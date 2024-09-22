@@ -20,6 +20,7 @@ RUN apt-get update && \
     apt-get install -y python3.9 python3.9-dev python3.9-distutils && \
     apt-get install -y wget curl && \
     ln -fs /usr/bin/python3.9 /usr/bin/python3 && \
+    ln -fs /usr/bin/python3.9 /usr/bin/python && \
     wget https://bootstrap.pypa.io/get-pip.py && \
     python3 get-pip.py
 

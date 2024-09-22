@@ -1,0 +1,162 @@
+2024-09-23 01:17:23,932 P87236 INFO FuxiCTR version: 2.3.2
+2024-09-23 01:17:23,933 P87236 INFO Params: {
+    "batch_norm": "True",
+    "batch_size": "4096",
+    "data_format": "csv",
+    "data_root": "dataset/",
+    "dataset_id": "ML_1M_7_x1",
+    "debug_mode": "False",
+    "deep_net_dropout": "0.1",
+    "early_stop_patience": "2",
+    "embedding_dim": "16",
+    "embedding_regularizer": "0.01",
+    "epochs": "100",
+    "eval_steps": "None",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['UserID', 'Gender', 'Age', 'Occupation', 'MovieID', 'Release'], 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'encoder': 'MaskedSumPooling', 'max_len': 5, 'name': 'Genres', 'splitter': '^', 'type': 'sequence'}]",
+    "feature_config": "None",
+    "feature_specs": "None",
+    "gpu": "0",
+    "group_id": "None",
+    "label_col": "{'dtype': 'float', 'name': 'Label'}",
+    "layer_norm": "True",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "ViTExpDCNv3",
+    "model_id": "ViTExpDCNv3_ML_1M_001_808e0731",
+    "model_root": "./checkpoints/",
+    "monitor": "{'AUC': 1, 'logloss': 0}",
+    "monitor_mode": "max",
+    "net_regularizer": "0",
+    "num_deep_cross_layers": "2",
+    "num_heads": "1",
+    "num_shallow_cross_layers": "2",
+    "num_workers": "4",
+    "optimizer": "adam",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2024",
+    "shallow_net_dropout": "0.1",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "dataset/ML_1M/test.csv",
+    "train_data": "dataset/ML_1M/train.csv",
+    "use_features": "None",
+    "valid_data": "dataset/ML_1M/valid.csv",
+    "verbose": "1",
+    "vit_hidden_dim": "32",
+    "vit_num_heads": "2",
+    "vit_num_layers": "1",
+    "vit_patch_size": "4"
+}
+2024-09-23 01:17:23,934 P87236 INFO Set up feature processor...
+2024-09-23 01:17:23,935 P87236 WARNING Skip rebuilding dataset/ML_1M_7_x1/feature_map.json. Please delete it manually if rebuilding is required.
+2024-09-23 01:17:23,935 P87236 INFO Load feature_map from json: dataset/ML_1M_7_x1/feature_map.json
+2024-09-23 01:17:23,935 P87236 INFO Set column index...
+2024-09-23 01:17:23,935 P87236 INFO Feature specs: {
+    "Age": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 9}",
+    "Gender": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 4}",
+    "Genres": "{'source': '', 'type': 'sequence', 'feature_encoder': 'layers.MaskedAveragePooling()', 'padding_idx': 0, 'max_len': 5, 'vocab_size': 302}",
+    "MovieID": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 3659}",
+    "Occupation": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 23}",
+    "Release": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 83}",
+    "UserID": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 6042}"
+}
+2024-09-23 01:17:25,326 P87236 INFO Total number of parameters: 468026.
+2024-09-23 01:17:25,326 P87236 INFO Loading datasets...
+2024-09-23 01:17:27,163 P87236 INFO Train samples: total/700146, blocks/1
+2024-09-23 01:17:27,672 P87236 INFO Validation samples: total/200041, blocks/1
+2024-09-23 01:17:27,672 P87236 INFO Loading train and validation data done.
+2024-09-23 01:17:27,673 P87236 INFO Start training: 171 batches/epoch
+2024-09-23 01:17:27,673 P87236 INFO ************ Epoch=1 start ************
+2024-09-23 01:18:06,201 P87236 INFO Train loss: 0.415791
+2024-09-23 01:18:06,201 P87236 INFO Evaluation @epoch 1 - batch 171: 
+2024-09-23 01:18:08,838 P87236 INFO [Metrics] AUC: 0.811217 - logloss: 0.350592
+2024-09-23 01:18:08,839 P87236 INFO Save best model: monitor(max)=0.811217
+2024-09-23 01:18:08,879 P87236 INFO ************ Epoch=1 end ************
+2024-09-23 01:18:45,564 P87236 INFO Train loss: 0.369889
+2024-09-23 01:18:45,565 P87236 INFO Evaluation @epoch 2 - batch 171: 
+2024-09-23 01:18:48,099 P87236 INFO [Metrics] AUC: 0.820983 - logloss: 0.343151
+2024-09-23 01:18:48,099 P87236 INFO Save best model: monitor(max)=0.820983
+2024-09-23 01:18:48,158 P87236 INFO ************ Epoch=2 end ************
+2024-09-23 01:19:24,283 P87236 INFO Train loss: 0.364417
+2024-09-23 01:19:24,283 P87236 INFO Evaluation @epoch 3 - batch 171: 
+2024-09-23 01:19:26,962 P87236 INFO [Metrics] AUC: 0.826155 - logloss: 0.339381
+2024-09-23 01:19:26,962 P87236 INFO Save best model: monitor(max)=0.826155
+2024-09-23 01:19:27,018 P87236 INFO ************ Epoch=3 end ************
+2024-09-23 01:20:02,274 P87236 INFO Train loss: 0.361352
+2024-09-23 01:20:02,274 P87236 INFO Evaluation @epoch 4 - batch 171: 
+2024-09-23 01:20:04,973 P87236 INFO [Metrics] AUC: 0.828953 - logloss: 0.336511
+2024-09-23 01:20:04,974 P87236 INFO Save best model: monitor(max)=0.828953
+2024-09-23 01:20:05,031 P87236 INFO ************ Epoch=4 end ************
+2024-09-23 01:20:41,321 P87236 INFO Train loss: 0.359318
+2024-09-23 01:20:41,322 P87236 INFO Evaluation @epoch 5 - batch 171: 
+2024-09-23 01:20:43,973 P87236 INFO [Metrics] AUC: 0.834023 - logloss: 0.333178
+2024-09-23 01:20:43,974 P87236 INFO Save best model: monitor(max)=0.834023
+2024-09-23 01:20:44,030 P87236 INFO ************ Epoch=5 end ************
+2024-09-23 01:21:20,952 P87236 INFO Train loss: 0.357946
+2024-09-23 01:21:20,952 P87236 INFO Evaluation @epoch 6 - batch 171: 
+2024-09-23 01:21:23,567 P87236 INFO [Metrics] AUC: 0.836553 - logloss: 0.330911
+2024-09-23 01:21:23,567 P87236 INFO Save best model: monitor(max)=0.836553
+2024-09-23 01:21:23,625 P87236 INFO ************ Epoch=6 end ************
+2024-09-23 01:22:00,029 P87236 INFO Train loss: 0.356059
+2024-09-23 01:22:00,029 P87236 INFO Evaluation @epoch 7 - batch 171: 
+2024-09-23 01:22:02,677 P87236 INFO [Metrics] AUC: 0.836956 - logloss: 0.330789
+2024-09-23 01:22:02,678 P87236 INFO Save best model: monitor(max)=0.836956
+2024-09-23 01:22:02,744 P87236 INFO ************ Epoch=7 end ************
+2024-09-23 01:22:28,136 P87236 INFO Train loss: 0.354543
+2024-09-23 01:22:28,137 P87236 INFO Evaluation @epoch 8 - batch 171: 
+2024-09-23 01:22:30,166 P87236 INFO [Metrics] AUC: 0.839538 - logloss: 0.328961
+2024-09-23 01:22:30,167 P87236 INFO Save best model: monitor(max)=0.839538
+2024-09-23 01:22:30,226 P87236 INFO ************ Epoch=8 end ************
+2024-09-23 01:23:07,453 P87236 INFO Train loss: 0.353419
+2024-09-23 01:23:07,454 P87236 INFO Evaluation @epoch 9 - batch 171: 
+2024-09-23 01:23:10,282 P87236 INFO [Metrics] AUC: 0.840536 - logloss: 0.327799
+2024-09-23 01:23:10,283 P87236 INFO Save best model: monitor(max)=0.840536
+2024-09-23 01:23:10,339 P87236 INFO ************ Epoch=9 end ************
+2024-09-23 01:23:46,831 P87236 INFO Train loss: 0.352653
+2024-09-23 01:23:46,832 P87236 INFO Evaluation @epoch 10 - batch 171: 
+2024-09-23 01:23:49,594 P87236 INFO [Metrics] AUC: 0.841772 - logloss: 0.326876
+2024-09-23 01:23:49,595 P87236 INFO Save best model: monitor(max)=0.841772
+2024-09-23 01:23:49,676 P87236 INFO ************ Epoch=10 end ************
+2024-09-23 01:24:25,521 P87236 INFO Train loss: 0.351810
+2024-09-23 01:24:25,522 P87236 INFO Evaluation @epoch 11 - batch 171: 
+2024-09-23 01:24:28,375 P87236 INFO [Metrics] AUC: 0.841479 - logloss: 0.327050
+2024-09-23 01:24:28,376 P87236 INFO Monitor(max)=0.841479 STOP!
+2024-09-23 01:24:28,376 P87236 INFO Reduce learning rate on plateau: 0.000100
+2024-09-23 01:24:28,438 P87236 INFO ************ Epoch=11 end ************
+2024-09-23 01:25:04,128 P87236 INFO Train loss: 0.325599
+2024-09-23 01:25:04,128 P87236 INFO Evaluation @epoch 12 - batch 171: 
+2024-09-23 01:25:06,856 P87236 INFO [Metrics] AUC: 0.850063 - logloss: 0.320488
+2024-09-23 01:25:06,856 P87236 INFO Save best model: monitor(max)=0.850063
+2024-09-23 01:25:06,913 P87236 INFO ************ Epoch=12 end ************
+2024-09-23 01:25:43,392 P87236 INFO Train loss: 0.313247
+2024-09-23 01:25:43,392 P87236 INFO Evaluation @epoch 13 - batch 171: 
+2024-09-23 01:25:46,083 P87236 INFO [Metrics] AUC: 0.852841 - logloss: 0.318765
+2024-09-23 01:25:46,084 P87236 INFO Save best model: monitor(max)=0.852841
+2024-09-23 01:25:46,147 P87236 INFO ************ Epoch=13 end ************
+2024-09-23 01:26:17,108 P87236 INFO Train loss: 0.307140
+2024-09-23 01:26:17,108 P87236 INFO Evaluation @epoch 14 - batch 171: 
+2024-09-23 01:26:18,755 P87236 INFO [Metrics] AUC: 0.853550 - logloss: 0.318948
+2024-09-23 01:26:18,756 P87236 INFO Save best model: monitor(max)=0.853550
+2024-09-23 01:26:18,833 P87236 INFO ************ Epoch=14 end ************
+2024-09-23 01:26:49,826 P87236 INFO Train loss: 0.303042
+2024-09-23 01:26:49,827 P87236 INFO Evaluation @epoch 15 - batch 171: 
+2024-09-23 01:26:52,498 P87236 INFO [Metrics] AUC: 0.853599 - logloss: 0.319197
+2024-09-23 01:26:52,498 P87236 INFO Save best model: monitor(max)=0.853599
+2024-09-23 01:26:52,557 P87236 INFO ************ Epoch=15 end ************
+2024-09-23 01:27:29,003 P87236 INFO Train loss: 0.299077
+2024-09-23 01:27:29,003 P87236 INFO Evaluation @epoch 16 - batch 171: 
+2024-09-23 01:27:31,798 P87236 INFO [Metrics] AUC: 0.853348 - logloss: 0.320363
+2024-09-23 01:27:31,799 P87236 INFO Monitor(max)=0.853348 STOP!
+2024-09-23 01:27:31,799 P87236 INFO Reduce learning rate on plateau: 0.000010
+2024-09-23 01:27:31,863 P87236 INFO ************ Epoch=16 end ************
+2024-09-23 01:28:07,810 P87236 INFO Train loss: 0.286479
+2024-09-23 01:28:07,810 P87236 INFO Evaluation @epoch 17 - batch 171: 
+2024-09-23 01:28:10,453 P87236 INFO [Metrics] AUC: 0.852831 - logloss: 0.322750
+2024-09-23 01:28:10,454 P87236 INFO Monitor(max)=0.852831 STOP!
+2024-09-23 01:28:10,454 P87236 INFO Reduce learning rate on plateau: 0.000001
+2024-09-23 01:28:10,454 P87236 INFO ********* Epoch=17 early stop *********
+2024-09-23 01:28:10,517 P87236 INFO Training finished.
+2024-09-23 01:28:10,518 P87236 INFO Load best model: /workspace/checkpoints/ML_1M_7_x1/ViTExpDCNv3_ML_1M_001_808e0731.model

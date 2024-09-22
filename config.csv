@@ -1,0 +1,1 @@
+ 20240922-224911,[command] python run_expid.py --expid DCNv3_ML_1M,[exp_id] DCNv3_ML_1M,[dataset_id] ML_1M_7_x1,[train] N.A.,[val] logloss: 0.320073 - AUC: 0.853690,[test] logloss: 0.318352 - AUC: 0.853719

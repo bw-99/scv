@@ -23,7 +23,7 @@ from fuxictr.pytorch.torch_utils import get_regularizer
 class ViTDCNv3(BaseModel):
     def __init__(self,
                  feature_map,
-                 model_id="DCNv3",
+                 model_id="ViTDCNv3",
                  gpu=-1,
                  learning_rate=1e-3,
                  embedding_dim=10,
@@ -55,7 +55,7 @@ class ViTDCNv3(BaseModel):
                                            layer_norm=layer_norm,
                                            batch_norm=batch_norm,
                                            num_heads=num_heads,
-                                           vit_input_dim=input_dim,
+                                           vit_input_dim=input_dim//2,
                                            vit_patch_size=vit_patch_size,
                                             vit_hidden_dim=vit_hidden_dim,
                                             vit_num_layers=vit_num_layers,
@@ -66,7 +66,7 @@ class ViTDCNv3(BaseModel):
                                       layer_norm=layer_norm,
                                       batch_norm=batch_norm,
                                       num_heads=num_heads,
-                                      vit_input_dim=input_dim,
+                                      vit_input_dim=input_dim//2,
                                       vit_patch_size=vit_patch_size,
                                       vit_hidden_dim=vit_hidden_dim,
                                       vit_num_layers=vit_num_layers,
@@ -102,6 +102,10 @@ class ViTDCNv3(BaseModel):
         weight_s = torch.where(weight_s > 0, weight_s, torch.zeros(1).to(weight_s.device))
         loss = loss + loss_d * weight_d + loss_s * weight_s
         return loss
+    
+    def save_weights(self, checkpoint):
+        return
+
 
 
 class MultiHeadFeatureEmbedding(nn.Module):
@@ -172,11 +176,7 @@ class ExponentialCrossViTNetwork(nn.Module):
             H = self.w[i](x)
             if len(self.batch_norm) > i:
                 H = self.batch_norm[i](H)
-            if len(self.layer_norm) > i:
-                norm_H = self.layer_norm[i](H)
-                mask = self.masker(norm_H)
-            else:
-                mask = self.masker(H)
+            mask = self.masker_lst[i](self.w[i].weight)
             H = torch.cat([H, H * mask], dim=-1)
             x = x * (H + self.b[i]) + x
             if len(self.dropout) > i:
@@ -235,11 +235,7 @@ class LinearCrossViTLayer(nn.Module):
             H = self.w[i](x)
             if len(self.batch_norm) > i:
                 H = self.batch_norm[i](H)
-            if len(self.layer_norm) > i:
-                norm_H = self.layer_norm[i](H)
-                mask = self.masker(norm_H)
-            else:
-                mask = self.masker(H)
+            mask = self.masker_lst[i](self.w[i].weight)
             H = torch.cat([H, H * mask], dim=-1)
             x = x0 * (H + self.b[i]) + x
             if len(self.dropout) > i:
@@ -279,8 +275,7 @@ class VIT2DEmbeddingModel(nn.Module):
         self.output_layer = nn.Linear(vit_hidden_dim, vit_input_dim)
 
 
-    def forward(self, dict):
-        x = dict[MATRIX_CV_EMBEDDING_INPUT]
+    def forward(self, x):
         if(len(x.shape) == 2):
             x = x.unsqueeze(0).unsqueeze(0)
         elif(len(x.shape) == 3):

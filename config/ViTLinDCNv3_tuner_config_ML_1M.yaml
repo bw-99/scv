@@ -1,0 +1,15 @@
+base_config: ./config/
+base_expid: ViTLinDCNv3_ML_1M
+dataset_id: ML_1M_7_x1
+
+tuner_space:
+    model_root: './checkpoints/'
+    batch_size: 4096
+    num_deep_cross_layers: [2, 3, 4]
+    num_shallow_cross_layers: [2, 3, 4]
+    deep_net_dropout: [0.1]
+    shallow_net_dropout: [0.1]
+    vit_patch_size: [4, 8]
+    vit_hidden_dim: [32, 64, 128]
+    vit_num_layers: [1, 2, 4]
+    vit_num_heads: [2, 4, 8]

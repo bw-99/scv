@@ -15,18 +15,19 @@
 # =========================================================================
 
 import sys
-sys.path.append("/home/lhh/code")
+# sys.path.append("/home/lhh/code")
 import os
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 import sys
 import logging
 from datetime import datetime
-from fuxictr.utils import load_config, set_logger, print_to_json, print_to_list, delete_model_files
+from fuxictr.utils import load_config, set_logger, print_to_json, print_to_list
 from fuxictr.features import FeatureMap
 from fuxictr.pytorch.torch_utils import seed_everything
-from fuxictr.pytorch.dataloaders import H5DataLoader
-from fuxictr.preprocess import FeatureProcessor, build_dataset
-from fuxictr.datasets.criteo import FeatureProcessor
+from fuxictr.pytorch.dataloaders import RankDataLoader
+from fuxictr.preprocess import build_dataset
+from custom_fp import CustomizedFeatureProcessor as FeatureProcessor 
+
 import src as model_zoo
 import gc
 import argparse
@@ -54,7 +55,7 @@ if __name__ == '__main__':
     data_dir = os.path.join(params['data_root'], params['dataset_id'])
     feature_map_json = os.path.join(data_dir, "feature_map.json")
     if params["data_format"] == "csv":
-        # Build feature_map and transform h5 data
+        
         feature_encoder = FeatureProcessor(**params)
         params["train_data"], params["valid_data"], params["test_data"] = \
             build_dataset(feature_encoder, **params)
@@ -62,11 +63,12 @@ if __name__ == '__main__':
     feature_map.load(feature_map_json, params)
     logging.info("Feature specs: " + print_to_json(feature_map.features))
     
+
     model_class = getattr(model_zoo, params['model'])
     model = model_class(feature_map, **params)
     model.count_parameters() # print number of parameters used in model
 
-    train_gen, valid_gen = H5DataLoader(feature_map, stage='train', **params).make_iterator()
+    train_gen, valid_gen = RankDataLoader(feature_map, stage='train', **params).make_iterator()
     model.fit(train_gen, validation_data=valid_gen, **params)
 
     logging.info('****** Validation evaluation ******')
@@ -75,7 +77,7 @@ if __name__ == '__main__':
     gc.collect()
     
     logging.info('******** Test evaluation ********')
-    test_gen = H5DataLoader(feature_map, stage='test', **params).make_iterator()
+    test_gen = RankDataLoader(feature_map, stage='test', **params).make_iterator()
     test_result = {}
     if test_gen:
       test_result = model.evaluate(test_gen)
@@ -88,4 +90,3 @@ if __name__ == '__main__':
                     "N.A.", print_to_list(valid_result), print_to_list(test_result)))
 
     model_dir = os.path.join(params["model_root"], feature_map.dataset_id)
-    delete_model_files(model_dir, params["model_id"])

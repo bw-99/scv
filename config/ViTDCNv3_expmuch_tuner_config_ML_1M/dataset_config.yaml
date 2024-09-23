@@ -1,0 +1,16 @@
+ML_1M_7_x1_b220bdc8:
+    data_format: csv
+    data_root: dataset/
+    dataset_id: ML_1M_7_x1
+    feature_cols:
+    -   active: true
+        dtype: str
+        name: [UserID, Gender, Age, Occupation, MovieID, Release]
+        type: categorical
+    - {active: true, dtype: str, encoder: MaskedSumPooling, max_len: 5, name: Genres,
+        splitter: ^, type: sequence}
+    label_col: {dtype: float, name: Label}
+    min_categr_count: 1
+    test_data: dataset/ML_1M/test.csv
+    train_data: dataset/ML_1M/train.csv
+    valid_data: dataset/ML_1M/valid.csv

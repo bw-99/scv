@@ -1,0 +1,83 @@
+2024-09-23 23:42:07,669 P468480 INFO FuxiCTR version: 2.3.2
+2024-09-23 23:42:07,669 P468480 INFO Params: {
+    "batch_norm": "True",
+    "batch_size": "4096",
+    "data_format": "csv",
+    "data_root": "dataset/",
+    "dataset_id": "ML_1M_7_x1",
+    "debug_mode": "False",
+    "deep_net_dropout": "0.1",
+    "early_stop_patience": "2",
+    "embedding_dim": "16",
+    "embedding_regularizer": "0.01",
+    "epochs": "100",
+    "eval_steps": "None",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['UserID', 'Gender', 'Age', 'Occupation', 'MovieID', 'Release'], 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'encoder': 'MaskedSumPooling', 'max_len': 5, 'name': 'Genres', 'splitter': '^', 'type': 'sequence'}]",
+    "feature_config": "None",
+    "feature_specs": "None",
+    "gpu": "0",
+    "group_id": "None",
+    "label_col": "{'dtype': 'float', 'name': 'Label'}",
+    "layer_norm": "True",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DCNv3",
+    "model_id": "DCNv3_ML_1M_011_29b85096",
+    "model_root": "./checkpoints/",
+    "monitor": "{'AUC': 1, 'logloss': 0}",
+    "monitor_mode": "max",
+    "net_regularizer": "0",
+    "num_deep_cross_layers": "1",
+    "num_heads": "1",
+    "num_shallow_cross_layers": "2",
+    "num_workers": "4",
+    "optimizer": "adam",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2024",
+    "shallow_net_dropout": "0.2",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "dataset/ML_1M/test.csv",
+    "train_data": "dataset/ML_1M/train.csv",
+    "use_features": "None",
+    "valid_data": "dataset/ML_1M/valid.csv",
+    "verbose": "1"
+}
+2024-09-23 23:42:07,671 P468480 INFO Set up feature processor...
+2024-09-23 23:42:07,671 P468480 WARNING Skip rebuilding dataset/ML_1M_7_x1/feature_map.json. Please delete it manually if rebuilding is required.
+2024-09-23 23:42:07,671 P468480 INFO Load feature_map from json: dataset/ML_1M_7_x1/feature_map.json
+2024-09-23 23:42:07,672 P468480 INFO Set column index...
+2024-09-23 23:42:07,672 P468480 INFO Feature specs: {
+    "Age": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 9}",
+    "Gender": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 4}",
+    "Genres": "{'source': '', 'type': 'sequence', 'feature_encoder': 'layers.MaskedAveragePooling()', 'padding_idx': 0, 'max_len': 5, 'vocab_size': 302}",
+    "MovieID": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 3659}",
+    "Occupation": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 23}",
+    "Release": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 83}",
+    "UserID": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 6042}"
+}
+2024-09-23 23:42:08,849 P468480 INFO Total number of parameters: 181672.
+2024-09-23 23:42:08,849 P468480 INFO Loading datasets...
+2024-09-23 23:42:10,892 P468480 INFO Train samples: total/700146, blocks/1
+2024-09-23 23:42:11,163 P468480 INFO Validation samples: total/200041, blocks/1
+2024-09-23 23:42:11,163 P468480 INFO Loading train and validation data done.
+2024-09-23 23:42:11,164 P468480 INFO Start training: 171 batches/epoch
+2024-09-23 23:42:11,164 P468480 INFO ************ Epoch=1 start ************
+2024-09-23 23:42:25,631 P468480 INFO Train loss: 0.438827
+2024-09-23 23:42:25,632 P468480 INFO Evaluation @epoch 1 - batch 171: 
+2024-09-23 23:42:26,977 P468480 INFO [Metrics] AUC: 0.804806 - logloss: 0.356412
+2024-09-23 23:42:26,978 P468480 INFO Save best model: monitor(max)=0.804806
+2024-09-23 23:42:27,019 P468480 INFO ************ Epoch=1 end ************
+2024-09-23 23:42:40,023 P468480 INFO Train loss: 0.378793
+2024-09-23 23:42:40,023 P468480 INFO Evaluation @epoch 2 - batch 171: 
+2024-09-23 23:42:41,293 P468480 INFO [Metrics] AUC: 0.814743 - logloss: 0.348050
+2024-09-23 23:42:41,294 P468480 INFO Save best model: monitor(max)=0.814743
+2024-09-23 23:42:41,362 P468480 INFO ************ Epoch=2 end ************
+2024-09-23 23:42:54,957 P468480 INFO Train loss: 0.371278
+2024-09-23 23:42:54,958 P468480 INFO Evaluation @epoch 3 - batch 171: 
+2024-09-23 23:42:56,278 P468480 INFO [Metrics] AUC: 0.819462 - logloss: 0.344088
+2024-09-23 23:42:56,278 P468480 INFO Save best model: monitor(max)=0.819462
+2024-09-23 23:42:56,335 P468480 INFO ************ Epoch=3 end ************

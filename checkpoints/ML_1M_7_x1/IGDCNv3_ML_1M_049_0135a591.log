@@ -1,0 +1,160 @@
+2024-09-23 23:23:39,328 P454969 INFO FuxiCTR version: 2.3.2
+2024-09-23 23:23:39,329 P454969 INFO Params: {
+    "batch_norm": "True",
+    "batch_size": "4096",
+    "data_format": "csv",
+    "data_root": "dataset/",
+    "dataset_id": "ML_1M_7_x1",
+    "debug_mode": "False",
+    "deep_net_dropout": "0.2",
+    "early_stop_patience": "2",
+    "embedding_dim": "16",
+    "embedding_regularizer": "0.01",
+    "epochs": "100",
+    "eval_steps": "None",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['UserID', 'Gender', 'Age', 'Occupation', 'MovieID', 'Release'], 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'encoder': 'MaskedSumPooling', 'max_len': 5, 'name': 'Genres', 'splitter': '^', 'type': 'sequence'}]",
+    "feature_config": "None",
+    "feature_specs": "None",
+    "gpu": "0",
+    "group_id": "None",
+    "label_col": "{'dtype': 'float', 'name': 'Label'}",
+    "layer_norm": "True",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "IGDCNv3",
+    "model_id": "IGDCNv3_ML_1M_049_0135a591",
+    "model_root": "./checkpoints/",
+    "monitor": "{'AUC': 1, 'logloss': 0}",
+    "monitor_mode": "max",
+    "net_regularizer": "0",
+    "num_deep_cross_layers": "2",
+    "num_heads": "1",
+    "num_shallow_cross_layers": "2",
+    "num_workers": "4",
+    "optimizer": "adam",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2024",
+    "shallow_net_dropout": "0.1",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "dataset/ML_1M/test.csv",
+    "train_data": "dataset/ML_1M/train.csv",
+    "use_features": "None",
+    "valid_data": "dataset/ML_1M/valid.csv",
+    "verbose": "1"
+}
+2024-09-23 23:23:39,330 P454969 INFO Set up feature processor...
+2024-09-23 23:23:39,330 P454969 WARNING Skip rebuilding dataset/ML_1M_7_x1/feature_map.json. Please delete it manually if rebuilding is required.
+2024-09-23 23:23:39,330 P454969 INFO Load feature_map from json: dataset/ML_1M_7_x1/feature_map.json
+2024-09-23 23:23:39,330 P454969 INFO Set column index...
+2024-09-23 23:23:39,331 P454969 INFO Feature specs: {
+    "Age": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 9}",
+    "Gender": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 4}",
+    "Genres": "{'source': '', 'type': 'sequence', 'feature_encoder': 'layers.MaskedAveragePooling()', 'padding_idx': 0, 'max_len': 5, 'vocab_size': 302}",
+    "MovieID": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 3659}",
+    "Occupation": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 23}",
+    "Release": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 83}",
+    "UserID": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 6042}"
+}
+2024-09-23 23:23:40,566 P454969 INFO Total number of parameters: 188394.
+2024-09-23 23:23:40,566 P454969 INFO Loading datasets...
+2024-09-23 23:23:42,382 P454969 INFO Train samples: total/700146, blocks/1
+2024-09-23 23:23:42,894 P454969 INFO Validation samples: total/200041, blocks/1
+2024-09-23 23:23:42,895 P454969 INFO Loading train and validation data done.
+2024-09-23 23:23:42,895 P454969 INFO Start training: 171 batches/epoch
+2024-09-23 23:23:42,895 P454969 INFO ************ Epoch=1 start ************
+2024-09-23 23:23:57,187 P454969 INFO Train loss: 0.433366
+2024-09-23 23:23:57,188 P454969 INFO Evaluation @epoch 1 - batch 171: 
+2024-09-23 23:23:58,516 P454969 INFO [Metrics] AUC: 0.803989 - logloss: 0.355870
+2024-09-23 23:23:58,517 P454969 INFO Save best model: monitor(max)=0.803989
+2024-09-23 23:23:58,574 P454969 INFO ************ Epoch=1 end ************
+2024-09-23 23:24:11,800 P454969 INFO Train loss: 0.376280
+2024-09-23 23:24:11,800 P454969 INFO Evaluation @epoch 2 - batch 171: 
+2024-09-23 23:24:13,048 P454969 INFO [Metrics] AUC: 0.813323 - logloss: 0.349128
+2024-09-23 23:24:13,049 P454969 INFO Save best model: monitor(max)=0.813323
+2024-09-23 23:24:13,115 P454969 INFO ************ Epoch=2 end ************
+2024-09-23 23:24:26,137 P454969 INFO Train loss: 0.369053
+2024-09-23 23:24:26,138 P454969 INFO Evaluation @epoch 3 - batch 171: 
+2024-09-23 23:24:27,398 P454969 INFO [Metrics] AUC: 0.819617 - logloss: 0.343825
+2024-09-23 23:24:27,398 P454969 INFO Save best model: monitor(max)=0.819617
+2024-09-23 23:24:27,463 P454969 INFO ************ Epoch=3 end ************
+2024-09-23 23:24:40,159 P454969 INFO Train loss: 0.365801
+2024-09-23 23:24:40,159 P454969 INFO Evaluation @epoch 4 - batch 171: 
+2024-09-23 23:24:41,513 P454969 INFO [Metrics] AUC: 0.825607 - logloss: 0.339435
+2024-09-23 23:24:41,514 P454969 INFO Save best model: monitor(max)=0.825607
+2024-09-23 23:24:41,579 P454969 INFO ************ Epoch=4 end ************
+2024-09-23 23:24:54,415 P454969 INFO Train loss: 0.363444
+2024-09-23 23:24:54,415 P454969 INFO Evaluation @epoch 5 - batch 171: 
+2024-09-23 23:24:55,687 P454969 INFO [Metrics] AUC: 0.829122 - logloss: 0.336967
+2024-09-23 23:24:55,688 P454969 INFO Save best model: monitor(max)=0.829122
+2024-09-23 23:24:55,749 P454969 INFO ************ Epoch=5 end ************
+2024-09-23 23:25:08,955 P454969 INFO Train loss: 0.360671
+2024-09-23 23:25:08,955 P454969 INFO Evaluation @epoch 6 - batch 171: 
+2024-09-23 23:25:10,245 P454969 INFO [Metrics] AUC: 0.833339 - logloss: 0.333619
+2024-09-23 23:25:10,246 P454969 INFO Save best model: monitor(max)=0.833339
+2024-09-23 23:25:10,314 P454969 INFO ************ Epoch=6 end ************
+2024-09-23 23:25:24,055 P454969 INFO Train loss: 0.358983
+2024-09-23 23:25:24,055 P454969 INFO Evaluation @epoch 7 - batch 171: 
+2024-09-23 23:25:25,231 P454969 INFO [Metrics] AUC: 0.835066 - logloss: 0.332190
+2024-09-23 23:25:25,232 P454969 INFO Save best model: monitor(max)=0.835066
+2024-09-23 23:25:25,338 P454969 INFO ************ Epoch=7 end ************
+2024-09-23 23:25:38,983 P454969 INFO Train loss: 0.357112
+2024-09-23 23:25:38,984 P454969 INFO Evaluation @epoch 8 - batch 171: 
+2024-09-23 23:25:40,153 P454969 INFO [Metrics] AUC: 0.837639 - logloss: 0.330364
+2024-09-23 23:25:40,154 P454969 INFO Save best model: monitor(max)=0.837639
+2024-09-23 23:25:40,241 P454969 INFO ************ Epoch=8 end ************
+2024-09-23 23:25:54,166 P454969 INFO Train loss: 0.355094
+2024-09-23 23:25:54,166 P454969 INFO Evaluation @epoch 9 - batch 171: 
+2024-09-23 23:25:55,423 P454969 INFO [Metrics] AUC: 0.838959 - logloss: 0.328959
+2024-09-23 23:25:55,424 P454969 INFO Save best model: monitor(max)=0.838959
+2024-09-23 23:25:55,495 P454969 INFO ************ Epoch=9 end ************
+2024-09-23 23:26:09,646 P454969 INFO Train loss: 0.354294
+2024-09-23 23:26:09,647 P454969 INFO Evaluation @epoch 10 - batch 171: 
+2024-09-23 23:26:10,885 P454969 INFO [Metrics] AUC: 0.840602 - logloss: 0.327963
+2024-09-23 23:26:10,886 P454969 INFO Save best model: monitor(max)=0.840602
+2024-09-23 23:26:10,960 P454969 INFO ************ Epoch=10 end ************
+2024-09-23 23:26:25,434 P454969 INFO Train loss: 0.353151
+2024-09-23 23:26:25,435 P454969 INFO Evaluation @epoch 11 - batch 171: 
+2024-09-23 23:26:26,659 P454969 INFO [Metrics] AUC: 0.840209 - logloss: 0.328001
+2024-09-23 23:26:26,660 P454969 INFO Monitor(max)=0.840209 STOP!
+2024-09-23 23:26:26,660 P454969 INFO Reduce learning rate on plateau: 0.000100
+2024-09-23 23:26:26,713 P454969 INFO ************ Epoch=11 end ************
+2024-09-23 23:26:41,597 P454969 INFO Train loss: 0.327621
+2024-09-23 23:26:41,598 P454969 INFO Evaluation @epoch 12 - batch 171: 
+2024-09-23 23:26:42,727 P454969 INFO [Metrics] AUC: 0.849146 - logloss: 0.321144
+2024-09-23 23:26:42,728 P454969 INFO Save best model: monitor(max)=0.849146
+2024-09-23 23:26:42,805 P454969 INFO ************ Epoch=12 end ************
+2024-09-23 23:26:58,245 P454969 INFO Train loss: 0.315280
+2024-09-23 23:26:58,246 P454969 INFO Evaluation @epoch 13 - batch 171: 
+2024-09-23 23:26:59,461 P454969 INFO [Metrics] AUC: 0.852029 - logloss: 0.318766
+2024-09-23 23:26:59,462 P454969 INFO Save best model: monitor(max)=0.852029
+2024-09-23 23:26:59,532 P454969 INFO ************ Epoch=13 end ************
+2024-09-23 23:27:14,731 P454969 INFO Train loss: 0.309284
+2024-09-23 23:27:14,731 P454969 INFO Evaluation @epoch 14 - batch 171: 
+2024-09-23 23:27:15,851 P454969 INFO [Metrics] AUC: 0.852931 - logloss: 0.318489
+2024-09-23 23:27:15,852 P454969 INFO Save best model: monitor(max)=0.852931
+2024-09-23 23:27:15,946 P454969 INFO ************ Epoch=14 end ************
+2024-09-23 23:27:30,771 P454969 INFO Train loss: 0.304810
+2024-09-23 23:27:30,772 P454969 INFO Evaluation @epoch 15 - batch 171: 
+2024-09-23 23:27:31,838 P454969 INFO [Metrics] AUC: 0.852851 - logloss: 0.318956
+2024-09-23 23:27:31,840 P454969 INFO Monitor(max)=0.852851 STOP!
+2024-09-23 23:27:31,840 P454969 INFO Reduce learning rate on plateau: 0.000010
+2024-09-23 23:27:31,906 P454969 INFO ************ Epoch=15 end ************
+2024-09-23 23:27:46,652 P454969 INFO Train loss: 0.293042
+2024-09-23 23:27:46,653 P454969 INFO Evaluation @epoch 16 - batch 171: 
+2024-09-23 23:27:47,713 P454969 INFO [Metrics] AUC: 0.852738 - logloss: 0.319541
+2024-09-23 23:27:47,714 P454969 INFO Monitor(max)=0.852738 STOP!
+2024-09-23 23:27:47,714 P454969 INFO Reduce learning rate on plateau: 0.000001
+2024-09-23 23:27:47,714 P454969 INFO ********* Epoch=16 early stop *********
+2024-09-23 23:27:47,773 P454969 INFO Training finished.
+2024-09-23 23:27:47,773 P454969 INFO Load best model: /workspace/checkpoints/ML_1M_7_x1/IGDCNv3_ML_1M_049_0135a591.model
+2024-09-23 23:27:47,782 P454969 INFO ****** Validation evaluation ******
+2024-09-23 23:27:49,111 P454969 INFO [Metrics] logloss: 0.318489 - AUC: 0.852931
+2024-09-23 23:27:49,249 P454969 INFO ******** Test evaluation ********
+2024-09-23 23:27:49,249 P454969 INFO Loading datasets...
+2024-09-23 23:27:49,487 P454969 INFO Test samples: total/100022, blocks/1
+2024-09-23 23:27:49,487 P454969 INFO Loading test data done.
+2024-09-23 23:27:50,280 P454969 INFO [Metrics] logloss: 0.316733 - AUC: 0.853351

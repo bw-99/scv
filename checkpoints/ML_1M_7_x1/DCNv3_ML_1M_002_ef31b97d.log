@@ -116,3 +116,116 @@
 2024-09-23 22:40:59,701 P419777 INFO [Metrics] AUC: 0.833030 - logloss: 0.333681
 2024-09-23 22:40:59,702 P419777 INFO Save best model: monitor(max)=0.833030
 2024-09-23 22:40:59,768 P419777 INFO ************ Epoch=10 end ************
+2024-09-23 22:41:13,724 P419777 INFO Train loss: 0.355836
+2024-09-23 22:41:13,725 P419777 INFO Evaluation @epoch 11 - batch 171: 
+2024-09-23 22:41:14,648 P419777 INFO [Metrics] AUC: 0.833888 - logloss: 0.332964
+2024-09-23 22:41:14,648 P419777 INFO Save best model: monitor(max)=0.833888
+2024-09-23 22:41:14,708 P419777 INFO ************ Epoch=11 end ************
+2024-09-23 22:41:28,776 P419777 INFO Train loss: 0.354759
+2024-09-23 22:41:28,777 P419777 INFO Evaluation @epoch 12 - batch 171: 
+2024-09-23 22:41:29,715 P419777 INFO [Metrics] AUC: 0.835695 - logloss: 0.331450
+2024-09-23 22:41:29,716 P419777 INFO Save best model: monitor(max)=0.835695
+2024-09-23 22:41:29,779 P419777 INFO ************ Epoch=12 end ************
+2024-09-23 22:41:43,642 P419777 INFO Train loss: 0.353845
+2024-09-23 22:41:43,642 P419777 INFO Evaluation @epoch 13 - batch 171: 
+2024-09-23 22:41:44,540 P419777 INFO [Metrics] AUC: 0.836524 - logloss: 0.330578
+2024-09-23 22:41:44,541 P419777 INFO Save best model: monitor(max)=0.836524
+2024-09-23 22:41:44,603 P419777 INFO ************ Epoch=13 end ************
+2024-09-23 22:41:58,752 P419777 INFO Train loss: 0.353016
+2024-09-23 22:41:58,752 P419777 INFO Evaluation @epoch 14 - batch 171: 
+2024-09-23 22:41:59,603 P419777 INFO [Metrics] AUC: 0.837041 - logloss: 0.330520
+2024-09-23 22:41:59,604 P419777 INFO Save best model: monitor(max)=0.837041
+2024-09-23 22:41:59,672 P419777 INFO ************ Epoch=14 end ************
+2024-09-23 22:42:13,710 P419777 INFO Train loss: 0.351965
+2024-09-23 22:42:13,711 P419777 INFO Evaluation @epoch 15 - batch 171: 
+2024-09-23 22:42:14,611 P419777 INFO [Metrics] AUC: 0.838563 - logloss: 0.329054
+2024-09-23 22:42:14,612 P419777 INFO Save best model: monitor(max)=0.838563
+2024-09-23 22:42:14,673 P419777 INFO ************ Epoch=15 end ************
+2024-09-23 22:42:28,782 P419777 INFO Train loss: 0.351225
+2024-09-23 22:42:28,782 P419777 INFO Evaluation @epoch 16 - batch 171: 
+2024-09-23 22:42:29,606 P419777 INFO [Metrics] AUC: 0.838639 - logloss: 0.329155
+2024-09-23 22:42:29,607 P419777 INFO Save best model: monitor(max)=0.838639
+2024-09-23 22:42:29,667 P419777 INFO ************ Epoch=16 end ************
+2024-09-23 22:42:44,214 P419777 INFO Train loss: 0.350714
+2024-09-23 22:42:44,214 P419777 INFO Evaluation @epoch 17 - batch 171: 
+2024-09-23 22:42:45,061 P419777 INFO [Metrics] AUC: 0.840727 - logloss: 0.327754
+2024-09-23 22:42:45,062 P419777 INFO Save best model: monitor(max)=0.840727
+2024-09-23 22:42:45,119 P419777 INFO ************ Epoch=17 end ************
+2024-09-23 22:42:59,821 P419777 INFO Train loss: 0.349507
+2024-09-23 22:42:59,821 P419777 INFO Evaluation @epoch 18 - batch 171: 
+2024-09-23 22:43:00,749 P419777 INFO [Metrics] AUC: 0.839775 - logloss: 0.328511
+2024-09-23 22:43:00,750 P419777 INFO Monitor(max)=0.839775 STOP!
+2024-09-23 22:43:00,750 P419777 INFO Reduce learning rate on plateau: 0.000100
+2024-09-23 22:43:00,806 P419777 INFO ************ Epoch=18 end ************
+2024-09-23 22:43:15,543 P419777 INFO Train loss: 0.328638
+2024-09-23 22:43:15,544 P419777 INFO Evaluation @epoch 19 - batch 171: 
+2024-09-23 22:43:16,520 P419777 INFO [Metrics] AUC: 0.847803 - logloss: 0.321715
+2024-09-23 22:43:16,521 P419777 INFO Save best model: monitor(max)=0.847803
+2024-09-23 22:43:16,579 P419777 INFO ************ Epoch=19 end ************
+2024-09-23 22:43:31,342 P419777 INFO Train loss: 0.319352
+2024-09-23 22:43:31,342 P419777 INFO Evaluation @epoch 20 - batch 171: 
+2024-09-23 22:43:32,345 P419777 INFO [Metrics] AUC: 0.850341 - logloss: 0.319763
+2024-09-23 22:43:32,346 P419777 INFO Save best model: monitor(max)=0.850341
+2024-09-23 22:43:32,415 P419777 INFO ************ Epoch=20 end ************
+2024-09-23 22:43:36,734 P419777 INFO Train loss: 0.314956
+2024-09-23 22:43:36,734 P419777 INFO Evaluation @epoch 21 - batch 171: 
+2024-09-23 22:43:37,477 P419777 INFO [Metrics] AUC: 0.851211 - logloss: 0.319099
+2024-09-23 22:43:37,478 P419777 INFO Save best model: monitor(max)=0.851211
+2024-09-23 22:43:37,537 P419777 INFO ************ Epoch=21 end ************
+2024-09-23 22:43:41,789 P419777 INFO Train loss: 0.312180
+2024-09-23 22:43:41,789 P419777 INFO Evaluation @epoch 22 - batch 171: 
+2024-09-23 22:43:42,546 P419777 INFO [Metrics] AUC: 0.851679 - logloss: 0.318863
+2024-09-23 22:43:42,547 P419777 INFO Save best model: monitor(max)=0.851679
+2024-09-23 22:43:42,607 P419777 INFO ************ Epoch=22 end ************
+2024-09-23 22:43:52,515 P419777 INFO Train loss: 0.310191
+2024-09-23 22:43:52,515 P419777 INFO Evaluation @epoch 23 - batch 171: 
+2024-09-23 22:43:53,743 P419777 INFO [Metrics] AUC: 0.851789 - logloss: 0.318904
+2024-09-23 22:43:53,743 P419777 INFO Save best model: monitor(max)=0.851789
+2024-09-23 22:43:53,805 P419777 INFO ************ Epoch=23 end ************
+2024-09-23 22:44:05,863 P419777 INFO Train loss: 0.308313
+2024-09-23 22:44:05,863 P419777 INFO Evaluation @epoch 24 - batch 171: 
+2024-09-23 22:44:07,058 P419777 INFO [Metrics] AUC: 0.851827 - logloss: 0.319055
+2024-09-23 22:44:07,059 P419777 INFO Save best model: monitor(max)=0.851827
+2024-09-23 22:44:07,126 P419777 INFO ************ Epoch=24 end ************
+2024-09-23 22:44:20,115 P419777 INFO Train loss: 0.307017
+2024-09-23 22:44:20,116 P419777 INFO Evaluation @epoch 25 - batch 171: 
+2024-09-23 22:44:21,329 P419777 INFO [Metrics] AUC: 0.851991 - logloss: 0.318806
+2024-09-23 22:44:21,329 P419777 INFO Save best model: monitor(max)=0.851991
+2024-09-23 22:44:21,386 P419777 INFO ************ Epoch=25 end ************
+2024-09-23 22:44:34,094 P419777 INFO Train loss: 0.305575
+2024-09-23 22:44:34,094 P419777 INFO Evaluation @epoch 26 - batch 171: 
+2024-09-23 22:44:35,291 P419777 INFO [Metrics] AUC: 0.851901 - logloss: 0.318975
+2024-09-23 22:44:35,292 P419777 INFO Monitor(max)=0.851901 STOP!
+2024-09-23 22:44:35,292 P419777 INFO Reduce learning rate on plateau: 0.000010
+2024-09-23 22:44:35,348 P419777 INFO ************ Epoch=26 end ************
+2024-09-23 22:44:47,799 P419777 INFO Train loss: 0.297694
+2024-09-23 22:44:47,799 P419777 INFO Evaluation @epoch 27 - batch 171: 
+2024-09-23 22:44:48,938 P419777 INFO [Metrics] AUC: 0.852133 - logloss: 0.319343
+2024-09-23 22:44:48,938 P419777 INFO Save best model: monitor(max)=0.852133
+2024-09-23 22:44:49,002 P419777 INFO ************ Epoch=27 end ************
+2024-09-23 22:45:01,329 P419777 INFO Train loss: 0.296947
+2024-09-23 22:45:01,329 P419777 INFO Evaluation @epoch 28 - batch 171: 
+2024-09-23 22:45:02,476 P419777 INFO [Metrics] AUC: 0.852138 - logloss: 0.319469
+2024-09-23 22:45:02,477 P419777 INFO Save best model: monitor(max)=0.852138
+2024-09-23 22:45:02,537 P419777 INFO ************ Epoch=28 end ************
+2024-09-23 22:45:15,233 P419777 INFO Train loss: 0.296352
+2024-09-23 22:45:15,233 P419777 INFO Evaluation @epoch 29 - batch 171: 
+2024-09-23 22:45:16,383 P419777 INFO [Metrics] AUC: 0.852123 - logloss: 0.319584
+2024-09-23 22:45:16,384 P419777 INFO Monitor(max)=0.852123 STOP!
+2024-09-23 22:45:16,384 P419777 INFO Reduce learning rate on plateau: 0.000001
+2024-09-23 22:45:16,447 P419777 INFO ************ Epoch=29 end ************
+2024-09-23 22:45:29,435 P419777 INFO Train loss: 0.295562
+2024-09-23 22:45:29,435 P419777 INFO Evaluation @epoch 30 - batch 171: 
+2024-09-23 22:45:30,586 P419777 INFO [Metrics] AUC: 0.852118 - logloss: 0.319632
+2024-09-23 22:45:30,587 P419777 INFO Monitor(max)=0.852118 STOP!
+2024-09-23 22:45:30,587 P419777 INFO Reduce learning rate on plateau: 0.000001
+2024-09-23 22:45:30,587 P419777 INFO ********* Epoch=30 early stop *********
+2024-09-23 22:45:30,641 P419777 INFO Training finished.
+2024-09-23 22:45:30,642 P419777 INFO Load best model: /workspace/checkpoints/ML_1M_7_x1/DCNv3_ML_1M_002_ef31b97d.model
+2024-09-23 22:45:30,650 P419777 INFO ****** Validation evaluation ******
+2024-09-23 22:45:31,857 P419777 INFO [Metrics] logloss: 0.319469 - AUC: 0.852138
+2024-09-23 22:45:32,003 P419777 INFO ******** Test evaluation ********
+2024-09-23 22:45:32,003 P419777 INFO Loading datasets...
+2024-09-23 22:45:32,271 P419777 INFO Test samples: total/100022, blocks/1
+2024-09-23 22:45:32,271 P419777 INFO Loading test data done.
+2024-09-23 22:45:32,999 P419777 INFO [Metrics] logloss: 0.317786 - AUC: 0.852437

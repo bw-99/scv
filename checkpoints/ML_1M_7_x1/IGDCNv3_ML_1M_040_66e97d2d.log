@@ -101,3 +101,65 @@
 2024-09-23 22:40:58,776 P420116 INFO [Metrics] AUC: 0.828862 - logloss: 0.337730
 2024-09-23 22:40:58,778 P420116 INFO Save best model: monitor(max)=0.828862
 2024-09-23 22:40:58,858 P420116 INFO ************ Epoch=7 end ************
+2024-09-23 22:41:12,792 P420116 INFO Train loss: 0.360429
+2024-09-23 22:41:12,793 P420116 INFO Evaluation @epoch 8 - batch 171: 
+2024-09-23 22:41:13,954 P420116 INFO [Metrics] AUC: 0.832889 - logloss: 0.334595
+2024-09-23 22:41:13,955 P420116 INFO Save best model: monitor(max)=0.832889
+2024-09-23 22:41:14,027 P420116 INFO ************ Epoch=8 end ************
+2024-09-23 22:41:27,838 P420116 INFO Train loss: 0.359288
+2024-09-23 22:41:27,838 P420116 INFO Evaluation @epoch 9 - batch 171: 
+2024-09-23 22:41:28,991 P420116 INFO [Metrics] AUC: 0.832624 - logloss: 0.334116
+2024-09-23 22:41:28,992 P420116 INFO Monitor(max)=0.832624 STOP!
+2024-09-23 22:41:28,992 P420116 INFO Reduce learning rate on plateau: 0.000100
+2024-09-23 22:41:29,059 P420116 INFO ************ Epoch=9 end ************
+2024-09-23 22:41:42,672 P420116 INFO Train loss: 0.339272
+2024-09-23 22:41:42,673 P420116 INFO Evaluation @epoch 10 - batch 171: 
+2024-09-23 22:41:43,837 P420116 INFO [Metrics] AUC: 0.844157 - logloss: 0.324655
+2024-09-23 22:41:43,838 P420116 INFO Save best model: monitor(max)=0.844157
+2024-09-23 22:41:43,907 P420116 INFO ************ Epoch=10 end ************
+2024-09-23 22:41:57,859 P420116 INFO Train loss: 0.327287
+2024-09-23 22:41:57,859 P420116 INFO Evaluation @epoch 11 - batch 171: 
+2024-09-23 22:41:59,056 P420116 INFO [Metrics] AUC: 0.848465 - logloss: 0.321119
+2024-09-23 22:41:59,057 P420116 INFO Save best model: monitor(max)=0.848465
+2024-09-23 22:41:59,128 P420116 INFO ************ Epoch=11 end ************
+2024-09-23 22:42:12,897 P420116 INFO Train loss: 0.321726
+2024-09-23 22:42:12,898 P420116 INFO Evaluation @epoch 12 - batch 171: 
+2024-09-23 22:42:14,027 P420116 INFO [Metrics] AUC: 0.850410 - logloss: 0.319602
+2024-09-23 22:42:14,028 P420116 INFO Save best model: monitor(max)=0.850410
+2024-09-23 22:42:14,102 P420116 INFO ************ Epoch=12 end ************
+2024-09-23 22:42:28,035 P420116 INFO Train loss: 0.318223
+2024-09-23 22:42:28,035 P420116 INFO Evaluation @epoch 13 - batch 171: 
+2024-09-23 22:42:29,142 P420116 INFO [Metrics] AUC: 0.851119 - logloss: 0.319123
+2024-09-23 22:42:29,143 P420116 INFO Save best model: monitor(max)=0.851119
+2024-09-23 22:42:29,214 P420116 INFO ************ Epoch=13 end ************
+2024-09-23 22:42:43,558 P420116 INFO Train loss: 0.315781
+2024-09-23 22:42:43,558 P420116 INFO Evaluation @epoch 14 - batch 171: 
+2024-09-23 22:42:44,681 P420116 INFO [Metrics] AUC: 0.851428 - logloss: 0.318822
+2024-09-23 22:42:44,682 P420116 INFO Save best model: monitor(max)=0.851428
+2024-09-23 22:42:44,753 P420116 INFO ************ Epoch=14 end ************
+2024-09-23 22:42:59,372 P420116 INFO Train loss: 0.313430
+2024-09-23 22:42:59,373 P420116 INFO Evaluation @epoch 15 - batch 171: 
+2024-09-23 22:43:00,495 P420116 INFO [Metrics] AUC: 0.851741 - logloss: 0.318825
+2024-09-23 22:43:00,496 P420116 INFO Save best model: monitor(max)=0.851741
+2024-09-23 22:43:00,559 P420116 INFO ************ Epoch=15 end ************
+2024-09-23 22:43:15,322 P420116 INFO Train loss: 0.311548
+2024-09-23 22:43:15,322 P420116 INFO Evaluation @epoch 16 - batch 171: 
+2024-09-23 22:43:16,302 P420116 INFO [Metrics] AUC: 0.851737 - logloss: 0.318948
+2024-09-23 22:43:16,302 P420116 INFO Monitor(max)=0.851737 STOP!
+2024-09-23 22:43:16,303 P420116 INFO Reduce learning rate on plateau: 0.000010
+2024-09-23 22:43:16,356 P420116 INFO ************ Epoch=16 end ************
+2024-09-23 22:43:31,237 P420116 INFO Train loss: 0.302509
+2024-09-23 22:43:31,237 P420116 INFO Evaluation @epoch 17 - batch 171: 
+2024-09-23 22:43:32,267 P420116 INFO [Metrics] AUC: 0.851731 - logloss: 0.319363
+2024-09-23 22:43:32,267 P420116 INFO Monitor(max)=0.851731 STOP!
+2024-09-23 22:43:32,268 P420116 INFO Reduce learning rate on plateau: 0.000001
+2024-09-23 22:43:32,268 P420116 INFO ********* Epoch=17 early stop *********
+2024-09-23 22:43:32,331 P420116 INFO Training finished.
+2024-09-23 22:43:32,331 P420116 INFO Load best model: /workspace/checkpoints/ML_1M_7_x1/IGDCNv3_ML_1M_040_66e97d2d.model
+2024-09-23 22:43:32,338 P420116 INFO ****** Validation evaluation ******
+2024-09-23 22:43:33,510 P420116 INFO [Metrics] logloss: 0.318825 - AUC: 0.851741
+2024-09-23 22:43:33,643 P420116 INFO ******** Test evaluation ********
+2024-09-23 22:43:33,643 P420116 INFO Loading datasets...
+2024-09-23 22:43:33,886 P420116 INFO Test samples: total/100022, blocks/1
+2024-09-23 22:43:33,886 P420116 INFO Loading test data done.
+2024-09-23 22:43:34,637 P420116 INFO [Metrics] logloss: 0.317853 - AUC: 0.851655

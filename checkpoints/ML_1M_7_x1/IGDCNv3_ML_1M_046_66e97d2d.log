@@ -1,0 +1,160 @@
+2024-09-23 23:10:50,944 P445110 INFO FuxiCTR version: 2.3.2
+2024-09-23 23:10:50,945 P445110 INFO Params: {
+    "batch_norm": "True",
+    "batch_size": "4096",
+    "data_format": "csv",
+    "data_root": "dataset/",
+    "dataset_id": "ML_1M_7_x1",
+    "debug_mode": "False",
+    "deep_net_dropout": "0.1",
+    "early_stop_patience": "2",
+    "embedding_dim": "16",
+    "embedding_regularizer": "0.01",
+    "epochs": "100",
+    "eval_steps": "None",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['UserID', 'Gender', 'Age', 'Occupation', 'MovieID', 'Release'], 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'encoder': 'MaskedSumPooling', 'max_len': 5, 'name': 'Genres', 'splitter': '^', 'type': 'sequence'}]",
+    "feature_config": "None",
+    "feature_specs": "None",
+    "gpu": "0",
+    "group_id": "None",
+    "label_col": "{'dtype': 'float', 'name': 'Label'}",
+    "layer_norm": "True",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "IGDCNv3",
+    "model_id": "IGDCNv3_ML_1M_046_66e97d2d",
+    "model_root": "./checkpoints/",
+    "monitor": "{'AUC': 1, 'logloss': 0}",
+    "monitor_mode": "max",
+    "net_regularizer": "0",
+    "num_deep_cross_layers": "2",
+    "num_heads": "1",
+    "num_shallow_cross_layers": "2",
+    "num_workers": "4",
+    "optimizer": "adam",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2024",
+    "shallow_net_dropout": "0.1",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "dataset/ML_1M/test.csv",
+    "train_data": "dataset/ML_1M/train.csv",
+    "use_features": "None",
+    "valid_data": "dataset/ML_1M/valid.csv",
+    "verbose": "1"
+}
+2024-09-23 23:10:50,946 P445110 INFO Set up feature processor...
+2024-09-23 23:10:50,946 P445110 WARNING Skip rebuilding dataset/ML_1M_7_x1/feature_map.json. Please delete it manually if rebuilding is required.
+2024-09-23 23:10:50,946 P445110 INFO Load feature_map from json: dataset/ML_1M_7_x1/feature_map.json
+2024-09-23 23:10:50,947 P445110 INFO Set column index...
+2024-09-23 23:10:50,947 P445110 INFO Feature specs: {
+    "Age": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 9}",
+    "Gender": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 4}",
+    "Genres": "{'source': '', 'type': 'sequence', 'feature_encoder': 'layers.MaskedAveragePooling()', 'padding_idx': 0, 'max_len': 5, 'vocab_size': 302}",
+    "MovieID": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 3659}",
+    "Occupation": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 23}",
+    "Release": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 83}",
+    "UserID": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 6042}"
+}
+2024-09-23 23:10:52,204 P445110 INFO Total number of parameters: 188394.
+2024-09-23 23:10:52,204 P445110 INFO Loading datasets...
+2024-09-23 23:10:54,128 P445110 INFO Train samples: total/700146, blocks/1
+2024-09-23 23:10:54,688 P445110 INFO Validation samples: total/200041, blocks/1
+2024-09-23 23:10:54,688 P445110 INFO Loading train and validation data done.
+2024-09-23 23:10:54,688 P445110 INFO Start training: 171 batches/epoch
+2024-09-23 23:10:54,689 P445110 INFO ************ Epoch=1 start ************
+2024-09-23 23:11:09,112 P445110 INFO Train loss: 0.431473
+2024-09-23 23:11:09,112 P445110 INFO Evaluation @epoch 1 - batch 171: 
+2024-09-23 23:11:10,351 P445110 INFO [Metrics] AUC: 0.804031 - logloss: 0.355865
+2024-09-23 23:11:10,352 P445110 INFO Save best model: monitor(max)=0.804031
+2024-09-23 23:11:10,396 P445110 INFO ************ Epoch=1 end ************
+2024-09-23 23:11:23,799 P445110 INFO Train loss: 0.375008
+2024-09-23 23:11:23,799 P445110 INFO Evaluation @epoch 2 - batch 171: 
+2024-09-23 23:11:25,046 P445110 INFO [Metrics] AUC: 0.815641 - logloss: 0.347356
+2024-09-23 23:11:25,047 P445110 INFO Save best model: monitor(max)=0.815641
+2024-09-23 23:11:25,112 P445110 INFO ************ Epoch=2 end ************
+2024-09-23 23:11:38,369 P445110 INFO Train loss: 0.367708
+2024-09-23 23:11:38,369 P445110 INFO Evaluation @epoch 3 - batch 171: 
+2024-09-23 23:11:39,765 P445110 INFO [Metrics] AUC: 0.822030 - logloss: 0.342231
+2024-09-23 23:11:39,766 P445110 INFO Save best model: monitor(max)=0.822030
+2024-09-23 23:11:39,827 P445110 INFO ************ Epoch=3 end ************
+2024-09-23 23:11:52,828 P445110 INFO Train loss: 0.363599
+2024-09-23 23:11:52,828 P445110 INFO Evaluation @epoch 4 - batch 171: 
+2024-09-23 23:11:54,097 P445110 INFO [Metrics] AUC: 0.827790 - logloss: 0.337963
+2024-09-23 23:11:54,098 P445110 INFO Save best model: monitor(max)=0.827790
+2024-09-23 23:11:54,160 P445110 INFO ************ Epoch=4 end ************
+2024-09-23 23:12:07,583 P445110 INFO Train loss: 0.360342
+2024-09-23 23:12:07,583 P445110 INFO Evaluation @epoch 5 - batch 171: 
+2024-09-23 23:12:08,903 P445110 INFO [Metrics] AUC: 0.831203 - logloss: 0.335287
+2024-09-23 23:12:08,904 P445110 INFO Save best model: monitor(max)=0.831203
+2024-09-23 23:12:08,968 P445110 INFO ************ Epoch=5 end ************
+2024-09-23 23:12:22,415 P445110 INFO Train loss: 0.357976
+2024-09-23 23:12:22,415 P445110 INFO Evaluation @epoch 6 - batch 171: 
+2024-09-23 23:12:23,733 P445110 INFO [Metrics] AUC: 0.835839 - logloss: 0.331691
+2024-09-23 23:12:23,733 P445110 INFO Save best model: monitor(max)=0.835839
+2024-09-23 23:12:23,807 P445110 INFO ************ Epoch=6 end ************
+2024-09-23 23:12:37,595 P445110 INFO Train loss: 0.355892
+2024-09-23 23:12:37,595 P445110 INFO Evaluation @epoch 7 - batch 171: 
+2024-09-23 23:12:38,862 P445110 INFO [Metrics] AUC: 0.836816 - logloss: 0.330845
+2024-09-23 23:12:38,862 P445110 INFO Save best model: monitor(max)=0.836816
+2024-09-23 23:12:38,942 P445110 INFO ************ Epoch=7 end ************
+2024-09-23 23:12:52,850 P445110 INFO Train loss: 0.354710
+2024-09-23 23:12:52,850 P445110 INFO Evaluation @epoch 8 - batch 171: 
+2024-09-23 23:12:54,093 P445110 INFO [Metrics] AUC: 0.839178 - logloss: 0.329145
+2024-09-23 23:12:54,094 P445110 INFO Save best model: monitor(max)=0.839178
+2024-09-23 23:12:54,180 P445110 INFO ************ Epoch=8 end ************
+2024-09-23 23:13:08,465 P445110 INFO Train loss: 0.353006
+2024-09-23 23:13:08,466 P445110 INFO Evaluation @epoch 9 - batch 171: 
+2024-09-23 23:13:09,676 P445110 INFO [Metrics] AUC: 0.840413 - logloss: 0.327897
+2024-09-23 23:13:09,676 P445110 INFO Save best model: monitor(max)=0.840413
+2024-09-23 23:13:09,744 P445110 INFO ************ Epoch=9 end ************
+2024-09-23 23:13:14,797 P445110 INFO Train loss: 0.352483
+2024-09-23 23:13:14,798 P445110 INFO Evaluation @epoch 10 - batch 171: 
+2024-09-23 23:13:15,679 P445110 INFO [Metrics] AUC: 0.841815 - logloss: 0.327145
+2024-09-23 23:13:15,680 P445110 INFO Save best model: monitor(max)=0.841815
+2024-09-23 23:13:15,742 P445110 INFO ************ Epoch=10 end ************
+2024-09-23 23:13:20,983 P445110 INFO Train loss: 0.351808
+2024-09-23 23:13:20,983 P445110 INFO Evaluation @epoch 11 - batch 171: 
+2024-09-23 23:13:21,805 P445110 INFO [Metrics] AUC: 0.841365 - logloss: 0.327132
+2024-09-23 23:13:21,806 P445110 INFO Monitor(max)=0.841365 STOP!
+2024-09-23 23:13:21,806 P445110 INFO Reduce learning rate on plateau: 0.000100
+2024-09-23 23:13:21,883 P445110 INFO ************ Epoch=11 end ************
+2024-09-23 23:13:34,646 P445110 INFO Train loss: 0.325913
+2024-09-23 23:13:34,647 P445110 INFO Evaluation @epoch 12 - batch 171: 
+2024-09-23 23:13:35,956 P445110 INFO [Metrics] AUC: 0.849986 - logloss: 0.320404
+2024-09-23 23:13:35,956 P445110 INFO Save best model: monitor(max)=0.849986
+2024-09-23 23:13:36,020 P445110 INFO ************ Epoch=12 end ************
+2024-09-23 23:13:49,934 P445110 INFO Train loss: 0.313388
+2024-09-23 23:13:49,934 P445110 INFO Evaluation @epoch 13 - batch 171: 
+2024-09-23 23:13:51,098 P445110 INFO [Metrics] AUC: 0.852884 - logloss: 0.318049
+2024-09-23 23:13:51,099 P445110 INFO Save best model: monitor(max)=0.852884
+2024-09-23 23:13:51,176 P445110 INFO ************ Epoch=13 end ************
+2024-09-23 23:14:05,204 P445110 INFO Train loss: 0.307027
+2024-09-23 23:14:05,204 P445110 INFO Evaluation @epoch 14 - batch 171: 
+2024-09-23 23:14:06,414 P445110 INFO [Metrics] AUC: 0.853694 - logloss: 0.317955
+2024-09-23 23:14:06,415 P445110 INFO Save best model: monitor(max)=0.853694
+2024-09-23 23:14:06,488 P445110 INFO ************ Epoch=14 end ************
+2024-09-23 23:14:20,903 P445110 INFO Train loss: 0.302320
+2024-09-23 23:14:20,903 P445110 INFO Evaluation @epoch 15 - batch 171: 
+2024-09-23 23:14:22,132 P445110 INFO [Metrics] AUC: 0.853687 - logloss: 0.318629
+2024-09-23 23:14:22,133 P445110 INFO Monitor(max)=0.853687 STOP!
+2024-09-23 23:14:22,133 P445110 INFO Reduce learning rate on plateau: 0.000010
+2024-09-23 23:14:22,189 P445110 INFO ************ Epoch=15 end ************
+2024-09-23 23:14:36,713 P445110 INFO Train loss: 0.290151
+2024-09-23 23:14:36,713 P445110 INFO Evaluation @epoch 16 - batch 171: 
+2024-09-23 23:14:37,760 P445110 INFO [Metrics] AUC: 0.853445 - logloss: 0.319288
+2024-09-23 23:14:37,760 P445110 INFO Monitor(max)=0.853445 STOP!
+2024-09-23 23:14:37,761 P445110 INFO Reduce learning rate on plateau: 0.000001
+2024-09-23 23:14:37,761 P445110 INFO ********* Epoch=16 early stop *********
+2024-09-23 23:14:37,811 P445110 INFO Training finished.
+2024-09-23 23:14:37,811 P445110 INFO Load best model: /workspace/checkpoints/ML_1M_7_x1/IGDCNv3_ML_1M_046_66e97d2d.model
+2024-09-23 23:14:37,818 P445110 INFO ****** Validation evaluation ******
+2024-09-23 23:14:38,932 P445110 INFO [Metrics] logloss: 0.317955 - AUC: 0.853694
+2024-09-23 23:14:39,083 P445110 INFO ******** Test evaluation ********
+2024-09-23 23:14:39,083 P445110 INFO Loading datasets...
+2024-09-23 23:14:39,359 P445110 INFO Test samples: total/100022, blocks/1
+2024-09-23 23:14:39,359 P445110 INFO Loading test data done.
+2024-09-23 23:14:40,124 P445110 INFO [Metrics] logloss: 0.316112 - AUC: 0.854240

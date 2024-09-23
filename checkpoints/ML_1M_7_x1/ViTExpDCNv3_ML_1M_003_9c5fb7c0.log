@@ -117,3 +117,71 @@
 2024-09-23 01:50:19,740 P97633 INFO ************ Epoch=9 end ************
 2024-09-23 01:51:14,448 P97633 INFO Train loss: 0.352035
 2024-09-23 01:51:14,448 P97633 INFO Evaluation @epoch 10 - batch 171: 
+2024-09-23 01:51:18,744 P97633 INFO [Metrics] AUC: 0.841408 - logloss: 0.327292
+2024-09-23 01:51:18,745 P97633 INFO Save best model: monitor(max)=0.841408
+2024-09-23 01:51:18,825 P97633 INFO ************ Epoch=10 end ************
+2024-09-23 01:52:21,049 P97633 INFO Train loss: 0.351284
+2024-09-23 01:52:21,050 P97633 INFO Evaluation @epoch 11 - batch 171: 
+2024-09-23 01:52:25,163 P97633 INFO [Metrics] AUC: 0.841794 - logloss: 0.326913
+2024-09-23 01:52:25,164 P97633 INFO Save best model: monitor(max)=0.841794
+2024-09-23 01:52:25,244 P97633 INFO ************ Epoch=11 end ************
+2024-09-23 01:53:27,700 P97633 INFO Train loss: 0.350646
+2024-09-23 01:53:27,701 P97633 INFO Evaluation @epoch 12 - batch 171: 
+2024-09-23 01:53:31,888 P97633 INFO [Metrics] AUC: 0.842900 - logloss: 0.325985
+2024-09-23 01:53:31,888 P97633 INFO Save best model: monitor(max)=0.842900
+2024-09-23 01:53:31,985 P97633 INFO ************ Epoch=12 end ************
+2024-09-23 01:54:31,528 P97633 INFO Train loss: 0.350041
+2024-09-23 01:54:31,529 P97633 INFO Evaluation @epoch 13 - batch 171: 
+2024-09-23 01:54:35,102 P97633 INFO [Metrics] AUC: 0.843397 - logloss: 0.325596
+2024-09-23 01:54:35,103 P97633 INFO Save best model: monitor(max)=0.843397
+2024-09-23 01:54:35,179 P97633 INFO ************ Epoch=13 end ************
+2024-09-23 01:55:37,595 P97633 INFO Train loss: 0.349890
+2024-09-23 01:55:37,596 P97633 INFO Evaluation @epoch 14 - batch 171: 
+2024-09-23 01:55:41,671 P97633 INFO [Metrics] AUC: 0.843820 - logloss: 0.325115
+2024-09-23 01:55:41,671 P97633 INFO Save best model: monitor(max)=0.843820
+2024-09-23 01:55:41,756 P97633 INFO ************ Epoch=14 end ************
+2024-09-23 01:56:43,830 P97633 INFO Train loss: 0.349510
+2024-09-23 01:56:43,830 P97633 INFO Evaluation @epoch 15 - batch 171: 
+2024-09-23 01:56:48,111 P97633 INFO [Metrics] AUC: 0.844030 - logloss: 0.324784
+2024-09-23 01:56:48,111 P97633 INFO Save best model: monitor(max)=0.844030
+2024-09-23 01:56:48,179 P97633 INFO ************ Epoch=15 end ************
+2024-09-23 01:57:48,674 P97633 INFO Train loss: 0.349550
+2024-09-23 01:57:48,674 P97633 INFO Evaluation @epoch 16 - batch 171: 
+2024-09-23 01:57:52,748 P97633 INFO [Metrics] AUC: 0.844996 - logloss: 0.324127
+2024-09-23 01:57:52,749 P97633 INFO Save best model: monitor(max)=0.844996
+2024-09-23 01:57:52,838 P97633 INFO ************ Epoch=16 end ************
+2024-09-23 01:58:54,551 P97633 INFO Train loss: 0.348728
+2024-09-23 01:58:54,552 P97633 INFO Evaluation @epoch 17 - batch 171: 
+2024-09-23 01:58:58,679 P97633 INFO [Metrics] AUC: 0.843852 - logloss: 0.325170
+2024-09-23 01:58:58,680 P97633 INFO Monitor(max)=0.843852 STOP!
+2024-09-23 01:58:58,680 P97633 INFO Reduce learning rate on plateau: 0.000100
+2024-09-23 01:58:58,740 P97633 INFO ************ Epoch=17 end ************
+2024-09-23 02:00:01,135 P97633 INFO Train loss: 0.321692
+2024-09-23 02:00:01,136 P97633 INFO Evaluation @epoch 18 - batch 171: 
+2024-09-23 02:00:04,625 P97633 INFO [Metrics] AUC: 0.850902 - logloss: 0.320520
+2024-09-23 02:00:04,625 P97633 INFO Save best model: monitor(max)=0.850902
+2024-09-23 02:00:04,735 P97633 INFO ************ Epoch=18 end ************
+2024-09-23 02:01:04,165 P97633 INFO Train loss: 0.308998
+2024-09-23 02:01:04,166 P97633 INFO Evaluation @epoch 19 - batch 171: 
+2024-09-23 02:01:08,167 P97633 INFO [Metrics] AUC: 0.852913 - logloss: 0.319441
+2024-09-23 02:01:08,168 P97633 INFO Save best model: monitor(max)=0.852913
+2024-09-23 02:01:08,234 P97633 INFO ************ Epoch=19 end ************
+2024-09-23 02:02:10,772 P97633 INFO Train loss: 0.302091
+2024-09-23 02:02:10,772 P97633 INFO Evaluation @epoch 20 - batch 171: 
+2024-09-23 02:02:14,594 P97633 INFO [Metrics] AUC: 0.853365 - logloss: 0.320250
+2024-09-23 02:02:14,595 P97633 INFO Save best model: monitor(max)=0.853365
+2024-09-23 02:02:14,669 P97633 INFO ************ Epoch=20 end ************
+2024-09-23 02:03:17,345 P97633 INFO Train loss: 0.297271
+2024-09-23 02:03:17,345 P97633 INFO Evaluation @epoch 21 - batch 171: 
+2024-09-23 02:03:21,428 P97633 INFO [Metrics] AUC: 0.853064 - logloss: 0.321038
+2024-09-23 02:03:21,429 P97633 INFO Monitor(max)=0.853064 STOP!
+2024-09-23 02:03:21,429 P97633 INFO Reduce learning rate on plateau: 0.000010
+2024-09-23 02:03:21,512 P97633 INFO ************ Epoch=21 end ************
+2024-09-23 02:04:20,892 P97633 INFO Train loss: 0.283879
+2024-09-23 02:04:20,893 P97633 INFO Evaluation @epoch 22 - batch 171: 
+2024-09-23 02:04:24,948 P97633 INFO [Metrics] AUC: 0.852547 - logloss: 0.323729
+2024-09-23 02:04:24,948 P97633 INFO Monitor(max)=0.852547 STOP!
+2024-09-23 02:04:24,949 P97633 INFO Reduce learning rate on plateau: 0.000001
+2024-09-23 02:04:24,949 P97633 INFO ********* Epoch=22 early stop *********
+2024-09-23 02:04:25,027 P97633 INFO Training finished.
+2024-09-23 02:04:25,027 P97633 INFO Load best model: /workspace/checkpoints/ML_1M_7_x1/ViTExpDCNv3_ML_1M_003_9c5fb7c0.model

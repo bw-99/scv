@@ -136,3 +136,22 @@
 2024-09-23 01:51:04,256 P96442 INFO [Metrics] AUC: 0.852988 - logloss: 0.318706
 2024-09-23 01:51:04,257 P96442 INFO Save best model: monitor(max)=0.852988
 2024-09-23 01:51:04,341 P96442 INFO ************ Epoch=13 end ************
+2024-09-23 01:52:06,804 P96442 INFO Train loss: 0.305623
+2024-09-23 01:52:06,805 P96442 INFO Evaluation @epoch 14 - batch 171: 
+2024-09-23 01:52:10,865 P96442 INFO [Metrics] AUC: 0.853550 - logloss: 0.319197
+2024-09-23 01:52:10,865 P96442 INFO Save best model: monitor(max)=0.853550
+2024-09-23 01:52:10,946 P96442 INFO ************ Epoch=14 end ************
+2024-09-23 01:53:12,964 P96442 INFO Train loss: 0.300908
+2024-09-23 01:53:12,965 P96442 INFO Evaluation @epoch 15 - batch 171: 
+2024-09-23 01:53:17,282 P96442 INFO [Metrics] AUC: 0.853190 - logloss: 0.319968
+2024-09-23 01:53:17,282 P96442 INFO Monitor(max)=0.853190 STOP!
+2024-09-23 01:53:17,283 P96442 INFO Reduce learning rate on plateau: 0.000010
+2024-09-23 01:53:17,380 P96442 INFO ************ Epoch=15 end ************
+2024-09-23 01:54:19,887 P96442 INFO Train loss: 0.287649
+2024-09-23 01:54:19,887 P96442 INFO Evaluation @epoch 16 - batch 171: 
+2024-09-23 01:54:23,956 P96442 INFO [Metrics] AUC: 0.852917 - logloss: 0.321705
+2024-09-23 01:54:23,957 P96442 INFO Monitor(max)=0.852917 STOP!
+2024-09-23 01:54:23,958 P96442 INFO Reduce learning rate on plateau: 0.000001
+2024-09-23 01:54:23,958 P96442 INFO ********* Epoch=16 early stop *********
+2024-09-23 01:54:24,056 P96442 INFO Training finished.
+2024-09-23 01:54:24,057 P96442 INFO Load best model: /workspace/checkpoints/ML_1M_7_x1/ViTLinDCNv3_ML_1M_003_d40c8961.model

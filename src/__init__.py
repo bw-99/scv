@@ -4,3 +4,4 @@ from .ViTLinDCNv3 import *
 from .DCNv3 import *
 from .ViTDCNv2 import *
 from .ViTExpDCNv3 import *
+from .IGDCNv3 import *

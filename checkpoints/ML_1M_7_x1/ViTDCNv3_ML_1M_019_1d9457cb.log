@@ -1,0 +1,150 @@
+2024-09-23 10:20:18,373 P286734 INFO FuxiCTR version: 2.3.2
+2024-09-23 10:20:18,374 P286734 INFO Params: {
+    "batch_norm": "True",
+    "batch_size": "4096",
+    "data_format": "csv",
+    "data_root": "dataset/",
+    "dataset_id": "ML_1M_7_x1",
+    "debug_mode": "False",
+    "deep_net_dropout": "0.1",
+    "early_stop_patience": "2",
+    "embedding_dim": "16",
+    "embedding_regularizer": "0.01",
+    "epochs": "100",
+    "eval_steps": "None",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['UserID', 'Gender', 'Age', 'Occupation', 'MovieID', 'Release'], 'type': 'categorical'}, {'active': True, 'dtype': 'str', 'encoder': 'MaskedSumPooling', 'max_len': 5, 'name': 'Genres', 'splitter': '^', 'type': 'sequence'}]",
+    "feature_config": "None",
+    "feature_specs": "None",
+    "gpu": "0",
+    "group_id": "None",
+    "label_col": "{'dtype': 'float', 'name': 'Label'}",
+    "layer_norm": "True",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "ViTDCNv3",
+    "model_id": "ViTDCNv3_ML_1M_019_1d9457cb",
+    "model_root": "./checkpoints/",
+    "monitor": "{'AUC': 1, 'logloss': 0}",
+    "monitor_mode": "max",
+    "net_regularizer": "0",
+    "num_deep_cross_layers": "2",
+    "num_heads": "1",
+    "num_shallow_cross_layers": "2",
+    "num_workers": "4",
+    "optimizer": "adam",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2024",
+    "shallow_net_dropout": "0.1",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "dataset/ML_1M/test.csv",
+    "train_data": "dataset/ML_1M/train.csv",
+    "use_features": "None",
+    "valid_data": "dataset/ML_1M/valid.csv",
+    "verbose": "1",
+    "vit_hidden_dim": "128",
+    "vit_num_heads": "2",
+    "vit_num_layers": "1",
+    "vit_patch_size": "4"
+}
+2024-09-23 10:20:18,375 P286734 INFO Set up feature processor...
+2024-09-23 10:20:18,375 P286734 WARNING Skip rebuilding dataset/ML_1M_7_x1/feature_map.json. Please delete it manually if rebuilding is required.
+2024-09-23 10:20:18,375 P286734 INFO Load feature_map from json: dataset/ML_1M_7_x1/feature_map.json
+2024-09-23 10:20:18,376 P286734 INFO Set column index...
+2024-09-23 10:20:18,376 P286734 INFO Feature specs: {
+    "Age": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 9}",
+    "Gender": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 4}",
+    "Genres": "{'source': '', 'type': 'sequence', 'feature_encoder': 'layers.MaskedAveragePooling()', 'padding_idx': 0, 'max_len': 5, 'vocab_size': 302}",
+    "MovieID": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 3659}",
+    "Occupation": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 23}",
+    "Release": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 83}",
+    "UserID": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 6042}"
+}
+2024-09-23 10:20:20,239 P286734 INFO Total number of parameters: 2598378.
+2024-09-23 10:20:20,240 P286734 INFO Loading datasets...
+2024-09-23 10:20:22,413 P286734 INFO Train samples: total/700146, blocks/1
+2024-09-23 10:20:23,067 P286734 INFO Validation samples: total/200041, blocks/1
+2024-09-23 10:20:23,068 P286734 INFO Loading train and validation data done.
+2024-09-23 10:20:23,068 P286734 INFO Start training: 171 batches/epoch
+2024-09-23 10:20:23,068 P286734 INFO ************ Epoch=1 start ************
+2024-09-23 10:21:20,006 P286734 INFO Train loss: 0.398720
+2024-09-23 10:21:20,006 P286734 INFO Evaluation @epoch 1 - batch 171: 
+2024-09-23 10:21:23,163 P286734 INFO [Metrics] AUC: 0.814743 - logloss: 0.347495
+2024-09-23 10:21:23,164 P286734 INFO Save best model: monitor(max)=0.814743
+2024-09-23 10:21:23,202 P286734 INFO ************ Epoch=1 end ************
+2024-09-23 10:22:10,645 P286734 INFO Train loss: 0.366290
+2024-09-23 10:22:10,645 P286734 INFO Evaluation @epoch 2 - batch 171: 
+2024-09-23 10:22:13,980 P286734 INFO [Metrics] AUC: 0.824864 - logloss: 0.340076
+2024-09-23 10:22:13,981 P286734 INFO Save best model: monitor(max)=0.824864
+2024-09-23 10:22:14,041 P286734 INFO ************ Epoch=2 end ************
+2024-09-23 10:23:01,322 P286734 INFO Train loss: 0.362161
+2024-09-23 10:23:01,322 P286734 INFO Evaluation @epoch 3 - batch 171: 
+2024-09-23 10:23:04,702 P286734 INFO [Metrics] AUC: 0.830037 - logloss: 0.336620
+2024-09-23 10:23:04,702 P286734 INFO Save best model: monitor(max)=0.830037
+2024-09-23 10:23:04,760 P286734 INFO ************ Epoch=3 end ************
+2024-09-23 10:23:51,737 P286734 INFO Train loss: 0.359379
+2024-09-23 10:23:51,737 P286734 INFO Evaluation @epoch 4 - batch 171: 
+2024-09-23 10:23:55,213 P286734 INFO [Metrics] AUC: 0.834142 - logloss: 0.333262
+2024-09-23 10:23:55,214 P286734 INFO Save best model: monitor(max)=0.834142
+2024-09-23 10:23:55,274 P286734 INFO ************ Epoch=4 end ************
+2024-09-23 10:24:42,840 P286734 INFO Train loss: 0.356981
+2024-09-23 10:24:42,840 P286734 INFO Evaluation @epoch 5 - batch 171: 
+2024-09-23 10:24:46,491 P286734 INFO [Metrics] AUC: 0.837506 - logloss: 0.330156
+2024-09-23 10:24:46,492 P286734 INFO Save best model: monitor(max)=0.837506
+2024-09-23 10:24:46,562 P286734 INFO ************ Epoch=5 end ************
+2024-09-23 10:25:34,955 P286734 INFO Train loss: 0.355265
+2024-09-23 10:25:34,956 P286734 INFO Evaluation @epoch 6 - batch 171: 
+2024-09-23 10:25:38,487 P286734 INFO [Metrics] AUC: 0.837693 - logloss: 0.330055
+2024-09-23 10:25:38,488 P286734 INFO Save best model: monitor(max)=0.837693
+2024-09-23 10:25:38,567 P286734 INFO ************ Epoch=6 end ************
+2024-09-23 10:26:26,288 P286734 INFO Train loss: 0.353508
+2024-09-23 10:26:26,289 P286734 INFO Evaluation @epoch 7 - batch 171: 
+2024-09-23 10:26:29,663 P286734 INFO [Metrics] AUC: 0.839327 - logloss: 0.329254
+2024-09-23 10:26:29,664 P286734 INFO Save best model: monitor(max)=0.839327
+2024-09-23 10:26:29,741 P286734 INFO ************ Epoch=7 end ************
+2024-09-23 10:27:00,143 P286734 INFO Train loss: 0.352698
+2024-09-23 10:27:00,144 P286734 INFO Evaluation @epoch 8 - batch 171: 
+2024-09-23 10:27:02,410 P286734 INFO [Metrics] AUC: 0.840921 - logloss: 0.327489
+2024-09-23 10:27:02,411 P286734 INFO Save best model: monitor(max)=0.840921
+2024-09-23 10:27:02,474 P286734 INFO ************ Epoch=8 end ************
+2024-09-23 10:27:28,714 P286734 INFO Train loss: 0.351548
+2024-09-23 10:27:28,714 P286734 INFO Evaluation @epoch 9 - batch 171: 
+2024-09-23 10:27:31,195 P286734 INFO [Metrics] AUC: 0.841331 - logloss: 0.326988
+2024-09-23 10:27:31,195 P286734 INFO Save best model: monitor(max)=0.841331
+2024-09-23 10:27:31,257 P286734 INFO ************ Epoch=9 end ************
+2024-09-23 10:27:57,185 P286734 INFO Train loss: 0.350956
+2024-09-23 10:27:57,185 P286734 INFO Evaluation @epoch 10 - batch 171: 
+2024-09-23 10:27:59,566 P286734 INFO [Metrics] AUC: 0.842629 - logloss: 0.326116
+2024-09-23 10:27:59,566 P286734 INFO Save best model: monitor(max)=0.842629
+2024-09-23 10:27:59,631 P286734 INFO ************ Epoch=10 end ************
+2024-09-23 10:28:23,309 P286734 INFO Train loss: 0.350382
+2024-09-23 10:28:23,310 P286734 INFO Evaluation @epoch 11 - batch 171: 
+2024-09-23 10:28:24,629 P286734 INFO [Metrics] AUC: 0.843610 - logloss: 0.325884
+2024-09-23 10:28:24,630 P286734 INFO Save best model: monitor(max)=0.843610
+2024-09-23 10:28:24,684 P286734 INFO ************ Epoch=11 end ************
+2024-09-23 10:28:33,956 P286734 INFO Train loss: 0.350320
+2024-09-23 10:28:33,956 P286734 INFO Evaluation @epoch 12 - batch 171: 
+2024-09-23 10:28:35,319 P286734 INFO [Metrics] AUC: 0.843128 - logloss: 0.326066
+2024-09-23 10:28:35,320 P286734 INFO Monitor(max)=0.843128 STOP!
+2024-09-23 10:28:35,320 P286734 INFO Reduce learning rate on plateau: 0.000100
+2024-09-23 10:28:35,380 P286734 INFO ************ Epoch=12 end ************
+2024-09-23 10:28:44,754 P286734 INFO Train loss: 0.322762
+2024-09-23 10:28:44,754 P286734 INFO Evaluation @epoch 13 - batch 171: 
+2024-09-23 10:28:45,892 P286734 INFO [Metrics] AUC: 0.850706 - logloss: 0.321535
+2024-09-23 10:28:45,892 P286734 INFO Save best model: monitor(max)=0.850706
+2024-09-23 10:28:45,950 P286734 INFO ************ Epoch=13 end ************
+2024-09-23 10:28:55,162 P286734 INFO Train loss: 0.311137
+2024-09-23 10:28:55,162 P286734 INFO Evaluation @epoch 14 - batch 171: 
+2024-09-23 10:28:56,477 P286734 INFO [Metrics] AUC: 0.852879 - logloss: 0.320637
+2024-09-23 10:28:56,478 P286734 INFO Save best model: monitor(max)=0.852879
+2024-09-23 10:28:56,536 P286734 INFO ************ Epoch=14 end ************
+2024-09-23 10:29:05,771 P286734 INFO Train loss: 0.304551
+2024-09-23 10:29:05,771 P286734 INFO Evaluation @epoch 15 - batch 171: 
+2024-09-23 10:29:07,129 P286734 INFO [Metrics] AUC: 0.853220 - logloss: 0.320961
+2024-09-23 10:29:07,130 P286734 INFO Save best model: monitor(max)=0.853220
+2024-09-23 10:29:07,190 P286734 INFO ************ Epoch=15 end ************
+2024-09-23 10:29:16,539 P286734 INFO Train loss: 0.299893
+2024-09-23 10:29:16,539 P286734 INFO Evaluation @epoch 16 - batch 171: 

@@ -97,7 +97,18 @@ class SSLViTDCNv3(BaseModel):
                        }
         return return_dict
 
-    def add_loss(self, inputs):
+    # def train_step(self, inputs):
+    #     self.optimizer.zero_grad()
+    #     return_dict = self.forward(inputs)
+    #     y_true = self.get_labels(inputs)
+    #     loss = self.compute_loss(return_dict, y_true)
+    #     loss.backward()
+    #     nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
+    #     self.optimizer.step()
+    #     return loss
+
+    def train_step(self, inputs):
+        self.optimizer.zero_grad()
         return_dict = self.forward(inputs)
         y_true = self.get_labels(inputs)
         y_pred = return_dict["y_pred"]
@@ -113,13 +124,21 @@ class SSLViTDCNv3(BaseModel):
 
         dmask_loss = 0
         for dmask_candidate in return_dict["dmask_candidates"]:
-            dmask_loss+= 1 - F.cosine_similarity(return_dict["dmask_candidates"][0], dmask_candidate).mean()
-
+            target = dmask_candidate[0]
+            for random in dmask_candidate[1:]:
+                dmask_loss+= F.mse_loss(target, random).mean()
+                
         smask_loss = 0
         for smask_candidate in return_dict["smask_candidates"]:
-            smask_loss+= 1 - F.cosine_similarity(return_dict["smask_candidates"][0], smask_candidate).mean()
-        
+            target = smask_candidate[0]
+            for random in smask_candidate[1:]:
+                smask_loss+= F.mse_loss(target, random).mean()
+
+        # print(loss ,loss_d * weight_d , loss_s * weight_s , dmask_loss, smask_loss)
         loss = loss + loss_d * weight_d + loss_s * weight_s + (dmask_loss + smask_loss) * self.vit_ssl_loss_weight
+        loss.backward()
+        nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
+        self.optimizer.step()
         return loss
 
 
@@ -190,8 +209,7 @@ class ExponentialCrossViTNetwork(nn.Module):
         self.dfc = nn.Linear(input_dim, 1)
 
     def forward(self, x):
-        random_permutations = [torch.randperm(self.vit_input_dim) for _ in range(self.vit_num_ssl)]
-        
+        mask_candidates_lst = []
         for i in range(self.num_cross_layers):
             H = self.w[i](x)
             if len(self.batch_norm) > i:
@@ -200,15 +218,17 @@ class ExponentialCrossViTNetwork(nn.Module):
             mask_candidates = [mask]
             for _ in range(self.vit_num_ssl):
                 random_idx = torch.randperm(self.vit_input_dim)
-                random_mask = self.masker_lst[i](self.w[i].weight[random_idx])
+                # random_col_idx = torch.randperm(self.vit_input_dim)
+                random_mask = self.masker_lst[i](self.w[i].weight[random_idx][:, random_idx])
                 mask_candidates.append(random_mask[random_idx.sort().indices])
-
+            mask_candidates_lst.append(mask_candidates)
             H = torch.cat([H, H * mask], dim=-1)
             x = x * (H + self.b[i]) + x
             if len(self.dropout) > i:
                 x = self.dropout[i](x)
         logit = self.dfc(x)
-        return logit, mask_candidates
+
+        return logit, mask_candidates_lst
 
 
 class LinearCrossViTLayer(nn.Module):
@@ -259,6 +279,7 @@ class LinearCrossViTLayer(nn.Module):
         self.sfc = nn.Linear(input_dim, 1)
 
     def forward(self, x):
+        mask_candidates_lst = []
         x0 = x
         for i in range(self.num_cross_layers):
             H = self.w[i](x)
@@ -268,15 +289,16 @@ class LinearCrossViTLayer(nn.Module):
             mask_candidates = [mask]
             for _ in range(self.vit_num_ssl):
                 random_idx = torch.randperm(self.vit_input_dim)
-                random_mask = self.masker_lst[i](self.w[i].weight[random_idx])
+                # random_col_idx = torch.randperm(self.vit_input_dim)
+                random_mask = self.masker_lst[i](self.w[i].weight[random_idx][:, random_idx])
                 mask_candidates.append(random_mask[random_idx.sort().indices])
-
+            mask_candidates_lst.append(mask_candidates)
             H = torch.cat([H, H * mask], dim=-1)
             x = x0 * (H + self.b[i]) + x
             if len(self.dropout) > i:
                 x = self.dropout[i](x)
         logit = self.sfc(x)
-        return logit, mask_candidates
+        return logit, mask_candidates_lst
 
 
 

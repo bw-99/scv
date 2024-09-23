@@ -82,7 +82,8 @@ class ViTExpDCNv3(BaseModel):
                        "y_s": self.output_activation(slogit)}
         return return_dict
 
-    def add_loss(self, inputs):
+    def train_step(self, inputs):
+        self.optimizer.zero_grad()
         return_dict = self.forward(inputs)
         y_true = self.get_labels(inputs)
         y_pred = return_dict["y_pred"]
@@ -96,10 +97,10 @@ class ViTExpDCNv3(BaseModel):
         weight_d = torch.where(weight_d > 0, weight_d, torch.zeros(1).to(weight_d.device))
         weight_s = torch.where(weight_s > 0, weight_s, torch.zeros(1).to(weight_s.device))
         loss = loss + loss_d * weight_d + loss_s * weight_s
+        loss.backward()
+        nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
+        self.optimizer.step()
         return loss
-    
-    def save_weights(self, checkpoint):
-        return
 
 
 

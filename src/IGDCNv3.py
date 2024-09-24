@@ -88,6 +88,7 @@ class IGDCNv3(BaseModel):
         weight_d = torch.where(weight_d > 0, weight_d, torch.zeros(1).to(weight_d.device))
         weight_s = torch.where(weight_s > 0, weight_s, torch.zeros(1).to(weight_s.device))
         loss = loss + loss_d * weight_d + loss_s * weight_s
+        loss += self.regularization_loss()
         loss.backward()
         nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
         self.optimizer.step()

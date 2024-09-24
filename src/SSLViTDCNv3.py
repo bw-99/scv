@@ -136,6 +136,7 @@ class SSLViTDCNv3(BaseModel):
 
         # print(loss ,loss_d * weight_d , loss_s * weight_s , dmask_loss, smask_loss)
         loss = loss + loss_d * weight_d + loss_s * weight_s + (dmask_loss + smask_loss) * self.vit_ssl_loss_weight
+        loss += self.regularization_loss()
         loss.backward()
         nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
         self.optimizer.step()

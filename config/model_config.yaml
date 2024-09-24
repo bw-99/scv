@@ -12,6 +12,8 @@ Base:
     feature_specs: null
     feature_config: null
 
+
+
 DCNv3_KKBox_x10:
     model: DCNv3
     dataset_id: KKBox_csv
@@ -126,6 +128,32 @@ ViTExpDCNv3_KKBox_x10:
     layer_norm: True
     batch_norm: True
     num_heads: 1
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 4
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
+DCNv2_ML_1M:
+    model: DCNv2
+    dataset_id: ML_1M_7_x1
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 0.01
+    use_low_rank_mixture: False
+    low_rank: 32
+    num_experts: 4
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    num_cross_layers: 3
+    net_dropout: 0.1
+    parallel_dnn_hidden_units: [512, 128]
+    batch_norm: True
     epochs: 100
     shuffle: True
     seed: 2024

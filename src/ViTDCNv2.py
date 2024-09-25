@@ -87,10 +87,6 @@ class ViTDCNv2(BaseModel):
         return_dict = {"y_pred": y_pred}
         return return_dict
 
-    
-    def save_weights(self, checkpoint):
-        return
-
 
 
 class MultiHeadFeatureEmbedding(nn.Module):

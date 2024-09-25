@@ -18,7 +18,7 @@ from torch import nn
 from fuxictr.pytorch.models import BaseModel
 from fuxictr.pytorch.layers import FeatureEmbedding
 from fuxictr.pytorch.torch_utils import get_regularizer
-
+import torch.nn.functional as F
 
 class IGDCNv3(BaseModel):
     def __init__(self,
@@ -73,7 +73,8 @@ class IGDCNv3(BaseModel):
                        "y_s": self.output_activation(slogit)}
         return return_dict
 
-    def add_loss(self, inputs):
+    def train_step(self, inputs):
+        self.optimizer.zero_grad()
         return_dict = self.forward(inputs)
         y_true = self.get_labels(inputs)
         y_pred = return_dict["y_pred"]
@@ -87,10 +88,14 @@ class IGDCNv3(BaseModel):
         weight_d = torch.where(weight_d > 0, weight_d, torch.zeros(1).to(weight_d.device))
         weight_s = torch.where(weight_s > 0, weight_s, torch.zeros(1).to(weight_s.device))
         loss = loss + loss_d * weight_d + loss_s * weight_s
+        loss += self.regularization_loss()
+        loss.backward()
+        nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
+        self.optimizer.step()
         return loss
     
-    def save_weights(self, checkpoint):
-        return
+    # def save_weights(self, checkpoint):
+    #     return
 
 
 class MultiHeadFeatureEmbedding(nn.Module):
@@ -127,7 +132,7 @@ class ExponentialCrossIGNetwork(nn.Module):
         self.dropout = nn.ModuleList()
         self.w = nn.ModuleList()
         self.b = nn.ParameterList()
-        self.masker_lst = nn.ModuleList()
+        self.masker_lst = nn.ParameterList()
         for i in range(num_cross_layers):
             self.w.append(nn.Linear(input_dim, input_dim // 2, bias=False))
             self.b.append(nn.Parameter(torch.zeros((input_dim,))))
@@ -137,11 +142,9 @@ class ExponentialCrossIGNetwork(nn.Module):
                 self.batch_norm.append(nn.BatchNorm1d(num_heads))
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
-            self.masker_lst.append(nn.Sequential(
-                nn.Linear(input_dim, input_dim // 2, bias=False),
-                nn.ReLU()
-            ))
+            self.masker_lst.append(nn.Parameter(torch.zeros((input_dim//2))))
             nn.init.uniform_(self.b[i].data)
+            nn.init.uniform_(self.masker_lst[i].data)
         self.masker = nn.ReLU()
         self.dfc = nn.Linear(input_dim, 1)
 
@@ -150,7 +153,7 @@ class ExponentialCrossIGNetwork(nn.Module):
             H = self.w[i](x)
             if len(self.batch_norm) > i:
                 H = self.batch_norm[i](H)
-            mask = self.masker_lst[i](self.w[i].weight)
+            mask = F.relu(self.masker_lst[i])
             H = torch.cat([H, H * mask], dim=-1)
             x = x * (H + self.b[i]) + x
             if len(self.dropout) > i:
@@ -174,7 +177,7 @@ class LinearCrossIGLayer(nn.Module):
         self.dropout = nn.ModuleList()
         self.w = nn.ModuleList()
         self.b = nn.ParameterList()
-        self.masker_lst = nn.ModuleList()
+        self.masker_lst = nn.ParameterList()
         for i in range(num_cross_layers):
             self.w.append(nn.Linear(input_dim, input_dim // 2, bias=False))
             self.b.append(nn.Parameter(torch.zeros((input_dim,))))
@@ -184,11 +187,9 @@ class LinearCrossIGLayer(nn.Module):
                 self.batch_norm.append(nn.BatchNorm1d(num_heads))
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
-            self.masker_lst.append(nn.Sequential(
-                nn.Linear(input_dim, input_dim // 2, bias=False),
-                nn.ReLU()
-            ))
+            self.masker_lst.append(nn.Parameter(torch.zeros((input_dim//2))))
             nn.init.uniform_(self.b[i].data)
+            nn.init.uniform_(self.masker_lst[i].data)
         self.masker = nn.ReLU()
         self.sfc = nn.Linear(input_dim, 1)
 
@@ -198,7 +199,7 @@ class LinearCrossIGLayer(nn.Module):
             H = self.w[i](x)
             if len(self.batch_norm) > i:
                 H = self.batch_norm[i](H)
-            mask = self.masker_lst[i](self.w[i].weight)
+            mask = F.relu(self.masker_lst[i])
             H = torch.cat([H, H * mask], dim=-1)
             x = x0 * (H + self.b[i]) + x
             if len(self.dropout) > i:

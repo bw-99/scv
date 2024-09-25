@@ -5,3 +5,5 @@ from .DCNv3 import *
 from .ViTDCNv2 import *
 from .ViTExpDCNv3 import *
 from .IGDCNv3 import *
+from .SSLViTDCNv3 import *
+from .model_zoo import *

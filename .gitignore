@@ -1,3 +1,5 @@
 dataset/*
 GITHUB_TOKEN
 checkpoints/*
+__pycache__
+src/__pycache__

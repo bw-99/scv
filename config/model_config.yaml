@@ -214,6 +214,7 @@ ViTDCNv2_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 4
+    mask_activation: "ReLU"
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 

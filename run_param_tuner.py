@@ -16,6 +16,7 @@
 # import sys
 # sys.path.append("/mnt/public/lhh/code/")
 import sys
+from fuxictr.pytorch.torch_utils import seed_everything
 
 sys.path.append("/home/lhh/code")
 from datetime import datetime
@@ -34,6 +35,7 @@ if __name__ == '__main__':
     args = vars(parser.parse_args())
     gpu_list = args['gpu']
     expid_tag = args['tag']
+    seed_everything(2024)
 
     # generate parameter space combinations
     config_dir = autotuner.enumerate_params(args['config'])

@@ -41,6 +41,7 @@ class ViTDCNv2(BaseModel):
                  vit_hidden_dim=32, 
                  vit_num_layers=2, 
                  vit_num_heads=8,
+                 mask_activation="ReLU",
                  **kwargs):
         super(ViTDCNv2, self).__init__(feature_map,
                                     model_id=model_id,
@@ -58,7 +59,8 @@ class ViTDCNv2(BaseModel):
                                            vit_patch_size=vit_patch_size,
                                             vit_hidden_dim=vit_hidden_dim,
                                             vit_num_layers=vit_num_layers,
-                                            vit_num_heads=vit_num_heads)
+                                            vit_num_heads=vit_num_heads,
+                                            mask_activation=mask_activation)
         self.parallel_dnn = MLP_Block(input_dim=input_dim,
                                           output_dim=None, # output hidden layer
                                           hidden_units=parallel_dnn_hidden_units,
@@ -117,7 +119,8 @@ class ViTCrossNetV2(nn.Module):
                  vit_num_layers=2, 
                  vit_num_heads=4,
                  net_dropout=0.1,
-                 num_heads=1,):
+                 num_heads=1,
+                 mask_activation="ReLU"):
         super(ViTCrossNetV2, self).__init__()
         self.num_layers = num_layers
         self.layer_norm = nn.ModuleList()
@@ -126,6 +129,7 @@ class ViTCrossNetV2(nn.Module):
         self.w = nn.ModuleList()
         self.b = nn.ParameterList()
         self.masker_lst = nn.ModuleList()
+        self.activation = getattr(nn, mask_activation)
         for i in range(num_layers):
             self.w.append(nn.Linear(input_dim, input_dim, bias=False))
             self.b.append(nn.Parameter(torch.zeros((input_dim,))))
@@ -141,7 +145,7 @@ class ViTCrossNetV2(nn.Module):
                     vit_num_layers=vit_num_layers,
                     vit_num_heads=vit_num_heads
                 ),
-                nn.ReLU()
+                self.activation()
             ))
             nn.init.uniform_(self.b[i].data)
         self.masker = nn.ReLU()

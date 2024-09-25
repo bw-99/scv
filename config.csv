@@ -2,3 +2,4 @@
  20240925-173910,[command] python run_expid.py --expid DCNv3_ML_1M,[exp_id] DCNv3_ML_1M,[dataset_id] ML_1M_7_x1,[train] N.A.,[val] logloss: 0.318009 - AUC: 0.854355,[test] logloss: 0.316404 - AUC: 0.854625
  20240925-193913,[command] python run_expid.py --expid DCNv3_KKBox_x10,[exp_id] DCNv3_KKBox_x10,[dataset_id] KKBox_csv,[train] N.A.,[val] logloss: 0.482449 - AUC: 0.855378,[test] logloss: 0.482892 - AUC: 0.855009
  20240925-201433,[command] python run_expid.py --expid DCNv3_ML_1M,[exp_id] DCNv3_ML_1M,[dataset_id] ML_1M_7_x1,[train] N.A.,[val] logloss: 0.318009 - AUC: 0.854355,[test] logloss: 0.316404 - AUC: 0.854625
+ 20240925-220438,[command] python run_expid.py --expid DCNv3_KKBox_x10,[exp_id] DCNv3_KKBox_x10,[dataset_id] KKBox_csv,[train] N.A.,[val] logloss: 0.482449 - AUC: 0.855378,[test] logloss: 0.482892 - AUC: 0.855009

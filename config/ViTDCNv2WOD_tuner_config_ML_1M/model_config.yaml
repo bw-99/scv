@@ -1,4 +1,4 @@
-ViTDCNv2_ML_1M_001_76977982:
+ViTDCNv2_ML_1M_001_e044db12:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -14,6 +14,7 @@ ViTDCNv2_ML_1M_001_76977982:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -37,7 +38,7 @@ ViTDCNv2_ML_1M_001_76977982:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_ML_1M_002_df58e5c4:
+ViTDCNv2_ML_1M_002_089f5f72:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -53,6 +54,7 @@ ViTDCNv2_ML_1M_002_df58e5c4:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -76,7 +78,7 @@ ViTDCNv2_ML_1M_002_df58e5c4:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv2_ML_1M_003_8aa84fb2:
+ViTDCNv2_ML_1M_003_1db476aa:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -92,6 +94,7 @@ ViTDCNv2_ML_1M_003_8aa84fb2:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -115,7 +118,7 @@ ViTDCNv2_ML_1M_003_8aa84fb2:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv2_ML_1M_004_c66d0a09:
+ViTDCNv2_ML_1M_004_ac574720:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -131,6 +134,7 @@ ViTDCNv2_ML_1M_004_c66d0a09:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -154,7 +158,7 @@ ViTDCNv2_ML_1M_004_c66d0a09:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv2_ML_1M_005_3a630edd:
+ViTDCNv2_ML_1M_005_a452423c:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -170,6 +174,7 @@ ViTDCNv2_ML_1M_005_3a630edd:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -193,7 +198,7 @@ ViTDCNv2_ML_1M_005_3a630edd:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv2_ML_1M_006_1999a629:
+ViTDCNv2_ML_1M_006_24eccac8:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -209,6 +214,7 @@ ViTDCNv2_ML_1M_006_1999a629:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -232,7 +238,7 @@ ViTDCNv2_ML_1M_006_1999a629:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv2_ML_1M_007_df58e5c4:
+ViTDCNv2_ML_1M_007_089f5f72:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -248,6 +254,7 @@ ViTDCNv2_ML_1M_007_df58e5c4:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -271,7 +278,7 @@ ViTDCNv2_ML_1M_007_df58e5c4:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_ML_1M_008_c97481d6:
+ViTDCNv2_ML_1M_008_b0558070:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -287,6 +294,7 @@ ViTDCNv2_ML_1M_008_c97481d6:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -310,7 +318,7 @@ ViTDCNv2_ML_1M_008_c97481d6:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv2_ML_1M_009_ca8b2bc9:
+ViTDCNv2_ML_1M_009_b9fa22e5:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -326,6 +334,7 @@ ViTDCNv2_ML_1M_009_ca8b2bc9:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -349,7 +358,7 @@ ViTDCNv2_ML_1M_009_ca8b2bc9:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv2_ML_1M_010_3a630edd:
+ViTDCNv2_ML_1M_010_a452423c:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -365,6 +374,7 @@ ViTDCNv2_ML_1M_010_3a630edd:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -388,7 +398,7 @@ ViTDCNv2_ML_1M_010_3a630edd:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv2_ML_1M_011_e4ce5401:
+ViTDCNv2_ML_1M_011_bc2adaf4:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -404,6 +414,7 @@ ViTDCNv2_ML_1M_011_e4ce5401:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -427,7 +438,7 @@ ViTDCNv2_ML_1M_011_e4ce5401:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv2_ML_1M_012_ec4184ab:
+ViTDCNv2_ML_1M_012_c990d58d:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -443,6 +454,7 @@ ViTDCNv2_ML_1M_012_ec4184ab:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -466,7 +478,7 @@ ViTDCNv2_ML_1M_012_ec4184ab:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv2_ML_1M_013_8aa84fb2:
+ViTDCNv2_ML_1M_013_1db476aa:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -482,6 +494,7 @@ ViTDCNv2_ML_1M_013_8aa84fb2:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -505,7 +518,7 @@ ViTDCNv2_ML_1M_013_8aa84fb2:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_ML_1M_014_ca8b2bc9:
+ViTDCNv2_ML_1M_014_b9fa22e5:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -521,6 +534,7 @@ ViTDCNv2_ML_1M_014_ca8b2bc9:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -544,7 +558,7 @@ ViTDCNv2_ML_1M_014_ca8b2bc9:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv2_ML_1M_015_2f64968b:
+ViTDCNv2_ML_1M_015_fbebc4fa:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -560,6 +574,7 @@ ViTDCNv2_ML_1M_015_2f64968b:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -583,7 +598,7 @@ ViTDCNv2_ML_1M_015_2f64968b:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv2_ML_1M_016_1999a629:
+ViTDCNv2_ML_1M_016_24eccac8:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -599,6 +614,7 @@ ViTDCNv2_ML_1M_016_1999a629:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -622,7 +638,7 @@ ViTDCNv2_ML_1M_016_1999a629:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv2_ML_1M_017_ec4184ab:
+ViTDCNv2_ML_1M_017_c990d58d:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -638,6 +654,7 @@ ViTDCNv2_ML_1M_017_ec4184ab:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -661,7 +678,7 @@ ViTDCNv2_ML_1M_017_ec4184ab:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv2_ML_1M_018_8a909b0e:
+ViTDCNv2_ML_1M_018_bb24c68b:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -677,6 +694,7 @@ ViTDCNv2_ML_1M_018_8a909b0e:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -700,7 +718,7 @@ ViTDCNv2_ML_1M_018_8a909b0e:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv2_ML_1M_019_31a15c3c:
+ViTDCNv2_ML_1M_019_21c3aea2:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -716,6 +734,7 @@ ViTDCNv2_ML_1M_019_31a15c3c:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -739,7 +758,7 @@ ViTDCNv2_ML_1M_019_31a15c3c:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_ML_1M_020_0da67ae2:
+ViTDCNv2_ML_1M_020_6f743ffa:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -755,6 +774,7 @@ ViTDCNv2_ML_1M_020_0da67ae2:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -778,7 +798,7 @@ ViTDCNv2_ML_1M_020_0da67ae2:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv2_ML_1M_021_1088b9a3:
+ViTDCNv2_ML_1M_021_3c56a93e:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -794,6 +814,7 @@ ViTDCNv2_ML_1M_021_1088b9a3:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -817,7 +838,7 @@ ViTDCNv2_ML_1M_021_1088b9a3:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv2_ML_1M_022_368e0590:
+ViTDCNv2_ML_1M_022_c61e38c2:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -833,6 +854,7 @@ ViTDCNv2_ML_1M_022_368e0590:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -856,7 +878,7 @@ ViTDCNv2_ML_1M_022_368e0590:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv2_ML_1M_023_04bee0b0:
+ViTDCNv2_ML_1M_023_e4f64a86:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -872,6 +894,7 @@ ViTDCNv2_ML_1M_023_04bee0b0:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/
@@ -895,7 +918,7 @@ ViTDCNv2_ML_1M_023_04bee0b0:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv2_ML_1M_024_4c12ebd0:
+ViTDCNv2_ML_1M_024_65231244:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -911,6 +934,7 @@ ViTDCNv2_ML_1M_024_4c12ebd0:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_activation: ReLU
     metrics: [logloss, AUC]
     model: ViTDCNv2
     model_root: ./checkpoints/

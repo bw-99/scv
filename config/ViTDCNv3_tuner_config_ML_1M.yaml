@@ -7,9 +7,9 @@ tuner_space:
     batch_size: 4096
     num_deep_cross_layers: [1, 2, 3, 4]
     num_shallow_cross_layers: [1, 2, 3, 4]
-    deep_net_dropout: [0.1, 0.2, 0.3]
-    shallow_net_dropout: [0.1, 0.2, 0.3]
+    deep_net_dropout: [0.1]
+    shallow_net_dropout: [0.1]
     vit_patch_size: [4, 8]
     vit_hidden_dim: [64]
     vit_num_layers: [1, 2, 3]
-    vit_num_heads: [2, 4, 8, 16]
+    vit_num_heads: [2, 4, 8]

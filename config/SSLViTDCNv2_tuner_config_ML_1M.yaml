@@ -1,0 +1,15 @@
+base_config: ./config/
+base_expid: SSLViTDCNv2_ML_1M
+dataset_id: ML_1M_7_x1
+
+tuner_space:
+    model_root: './checkpoints/'
+    batch_size: 4096
+    num_cross_layers: [1]
+    net_dropout: [0.2]
+    vit_patch_size: [4]
+    vit_hidden_dim: [64]
+    vit_num_layers: [1]
+    vit_num_heads: [8]
+    vit_num_ssl: [4, 2, 0]
+    vit_ssl_loss_weight: [1, 0.5, 0.1]

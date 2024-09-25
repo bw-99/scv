@@ -97,3 +97,8 @@
 2024-09-25 20:21:30,636 P16849 INFO [Metrics] AUC: 0.831301 - logloss: 0.504103
 2024-09-25 20:21:30,642 P16849 INFO Save best model: monitor(max)=0.831301
 2024-09-25 20:21:31,252 P16849 INFO ************ Epoch=5 end ************
+2024-09-25 20:26:34,656 P16849 INFO Train loss: 0.560618
+2024-09-25 20:26:34,657 P16849 INFO Evaluation @epoch 6 - batch 591: 
+2024-09-25 20:26:45,301 P16849 INFO [Metrics] AUC: 0.833367 - logloss: 0.501443
+2024-09-25 20:26:45,308 P16849 INFO Save best model: monitor(max)=0.833367
+2024-09-25 20:26:45,877 P16849 INFO ************ Epoch=6 end ************

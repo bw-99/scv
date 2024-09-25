@@ -13,7 +13,6 @@ Base:
     feature_config: null
 
 
-
 DCNv3_KKBox_x10:
     model: DCNv3
     dataset_id: KKBox_csv
@@ -188,6 +187,7 @@ DCNv3_ML_1M:
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
+
 ViTDCNv2_ML_1M:
     model: ViTDCNv2
     dataset_id: ML_1M_7_x1
@@ -242,6 +242,7 @@ IGDCNv3_ML_1M:
     num_workers: 4
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
+    
 
 
 SSLViTDCNv3_ML_1M:
@@ -276,6 +277,36 @@ SSLViTDCNv3_ML_1M:
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
+SSLViTDCNv2_ML_1M:
+    model: SSLViTDCNv2
+    dataset_id: ML_1M_7_x1
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 0.01
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    num_cross_layers: 3
+    net_dropout: 0.1
+    vit_patch_size: 8
+    vit_hidden_dim: 64
+    vit_num_layers: 2
+    vit_num_heads: 8
+    vit_num_ssl: 2
+    vit_ssl_loss_weight: 1
+    layer_norm: True
+    batch_norm: False
+    num_heads: 1
+    parallel_dnn_hidden_units: [512, 128]
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 4
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
 
 ViTDCNv3_ML_1M:
     model: ViTDCNv3

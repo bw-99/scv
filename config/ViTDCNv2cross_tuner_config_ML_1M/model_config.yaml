@@ -1,6 +1,6 @@
-ViTDCNv2_ML_1M_001_c97f4e98:
+ViTDCNv2_ML_1M_001_afae0eb7:
     batch_norm: false
-    batch_size: 4096
+    batch_size: 16384
     dataset_id: ML_1M_7_x1_b220bdc8
     debug_mode: false
     early_stop_patience: 2
@@ -12,7 +12,7 @@ ViTDCNv2_ML_1M_001_c97f4e98:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -22,47 +22,7 @@ ViTDCNv2_ML_1M_001_c97f4e98:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 1
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_002_4c0b3dca:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
+    num_cross_layers: 4
     num_heads: 1
     num_workers: 4
     optimizer: adam
@@ -78,9 +38,9 @@ ViTDCNv2_ML_1M_002_4c0b3dca:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_ML_1M_003_8b960980:
+ViTDCNv2_ML_1M_002_be799f19:
     batch_norm: false
-    batch_size: 4096
+    batch_size: 16384
     dataset_id: ML_1M_7_x1_b220bdc8
     debug_mode: false
     early_stop_patience: 2
@@ -92,7 +52,7 @@ ViTDCNv2_ML_1M_003_8b960980:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -102,87 +62,7 @@ ViTDCNv2_ML_1M_003_8b960980:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 1
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_004_0643fa2d:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 2
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_005_cc1820f9:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
+    num_cross_layers: 4
     num_heads: 1
     num_workers: 4
     optimizer: adam
@@ -198,9 +78,9 @@ ViTDCNv2_ML_1M_005_cc1820f9:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv2_ML_1M_006_e044db12:
+ViTDCNv2_ML_1M_003_5298a659:
     batch_norm: false
-    batch_size: 4096
+    batch_size: 16384
     dataset_id: ML_1M_7_x1_b220bdc8
     debug_mode: false
     early_stop_patience: 2
@@ -212,1287 +92,7 @@ ViTDCNv2_ML_1M_006_e044db12:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 2
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_007_1ee51788:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_008_4e2f3c99:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_009_809fc64b:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_010_70826770:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_011_8b960980:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_012_6af24ef2:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_013_3caa17f2:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_014_e044db12:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_015_ac574720:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_016_1feb718d:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_017_809fc64b:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_018_783a4a5f:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 1
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_019_0643fa2d:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 1
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_020_cc1820f9:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 1
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_021_e044db12:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 1
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_022_d38c9075:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 2
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_023_3236482a:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 2
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_024_089f5f72:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 2
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_025_8a17ce67:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_026_3d6c7979:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_027_1db476aa:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_028_3caa17f2:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_029_e044db12:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_030_ac574720:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_031_c48067cf:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_032_089f5f72:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_033_a452423c:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_034_eb4692d7:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_035_1db476aa:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_036_24eccac8:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 2
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_037_1ee51788:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 3
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 1
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_038_4e2f3c99:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -1518,9 +118,9 @@ ViTDCNv2_ML_1M_038_4e2f3c99:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_ML_1M_039_809fc64b:
+ViTDCNv2_ML_1M_004_c5e3684e:
     batch_norm: false
-    batch_size: 4096
+    batch_size: 16384
     dataset_id: ML_1M_7_x1_b220bdc8
     debug_mode: false
     early_stop_patience: 2
@@ -1532,87 +132,7 @@ ViTDCNv2_ML_1M_039_809fc64b:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 3
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 1
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_040_8a17ce67:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 3
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 2
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_041_3d6c7979:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -1638,9 +158,9 @@ ViTDCNv2_ML_1M_041_3d6c7979:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv2_ML_1M_042_1db476aa:
+ViTDCNv2_ML_1M_005_a3211468:
     batch_norm: false
-    batch_size: 4096
+    batch_size: 16384
     dataset_id: ML_1M_7_x1_b220bdc8
     debug_mode: false
     early_stop_patience: 2
@@ -1652,7 +172,7 @@ ViTDCNv2_ML_1M_042_1db476aa:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -1662,87 +182,7 @@ ViTDCNv2_ML_1M_042_1db476aa:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 3
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 2
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_043_e3152e48:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 3
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_044_f1c44153:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 3
+    num_cross_layers: 2
     num_heads: 1
     num_workers: 4
     optimizer: adam
@@ -1756,91 +196,11 @@ ViTDCNv2_ML_1M_044_f1c44153:
     verbose: 1
     vit_hidden_dim: 64
     vit_num_heads: 4
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_045_af924420:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 3
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_046_1feb718d:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 3
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
     vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_047_809fc64b:
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_006_6e1cd509:
     batch_norm: false
-    batch_size: 4096
+    batch_size: 16384
     dataset_id: ML_1M_7_x1_b220bdc8
     debug_mode: false
     early_stop_patience: 2
@@ -1852,7 +212,207 @@ ViTDCNv2_ML_1M_047_809fc64b:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_007_f26f9a42:
+    batch_norm: false
+    batch_size: 16384
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 1
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_008_a3211468:
+    batch_norm: false
+    batch_size: 16384
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 1
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_009_7691ccca:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_010_187478f6:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_011_34a8f411:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -1877,10 +437,10 @@ ViTDCNv2_ML_1M_047_809fc64b:
     vit_hidden_dim: 64
     vit_num_heads: 4
     vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_048_783a4a5f:
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_012_570dd474:
     batch_norm: false
-    batch_size: 4096
+    batch_size: 8192
     dataset_id: ML_1M_7_x1_b220bdc8
     debug_mode: false
     early_stop_patience: 2
@@ -1892,7 +452,7 @@ ViTDCNv2_ML_1M_048_783a4a5f:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -1915,10 +475,170 @@ ViTDCNv2_ML_1M_048_783a4a5f:
     use_features: null
     verbose: 1
     vit_hidden_dim: 64
-    vit_num_heads: 8
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_013_06dce684:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
     vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_049_eb4692d7:
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_014_601bcb62:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_015_38d379cf:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 1
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_016_06dce684:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 1
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_017_a47d198b:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1932,7 +652,87 @@ ViTDCNv2_ML_1M_049_eb4692d7:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_018_b312a949:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_019_7af33c45:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -1955,10 +755,10 @@ ViTDCNv2_ML_1M_049_eb4692d7:
     use_features: null
     verbose: 1
     vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_050_1db476aa:
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_020_5bc6065b:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1972,7 +772,7 @@ ViTDCNv2_ML_1M_050_1db476aa:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -1997,8 +797,8 @@ ViTDCNv2_ML_1M_050_1db476aa:
     vit_hidden_dim: 64
     vit_num_heads: 4
     vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_051_24eccac8:
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_021_07e1163f:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2012,7 +812,7 @@ ViTDCNv2_ML_1M_051_24eccac8:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -2022,87 +822,7 @@ ViTDCNv2_ML_1M_051_24eccac8:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 3
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_052_ec980e46:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 3
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_053_af924420:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 3
+    num_cross_layers: 2
     num_heads: 1
     num_workers: 4
     optimizer: adam
@@ -2116,9 +836,9 @@ ViTDCNv2_ML_1M_053_af924420:
     verbose: 1
     vit_hidden_dim: 64
     vit_num_heads: 4
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_054_0a225b9c:
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_022_d6169cd5:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2132,7 +852,7 @@ ViTDCNv2_ML_1M_054_0a225b9c:
     feature_specs: null
     group_id: null
     layer_norm: true
-    learning_rate: 0.001
+    learning_rate: 0.005
     loss: binary_crossentropy
     mask_activation: ReLU
     metrics: [logloss, AUC]
@@ -2142,7 +862,7 @@ ViTDCNv2_ML_1M_054_0a225b9c:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 3
+    num_cross_layers: 2
     num_heads: 1
     num_workers: 4
     optimizer: adam
@@ -2155,12 +875,92 @@ ViTDCNv2_ML_1M_054_0a225b9c:
     use_features: null
     verbose: 1
     vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_055_cc1820f9:
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_023_9403eb1b:
     batch_norm: false
     batch_size: 4096
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 1
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_024_07e1163f:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.005
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 1
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_025_cc8a6cce:
+    batch_norm: false
+    batch_size: 16384
     dataset_id: ML_1M_7_x1_b220bdc8
     debug_mode: false
     early_stop_patience: 2
@@ -2195,10 +995,610 @@ ViTDCNv2_ML_1M_055_cc1820f9:
     use_features: null
     verbose: 1
     vit_hidden_dim: 64
-    vit_num_heads: 2
+    vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_ML_1M_056_37fbffb6:
+ViTDCNv2_ML_1M_026_2088fc03:
+    batch_norm: false
+    batch_size: 16384
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_027_cf326a53:
+    batch_norm: false
+    batch_size: 16384
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_028_584bf25d:
+    batch_norm: false
+    batch_size: 16384
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_029_80f2ccab:
+    batch_norm: false
+    batch_size: 16384
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_030_2e8a59f4:
+    batch_norm: false
+    batch_size: 16384
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_031_38c19389:
+    batch_norm: false
+    batch_size: 16384
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 1
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_032_80f2ccab:
+    batch_norm: false
+    batch_size: 16384
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 1
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_033_de91cb2c:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_034_6b0cf10f:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_035_763a36c1:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_036_162266c5:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_037_29e3b001:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_038_a541ab04:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_039_63d77047:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 1
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_040_29e3b001:
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 1
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_041_37fbffb6:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2238,87 +1638,7 @@ ViTDCNv2_ML_1M_056_37fbffb6:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_ML_1M_057_4e250ffc:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 4
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 1
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_058_3236482a:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 4
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 2
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_059_033c6eb6:
+ViTDCNv2_ML_1M_042_033c6eb6:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2358,7 +1678,7 @@ ViTDCNv2_ML_1M_059_033c6eb6:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv2_ML_1M_060_21c3aea2:
+ViTDCNv2_ML_1M_043_4e2f3c99:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2382,207 +1702,7 @@ ViTDCNv2_ML_1M_060_21c3aea2:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 4
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 2
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_061_3d6c7979:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 4
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_062_e53978e9:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 4
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 4
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_063_d8a178d9:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 4
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 3
-    vit_patch_size: 4
-ViTDCNv2_ML_1M_064_e044db12:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 4
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_065_4e250ffc:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 4
+    num_cross_layers: 3
     num_heads: 1
     num_workers: 4
     optimizer: adam
@@ -2597,8 +1717,8 @@ ViTDCNv2_ML_1M_065_4e250ffc:
     vit_hidden_dim: 64
     vit_num_heads: 4
     vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_066_01a344e6:
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_044_3d6c7979:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2622,7 +1742,7 @@ ViTDCNv2_ML_1M_066_01a344e6:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 4
+    num_cross_layers: 3
     num_heads: 1
     num_workers: 4
     optimizer: adam
@@ -2635,10 +1755,50 @@ ViTDCNv2_ML_1M_066_01a344e6:
     use_features: null
     verbose: 1
     vit_hidden_dim: 64
-    vit_num_heads: 8
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_045_cc1820f9:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: ML_1M_7_x1_b220bdc8
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_activation: ReLU
+    metrics: [logloss, AUC]
+    model: ViTDCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_cross_layers: 2
+    num_heads: 1
+    num_workers: 4
+    optimizer: adam
+    parallel_dnn_hidden_units: [512, 128]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_hidden_dim: 64
+    vit_num_heads: 4
     vit_num_layers: 1
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_067_089f5f72:
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_046_3236482a:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2662,47 +1822,7 @@ ViTDCNv2_ML_1M_067_089f5f72:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 4
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_068_21c3aea2:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 4
+    num_cross_layers: 2
     num_heads: 1
     num_workers: 4
     optimizer: adam
@@ -2717,8 +1837,8 @@ ViTDCNv2_ML_1M_068_21c3aea2:
     vit_hidden_dim: 64
     vit_num_heads: 4
     vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_069_c61e38c2:
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_047_4c0b3dca:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2742,87 +1862,7 @@ ViTDCNv2_ML_1M_069_c61e38c2:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 4
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_070_1db476aa:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 4
-    num_heads: 1
-    num_workers: 4
-    optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_hidden_dim: 64
-    vit_num_heads: 2
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_071_d8a178d9:
-    batch_norm: false
-    batch_size: 4096
-    dataset_id: ML_1M_7_x1_b220bdc8
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.01
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_activation: ReLU
-    metrics: [logloss, AUC]
-    model: ViTDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_dropout: 0.1
-    net_regularizer: 0
-    num_cross_layers: 4
+    num_cross_layers: 1
     num_heads: 1
     num_workers: 4
     optimizer: adam
@@ -2836,9 +1876,9 @@ ViTDCNv2_ML_1M_071_d8a178d9:
     verbose: 1
     vit_hidden_dim: 64
     vit_num_heads: 4
-    vit_num_layers: 3
-    vit_patch_size: 8
-ViTDCNv2_ML_1M_072_cef2e084:
+    vit_num_layers: 1
+    vit_patch_size: 4
+ViTDCNv2_ML_1M_048_cc1820f9:
     batch_norm: false
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2862,7 +1902,7 @@ ViTDCNv2_ML_1M_072_cef2e084:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 4
+    num_cross_layers: 1
     num_heads: 1
     num_workers: 4
     optimizer: adam
@@ -2875,6 +1915,6 @@ ViTDCNv2_ML_1M_072_cef2e084:
     use_features: null
     verbose: 1
     vit_hidden_dim: 64
-    vit_num_heads: 8
-    vit_num_layers: 3
-    vit_patch_size: 8
+    vit_num_heads: 4
+    vit_num_layers: 2
+    vit_patch_size: 4

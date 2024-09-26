@@ -24,7 +24,7 @@ ViTDCNv2_KKBox_x10_001_bdf11902:
     net_regularizer: 0
     num_cross_layers: 4
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -64,7 +64,7 @@ ViTDCNv2_KKBox_x10_002_08a66323:
     net_regularizer: 0
     num_cross_layers: 4
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -104,7 +104,7 @@ ViTDCNv2_KKBox_x10_003_2d212112:
     net_regularizer: 0
     num_cross_layers: 3
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -144,7 +144,7 @@ ViTDCNv2_KKBox_x10_004_a7dc0940:
     net_regularizer: 0
     num_cross_layers: 3
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -184,7 +184,7 @@ ViTDCNv2_KKBox_x10_005_19ce66eb:
     net_regularizer: 0
     num_cross_layers: 2
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -224,7 +224,7 @@ ViTDCNv2_KKBox_x10_006_9ddf5dda:
     net_regularizer: 0
     num_cross_layers: 2
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -264,7 +264,7 @@ ViTDCNv2_KKBox_x10_007_3323b599:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -304,7 +304,7 @@ ViTDCNv2_KKBox_x10_008_205c4043:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true

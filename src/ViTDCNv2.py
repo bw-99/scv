@@ -70,6 +70,7 @@ class ViTDCNv2(BaseModel):
                                           batch_norm=batch_norm)
 
         final_dim = input_dim + parallel_dnn_hidden_units[-1]
+        # final_dim =  parallel_dnn_hidden_units[-1]
         self.fc = nn.Linear(final_dim, 1)
 
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
@@ -79,8 +80,8 @@ class ViTDCNv2(BaseModel):
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X)
-        cross_out = self.crossnet(feature_emb)
         dnn_out = self.parallel_dnn(feature_emb)
+        cross_out = self.crossnet(feature_emb)
         final_out = torch.cat([cross_out, dnn_out], dim=-1)
         y_pred = self.fc(final_out)
         if(len(y_pred.shape) == 3):
@@ -92,7 +93,7 @@ class ViTDCNv2(BaseModel):
 
 
 class MultiHeadFeatureEmbedding(nn.Module):
-    def __init__(self, feature_map, embedding_dim, num_heads=2):
+    def __init__(self, feature_map, embedding_dim, num_heads=1):
         super(MultiHeadFeatureEmbedding, self).__init__()
         self.num_heads = num_heads
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
@@ -107,7 +108,8 @@ class MultiHeadFeatureEmbedding(nn.Module):
                                                          multihead_feature_emb2.flatten(
                                                              start_dim=2)  # B × H × FD/2H; B × H × FD/2H
         multihead_feature_emb = torch.cat([multihead_feature_emb1, multihead_feature_emb2], dim=-1)
-        return multihead_feature_emb  # B × H × FD/H
+        return multihead_feature_emb.view(multihead_feature_emb.shape[0], -1)
+    # B × H × FD/H
 
 class ViTCrossNetV2(nn.Module):
     def __init__(self, input_dim, num_layers,
@@ -123,44 +125,47 @@ class ViTCrossNetV2(nn.Module):
                  mask_activation="ReLU"):
         super(ViTCrossNetV2, self).__init__()
         self.num_layers = num_layers
-        self.layer_norm = nn.ModuleList()
-        self.batch_norm = nn.ModuleList()
-        self.dropout = nn.ModuleList()
-        self.w = nn.ModuleList()
-        self.b = nn.ParameterList()
-        self.masker_lst = nn.ModuleList()
-        self.activation = getattr(nn, mask_activation)
-        for i in range(num_layers):
-            self.w.append(nn.Linear(input_dim, input_dim, bias=False))
-            self.b.append(nn.Parameter(torch.zeros((input_dim,))))
-            if layer_norm:
-                self.layer_norm.append(nn.LayerNorm(input_dim))
-            if net_dropout > 0:
-                self.dropout.append(nn.Dropout(net_dropout))
-            self.masker_lst.append(nn.Sequential(
+        self.layer_norm = nn.ModuleList(
+            [nn.LayerNorm(input_dim) if layer_norm else nn.Identity() for _ in range(num_layers)]
+        )
+        self.batch_norm = nn.ModuleList(
+            [nn.BatchNorm1d(input_dim) if batch_norm else nn.Identity() for _ in range(num_layers)]
+        )
+        self.dropout = nn.ModuleList(
+            [nn.Dropout(net_dropout) if net_dropout > 0 else nn.Identity() for _ in range(num_layers)]
+        )
+        self.w = nn.ModuleList([nn.Linear(input_dim, input_dim, bias=False) for _ in range(num_layers)])
+        self.b = nn.ParameterList([nn.Parameter(torch.zeros(input_dim)) for _ in range(num_layers)])
+        self.masker_lst = nn.ModuleList([
+            nn.Sequential(
                 VIT2DEmbeddingModel(
-                    vit_input_dim=vit_input_dim,
+                    vit_input_dim=input_dim,
                     vit_patch_size=vit_patch_size,
                     vit_hidden_dim=vit_hidden_dim,
                     vit_num_layers=vit_num_layers,
                     vit_num_heads=vit_num_heads
                 ),
-                self.activation()
-            ))
-            nn.init.uniform_(self.b[i].data)
-        self.masker = nn.ReLU()
+                getattr(nn, mask_activation)()
+            ) for _ in range(num_layers)
+        ])
 
     def forward(self, x):
-        x0=x
+        x0 = x
         for i in range(self.num_layers):
             H = self.w[i](x)
-            if len(self.batch_norm) > i:
+            # print(H.shape)
+            # H = self.w[i](x).squeeze(dim=1)
+            if isinstance(self.batch_norm[i], nn.BatchNorm1d):
                 H = self.batch_norm[i](H)
-            mask = self.masker_lst[i](self.w[i].weight)
+            mask = self.masker_lst[i](self.w[i].weight.unsqueeze(0))
+            # print(mask.shape, H.shape)
             H = H * mask
             x = x0 * (H + self.b[i]) + x
+            if isinstance(self.layer_norm[i], nn.LayerNorm):
+                x = self.layer_norm[i](x)
+            if isinstance(self.dropout[i], nn.Dropout):
+                x = self.dropout[i](x)
         return x
-
 
 
 class VIT2DEmbeddingModel(nn.Module):
@@ -170,13 +175,15 @@ class VIT2DEmbeddingModel(nn.Module):
                  vit_hidden_dim, 
                  vit_num_layers, 
                  vit_num_heads,
-                 **kawrgs):
+                 **kwargs):
         super(VIT2DEmbeddingModel, self).__init__()
         assert vit_input_dim % vit_patch_size == 0, "Input dimension must be divisible by patch size"
 
         self.input_dim = vit_input_dim
         self.patch_size = vit_patch_size
         self.hidden_dim = vit_hidden_dim
+
+        self.num_patches = (vit_input_dim // vit_patch_size) ** 2
 
         self.patch_embedding = nn.Conv2d(
             in_channels=1,
@@ -187,34 +194,32 @@ class VIT2DEmbeddingModel(nn.Module):
 
         self.class_token = nn.Parameter(torch.zeros(1, 1, vit_hidden_dim))
 
+        self.position_embedding = nn.Parameter(torch.zeros(1, self.num_patches + 1, vit_hidden_dim))
+
         encoder_layer = nn.TransformerEncoderLayer(d_model=vit_hidden_dim, nhead=vit_num_heads)
         self.transformer_encoder = nn.TransformerEncoder(encoder_layer, num_layers=vit_num_layers)
 
         self.output_layer = nn.Linear(vit_hidden_dim, vit_input_dim)
 
-
     def forward(self, x):
-        if(len(x.shape) == 2):
+        if x.dim() == 2:
             x = x.unsqueeze(0).unsqueeze(0)
-        elif(len(x.shape) == 3):
+        elif x.dim() == 3:
             x = x.unsqueeze(1)
 
         x = self.patch_embedding(x)
         batch_size, hidden_dim, num_patches_h, num_patches_w = x.size()
-        num_patches = num_patches_h * num_patches_w
-
         x = x.flatten(2)
-        x = x.transpose(1, 2)
+        x = x.transpose(1, 2)  # Shape: [batch_size, num_patches, hidden_dim]
 
         cls_token = self.class_token.expand(batch_size, -1, -1)
-        x = torch.cat((cls_token, x), dim=1)
+        x = torch.cat((cls_token, x), dim=1)  # Shape: [batch_size, num_patches + 1, hidden_dim]
 
-        position_embedding = nn.Parameter(torch.zeros(1, num_patches + 1, hidden_dim)).to(x.device)
+        position_embedding = self.position_embedding[:, :x.size(1), :]
         x = x + position_embedding
 
-        x = x.permute(1, 0, 2)
+        x = x.transpose(0, 1)  # Shape: [num_patches + 1, batch_size, hidden_dim]
         x = self.transformer_encoder(x)
-        x = x[0, :, :]
+        x = x[0, :, :]  # Take the output corresponding to the class token
         x = self.output_layer(x)
-        x = x.squeeze(0)
         return x

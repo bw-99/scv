@@ -34,7 +34,7 @@ DCNv2_KKBox_x10:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -63,7 +63,7 @@ ViTDCNv2_KKBox_x10:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     mask_activation: "ReLU"
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
@@ -90,7 +90,7 @@ DCNv3_KKBox_x10:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -121,7 +121,7 @@ ViTDCNv3_KKBox_x10:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -153,7 +153,7 @@ ViTLinDCNv3_KKBox_x10:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -185,7 +185,7 @@ ViTExpDCNv3_KKBox_x10:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -211,7 +211,7 @@ DCNv2_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -238,7 +238,7 @@ DCNv3_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -268,7 +268,7 @@ ViTDCNv2_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     mask_activation: "ReLU"
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
@@ -295,7 +295,7 @@ IGDCNv3_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
     
@@ -329,7 +329,7 @@ SSLViTDCNv3_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -360,7 +360,7 @@ SSLViTDCNv2_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -390,7 +390,7 @@ ViTDCNv3_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -422,7 +422,7 @@ ViTLinDCNv3_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -454,7 +454,7 @@ ViTExpDCNv3_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -483,7 +483,7 @@ DCNv3_iPinYou_x1:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
@@ -509,12 +509,12 @@ ViTDCNv2_iPinYou_x1:
     vit_num_heads: 8
     parallel_dnn_hidden_units: [512, 128]
     layer_norm: True
-    batch_norm: False
+    batch_norm: True
     num_heads: 1
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     mask_activation: "ReLU"
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
@@ -547,7 +547,33 @@ ViTLinDCNv3_iPinYou_x1:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 4
+    num_workers: 16
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
+
+DCNv2_iPinYou_x1:
+    model: DCNv2
+    dataset_id: iPinYou_x1_csv
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-3
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    use_low_rank_mixture: False
+    low_rank: 32
+    num_experts: 4    
+    num_cross_layers: 3
+    net_dropout: 0.1
+    parallel_dnn_hidden_units: [512, 128]
+    batch_norm: True
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 16
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'

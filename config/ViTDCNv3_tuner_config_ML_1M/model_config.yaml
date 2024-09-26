@@ -1,4 +1,4 @@
-ViTDCNv3_ML_1M_001_c658b535:
+ViTDCNv3_ML_1M_001_b4b4cbb5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -24,7 +24,7 @@ ViTDCNv3_ML_1M_001_c658b535:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -38,7 +38,7 @@ ViTDCNv3_ML_1M_001_c658b535:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_002_8e502756:
+ViTDCNv3_ML_1M_002_56fcd794:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -64,7 +64,7 @@ ViTDCNv3_ML_1M_002_8e502756:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -78,7 +78,7 @@ ViTDCNv3_ML_1M_002_8e502756:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_003_e44af4fe:
+ViTDCNv3_ML_1M_003_eea64327:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -104,7 +104,7 @@ ViTDCNv3_ML_1M_003_e44af4fe:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -118,7 +118,7 @@ ViTDCNv3_ML_1M_003_e44af4fe:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_004_12e23549:
+ViTDCNv3_ML_1M_004_cac476d3:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -144,7 +144,7 @@ ViTDCNv3_ML_1M_004_12e23549:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -158,7 +158,7 @@ ViTDCNv3_ML_1M_004_12e23549:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_005_5b2a06a5:
+ViTDCNv3_ML_1M_005_9213cee4:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -184,7 +184,7 @@ ViTDCNv3_ML_1M_005_5b2a06a5:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -198,7 +198,7 @@ ViTDCNv3_ML_1M_005_5b2a06a5:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_006_4a443e1f:
+ViTDCNv3_ML_1M_006_90b24be6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -224,7 +224,7 @@ ViTDCNv3_ML_1M_006_4a443e1f:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -238,7 +238,7 @@ ViTDCNv3_ML_1M_006_4a443e1f:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_007_f2e23616:
+ViTDCNv3_ML_1M_007_529231b1:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -264,7 +264,7 @@ ViTDCNv3_ML_1M_007_f2e23616:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -278,7 +278,7 @@ ViTDCNv3_ML_1M_007_f2e23616:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_008_1510125a:
+ViTDCNv3_ML_1M_008_1fb5610f:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -304,7 +304,7 @@ ViTDCNv3_ML_1M_008_1510125a:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -318,7 +318,7 @@ ViTDCNv3_ML_1M_008_1510125a:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_009_a1ea66ee:
+ViTDCNv3_ML_1M_009_7359730e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -344,7 +344,7 @@ ViTDCNv3_ML_1M_009_a1ea66ee:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -358,7 +358,7 @@ ViTDCNv3_ML_1M_009_a1ea66ee:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_010_26b39fa2:
+ViTDCNv3_ML_1M_010_255956d2:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -384,7 +384,7 @@ ViTDCNv3_ML_1M_010_26b39fa2:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -398,7 +398,7 @@ ViTDCNv3_ML_1M_010_26b39fa2:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_011_e44af4fe:
+ViTDCNv3_ML_1M_011_eea64327:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -424,7 +424,7 @@ ViTDCNv3_ML_1M_011_e44af4fe:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -438,7 +438,7 @@ ViTDCNv3_ML_1M_011_e44af4fe:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_012_268505de:
+ViTDCNv3_ML_1M_012_e39c2960:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -464,7 +464,7 @@ ViTDCNv3_ML_1M_012_268505de:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -478,7 +478,7 @@ ViTDCNv3_ML_1M_012_268505de:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_013_5f0ce551:
+ViTDCNv3_ML_1M_013_cf51fde1:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -504,7 +504,7 @@ ViTDCNv3_ML_1M_013_5f0ce551:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -518,7 +518,7 @@ ViTDCNv3_ML_1M_013_5f0ce551:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_014_4a443e1f:
+ViTDCNv3_ML_1M_014_90b24be6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -544,7 +544,7 @@ ViTDCNv3_ML_1M_014_4a443e1f:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -558,7 +558,7 @@ ViTDCNv3_ML_1M_014_4a443e1f:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_015_306062ba:
+ViTDCNv3_ML_1M_015_fec8f68b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -584,7 +584,7 @@ ViTDCNv3_ML_1M_015_306062ba:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -598,7 +598,7 @@ ViTDCNv3_ML_1M_015_306062ba:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_016_72bb763c:
+ViTDCNv3_ML_1M_016_41ed3df5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -624,7 +624,7 @@ ViTDCNv3_ML_1M_016_72bb763c:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -638,7 +638,7 @@ ViTDCNv3_ML_1M_016_72bb763c:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_017_a1ea66ee:
+ViTDCNv3_ML_1M_017_7359730e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -664,7 +664,7 @@ ViTDCNv3_ML_1M_017_a1ea66ee:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -678,7 +678,7 @@ ViTDCNv3_ML_1M_017_a1ea66ee:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_018_08ff2fea:
+ViTDCNv3_ML_1M_018_d131738a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -704,7 +704,7 @@ ViTDCNv3_ML_1M_018_08ff2fea:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -718,7 +718,7 @@ ViTDCNv3_ML_1M_018_08ff2fea:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_019_12e23549:
+ViTDCNv3_ML_1M_019_cac476d3:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -744,7 +744,7 @@ ViTDCNv3_ML_1M_019_12e23549:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -758,7 +758,7 @@ ViTDCNv3_ML_1M_019_12e23549:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_020_5b2a06a5:
+ViTDCNv3_ML_1M_020_9213cee4:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -784,7 +784,7 @@ ViTDCNv3_ML_1M_020_5b2a06a5:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -798,7 +798,7 @@ ViTDCNv3_ML_1M_020_5b2a06a5:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_021_4a443e1f:
+ViTDCNv3_ML_1M_021_90b24be6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -824,7 +824,7 @@ ViTDCNv3_ML_1M_021_4a443e1f:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -838,7 +838,7 @@ ViTDCNv3_ML_1M_021_4a443e1f:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_022_d6bec24c:
+ViTDCNv3_ML_1M_022_78c11385:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -864,7 +864,7 @@ ViTDCNv3_ML_1M_022_d6bec24c:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -878,7 +878,7 @@ ViTDCNv3_ML_1M_022_d6bec24c:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_023_cf111dae:
+ViTDCNv3_ML_1M_023_0a60d75b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -904,7 +904,7 @@ ViTDCNv3_ML_1M_023_cf111dae:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -918,7 +918,7 @@ ViTDCNv3_ML_1M_023_cf111dae:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_024_3466e4d1:
+ViTDCNv3_ML_1M_024_b65fa878:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -944,7 +944,7 @@ ViTDCNv3_ML_1M_024_3466e4d1:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -958,7 +958,7 @@ ViTDCNv3_ML_1M_024_3466e4d1:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_025_4d90a46f:
+ViTDCNv3_ML_1M_025_56164b43:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -984,7 +984,7 @@ ViTDCNv3_ML_1M_025_4d90a46f:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -998,7 +998,7 @@ ViTDCNv3_ML_1M_025_4d90a46f:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_026_9d156e6c:
+ViTDCNv3_ML_1M_026_616d6c2a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1024,7 +1024,7 @@ ViTDCNv3_ML_1M_026_9d156e6c:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1038,7 +1038,7 @@ ViTDCNv3_ML_1M_026_9d156e6c:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_027_6e670263:
+ViTDCNv3_ML_1M_027_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1064,7 +1064,7 @@ ViTDCNv3_ML_1M_027_6e670263:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1078,7 +1078,7 @@ ViTDCNv3_ML_1M_027_6e670263:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_028_5f0ce551:
+ViTDCNv3_ML_1M_028_cf51fde1:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1104,7 +1104,7 @@ ViTDCNv3_ML_1M_028_5f0ce551:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1118,7 +1118,7 @@ ViTDCNv3_ML_1M_028_5f0ce551:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_029_4a443e1f:
+ViTDCNv3_ML_1M_029_90b24be6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1144,7 +1144,7 @@ ViTDCNv3_ML_1M_029_4a443e1f:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1158,7 +1158,7 @@ ViTDCNv3_ML_1M_029_4a443e1f:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_030_306062ba:
+ViTDCNv3_ML_1M_030_fec8f68b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1184,7 +1184,7 @@ ViTDCNv3_ML_1M_030_306062ba:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1198,7 +1198,7 @@ ViTDCNv3_ML_1M_030_306062ba:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_031_b6426eac:
+ViTDCNv3_ML_1M_031_08c2cffa:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1224,7 +1224,7 @@ ViTDCNv3_ML_1M_031_b6426eac:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1238,7 +1238,7 @@ ViTDCNv3_ML_1M_031_b6426eac:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_032_3466e4d1:
+ViTDCNv3_ML_1M_032_b65fa878:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1264,7 +1264,7 @@ ViTDCNv3_ML_1M_032_3466e4d1:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1278,7 +1278,7 @@ ViTDCNv3_ML_1M_032_3466e4d1:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_033_d8a7bfcd:
+ViTDCNv3_ML_1M_033_d43c5095:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1304,7 +1304,7 @@ ViTDCNv3_ML_1M_033_d8a7bfcd:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1318,7 +1318,7 @@ ViTDCNv3_ML_1M_033_d8a7bfcd:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_034_3930a2f7:
+ViTDCNv3_ML_1M_034_2b6065a3:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1344,7 +1344,7 @@ ViTDCNv3_ML_1M_034_3930a2f7:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1358,7 +1358,7 @@ ViTDCNv3_ML_1M_034_3930a2f7:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_035_6e670263:
+ViTDCNv3_ML_1M_035_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1384,7 +1384,7 @@ ViTDCNv3_ML_1M_035_6e670263:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1398,7 +1398,7 @@ ViTDCNv3_ML_1M_035_6e670263:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_036_e046ed42:
+ViTDCNv3_ML_1M_036_547ca5ae:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1424,7 +1424,7 @@ ViTDCNv3_ML_1M_036_e046ed42:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1438,7 +1438,7 @@ ViTDCNv3_ML_1M_036_e046ed42:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_037_f2e23616:
+ViTDCNv3_ML_1M_037_529231b1:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1464,7 +1464,7 @@ ViTDCNv3_ML_1M_037_f2e23616:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1478,7 +1478,7 @@ ViTDCNv3_ML_1M_037_f2e23616:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_038_1510125a:
+ViTDCNv3_ML_1M_038_1fb5610f:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1504,7 +1504,7 @@ ViTDCNv3_ML_1M_038_1510125a:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1518,7 +1518,7 @@ ViTDCNv3_ML_1M_038_1510125a:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_039_a1ea66ee:
+ViTDCNv3_ML_1M_039_7359730e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1544,7 +1544,7 @@ ViTDCNv3_ML_1M_039_a1ea66ee:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1558,7 +1558,7 @@ ViTDCNv3_ML_1M_039_a1ea66ee:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_040_4d90a46f:
+ViTDCNv3_ML_1M_040_56164b43:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1584,7 +1584,7 @@ ViTDCNv3_ML_1M_040_4d90a46f:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1598,7 +1598,7 @@ ViTDCNv3_ML_1M_040_4d90a46f:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_041_9d156e6c:
+ViTDCNv3_ML_1M_041_616d6c2a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1624,7 +1624,7 @@ ViTDCNv3_ML_1M_041_9d156e6c:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1638,7 +1638,7 @@ ViTDCNv3_ML_1M_041_9d156e6c:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_042_6e670263:
+ViTDCNv3_ML_1M_042_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1664,7 +1664,7 @@ ViTDCNv3_ML_1M_042_6e670263:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1678,7 +1678,7 @@ ViTDCNv3_ML_1M_042_6e670263:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_043_d5ab53f1:
+ViTDCNv3_ML_1M_043_d5af6b11:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1704,7 +1704,7 @@ ViTDCNv3_ML_1M_043_d5ab53f1:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1718,7 +1718,7 @@ ViTDCNv3_ML_1M_043_d5ab53f1:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_044_f23d7afa:
+ViTDCNv3_ML_1M_044_0250fa38:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1744,7 +1744,7 @@ ViTDCNv3_ML_1M_044_f23d7afa:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1758,7 +1758,7 @@ ViTDCNv3_ML_1M_044_f23d7afa:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_045_a1fcb9ee:
+ViTDCNv3_ML_1M_045_ea662d22:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1784,7 +1784,7 @@ ViTDCNv3_ML_1M_045_a1fcb9ee:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1798,7 +1798,7 @@ ViTDCNv3_ML_1M_045_a1fcb9ee:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_046_72bb763c:
+ViTDCNv3_ML_1M_046_41ed3df5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1824,7 +1824,7 @@ ViTDCNv3_ML_1M_046_72bb763c:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1838,7 +1838,7 @@ ViTDCNv3_ML_1M_046_72bb763c:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_047_a1ea66ee:
+ViTDCNv3_ML_1M_047_7359730e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1864,7 +1864,7 @@ ViTDCNv3_ML_1M_047_a1ea66ee:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1878,7 +1878,7 @@ ViTDCNv3_ML_1M_047_a1ea66ee:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_048_08ff2fea:
+ViTDCNv3_ML_1M_048_d131738a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1904,7 +1904,7 @@ ViTDCNv3_ML_1M_048_08ff2fea:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1918,7 +1918,7 @@ ViTDCNv3_ML_1M_048_08ff2fea:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_049_3930a2f7:
+ViTDCNv3_ML_1M_049_2b6065a3:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1944,7 +1944,7 @@ ViTDCNv3_ML_1M_049_3930a2f7:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1958,7 +1958,7 @@ ViTDCNv3_ML_1M_049_3930a2f7:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_050_6e670263:
+ViTDCNv3_ML_1M_050_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -1984,7 +1984,7 @@ ViTDCNv3_ML_1M_050_6e670263:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1998,7 +1998,7 @@ ViTDCNv3_ML_1M_050_6e670263:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_051_e046ed42:
+ViTDCNv3_ML_1M_051_547ca5ae:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2024,7 +2024,7 @@ ViTDCNv3_ML_1M_051_e046ed42:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2038,7 +2038,7 @@ ViTDCNv3_ML_1M_051_e046ed42:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_052_b0156dad:
+ViTDCNv3_ML_1M_052_ac5511f5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2064,7 +2064,7 @@ ViTDCNv3_ML_1M_052_b0156dad:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2078,7 +2078,7 @@ ViTDCNv3_ML_1M_052_b0156dad:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_053_a1fcb9ee:
+ViTDCNv3_ML_1M_053_ea662d22:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2104,7 +2104,7 @@ ViTDCNv3_ML_1M_053_a1fcb9ee:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2118,7 +2118,7 @@ ViTDCNv3_ML_1M_053_a1fcb9ee:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_054_ce35e6af:
+ViTDCNv3_ML_1M_054_79c58187:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2144,7 +2144,7 @@ ViTDCNv3_ML_1M_054_ce35e6af:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2158,7 +2158,7 @@ ViTDCNv3_ML_1M_054_ce35e6af:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_055_5b2a06a5:
+ViTDCNv3_ML_1M_055_9213cee4:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2184,7 +2184,7 @@ ViTDCNv3_ML_1M_055_5b2a06a5:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2198,7 +2198,7 @@ ViTDCNv3_ML_1M_055_5b2a06a5:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_056_e6994222:
+ViTDCNv3_ML_1M_056_b00ba1b6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2224,7 +2224,7 @@ ViTDCNv3_ML_1M_056_e6994222:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2238,7 +2238,7 @@ ViTDCNv3_ML_1M_056_e6994222:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_057_10b0021b:
+ViTDCNv3_ML_1M_057_4650148f:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2264,7 +2264,7 @@ ViTDCNv3_ML_1M_057_10b0021b:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2278,7 +2278,7 @@ ViTDCNv3_ML_1M_057_10b0021b:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_058_cf111dae:
+ViTDCNv3_ML_1M_058_0a60d75b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2304,7 +2304,7 @@ ViTDCNv3_ML_1M_058_cf111dae:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2318,7 +2318,7 @@ ViTDCNv3_ML_1M_058_cf111dae:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_059_5f58f382:
+ViTDCNv3_ML_1M_059_e1019ed9:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2344,7 +2344,7 @@ ViTDCNv3_ML_1M_059_5f58f382:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2358,7 +2358,7 @@ ViTDCNv3_ML_1M_059_5f58f382:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_060_6f259159:
+ViTDCNv3_ML_1M_060_68707cda:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2384,7 +2384,7 @@ ViTDCNv3_ML_1M_060_6f259159:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2398,7 +2398,7 @@ ViTDCNv3_ML_1M_060_6f259159:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_061_9d156e6c:
+ViTDCNv3_ML_1M_061_616d6c2a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2424,7 +2424,7 @@ ViTDCNv3_ML_1M_061_9d156e6c:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2438,7 +2438,7 @@ ViTDCNv3_ML_1M_061_9d156e6c:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_062_b6a4ea95:
+ViTDCNv3_ML_1M_062_2859dc7d:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2464,7 +2464,7 @@ ViTDCNv3_ML_1M_062_b6a4ea95:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2478,7 +2478,7 @@ ViTDCNv3_ML_1M_062_b6a4ea95:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_063_f725370f:
+ViTDCNv3_ML_1M_063_c888fd6e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2504,7 +2504,7 @@ ViTDCNv3_ML_1M_063_f725370f:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2518,7 +2518,7 @@ ViTDCNv3_ML_1M_063_f725370f:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_064_4a443e1f:
+ViTDCNv3_ML_1M_064_90b24be6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2544,7 +2544,7 @@ ViTDCNv3_ML_1M_064_4a443e1f:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2558,7 +2558,7 @@ ViTDCNv3_ML_1M_064_4a443e1f:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_065_10b0021b:
+ViTDCNv3_ML_1M_065_4650148f:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2584,7 +2584,7 @@ ViTDCNv3_ML_1M_065_10b0021b:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2598,7 +2598,7 @@ ViTDCNv3_ML_1M_065_10b0021b:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_066_9ae0b437:
+ViTDCNv3_ML_1M_066_19fffe2f:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2624,7 +2624,7 @@ ViTDCNv3_ML_1M_066_9ae0b437:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2638,7 +2638,7 @@ ViTDCNv3_ML_1M_066_9ae0b437:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_067_3466e4d1:
+ViTDCNv3_ML_1M_067_b65fa878:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2664,7 +2664,7 @@ ViTDCNv3_ML_1M_067_3466e4d1:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2678,7 +2678,7 @@ ViTDCNv3_ML_1M_067_3466e4d1:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_068_6f259159:
+ViTDCNv3_ML_1M_068_68707cda:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2704,7 +2704,7 @@ ViTDCNv3_ML_1M_068_6f259159:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2718,7 +2718,7 @@ ViTDCNv3_ML_1M_068_6f259159:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_069_eef207c6:
+ViTDCNv3_ML_1M_069_7636ed1e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2744,7 +2744,7 @@ ViTDCNv3_ML_1M_069_eef207c6:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2758,7 +2758,7 @@ ViTDCNv3_ML_1M_069_eef207c6:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_070_6e670263:
+ViTDCNv3_ML_1M_070_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2784,7 +2784,7 @@ ViTDCNv3_ML_1M_070_6e670263:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2798,7 +2798,7 @@ ViTDCNv3_ML_1M_070_6e670263:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_071_f725370f:
+ViTDCNv3_ML_1M_071_c888fd6e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2824,7 +2824,7 @@ ViTDCNv3_ML_1M_071_f725370f:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2838,7 +2838,7 @@ ViTDCNv3_ML_1M_071_f725370f:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_072_f63ce874:
+ViTDCNv3_ML_1M_072_650eb95b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2864,7 +2864,7 @@ ViTDCNv3_ML_1M_072_f63ce874:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2878,7 +2878,7 @@ ViTDCNv3_ML_1M_072_f63ce874:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_073_12e23549:
+ViTDCNv3_ML_1M_073_cac476d3:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2904,7 +2904,7 @@ ViTDCNv3_ML_1M_073_12e23549:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2918,7 +2918,7 @@ ViTDCNv3_ML_1M_073_12e23549:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_074_5b2a06a5:
+ViTDCNv3_ML_1M_074_9213cee4:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2944,7 +2944,7 @@ ViTDCNv3_ML_1M_074_5b2a06a5:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2958,7 +2958,7 @@ ViTDCNv3_ML_1M_074_5b2a06a5:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_075_4a443e1f:
+ViTDCNv3_ML_1M_075_90b24be6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -2984,7 +2984,7 @@ ViTDCNv3_ML_1M_075_4a443e1f:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2998,7 +2998,7 @@ ViTDCNv3_ML_1M_075_4a443e1f:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_076_d6bec24c:
+ViTDCNv3_ML_1M_076_78c11385:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3024,7 +3024,7 @@ ViTDCNv3_ML_1M_076_d6bec24c:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3038,7 +3038,7 @@ ViTDCNv3_ML_1M_076_d6bec24c:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_077_cf111dae:
+ViTDCNv3_ML_1M_077_0a60d75b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3064,7 +3064,7 @@ ViTDCNv3_ML_1M_077_cf111dae:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3078,7 +3078,7 @@ ViTDCNv3_ML_1M_077_cf111dae:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_078_3466e4d1:
+ViTDCNv3_ML_1M_078_b65fa878:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3104,7 +3104,7 @@ ViTDCNv3_ML_1M_078_3466e4d1:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3118,7 +3118,7 @@ ViTDCNv3_ML_1M_078_3466e4d1:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_079_4d90a46f:
+ViTDCNv3_ML_1M_079_56164b43:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3144,7 +3144,7 @@ ViTDCNv3_ML_1M_079_4d90a46f:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3158,7 +3158,7 @@ ViTDCNv3_ML_1M_079_4d90a46f:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_080_9d156e6c:
+ViTDCNv3_ML_1M_080_616d6c2a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3184,7 +3184,7 @@ ViTDCNv3_ML_1M_080_9d156e6c:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3198,7 +3198,7 @@ ViTDCNv3_ML_1M_080_9d156e6c:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_081_6e670263:
+ViTDCNv3_ML_1M_081_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3224,7 +3224,7 @@ ViTDCNv3_ML_1M_081_6e670263:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3238,7 +3238,7 @@ ViTDCNv3_ML_1M_081_6e670263:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_082_5f0ce551:
+ViTDCNv3_ML_1M_082_cf51fde1:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3264,7 +3264,7 @@ ViTDCNv3_ML_1M_082_5f0ce551:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3278,7 +3278,7 @@ ViTDCNv3_ML_1M_082_5f0ce551:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_083_4a443e1f:
+ViTDCNv3_ML_1M_083_90b24be6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3304,7 +3304,7 @@ ViTDCNv3_ML_1M_083_4a443e1f:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3318,7 +3318,7 @@ ViTDCNv3_ML_1M_083_4a443e1f:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_084_306062ba:
+ViTDCNv3_ML_1M_084_fec8f68b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3344,7 +3344,7 @@ ViTDCNv3_ML_1M_084_306062ba:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3358,7 +3358,7 @@ ViTDCNv3_ML_1M_084_306062ba:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_085_b6426eac:
+ViTDCNv3_ML_1M_085_08c2cffa:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3384,7 +3384,7 @@ ViTDCNv3_ML_1M_085_b6426eac:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3398,7 +3398,7 @@ ViTDCNv3_ML_1M_085_b6426eac:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_086_3466e4d1:
+ViTDCNv3_ML_1M_086_b65fa878:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3424,7 +3424,7 @@ ViTDCNv3_ML_1M_086_3466e4d1:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3438,7 +3438,7 @@ ViTDCNv3_ML_1M_086_3466e4d1:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_087_d8a7bfcd:
+ViTDCNv3_ML_1M_087_d43c5095:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3464,7 +3464,7 @@ ViTDCNv3_ML_1M_087_d8a7bfcd:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3478,7 +3478,7 @@ ViTDCNv3_ML_1M_087_d8a7bfcd:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_088_3930a2f7:
+ViTDCNv3_ML_1M_088_2b6065a3:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3504,7 +3504,7 @@ ViTDCNv3_ML_1M_088_3930a2f7:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3518,7 +3518,7 @@ ViTDCNv3_ML_1M_088_3930a2f7:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_089_6e670263:
+ViTDCNv3_ML_1M_089_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3544,7 +3544,7 @@ ViTDCNv3_ML_1M_089_6e670263:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3558,7 +3558,7 @@ ViTDCNv3_ML_1M_089_6e670263:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_090_e046ed42:
+ViTDCNv3_ML_1M_090_547ca5ae:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3584,7 +3584,7 @@ ViTDCNv3_ML_1M_090_e046ed42:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3598,7 +3598,7 @@ ViTDCNv3_ML_1M_090_e046ed42:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_091_d6bec24c:
+ViTDCNv3_ML_1M_091_78c11385:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3624,7 +3624,7 @@ ViTDCNv3_ML_1M_091_d6bec24c:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3638,7 +3638,7 @@ ViTDCNv3_ML_1M_091_d6bec24c:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_092_cf111dae:
+ViTDCNv3_ML_1M_092_0a60d75b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3664,7 +3664,7 @@ ViTDCNv3_ML_1M_092_cf111dae:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3678,7 +3678,7 @@ ViTDCNv3_ML_1M_092_cf111dae:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_093_3466e4d1:
+ViTDCNv3_ML_1M_093_b65fa878:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3704,7 +3704,7 @@ ViTDCNv3_ML_1M_093_3466e4d1:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3718,7 +3718,7 @@ ViTDCNv3_ML_1M_093_3466e4d1:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_094_70a6f122:
+ViTDCNv3_ML_1M_094_c2e60a17:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3744,7 +3744,7 @@ ViTDCNv3_ML_1M_094_70a6f122:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3758,7 +3758,7 @@ ViTDCNv3_ML_1M_094_70a6f122:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_095_b8588cce:
+ViTDCNv3_ML_1M_095_dace1a89:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3784,7 +3784,7 @@ ViTDCNv3_ML_1M_095_b8588cce:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3798,7 +3798,7 @@ ViTDCNv3_ML_1M_095_b8588cce:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_096_5e4a85fb:
+ViTDCNv3_ML_1M_096_353c6d4e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3824,7 +3824,7 @@ ViTDCNv3_ML_1M_096_5e4a85fb:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3838,7 +3838,7 @@ ViTDCNv3_ML_1M_096_5e4a85fb:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_097_ff5d8242:
+ViTDCNv3_ML_1M_097_eee7c156:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3864,7 +3864,7 @@ ViTDCNv3_ML_1M_097_ff5d8242:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3878,7 +3878,7 @@ ViTDCNv3_ML_1M_097_ff5d8242:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_098_b22014c2:
+ViTDCNv3_ML_1M_098_614dbfb6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3904,7 +3904,7 @@ ViTDCNv3_ML_1M_098_b22014c2:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3918,7 +3918,7 @@ ViTDCNv3_ML_1M_098_b22014c2:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_099_76e30cdc:
+ViTDCNv3_ML_1M_099_fd3bc245:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3944,7 +3944,7 @@ ViTDCNv3_ML_1M_099_76e30cdc:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3958,7 +3958,7 @@ ViTDCNv3_ML_1M_099_76e30cdc:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_100_b6426eac:
+ViTDCNv3_ML_1M_100_08c2cffa:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -3984,7 +3984,7 @@ ViTDCNv3_ML_1M_100_b6426eac:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3998,7 +3998,7 @@ ViTDCNv3_ML_1M_100_b6426eac:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_101_3466e4d1:
+ViTDCNv3_ML_1M_101_b65fa878:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4024,7 +4024,7 @@ ViTDCNv3_ML_1M_101_3466e4d1:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4038,7 +4038,7 @@ ViTDCNv3_ML_1M_101_3466e4d1:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_102_d8a7bfcd:
+ViTDCNv3_ML_1M_102_d43c5095:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4064,7 +4064,7 @@ ViTDCNv3_ML_1M_102_d8a7bfcd:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4078,7 +4078,7 @@ ViTDCNv3_ML_1M_102_d8a7bfcd:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_103_263ed5cf:
+ViTDCNv3_ML_1M_103_5ab551a0:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4104,7 +4104,7 @@ ViTDCNv3_ML_1M_103_263ed5cf:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4118,7 +4118,7 @@ ViTDCNv3_ML_1M_103_263ed5cf:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_104_5e4a85fb:
+ViTDCNv3_ML_1M_104_353c6d4e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4144,7 +4144,7 @@ ViTDCNv3_ML_1M_104_5e4a85fb:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4158,7 +4158,7 @@ ViTDCNv3_ML_1M_104_5e4a85fb:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_105_ce617c9c:
+ViTDCNv3_ML_1M_105_7e3a4eb0:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4184,7 +4184,7 @@ ViTDCNv3_ML_1M_105_ce617c9c:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4198,7 +4198,7 @@ ViTDCNv3_ML_1M_105_ce617c9c:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_106_17c00ffd:
+ViTDCNv3_ML_1M_106_e5bb5cee:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4224,7 +4224,7 @@ ViTDCNv3_ML_1M_106_17c00ffd:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4238,7 +4238,7 @@ ViTDCNv3_ML_1M_106_17c00ffd:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_107_76e30cdc:
+ViTDCNv3_ML_1M_107_fd3bc245:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4264,7 +4264,7 @@ ViTDCNv3_ML_1M_107_76e30cdc:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4278,7 +4278,7 @@ ViTDCNv3_ML_1M_107_76e30cdc:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_108_d366a015:
+ViTDCNv3_ML_1M_108_a3c4fabf:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4304,7 +4304,7 @@ ViTDCNv3_ML_1M_108_d366a015:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4318,7 +4318,7 @@ ViTDCNv3_ML_1M_108_d366a015:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_109_4d90a46f:
+ViTDCNv3_ML_1M_109_56164b43:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4344,7 +4344,7 @@ ViTDCNv3_ML_1M_109_4d90a46f:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4358,7 +4358,7 @@ ViTDCNv3_ML_1M_109_4d90a46f:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_110_9d156e6c:
+ViTDCNv3_ML_1M_110_616d6c2a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4384,7 +4384,7 @@ ViTDCNv3_ML_1M_110_9d156e6c:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4398,7 +4398,7 @@ ViTDCNv3_ML_1M_110_9d156e6c:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_111_6e670263:
+ViTDCNv3_ML_1M_111_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4424,7 +4424,7 @@ ViTDCNv3_ML_1M_111_6e670263:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4438,7 +4438,7 @@ ViTDCNv3_ML_1M_111_6e670263:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_112_ff5d8242:
+ViTDCNv3_ML_1M_112_eee7c156:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4464,7 +4464,7 @@ ViTDCNv3_ML_1M_112_ff5d8242:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4478,7 +4478,7 @@ ViTDCNv3_ML_1M_112_ff5d8242:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_113_b22014c2:
+ViTDCNv3_ML_1M_113_614dbfb6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4504,7 +4504,7 @@ ViTDCNv3_ML_1M_113_b22014c2:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4518,7 +4518,7 @@ ViTDCNv3_ML_1M_113_b22014c2:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_114_76e30cdc:
+ViTDCNv3_ML_1M_114_fd3bc245:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4544,7 +4544,7 @@ ViTDCNv3_ML_1M_114_76e30cdc:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4558,7 +4558,7 @@ ViTDCNv3_ML_1M_114_76e30cdc:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_115_6252131a:
+ViTDCNv3_ML_1M_115_8b023999:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4584,7 +4584,7 @@ ViTDCNv3_ML_1M_115_6252131a:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4598,7 +4598,7 @@ ViTDCNv3_ML_1M_115_6252131a:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_116_df3420b2:
+ViTDCNv3_ML_1M_116_34c7293c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4624,7 +4624,7 @@ ViTDCNv3_ML_1M_116_df3420b2:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4638,7 +4638,7 @@ ViTDCNv3_ML_1M_116_df3420b2:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_117_7a78267c:
+ViTDCNv3_ML_1M_117_63a2576c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4664,7 +4664,7 @@ ViTDCNv3_ML_1M_117_7a78267c:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4678,7 +4678,7 @@ ViTDCNv3_ML_1M_117_7a78267c:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_118_3930a2f7:
+ViTDCNv3_ML_1M_118_2b6065a3:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4704,7 +4704,7 @@ ViTDCNv3_ML_1M_118_3930a2f7:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4718,7 +4718,7 @@ ViTDCNv3_ML_1M_118_3930a2f7:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_119_6e670263:
+ViTDCNv3_ML_1M_119_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4744,7 +4744,7 @@ ViTDCNv3_ML_1M_119_6e670263:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4758,7 +4758,7 @@ ViTDCNv3_ML_1M_119_6e670263:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_120_e046ed42:
+ViTDCNv3_ML_1M_120_547ca5ae:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4784,7 +4784,7 @@ ViTDCNv3_ML_1M_120_e046ed42:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4798,7 +4798,7 @@ ViTDCNv3_ML_1M_120_e046ed42:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_121_17c00ffd:
+ViTDCNv3_ML_1M_121_e5bb5cee:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4824,7 +4824,7 @@ ViTDCNv3_ML_1M_121_17c00ffd:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4838,7 +4838,7 @@ ViTDCNv3_ML_1M_121_17c00ffd:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_122_76e30cdc:
+ViTDCNv3_ML_1M_122_fd3bc245:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4864,7 +4864,7 @@ ViTDCNv3_ML_1M_122_76e30cdc:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4878,7 +4878,7 @@ ViTDCNv3_ML_1M_122_76e30cdc:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_123_d366a015:
+ViTDCNv3_ML_1M_123_a3c4fabf:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4904,7 +4904,7 @@ ViTDCNv3_ML_1M_123_d366a015:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4918,7 +4918,7 @@ ViTDCNv3_ML_1M_123_d366a015:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_124_ad909330:
+ViTDCNv3_ML_1M_124_f191a047:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4944,7 +4944,7 @@ ViTDCNv3_ML_1M_124_ad909330:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4958,7 +4958,7 @@ ViTDCNv3_ML_1M_124_ad909330:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_125_7a78267c:
+ViTDCNv3_ML_1M_125_63a2576c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -4984,7 +4984,7 @@ ViTDCNv3_ML_1M_125_7a78267c:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4998,7 +4998,7 @@ ViTDCNv3_ML_1M_125_7a78267c:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_126_946b81b2:
+ViTDCNv3_ML_1M_126_d9e46077:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5024,7 +5024,7 @@ ViTDCNv3_ML_1M_126_946b81b2:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5038,7 +5038,7 @@ ViTDCNv3_ML_1M_126_946b81b2:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_127_cf111dae:
+ViTDCNv3_ML_1M_127_0a60d75b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5064,7 +5064,7 @@ ViTDCNv3_ML_1M_127_cf111dae:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5078,7 +5078,7 @@ ViTDCNv3_ML_1M_127_cf111dae:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_128_5f58f382:
+ViTDCNv3_ML_1M_128_e1019ed9:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5104,7 +5104,7 @@ ViTDCNv3_ML_1M_128_5f58f382:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5118,7 +5118,7 @@ ViTDCNv3_ML_1M_128_5f58f382:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_129_6f259159:
+ViTDCNv3_ML_1M_129_68707cda:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5144,7 +5144,7 @@ ViTDCNv3_ML_1M_129_6f259159:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5158,7 +5158,7 @@ ViTDCNv3_ML_1M_129_6f259159:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_130_b8588cce:
+ViTDCNv3_ML_1M_130_dace1a89:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5184,7 +5184,7 @@ ViTDCNv3_ML_1M_130_b8588cce:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5198,7 +5198,7 @@ ViTDCNv3_ML_1M_130_b8588cce:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_131_34b95873:
+ViTDCNv3_ML_1M_131_15d06102:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5224,7 +5224,7 @@ ViTDCNv3_ML_1M_131_34b95873:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5238,7 +5238,7 @@ ViTDCNv3_ML_1M_131_34b95873:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_132_05a5ccb7:
+ViTDCNv3_ML_1M_132_ccbec24e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5264,7 +5264,7 @@ ViTDCNv3_ML_1M_132_05a5ccb7:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5278,7 +5278,7 @@ ViTDCNv3_ML_1M_132_05a5ccb7:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_133_b22014c2:
+ViTDCNv3_ML_1M_133_614dbfb6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5304,7 +5304,7 @@ ViTDCNv3_ML_1M_133_b22014c2:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5318,7 +5318,7 @@ ViTDCNv3_ML_1M_133_b22014c2:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_134_1cb1d101:
+ViTDCNv3_ML_1M_134_bb0bc419:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5344,7 +5344,7 @@ ViTDCNv3_ML_1M_134_1cb1d101:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5358,7 +5358,7 @@ ViTDCNv3_ML_1M_134_1cb1d101:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_135_18b26af5:
+ViTDCNv3_ML_1M_135_c4cf09d5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5384,7 +5384,7 @@ ViTDCNv3_ML_1M_135_18b26af5:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5398,7 +5398,7 @@ ViTDCNv3_ML_1M_135_18b26af5:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_136_3466e4d1:
+ViTDCNv3_ML_1M_136_b65fa878:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5424,7 +5424,7 @@ ViTDCNv3_ML_1M_136_3466e4d1:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5438,7 +5438,7 @@ ViTDCNv3_ML_1M_136_3466e4d1:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_137_6f259159:
+ViTDCNv3_ML_1M_137_68707cda:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5464,7 +5464,7 @@ ViTDCNv3_ML_1M_137_6f259159:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5478,7 +5478,7 @@ ViTDCNv3_ML_1M_137_6f259159:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_138_eef207c6:
+ViTDCNv3_ML_1M_138_7636ed1e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5504,7 +5504,7 @@ ViTDCNv3_ML_1M_138_eef207c6:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5518,7 +5518,7 @@ ViTDCNv3_ML_1M_138_eef207c6:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_139_5e4a85fb:
+ViTDCNv3_ML_1M_139_353c6d4e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5544,7 +5544,7 @@ ViTDCNv3_ML_1M_139_5e4a85fb:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5558,7 +5558,7 @@ ViTDCNv3_ML_1M_139_5e4a85fb:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_140_05a5ccb7:
+ViTDCNv3_ML_1M_140_ccbec24e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5584,7 +5584,7 @@ ViTDCNv3_ML_1M_140_05a5ccb7:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5598,7 +5598,7 @@ ViTDCNv3_ML_1M_140_05a5ccb7:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_141_51ef2264:
+ViTDCNv3_ML_1M_141_48f8b004:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5624,7 +5624,7 @@ ViTDCNv3_ML_1M_141_51ef2264:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5638,7 +5638,7 @@ ViTDCNv3_ML_1M_141_51ef2264:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_142_76e30cdc:
+ViTDCNv3_ML_1M_142_fd3bc245:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5664,7 +5664,7 @@ ViTDCNv3_ML_1M_142_76e30cdc:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5678,7 +5678,7 @@ ViTDCNv3_ML_1M_142_76e30cdc:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_143_18b26af5:
+ViTDCNv3_ML_1M_143_c4cf09d5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5704,7 +5704,7 @@ ViTDCNv3_ML_1M_143_18b26af5:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5718,7 +5718,7 @@ ViTDCNv3_ML_1M_143_18b26af5:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_144_78db3914:
+ViTDCNv3_ML_1M_144_f9f32691:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5744,7 +5744,7 @@ ViTDCNv3_ML_1M_144_78db3914:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5758,7 +5758,7 @@ ViTDCNv3_ML_1M_144_78db3914:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_145_f2e23616:
+ViTDCNv3_ML_1M_145_529231b1:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5784,7 +5784,7 @@ ViTDCNv3_ML_1M_145_f2e23616:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5798,7 +5798,7 @@ ViTDCNv3_ML_1M_145_f2e23616:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_146_1510125a:
+ViTDCNv3_ML_1M_146_1fb5610f:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5824,7 +5824,7 @@ ViTDCNv3_ML_1M_146_1510125a:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5838,7 +5838,7 @@ ViTDCNv3_ML_1M_146_1510125a:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_147_a1ea66ee:
+ViTDCNv3_ML_1M_147_7359730e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5864,7 +5864,7 @@ ViTDCNv3_ML_1M_147_a1ea66ee:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5878,7 +5878,7 @@ ViTDCNv3_ML_1M_147_a1ea66ee:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_148_4d90a46f:
+ViTDCNv3_ML_1M_148_56164b43:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5904,7 +5904,7 @@ ViTDCNv3_ML_1M_148_4d90a46f:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5918,7 +5918,7 @@ ViTDCNv3_ML_1M_148_4d90a46f:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_149_9d156e6c:
+ViTDCNv3_ML_1M_149_616d6c2a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5944,7 +5944,7 @@ ViTDCNv3_ML_1M_149_9d156e6c:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5958,7 +5958,7 @@ ViTDCNv3_ML_1M_149_9d156e6c:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_150_6e670263:
+ViTDCNv3_ML_1M_150_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -5984,7 +5984,7 @@ ViTDCNv3_ML_1M_150_6e670263:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5998,7 +5998,7 @@ ViTDCNv3_ML_1M_150_6e670263:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_151_d5ab53f1:
+ViTDCNv3_ML_1M_151_d5af6b11:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6024,7 +6024,7 @@ ViTDCNv3_ML_1M_151_d5ab53f1:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6038,7 +6038,7 @@ ViTDCNv3_ML_1M_151_d5ab53f1:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_152_f23d7afa:
+ViTDCNv3_ML_1M_152_0250fa38:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6064,7 +6064,7 @@ ViTDCNv3_ML_1M_152_f23d7afa:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6078,7 +6078,7 @@ ViTDCNv3_ML_1M_152_f23d7afa:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_153_a1fcb9ee:
+ViTDCNv3_ML_1M_153_ea662d22:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6104,7 +6104,7 @@ ViTDCNv3_ML_1M_153_a1fcb9ee:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6118,7 +6118,7 @@ ViTDCNv3_ML_1M_153_a1fcb9ee:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_154_72bb763c:
+ViTDCNv3_ML_1M_154_41ed3df5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6144,7 +6144,7 @@ ViTDCNv3_ML_1M_154_72bb763c:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6158,7 +6158,7 @@ ViTDCNv3_ML_1M_154_72bb763c:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_155_a1ea66ee:
+ViTDCNv3_ML_1M_155_7359730e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6184,7 +6184,7 @@ ViTDCNv3_ML_1M_155_a1ea66ee:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6198,7 +6198,7 @@ ViTDCNv3_ML_1M_155_a1ea66ee:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_156_08ff2fea:
+ViTDCNv3_ML_1M_156_d131738a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6224,7 +6224,7 @@ ViTDCNv3_ML_1M_156_08ff2fea:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6238,7 +6238,7 @@ ViTDCNv3_ML_1M_156_08ff2fea:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_157_3930a2f7:
+ViTDCNv3_ML_1M_157_2b6065a3:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6264,7 +6264,7 @@ ViTDCNv3_ML_1M_157_3930a2f7:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6278,7 +6278,7 @@ ViTDCNv3_ML_1M_157_3930a2f7:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_158_6e670263:
+ViTDCNv3_ML_1M_158_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6304,7 +6304,7 @@ ViTDCNv3_ML_1M_158_6e670263:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6318,7 +6318,7 @@ ViTDCNv3_ML_1M_158_6e670263:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_159_e046ed42:
+ViTDCNv3_ML_1M_159_547ca5ae:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6344,7 +6344,7 @@ ViTDCNv3_ML_1M_159_e046ed42:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6358,7 +6358,7 @@ ViTDCNv3_ML_1M_159_e046ed42:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_160_b0156dad:
+ViTDCNv3_ML_1M_160_ac5511f5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6384,7 +6384,7 @@ ViTDCNv3_ML_1M_160_b0156dad:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6398,7 +6398,7 @@ ViTDCNv3_ML_1M_160_b0156dad:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_161_a1fcb9ee:
+ViTDCNv3_ML_1M_161_ea662d22:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6424,7 +6424,7 @@ ViTDCNv3_ML_1M_161_a1fcb9ee:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6438,7 +6438,7 @@ ViTDCNv3_ML_1M_161_a1fcb9ee:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_162_ce35e6af:
+ViTDCNv3_ML_1M_162_79c58187:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6464,7 +6464,7 @@ ViTDCNv3_ML_1M_162_ce35e6af:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6478,7 +6478,7 @@ ViTDCNv3_ML_1M_162_ce35e6af:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_163_4d90a46f:
+ViTDCNv3_ML_1M_163_56164b43:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6504,7 +6504,7 @@ ViTDCNv3_ML_1M_163_4d90a46f:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6518,7 +6518,7 @@ ViTDCNv3_ML_1M_163_4d90a46f:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_164_9d156e6c:
+ViTDCNv3_ML_1M_164_616d6c2a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6544,7 +6544,7 @@ ViTDCNv3_ML_1M_164_9d156e6c:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6558,7 +6558,7 @@ ViTDCNv3_ML_1M_164_9d156e6c:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_165_6e670263:
+ViTDCNv3_ML_1M_165_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6584,7 +6584,7 @@ ViTDCNv3_ML_1M_165_6e670263:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6598,7 +6598,7 @@ ViTDCNv3_ML_1M_165_6e670263:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_166_ff5d8242:
+ViTDCNv3_ML_1M_166_eee7c156:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6624,7 +6624,7 @@ ViTDCNv3_ML_1M_166_ff5d8242:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6638,7 +6638,7 @@ ViTDCNv3_ML_1M_166_ff5d8242:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_167_b22014c2:
+ViTDCNv3_ML_1M_167_614dbfb6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6664,7 +6664,7 @@ ViTDCNv3_ML_1M_167_b22014c2:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6678,7 +6678,7 @@ ViTDCNv3_ML_1M_167_b22014c2:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_168_76e30cdc:
+ViTDCNv3_ML_1M_168_fd3bc245:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6704,7 +6704,7 @@ ViTDCNv3_ML_1M_168_76e30cdc:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6718,7 +6718,7 @@ ViTDCNv3_ML_1M_168_76e30cdc:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_169_6252131a:
+ViTDCNv3_ML_1M_169_8b023999:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6744,7 +6744,7 @@ ViTDCNv3_ML_1M_169_6252131a:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6758,7 +6758,7 @@ ViTDCNv3_ML_1M_169_6252131a:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_170_df3420b2:
+ViTDCNv3_ML_1M_170_34c7293c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6784,7 +6784,7 @@ ViTDCNv3_ML_1M_170_df3420b2:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6798,7 +6798,7 @@ ViTDCNv3_ML_1M_170_df3420b2:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_171_7a78267c:
+ViTDCNv3_ML_1M_171_63a2576c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6824,7 +6824,7 @@ ViTDCNv3_ML_1M_171_7a78267c:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6838,7 +6838,7 @@ ViTDCNv3_ML_1M_171_7a78267c:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_172_3930a2f7:
+ViTDCNv3_ML_1M_172_2b6065a3:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6864,7 +6864,7 @@ ViTDCNv3_ML_1M_172_3930a2f7:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6878,7 +6878,7 @@ ViTDCNv3_ML_1M_172_3930a2f7:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_173_6e670263:
+ViTDCNv3_ML_1M_173_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6904,7 +6904,7 @@ ViTDCNv3_ML_1M_173_6e670263:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6918,7 +6918,7 @@ ViTDCNv3_ML_1M_173_6e670263:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_174_e046ed42:
+ViTDCNv3_ML_1M_174_547ca5ae:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6944,7 +6944,7 @@ ViTDCNv3_ML_1M_174_e046ed42:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6958,7 +6958,7 @@ ViTDCNv3_ML_1M_174_e046ed42:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_175_17c00ffd:
+ViTDCNv3_ML_1M_175_e5bb5cee:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -6984,7 +6984,7 @@ ViTDCNv3_ML_1M_175_17c00ffd:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6998,7 +6998,7 @@ ViTDCNv3_ML_1M_175_17c00ffd:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_176_76e30cdc:
+ViTDCNv3_ML_1M_176_fd3bc245:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7024,7 +7024,7 @@ ViTDCNv3_ML_1M_176_76e30cdc:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7038,7 +7038,7 @@ ViTDCNv3_ML_1M_176_76e30cdc:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_177_d366a015:
+ViTDCNv3_ML_1M_177_a3c4fabf:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7064,7 +7064,7 @@ ViTDCNv3_ML_1M_177_d366a015:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7078,7 +7078,7 @@ ViTDCNv3_ML_1M_177_d366a015:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_178_ad909330:
+ViTDCNv3_ML_1M_178_f191a047:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7104,7 +7104,7 @@ ViTDCNv3_ML_1M_178_ad909330:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7118,7 +7118,7 @@ ViTDCNv3_ML_1M_178_ad909330:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_179_7a78267c:
+ViTDCNv3_ML_1M_179_63a2576c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7144,7 +7144,7 @@ ViTDCNv3_ML_1M_179_7a78267c:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7158,7 +7158,7 @@ ViTDCNv3_ML_1M_179_7a78267c:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_180_946b81b2:
+ViTDCNv3_ML_1M_180_d9e46077:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7184,7 +7184,7 @@ ViTDCNv3_ML_1M_180_946b81b2:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7198,7 +7198,7 @@ ViTDCNv3_ML_1M_180_946b81b2:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_181_d5ab53f1:
+ViTDCNv3_ML_1M_181_d5af6b11:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7224,7 +7224,7 @@ ViTDCNv3_ML_1M_181_d5ab53f1:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7238,7 +7238,7 @@ ViTDCNv3_ML_1M_181_d5ab53f1:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_182_f23d7afa:
+ViTDCNv3_ML_1M_182_0250fa38:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7264,7 +7264,7 @@ ViTDCNv3_ML_1M_182_f23d7afa:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7278,7 +7278,7 @@ ViTDCNv3_ML_1M_182_f23d7afa:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_183_a1fcb9ee:
+ViTDCNv3_ML_1M_183_ea662d22:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7304,7 +7304,7 @@ ViTDCNv3_ML_1M_183_a1fcb9ee:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7318,7 +7318,7 @@ ViTDCNv3_ML_1M_183_a1fcb9ee:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_184_6252131a:
+ViTDCNv3_ML_1M_184_8b023999:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7344,7 +7344,7 @@ ViTDCNv3_ML_1M_184_6252131a:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7358,7 +7358,7 @@ ViTDCNv3_ML_1M_184_6252131a:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_185_df3420b2:
+ViTDCNv3_ML_1M_185_34c7293c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7384,7 +7384,7 @@ ViTDCNv3_ML_1M_185_df3420b2:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7398,7 +7398,7 @@ ViTDCNv3_ML_1M_185_df3420b2:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_186_7a78267c:
+ViTDCNv3_ML_1M_186_63a2576c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7424,7 +7424,7 @@ ViTDCNv3_ML_1M_186_7a78267c:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7438,7 +7438,7 @@ ViTDCNv3_ML_1M_186_7a78267c:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_187_90a7d681:
+ViTDCNv3_ML_1M_187_99ddaf2f:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7464,7 +7464,7 @@ ViTDCNv3_ML_1M_187_90a7d681:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7478,7 +7478,7 @@ ViTDCNv3_ML_1M_187_90a7d681:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_188_54d2e680:
+ViTDCNv3_ML_1M_188_d33db1bd:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7504,7 +7504,7 @@ ViTDCNv3_ML_1M_188_54d2e680:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7518,7 +7518,7 @@ ViTDCNv3_ML_1M_188_54d2e680:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_189_dc7a1348:
+ViTDCNv3_ML_1M_189_0231f82a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7544,7 +7544,7 @@ ViTDCNv3_ML_1M_189_dc7a1348:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7558,7 +7558,7 @@ ViTDCNv3_ML_1M_189_dc7a1348:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_190_b0156dad:
+ViTDCNv3_ML_1M_190_ac5511f5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7584,7 +7584,7 @@ ViTDCNv3_ML_1M_190_b0156dad:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7598,7 +7598,7 @@ ViTDCNv3_ML_1M_190_b0156dad:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_191_a1fcb9ee:
+ViTDCNv3_ML_1M_191_ea662d22:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7624,7 +7624,7 @@ ViTDCNv3_ML_1M_191_a1fcb9ee:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7638,7 +7638,7 @@ ViTDCNv3_ML_1M_191_a1fcb9ee:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_192_ce35e6af:
+ViTDCNv3_ML_1M_192_79c58187:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7664,7 +7664,7 @@ ViTDCNv3_ML_1M_192_ce35e6af:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7678,7 +7678,7 @@ ViTDCNv3_ML_1M_192_ce35e6af:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_193_ad909330:
+ViTDCNv3_ML_1M_193_f191a047:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7704,7 +7704,7 @@ ViTDCNv3_ML_1M_193_ad909330:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7718,7 +7718,7 @@ ViTDCNv3_ML_1M_193_ad909330:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_194_7a78267c:
+ViTDCNv3_ML_1M_194_63a2576c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7744,7 +7744,7 @@ ViTDCNv3_ML_1M_194_7a78267c:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7758,7 +7758,7 @@ ViTDCNv3_ML_1M_194_7a78267c:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_195_946b81b2:
+ViTDCNv3_ML_1M_195_d9e46077:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7784,7 +7784,7 @@ ViTDCNv3_ML_1M_195_946b81b2:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7798,7 +7798,7 @@ ViTDCNv3_ML_1M_195_946b81b2:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_196_d0d96a9f:
+ViTDCNv3_ML_1M_196_667b82ee:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7824,7 +7824,7 @@ ViTDCNv3_ML_1M_196_d0d96a9f:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7838,7 +7838,7 @@ ViTDCNv3_ML_1M_196_d0d96a9f:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_197_dc7a1348:
+ViTDCNv3_ML_1M_197_0231f82a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7864,7 +7864,7 @@ ViTDCNv3_ML_1M_197_dc7a1348:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7878,7 +7878,7 @@ ViTDCNv3_ML_1M_197_dc7a1348:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_198_bdaf428b:
+ViTDCNv3_ML_1M_198_e46f4a11:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7904,7 +7904,7 @@ ViTDCNv3_ML_1M_198_bdaf428b:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7918,7 +7918,7 @@ ViTDCNv3_ML_1M_198_bdaf428b:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_199_9d156e6c:
+ViTDCNv3_ML_1M_199_616d6c2a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7944,7 +7944,7 @@ ViTDCNv3_ML_1M_199_9d156e6c:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7958,7 +7958,7 @@ ViTDCNv3_ML_1M_199_9d156e6c:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_200_b6a4ea95:
+ViTDCNv3_ML_1M_200_2859dc7d:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -7984,7 +7984,7 @@ ViTDCNv3_ML_1M_200_b6a4ea95:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7998,7 +7998,7 @@ ViTDCNv3_ML_1M_200_b6a4ea95:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_201_f725370f:
+ViTDCNv3_ML_1M_201_c888fd6e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8024,7 +8024,7 @@ ViTDCNv3_ML_1M_201_f725370f:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8038,7 +8038,7 @@ ViTDCNv3_ML_1M_201_f725370f:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_202_b22014c2:
+ViTDCNv3_ML_1M_202_614dbfb6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8064,7 +8064,7 @@ ViTDCNv3_ML_1M_202_b22014c2:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8078,7 +8078,7 @@ ViTDCNv3_ML_1M_202_b22014c2:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_203_1cb1d101:
+ViTDCNv3_ML_1M_203_bb0bc419:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8104,7 +8104,7 @@ ViTDCNv3_ML_1M_203_1cb1d101:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8118,7 +8118,7 @@ ViTDCNv3_ML_1M_203_1cb1d101:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_204_18b26af5:
+ViTDCNv3_ML_1M_204_c4cf09d5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8144,7 +8144,7 @@ ViTDCNv3_ML_1M_204_18b26af5:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8158,7 +8158,7 @@ ViTDCNv3_ML_1M_204_18b26af5:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_205_df3420b2:
+ViTDCNv3_ML_1M_205_34c7293c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8184,7 +8184,7 @@ ViTDCNv3_ML_1M_205_df3420b2:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8198,7 +8198,7 @@ ViTDCNv3_ML_1M_205_df3420b2:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_206_ca466560:
+ViTDCNv3_ML_1M_206_1afc789c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8224,7 +8224,7 @@ ViTDCNv3_ML_1M_206_ca466560:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8238,7 +8238,7 @@ ViTDCNv3_ML_1M_206_ca466560:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_207_53ed49c9:
+ViTDCNv3_ML_1M_207_b1ba7b9d:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8264,7 +8264,7 @@ ViTDCNv3_ML_1M_207_53ed49c9:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8278,7 +8278,7 @@ ViTDCNv3_ML_1M_207_53ed49c9:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_208_6e670263:
+ViTDCNv3_ML_1M_208_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8304,7 +8304,7 @@ ViTDCNv3_ML_1M_208_6e670263:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8318,7 +8318,7 @@ ViTDCNv3_ML_1M_208_6e670263:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_209_f725370f:
+ViTDCNv3_ML_1M_209_c888fd6e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8344,7 +8344,7 @@ ViTDCNv3_ML_1M_209_f725370f:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8358,7 +8358,7 @@ ViTDCNv3_ML_1M_209_f725370f:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_210_f63ce874:
+ViTDCNv3_ML_1M_210_650eb95b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8384,7 +8384,7 @@ ViTDCNv3_ML_1M_210_f63ce874:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8398,7 +8398,7 @@ ViTDCNv3_ML_1M_210_f63ce874:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_211_76e30cdc:
+ViTDCNv3_ML_1M_211_fd3bc245:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8424,7 +8424,7 @@ ViTDCNv3_ML_1M_211_76e30cdc:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8438,7 +8438,7 @@ ViTDCNv3_ML_1M_211_76e30cdc:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_212_18b26af5:
+ViTDCNv3_ML_1M_212_c4cf09d5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8464,7 +8464,7 @@ ViTDCNv3_ML_1M_212_18b26af5:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8478,7 +8478,7 @@ ViTDCNv3_ML_1M_212_18b26af5:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_213_78db3914:
+ViTDCNv3_ML_1M_213_f9f32691:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8504,7 +8504,7 @@ ViTDCNv3_ML_1M_213_78db3914:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8518,7 +8518,7 @@ ViTDCNv3_ML_1M_213_78db3914:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_214_7a78267c:
+ViTDCNv3_ML_1M_214_63a2576c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8544,7 +8544,7 @@ ViTDCNv3_ML_1M_214_7a78267c:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8558,7 +8558,7 @@ ViTDCNv3_ML_1M_214_7a78267c:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_215_53ed49c9:
+ViTDCNv3_ML_1M_215_b1ba7b9d:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8584,7 +8584,7 @@ ViTDCNv3_ML_1M_215_53ed49c9:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8598,7 +8598,7 @@ ViTDCNv3_ML_1M_215_53ed49c9:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_216_683fefab:
+ViTDCNv3_ML_1M_216_0d8a6f67:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8624,7 +8624,7 @@ ViTDCNv3_ML_1M_216_683fefab:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8638,7 +8638,7 @@ ViTDCNv3_ML_1M_216_683fefab:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_217_5b2a06a5:
+ViTDCNv3_ML_1M_217_9213cee4:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8664,7 +8664,7 @@ ViTDCNv3_ML_1M_217_5b2a06a5:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8678,7 +8678,7 @@ ViTDCNv3_ML_1M_217_5b2a06a5:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_218_e6994222:
+ViTDCNv3_ML_1M_218_b00ba1b6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8704,7 +8704,7 @@ ViTDCNv3_ML_1M_218_e6994222:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8718,7 +8718,7 @@ ViTDCNv3_ML_1M_218_e6994222:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_219_10b0021b:
+ViTDCNv3_ML_1M_219_4650148f:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8744,7 +8744,7 @@ ViTDCNv3_ML_1M_219_10b0021b:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8758,7 +8758,7 @@ ViTDCNv3_ML_1M_219_10b0021b:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_220_cf111dae:
+ViTDCNv3_ML_1M_220_0a60d75b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8784,7 +8784,7 @@ ViTDCNv3_ML_1M_220_cf111dae:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8798,7 +8798,7 @@ ViTDCNv3_ML_1M_220_cf111dae:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_221_5f58f382:
+ViTDCNv3_ML_1M_221_e1019ed9:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8824,7 +8824,7 @@ ViTDCNv3_ML_1M_221_5f58f382:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8838,7 +8838,7 @@ ViTDCNv3_ML_1M_221_5f58f382:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_222_6f259159:
+ViTDCNv3_ML_1M_222_68707cda:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8864,7 +8864,7 @@ ViTDCNv3_ML_1M_222_6f259159:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8878,7 +8878,7 @@ ViTDCNv3_ML_1M_222_6f259159:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_223_9d156e6c:
+ViTDCNv3_ML_1M_223_616d6c2a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8904,7 +8904,7 @@ ViTDCNv3_ML_1M_223_9d156e6c:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8918,7 +8918,7 @@ ViTDCNv3_ML_1M_223_9d156e6c:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_224_b6a4ea95:
+ViTDCNv3_ML_1M_224_2859dc7d:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8944,7 +8944,7 @@ ViTDCNv3_ML_1M_224_b6a4ea95:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8958,7 +8958,7 @@ ViTDCNv3_ML_1M_224_b6a4ea95:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_225_f725370f:
+ViTDCNv3_ML_1M_225_c888fd6e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -8984,7 +8984,7 @@ ViTDCNv3_ML_1M_225_f725370f:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8998,7 +8998,7 @@ ViTDCNv3_ML_1M_225_f725370f:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_226_4a443e1f:
+ViTDCNv3_ML_1M_226_90b24be6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9024,7 +9024,7 @@ ViTDCNv3_ML_1M_226_4a443e1f:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9038,7 +9038,7 @@ ViTDCNv3_ML_1M_226_4a443e1f:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_227_10b0021b:
+ViTDCNv3_ML_1M_227_4650148f:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9064,7 +9064,7 @@ ViTDCNv3_ML_1M_227_10b0021b:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9078,7 +9078,7 @@ ViTDCNv3_ML_1M_227_10b0021b:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_228_9ae0b437:
+ViTDCNv3_ML_1M_228_19fffe2f:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9104,7 +9104,7 @@ ViTDCNv3_ML_1M_228_9ae0b437:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9118,7 +9118,7 @@ ViTDCNv3_ML_1M_228_9ae0b437:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_229_3466e4d1:
+ViTDCNv3_ML_1M_229_b65fa878:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9144,7 +9144,7 @@ ViTDCNv3_ML_1M_229_3466e4d1:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9158,7 +9158,7 @@ ViTDCNv3_ML_1M_229_3466e4d1:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_230_6f259159:
+ViTDCNv3_ML_1M_230_68707cda:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9184,7 +9184,7 @@ ViTDCNv3_ML_1M_230_6f259159:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9198,7 +9198,7 @@ ViTDCNv3_ML_1M_230_6f259159:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_231_eef207c6:
+ViTDCNv3_ML_1M_231_7636ed1e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9224,7 +9224,7 @@ ViTDCNv3_ML_1M_231_eef207c6:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9238,7 +9238,7 @@ ViTDCNv3_ML_1M_231_eef207c6:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_232_6e670263:
+ViTDCNv3_ML_1M_232_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9264,7 +9264,7 @@ ViTDCNv3_ML_1M_232_6e670263:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9278,7 +9278,7 @@ ViTDCNv3_ML_1M_232_6e670263:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_233_f725370f:
+ViTDCNv3_ML_1M_233_c888fd6e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9304,7 +9304,7 @@ ViTDCNv3_ML_1M_233_f725370f:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9318,7 +9318,7 @@ ViTDCNv3_ML_1M_233_f725370f:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_234_f63ce874:
+ViTDCNv3_ML_1M_234_650eb95b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9344,7 +9344,7 @@ ViTDCNv3_ML_1M_234_f63ce874:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9358,7 +9358,7 @@ ViTDCNv3_ML_1M_234_f63ce874:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_235_cf111dae:
+ViTDCNv3_ML_1M_235_0a60d75b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9384,7 +9384,7 @@ ViTDCNv3_ML_1M_235_cf111dae:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9398,7 +9398,7 @@ ViTDCNv3_ML_1M_235_cf111dae:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_236_5f58f382:
+ViTDCNv3_ML_1M_236_e1019ed9:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9424,7 +9424,7 @@ ViTDCNv3_ML_1M_236_5f58f382:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9438,7 +9438,7 @@ ViTDCNv3_ML_1M_236_5f58f382:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_237_6f259159:
+ViTDCNv3_ML_1M_237_68707cda:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9464,7 +9464,7 @@ ViTDCNv3_ML_1M_237_6f259159:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9478,7 +9478,7 @@ ViTDCNv3_ML_1M_237_6f259159:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_238_b8588cce:
+ViTDCNv3_ML_1M_238_dace1a89:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9504,7 +9504,7 @@ ViTDCNv3_ML_1M_238_b8588cce:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9518,7 +9518,7 @@ ViTDCNv3_ML_1M_238_b8588cce:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_239_34b95873:
+ViTDCNv3_ML_1M_239_15d06102:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9544,7 +9544,7 @@ ViTDCNv3_ML_1M_239_34b95873:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9558,7 +9558,7 @@ ViTDCNv3_ML_1M_239_34b95873:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_240_05a5ccb7:
+ViTDCNv3_ML_1M_240_ccbec24e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9584,7 +9584,7 @@ ViTDCNv3_ML_1M_240_05a5ccb7:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9598,7 +9598,7 @@ ViTDCNv3_ML_1M_240_05a5ccb7:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_241_b22014c2:
+ViTDCNv3_ML_1M_241_614dbfb6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9624,7 +9624,7 @@ ViTDCNv3_ML_1M_241_b22014c2:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9638,7 +9638,7 @@ ViTDCNv3_ML_1M_241_b22014c2:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_242_1cb1d101:
+ViTDCNv3_ML_1M_242_bb0bc419:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9664,7 +9664,7 @@ ViTDCNv3_ML_1M_242_1cb1d101:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9678,7 +9678,7 @@ ViTDCNv3_ML_1M_242_1cb1d101:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_243_18b26af5:
+ViTDCNv3_ML_1M_243_c4cf09d5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9704,7 +9704,7 @@ ViTDCNv3_ML_1M_243_18b26af5:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9718,7 +9718,7 @@ ViTDCNv3_ML_1M_243_18b26af5:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_244_3466e4d1:
+ViTDCNv3_ML_1M_244_b65fa878:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9744,7 +9744,7 @@ ViTDCNv3_ML_1M_244_3466e4d1:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9758,7 +9758,7 @@ ViTDCNv3_ML_1M_244_3466e4d1:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_245_6f259159:
+ViTDCNv3_ML_1M_245_68707cda:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9784,7 +9784,7 @@ ViTDCNv3_ML_1M_245_6f259159:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9798,7 +9798,7 @@ ViTDCNv3_ML_1M_245_6f259159:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_246_eef207c6:
+ViTDCNv3_ML_1M_246_7636ed1e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9824,7 +9824,7 @@ ViTDCNv3_ML_1M_246_eef207c6:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9838,7 +9838,7 @@ ViTDCNv3_ML_1M_246_eef207c6:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_247_5e4a85fb:
+ViTDCNv3_ML_1M_247_353c6d4e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9864,7 +9864,7 @@ ViTDCNv3_ML_1M_247_5e4a85fb:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9878,7 +9878,7 @@ ViTDCNv3_ML_1M_247_5e4a85fb:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_248_05a5ccb7:
+ViTDCNv3_ML_1M_248_ccbec24e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9904,7 +9904,7 @@ ViTDCNv3_ML_1M_248_05a5ccb7:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9918,7 +9918,7 @@ ViTDCNv3_ML_1M_248_05a5ccb7:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_249_51ef2264:
+ViTDCNv3_ML_1M_249_48f8b004:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9944,7 +9944,7 @@ ViTDCNv3_ML_1M_249_51ef2264:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9958,7 +9958,7 @@ ViTDCNv3_ML_1M_249_51ef2264:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_250_76e30cdc:
+ViTDCNv3_ML_1M_250_fd3bc245:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -9984,7 +9984,7 @@ ViTDCNv3_ML_1M_250_76e30cdc:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9998,7 +9998,7 @@ ViTDCNv3_ML_1M_250_76e30cdc:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_251_18b26af5:
+ViTDCNv3_ML_1M_251_c4cf09d5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10024,7 +10024,7 @@ ViTDCNv3_ML_1M_251_18b26af5:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10038,7 +10038,7 @@ ViTDCNv3_ML_1M_251_18b26af5:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_252_78db3914:
+ViTDCNv3_ML_1M_252_f9f32691:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10064,7 +10064,7 @@ ViTDCNv3_ML_1M_252_78db3914:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10078,7 +10078,7 @@ ViTDCNv3_ML_1M_252_78db3914:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_253_9d156e6c:
+ViTDCNv3_ML_1M_253_616d6c2a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10104,7 +10104,7 @@ ViTDCNv3_ML_1M_253_9d156e6c:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10118,7 +10118,7 @@ ViTDCNv3_ML_1M_253_9d156e6c:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_254_b6a4ea95:
+ViTDCNv3_ML_1M_254_2859dc7d:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10144,7 +10144,7 @@ ViTDCNv3_ML_1M_254_b6a4ea95:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10158,7 +10158,7 @@ ViTDCNv3_ML_1M_254_b6a4ea95:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_255_f725370f:
+ViTDCNv3_ML_1M_255_c888fd6e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10184,7 +10184,7 @@ ViTDCNv3_ML_1M_255_f725370f:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10198,7 +10198,7 @@ ViTDCNv3_ML_1M_255_f725370f:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_256_b22014c2:
+ViTDCNv3_ML_1M_256_614dbfb6:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10224,7 +10224,7 @@ ViTDCNv3_ML_1M_256_b22014c2:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10238,7 +10238,7 @@ ViTDCNv3_ML_1M_256_b22014c2:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_257_1cb1d101:
+ViTDCNv3_ML_1M_257_bb0bc419:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10264,7 +10264,7 @@ ViTDCNv3_ML_1M_257_1cb1d101:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10278,7 +10278,7 @@ ViTDCNv3_ML_1M_257_1cb1d101:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_258_18b26af5:
+ViTDCNv3_ML_1M_258_c4cf09d5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10304,7 +10304,7 @@ ViTDCNv3_ML_1M_258_18b26af5:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10318,7 +10318,7 @@ ViTDCNv3_ML_1M_258_18b26af5:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_259_df3420b2:
+ViTDCNv3_ML_1M_259_34c7293c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10344,7 +10344,7 @@ ViTDCNv3_ML_1M_259_df3420b2:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10358,7 +10358,7 @@ ViTDCNv3_ML_1M_259_df3420b2:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_260_ca466560:
+ViTDCNv3_ML_1M_260_1afc789c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10384,7 +10384,7 @@ ViTDCNv3_ML_1M_260_ca466560:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10398,7 +10398,7 @@ ViTDCNv3_ML_1M_260_ca466560:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_261_53ed49c9:
+ViTDCNv3_ML_1M_261_b1ba7b9d:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10424,7 +10424,7 @@ ViTDCNv3_ML_1M_261_53ed49c9:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10438,7 +10438,7 @@ ViTDCNv3_ML_1M_261_53ed49c9:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_262_6e670263:
+ViTDCNv3_ML_1M_262_05c94f09:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10464,7 +10464,7 @@ ViTDCNv3_ML_1M_262_6e670263:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10478,7 +10478,7 @@ ViTDCNv3_ML_1M_262_6e670263:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_263_f725370f:
+ViTDCNv3_ML_1M_263_c888fd6e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10504,7 +10504,7 @@ ViTDCNv3_ML_1M_263_f725370f:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10518,7 +10518,7 @@ ViTDCNv3_ML_1M_263_f725370f:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_264_f63ce874:
+ViTDCNv3_ML_1M_264_650eb95b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10544,7 +10544,7 @@ ViTDCNv3_ML_1M_264_f63ce874:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10558,7 +10558,7 @@ ViTDCNv3_ML_1M_264_f63ce874:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_265_76e30cdc:
+ViTDCNv3_ML_1M_265_fd3bc245:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10584,7 +10584,7 @@ ViTDCNv3_ML_1M_265_76e30cdc:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10598,7 +10598,7 @@ ViTDCNv3_ML_1M_265_76e30cdc:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_266_18b26af5:
+ViTDCNv3_ML_1M_266_c4cf09d5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10624,7 +10624,7 @@ ViTDCNv3_ML_1M_266_18b26af5:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10638,7 +10638,7 @@ ViTDCNv3_ML_1M_266_18b26af5:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_267_78db3914:
+ViTDCNv3_ML_1M_267_f9f32691:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10664,7 +10664,7 @@ ViTDCNv3_ML_1M_267_78db3914:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10678,7 +10678,7 @@ ViTDCNv3_ML_1M_267_78db3914:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_268_7a78267c:
+ViTDCNv3_ML_1M_268_63a2576c:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10704,7 +10704,7 @@ ViTDCNv3_ML_1M_268_7a78267c:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10718,7 +10718,7 @@ ViTDCNv3_ML_1M_268_7a78267c:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_269_53ed49c9:
+ViTDCNv3_ML_1M_269_b1ba7b9d:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10744,7 +10744,7 @@ ViTDCNv3_ML_1M_269_53ed49c9:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10758,7 +10758,7 @@ ViTDCNv3_ML_1M_269_53ed49c9:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_270_683fefab:
+ViTDCNv3_ML_1M_270_0d8a6f67:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10784,7 +10784,7 @@ ViTDCNv3_ML_1M_270_683fefab:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10798,7 +10798,7 @@ ViTDCNv3_ML_1M_270_683fefab:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_271_5f58f382:
+ViTDCNv3_ML_1M_271_e1019ed9:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10824,7 +10824,7 @@ ViTDCNv3_ML_1M_271_5f58f382:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10838,7 +10838,7 @@ ViTDCNv3_ML_1M_271_5f58f382:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_272_904a73e2:
+ViTDCNv3_ML_1M_272_bca8acb7:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10864,7 +10864,7 @@ ViTDCNv3_ML_1M_272_904a73e2:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10878,7 +10878,7 @@ ViTDCNv3_ML_1M_272_904a73e2:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_273_c64b8526:
+ViTDCNv3_ML_1M_273_e1bae6d2:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10904,7 +10904,7 @@ ViTDCNv3_ML_1M_273_c64b8526:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10918,7 +10918,7 @@ ViTDCNv3_ML_1M_273_c64b8526:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv3_ML_1M_274_34b95873:
+ViTDCNv3_ML_1M_274_15d06102:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10944,7 +10944,7 @@ ViTDCNv3_ML_1M_274_34b95873:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10958,7 +10958,7 @@ ViTDCNv3_ML_1M_274_34b95873:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_275_089ed07a:
+ViTDCNv3_ML_1M_275_be996b4a:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -10984,7 +10984,7 @@ ViTDCNv3_ML_1M_275_089ed07a:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10998,7 +10998,7 @@ ViTDCNv3_ML_1M_275_089ed07a:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_276_31dfdd8b:
+ViTDCNv3_ML_1M_276_20f3b16b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11024,7 +11024,7 @@ ViTDCNv3_ML_1M_276_31dfdd8b:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11038,7 +11038,7 @@ ViTDCNv3_ML_1M_276_31dfdd8b:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 4
-ViTDCNv3_ML_1M_277_1cb1d101:
+ViTDCNv3_ML_1M_277_bb0bc419:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11064,7 +11064,7 @@ ViTDCNv3_ML_1M_277_1cb1d101:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11078,7 +11078,7 @@ ViTDCNv3_ML_1M_277_1cb1d101:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_278_f9b8059e:
+ViTDCNv3_ML_1M_278_a23507d8:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11104,7 +11104,7 @@ ViTDCNv3_ML_1M_278_f9b8059e:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11118,7 +11118,7 @@ ViTDCNv3_ML_1M_278_f9b8059e:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_279_09f0d626:
+ViTDCNv3_ML_1M_279_2f38af2e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11144,7 +11144,7 @@ ViTDCNv3_ML_1M_279_09f0d626:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11158,7 +11158,7 @@ ViTDCNv3_ML_1M_279_09f0d626:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 4
-ViTDCNv3_ML_1M_280_6f259159:
+ViTDCNv3_ML_1M_280_68707cda:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11184,7 +11184,7 @@ ViTDCNv3_ML_1M_280_6f259159:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11198,7 +11198,7 @@ ViTDCNv3_ML_1M_280_6f259159:
     vit_num_heads: 2
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_281_c64b8526:
+ViTDCNv3_ML_1M_281_e1bae6d2:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11224,7 +11224,7 @@ ViTDCNv3_ML_1M_281_c64b8526:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11238,7 +11238,7 @@ ViTDCNv3_ML_1M_281_c64b8526:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_282_8c23df9c:
+ViTDCNv3_ML_1M_282_5011f263:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11264,7 +11264,7 @@ ViTDCNv3_ML_1M_282_8c23df9c:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11278,7 +11278,7 @@ ViTDCNv3_ML_1M_282_8c23df9c:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 8
-ViTDCNv3_ML_1M_283_05a5ccb7:
+ViTDCNv3_ML_1M_283_ccbec24e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11304,7 +11304,7 @@ ViTDCNv3_ML_1M_283_05a5ccb7:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11318,7 +11318,7 @@ ViTDCNv3_ML_1M_283_05a5ccb7:
     vit_num_heads: 2
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_284_31dfdd8b:
+ViTDCNv3_ML_1M_284_20f3b16b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11344,7 +11344,7 @@ ViTDCNv3_ML_1M_284_31dfdd8b:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11358,7 +11358,7 @@ ViTDCNv3_ML_1M_284_31dfdd8b:
     vit_num_heads: 4
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_285_38f2fbee:
+ViTDCNv3_ML_1M_285_0eda949d:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11384,7 +11384,7 @@ ViTDCNv3_ML_1M_285_38f2fbee:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11398,7 +11398,7 @@ ViTDCNv3_ML_1M_285_38f2fbee:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3_ML_1M_286_18b26af5:
+ViTDCNv3_ML_1M_286_c4cf09d5:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11424,7 +11424,7 @@ ViTDCNv3_ML_1M_286_18b26af5:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11438,7 +11438,7 @@ ViTDCNv3_ML_1M_286_18b26af5:
     vit_num_heads: 2
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_287_09f0d626:
+ViTDCNv3_ML_1M_287_2f38af2e:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11464,7 +11464,7 @@ ViTDCNv3_ML_1M_287_09f0d626:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -11478,7 +11478,7 @@ ViTDCNv3_ML_1M_287_09f0d626:
     vit_num_heads: 4
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3_ML_1M_288_b7ab3a18:
+ViTDCNv3_ML_1M_288_abf0666b:
     batch_norm: true
     batch_size: 4096
     dataset_id: ML_1M_7_x1_b220bdc8
@@ -11504,7 +11504,7 @@ ViTDCNv3_ML_1M_288_b7ab3a18:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true

@@ -24,7 +24,7 @@ IGDCNv3_ML_1M_001_ecc7b4e6:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -60,7 +60,7 @@ IGDCNv3_ML_1M_002_31ac99be:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -96,7 +96,7 @@ IGDCNv3_ML_1M_003_6b59504d:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -132,7 +132,7 @@ IGDCNv3_ML_1M_004_31ac99be:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -168,7 +168,7 @@ IGDCNv3_ML_1M_005_66e97d2d:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -204,7 +204,7 @@ IGDCNv3_ML_1M_006_4db93733:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -240,7 +240,7 @@ IGDCNv3_ML_1M_007_6b59504d:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -276,7 +276,7 @@ IGDCNv3_ML_1M_008_4db93733:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -312,7 +312,7 @@ IGDCNv3_ML_1M_009_dfc4cc4e:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -348,7 +348,7 @@ IGDCNv3_ML_1M_010_31ac99be:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -384,7 +384,7 @@ IGDCNv3_ML_1M_011_66e97d2d:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -420,7 +420,7 @@ IGDCNv3_ML_1M_012_4db93733:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -456,7 +456,7 @@ IGDCNv3_ML_1M_013_66e97d2d:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -492,7 +492,7 @@ IGDCNv3_ML_1M_014_0135a591:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -528,7 +528,7 @@ IGDCNv3_ML_1M_015_4a51a7b0:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -564,7 +564,7 @@ IGDCNv3_ML_1M_016_4db93733:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -600,7 +600,7 @@ IGDCNv3_ML_1M_017_4a51a7b0:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -636,7 +636,7 @@ IGDCNv3_ML_1M_018_cbca0677:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -672,7 +672,7 @@ IGDCNv3_ML_1M_019_6b59504d:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -708,7 +708,7 @@ IGDCNv3_ML_1M_020_4db93733:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -744,7 +744,7 @@ IGDCNv3_ML_1M_021_dfc4cc4e:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -780,7 +780,7 @@ IGDCNv3_ML_1M_022_4db93733:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -816,7 +816,7 @@ IGDCNv3_ML_1M_023_4a51a7b0:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -852,7 +852,7 @@ IGDCNv3_ML_1M_024_cbca0677:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -888,7 +888,7 @@ IGDCNv3_ML_1M_025_dfc4cc4e:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -924,7 +924,7 @@ IGDCNv3_ML_1M_026_cbca0677:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -960,7 +960,7 @@ IGDCNv3_ML_1M_027_6f9bfb97:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -996,7 +996,7 @@ IGDCNv3_ML_1M_028_017e1c05:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1032,7 +1032,7 @@ IGDCNv3_ML_1M_029_10566241:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1068,7 +1068,7 @@ IGDCNv3_ML_1M_030_2bb568a4:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1104,7 +1104,7 @@ IGDCNv3_ML_1M_031_10566241:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1140,7 +1140,7 @@ IGDCNv3_ML_1M_032_6f8bf8b8:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1176,7 +1176,7 @@ IGDCNv3_ML_1M_033_24abf99d:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1212,7 +1212,7 @@ IGDCNv3_ML_1M_034_2bb568a4:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1248,7 +1248,7 @@ IGDCNv3_ML_1M_035_24abf99d:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1284,7 +1284,7 @@ IGDCNv3_ML_1M_036_cbfadbd4:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1320,7 +1320,7 @@ IGDCNv3_ML_1M_037_31ac99be:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1356,7 +1356,7 @@ IGDCNv3_ML_1M_038_66e97d2d:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1392,7 +1392,7 @@ IGDCNv3_ML_1M_039_4db93733:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1428,7 +1428,7 @@ IGDCNv3_ML_1M_040_66e97d2d:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1464,7 +1464,7 @@ IGDCNv3_ML_1M_041_0135a591:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1500,7 +1500,7 @@ IGDCNv3_ML_1M_042_4a51a7b0:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1536,7 +1536,7 @@ IGDCNv3_ML_1M_043_4db93733:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1572,7 +1572,7 @@ IGDCNv3_ML_1M_044_4a51a7b0:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1608,7 +1608,7 @@ IGDCNv3_ML_1M_045_cbca0677:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1644,7 +1644,7 @@ IGDCNv3_ML_1M_046_66e97d2d:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1680,7 +1680,7 @@ IGDCNv3_ML_1M_047_0135a591:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1716,7 +1716,7 @@ IGDCNv3_ML_1M_048_4a51a7b0:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1752,7 +1752,7 @@ IGDCNv3_ML_1M_049_0135a591:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1788,7 +1788,7 @@ IGDCNv3_ML_1M_050_fad1b303:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1824,7 +1824,7 @@ IGDCNv3_ML_1M_051_76f1ee91:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1860,7 +1860,7 @@ IGDCNv3_ML_1M_052_4a51a7b0:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1896,7 +1896,7 @@ IGDCNv3_ML_1M_053_76f1ee91:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1932,7 +1932,7 @@ IGDCNv3_ML_1M_054_76dcea0a:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -1968,7 +1968,7 @@ IGDCNv3_ML_1M_055_4db93733:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2004,7 +2004,7 @@ IGDCNv3_ML_1M_056_4a51a7b0:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2040,7 +2040,7 @@ IGDCNv3_ML_1M_057_cbca0677:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2076,7 +2076,7 @@ IGDCNv3_ML_1M_058_4a51a7b0:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2112,7 +2112,7 @@ IGDCNv3_ML_1M_059_76f1ee91:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2148,7 +2148,7 @@ IGDCNv3_ML_1M_060_76dcea0a:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2184,7 +2184,7 @@ IGDCNv3_ML_1M_061_cbca0677:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2220,7 +2220,7 @@ IGDCNv3_ML_1M_062_76dcea0a:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2256,7 +2256,7 @@ IGDCNv3_ML_1M_063_7463b52b:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2292,7 +2292,7 @@ IGDCNv3_ML_1M_064_10566241:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2328,7 +2328,7 @@ IGDCNv3_ML_1M_065_6f8bf8b8:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2364,7 +2364,7 @@ IGDCNv3_ML_1M_066_24abf99d:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2400,7 +2400,7 @@ IGDCNv3_ML_1M_067_6f8bf8b8:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2436,7 +2436,7 @@ IGDCNv3_ML_1M_068_1f0ce841:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2472,7 +2472,7 @@ IGDCNv3_ML_1M_069_09104177:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2508,7 +2508,7 @@ IGDCNv3_ML_1M_070_24abf99d:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2544,7 +2544,7 @@ IGDCNv3_ML_1M_071_09104177:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2580,7 +2580,7 @@ IGDCNv3_ML_1M_072_5108bade:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2616,7 +2616,7 @@ IGDCNv3_ML_1M_073_6b59504d:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2652,7 +2652,7 @@ IGDCNv3_ML_1M_074_4db93733:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2688,7 +2688,7 @@ IGDCNv3_ML_1M_075_dfc4cc4e:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2724,7 +2724,7 @@ IGDCNv3_ML_1M_076_4db93733:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2760,7 +2760,7 @@ IGDCNv3_ML_1M_077_4a51a7b0:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2796,7 +2796,7 @@ IGDCNv3_ML_1M_078_cbca0677:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2832,7 +2832,7 @@ IGDCNv3_ML_1M_079_dfc4cc4e:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2868,7 +2868,7 @@ IGDCNv3_ML_1M_080_cbca0677:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2904,7 +2904,7 @@ IGDCNv3_ML_1M_081_6f9bfb97:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2940,7 +2940,7 @@ IGDCNv3_ML_1M_082_4db93733:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -2976,7 +2976,7 @@ IGDCNv3_ML_1M_083_4a51a7b0:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3012,7 +3012,7 @@ IGDCNv3_ML_1M_084_cbca0677:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3048,7 +3048,7 @@ IGDCNv3_ML_1M_085_4a51a7b0:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3084,7 +3084,7 @@ IGDCNv3_ML_1M_086_76f1ee91:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3120,7 +3120,7 @@ IGDCNv3_ML_1M_087_76dcea0a:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3156,7 +3156,7 @@ IGDCNv3_ML_1M_088_cbca0677:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3192,7 +3192,7 @@ IGDCNv3_ML_1M_089_76dcea0a:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3228,7 +3228,7 @@ IGDCNv3_ML_1M_090_7463b52b:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3264,7 +3264,7 @@ IGDCNv3_ML_1M_091_dfc4cc4e:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3300,7 +3300,7 @@ IGDCNv3_ML_1M_092_cbca0677:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3336,7 +3336,7 @@ IGDCNv3_ML_1M_093_6f9bfb97:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3372,7 +3372,7 @@ IGDCNv3_ML_1M_094_cbca0677:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3408,7 +3408,7 @@ IGDCNv3_ML_1M_095_76dcea0a:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3444,7 +3444,7 @@ IGDCNv3_ML_1M_096_7463b52b:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3480,7 +3480,7 @@ IGDCNv3_ML_1M_097_6f9bfb97:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3516,7 +3516,7 @@ IGDCNv3_ML_1M_098_7463b52b:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3552,7 +3552,7 @@ IGDCNv3_ML_1M_099_881d89ef:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3588,7 +3588,7 @@ IGDCNv3_ML_1M_100_2bb568a4:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3624,7 +3624,7 @@ IGDCNv3_ML_1M_101_24abf99d:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3660,7 +3660,7 @@ IGDCNv3_ML_1M_102_cbfadbd4:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3696,7 +3696,7 @@ IGDCNv3_ML_1M_103_24abf99d:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3732,7 +3732,7 @@ IGDCNv3_ML_1M_104_09104177:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3768,7 +3768,7 @@ IGDCNv3_ML_1M_105_5108bade:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3804,7 +3804,7 @@ IGDCNv3_ML_1M_106_cbfadbd4:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3840,7 +3840,7 @@ IGDCNv3_ML_1M_107_5108bade:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3876,7 +3876,7 @@ IGDCNv3_ML_1M_108_d86f25b6:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3912,7 +3912,7 @@ IGDCNv3_ML_1M_109_017e1c05:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3948,7 +3948,7 @@ IGDCNv3_ML_1M_110_10566241:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -3984,7 +3984,7 @@ IGDCNv3_ML_1M_111_2bb568a4:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4020,7 +4020,7 @@ IGDCNv3_ML_1M_112_10566241:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4056,7 +4056,7 @@ IGDCNv3_ML_1M_113_6f8bf8b8:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4092,7 +4092,7 @@ IGDCNv3_ML_1M_114_24abf99d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4128,7 +4128,7 @@ IGDCNv3_ML_1M_115_2bb568a4:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4164,7 +4164,7 @@ IGDCNv3_ML_1M_116_24abf99d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4200,7 +4200,7 @@ IGDCNv3_ML_1M_117_cbfadbd4:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4236,7 +4236,7 @@ IGDCNv3_ML_1M_118_10566241:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4272,7 +4272,7 @@ IGDCNv3_ML_1M_119_6f8bf8b8:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4308,7 +4308,7 @@ IGDCNv3_ML_1M_120_24abf99d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4344,7 +4344,7 @@ IGDCNv3_ML_1M_121_6f8bf8b8:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4380,7 +4380,7 @@ IGDCNv3_ML_1M_122_1f0ce841:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4416,7 +4416,7 @@ IGDCNv3_ML_1M_123_09104177:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4452,7 +4452,7 @@ IGDCNv3_ML_1M_124_24abf99d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4488,7 +4488,7 @@ IGDCNv3_ML_1M_125_09104177:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4524,7 +4524,7 @@ IGDCNv3_ML_1M_126_5108bade:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4560,7 +4560,7 @@ IGDCNv3_ML_1M_127_2bb568a4:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4596,7 +4596,7 @@ IGDCNv3_ML_1M_128_24abf99d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4632,7 +4632,7 @@ IGDCNv3_ML_1M_129_cbfadbd4:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4668,7 +4668,7 @@ IGDCNv3_ML_1M_130_24abf99d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4704,7 +4704,7 @@ IGDCNv3_ML_1M_131_09104177:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4740,7 +4740,7 @@ IGDCNv3_ML_1M_132_5108bade:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4776,7 +4776,7 @@ IGDCNv3_ML_1M_133_cbfadbd4:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4812,7 +4812,7 @@ IGDCNv3_ML_1M_134_5108bade:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4848,7 +4848,7 @@ IGDCNv3_ML_1M_135_d86f25b6:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4884,7 +4884,7 @@ IGDCNv3_ML_1M_136_0009e69f:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4920,7 +4920,7 @@ IGDCNv3_ML_1M_137_244c62e4:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4956,7 +4956,7 @@ IGDCNv3_ML_1M_138_717dbece:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -4992,7 +4992,7 @@ IGDCNv3_ML_1M_139_244c62e4:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5028,7 +5028,7 @@ IGDCNv3_ML_1M_140_20b53a66:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5064,7 +5064,7 @@ IGDCNv3_ML_1M_141_31763195:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5100,7 +5100,7 @@ IGDCNv3_ML_1M_142_717dbece:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5136,7 +5136,7 @@ IGDCNv3_ML_1M_143_31763195:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5172,7 +5172,7 @@ IGDCNv3_ML_1M_144_91b38490:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5208,7 +5208,7 @@ IGDCNv3_ML_1M_145_1dc568e7:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5244,7 +5244,7 @@ IGDCNv3_ML_1M_146_30ff2533:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5280,7 +5280,7 @@ IGDCNv3_ML_1M_147_f5524e38:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5316,7 +5316,7 @@ IGDCNv3_ML_1M_148_30ff2533:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5352,7 +5352,7 @@ IGDCNv3_ML_1M_149_0a6e28a5:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5388,7 +5388,7 @@ IGDCNv3_ML_1M_150_d44e25f9:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5424,7 +5424,7 @@ IGDCNv3_ML_1M_151_f5524e38:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5460,7 +5460,7 @@ IGDCNv3_ML_1M_152_d44e25f9:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5496,7 +5496,7 @@ IGDCNv3_ML_1M_153_ea414417:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5532,7 +5532,7 @@ IGDCNv3_ML_1M_154_30ff2533:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5568,7 +5568,7 @@ IGDCNv3_ML_1M_155_0a6e28a5:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5604,7 +5604,7 @@ IGDCNv3_ML_1M_156_d44e25f9:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5640,7 +5640,7 @@ IGDCNv3_ML_1M_157_0a6e28a5:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5676,7 +5676,7 @@ IGDCNv3_ML_1M_158_36ec6967:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5712,7 +5712,7 @@ IGDCNv3_ML_1M_159_cb1105b9:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5748,7 +5748,7 @@ IGDCNv3_ML_1M_160_d44e25f9:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5784,7 +5784,7 @@ IGDCNv3_ML_1M_161_cb1105b9:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5820,7 +5820,7 @@ IGDCNv3_ML_1M_162_fab2cf17:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5856,7 +5856,7 @@ IGDCNv3_ML_1M_163_f5524e38:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5892,7 +5892,7 @@ IGDCNv3_ML_1M_164_d44e25f9:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5928,7 +5928,7 @@ IGDCNv3_ML_1M_165_ea414417:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -5964,7 +5964,7 @@ IGDCNv3_ML_1M_166_d44e25f9:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6000,7 +6000,7 @@ IGDCNv3_ML_1M_167_cb1105b9:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6036,7 +6036,7 @@ IGDCNv3_ML_1M_168_fab2cf17:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6072,7 +6072,7 @@ IGDCNv3_ML_1M_169_ea414417:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6108,7 +6108,7 @@ IGDCNv3_ML_1M_170_fab2cf17:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6144,7 +6144,7 @@ IGDCNv3_ML_1M_171_ead8e2fb:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6180,7 +6180,7 @@ IGDCNv3_ML_1M_172_ed404ea5:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6216,7 +6216,7 @@ IGDCNv3_ML_1M_173_1523f687:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6252,7 +6252,7 @@ IGDCNv3_ML_1M_174_62799a7d:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6288,7 +6288,7 @@ IGDCNv3_ML_1M_175_1523f687:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6324,7 +6324,7 @@ IGDCNv3_ML_1M_176_14bb52b3:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6360,7 +6360,7 @@ IGDCNv3_ML_1M_177_6f408827:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6396,7 +6396,7 @@ IGDCNv3_ML_1M_178_62799a7d:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6432,7 +6432,7 @@ IGDCNv3_ML_1M_179_6f408827:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6468,7 +6468,7 @@ IGDCNv3_ML_1M_180_08e3028a:
     num_deep_cross_layers: 1
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6504,7 +6504,7 @@ IGDCNv3_ML_1M_181_30ff2533:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6540,7 +6540,7 @@ IGDCNv3_ML_1M_182_0a6e28a5:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6576,7 +6576,7 @@ IGDCNv3_ML_1M_183_d44e25f9:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6612,7 +6612,7 @@ IGDCNv3_ML_1M_184_0a6e28a5:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6648,7 +6648,7 @@ IGDCNv3_ML_1M_185_36ec6967:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6684,7 +6684,7 @@ IGDCNv3_ML_1M_186_cb1105b9:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6720,7 +6720,7 @@ IGDCNv3_ML_1M_187_d44e25f9:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6756,7 +6756,7 @@ IGDCNv3_ML_1M_188_cb1105b9:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6792,7 +6792,7 @@ IGDCNv3_ML_1M_189_fab2cf17:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6828,7 +6828,7 @@ IGDCNv3_ML_1M_190_0a6e28a5:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6864,7 +6864,7 @@ IGDCNv3_ML_1M_191_36ec6967:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6900,7 +6900,7 @@ IGDCNv3_ML_1M_192_cb1105b9:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6936,7 +6936,7 @@ IGDCNv3_ML_1M_193_36ec6967:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -6972,7 +6972,7 @@ IGDCNv3_ML_1M_194_98eb59ce:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7008,7 +7008,7 @@ IGDCNv3_ML_1M_195_ec1165a2:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7044,7 +7044,7 @@ IGDCNv3_ML_1M_196_cb1105b9:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7080,7 +7080,7 @@ IGDCNv3_ML_1M_197_ec1165a2:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7116,7 +7116,7 @@ IGDCNv3_ML_1M_198_666ad1fe:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7152,7 +7152,7 @@ IGDCNv3_ML_1M_199_d44e25f9:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7188,7 +7188,7 @@ IGDCNv3_ML_1M_200_cb1105b9:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7224,7 +7224,7 @@ IGDCNv3_ML_1M_201_fab2cf17:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7260,7 +7260,7 @@ IGDCNv3_ML_1M_202_cb1105b9:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7296,7 +7296,7 @@ IGDCNv3_ML_1M_203_ec1165a2:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7332,7 +7332,7 @@ IGDCNv3_ML_1M_204_666ad1fe:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7368,7 +7368,7 @@ IGDCNv3_ML_1M_205_fab2cf17:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7404,7 +7404,7 @@ IGDCNv3_ML_1M_206_666ad1fe:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7440,7 +7440,7 @@ IGDCNv3_ML_1M_207_56aab01d:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7476,7 +7476,7 @@ IGDCNv3_ML_1M_208_1523f687:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7512,7 +7512,7 @@ IGDCNv3_ML_1M_209_14bb52b3:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7548,7 +7548,7 @@ IGDCNv3_ML_1M_210_6f408827:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7584,7 +7584,7 @@ IGDCNv3_ML_1M_211_14bb52b3:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7620,7 +7620,7 @@ IGDCNv3_ML_1M_212_6e02c933:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7656,7 +7656,7 @@ IGDCNv3_ML_1M_213_4a4959f5:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7692,7 +7692,7 @@ IGDCNv3_ML_1M_214_6f408827:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7728,7 +7728,7 @@ IGDCNv3_ML_1M_215_4a4959f5:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7764,7 +7764,7 @@ IGDCNv3_ML_1M_216_da2c2531:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7800,7 +7800,7 @@ IGDCNv3_ML_1M_217_f5524e38:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7836,7 +7836,7 @@ IGDCNv3_ML_1M_218_d44e25f9:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7872,7 +7872,7 @@ IGDCNv3_ML_1M_219_ea414417:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7908,7 +7908,7 @@ IGDCNv3_ML_1M_220_d44e25f9:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7944,7 +7944,7 @@ IGDCNv3_ML_1M_221_cb1105b9:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -7980,7 +7980,7 @@ IGDCNv3_ML_1M_222_fab2cf17:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8016,7 +8016,7 @@ IGDCNv3_ML_1M_223_ea414417:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8052,7 +8052,7 @@ IGDCNv3_ML_1M_224_fab2cf17:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8088,7 +8088,7 @@ IGDCNv3_ML_1M_225_ead8e2fb:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8124,7 +8124,7 @@ IGDCNv3_ML_1M_226_d44e25f9:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8160,7 +8160,7 @@ IGDCNv3_ML_1M_227_cb1105b9:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8196,7 +8196,7 @@ IGDCNv3_ML_1M_228_fab2cf17:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8232,7 +8232,7 @@ IGDCNv3_ML_1M_229_cb1105b9:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8268,7 +8268,7 @@ IGDCNv3_ML_1M_230_ec1165a2:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8304,7 +8304,7 @@ IGDCNv3_ML_1M_231_666ad1fe:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8340,7 +8340,7 @@ IGDCNv3_ML_1M_232_fab2cf17:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8376,7 +8376,7 @@ IGDCNv3_ML_1M_233_666ad1fe:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8412,7 +8412,7 @@ IGDCNv3_ML_1M_234_56aab01d:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8448,7 +8448,7 @@ IGDCNv3_ML_1M_235_ea414417:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8484,7 +8484,7 @@ IGDCNv3_ML_1M_236_fab2cf17:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8520,7 +8520,7 @@ IGDCNv3_ML_1M_237_ead8e2fb:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8556,7 +8556,7 @@ IGDCNv3_ML_1M_238_fab2cf17:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8592,7 +8592,7 @@ IGDCNv3_ML_1M_239_666ad1fe:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8628,7 +8628,7 @@ IGDCNv3_ML_1M_240_56aab01d:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8664,7 +8664,7 @@ IGDCNv3_ML_1M_241_ead8e2fb:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8700,7 +8700,7 @@ IGDCNv3_ML_1M_242_56aab01d:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8736,7 +8736,7 @@ IGDCNv3_ML_1M_243_67760de0:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8772,7 +8772,7 @@ IGDCNv3_ML_1M_244_62799a7d:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8808,7 +8808,7 @@ IGDCNv3_ML_1M_245_6f408827:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8844,7 +8844,7 @@ IGDCNv3_ML_1M_246_08e3028a:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8880,7 +8880,7 @@ IGDCNv3_ML_1M_247_6f408827:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8916,7 +8916,7 @@ IGDCNv3_ML_1M_248_4a4959f5:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8952,7 +8952,7 @@ IGDCNv3_ML_1M_249_da2c2531:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -8988,7 +8988,7 @@ IGDCNv3_ML_1M_250_08e3028a:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9024,7 +9024,7 @@ IGDCNv3_ML_1M_251_da2c2531:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9060,7 +9060,7 @@ IGDCNv3_ML_1M_252_7676fc69:
     num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9096,7 +9096,7 @@ IGDCNv3_ML_1M_253_ed404ea5:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9132,7 +9132,7 @@ IGDCNv3_ML_1M_254_1523f687:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9168,7 +9168,7 @@ IGDCNv3_ML_1M_255_62799a7d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9204,7 +9204,7 @@ IGDCNv3_ML_1M_256_1523f687:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9240,7 +9240,7 @@ IGDCNv3_ML_1M_257_14bb52b3:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9276,7 +9276,7 @@ IGDCNv3_ML_1M_258_6f408827:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9312,7 +9312,7 @@ IGDCNv3_ML_1M_259_62799a7d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9348,7 +9348,7 @@ IGDCNv3_ML_1M_260_6f408827:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9384,7 +9384,7 @@ IGDCNv3_ML_1M_261_08e3028a:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9420,7 +9420,7 @@ IGDCNv3_ML_1M_262_1523f687:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9456,7 +9456,7 @@ IGDCNv3_ML_1M_263_14bb52b3:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9492,7 +9492,7 @@ IGDCNv3_ML_1M_264_6f408827:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9528,7 +9528,7 @@ IGDCNv3_ML_1M_265_14bb52b3:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9564,7 +9564,7 @@ IGDCNv3_ML_1M_266_6e02c933:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9600,7 +9600,7 @@ IGDCNv3_ML_1M_267_4a4959f5:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9636,7 +9636,7 @@ IGDCNv3_ML_1M_268_6f408827:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9672,7 +9672,7 @@ IGDCNv3_ML_1M_269_4a4959f5:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9708,7 +9708,7 @@ IGDCNv3_ML_1M_270_da2c2531:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9744,7 +9744,7 @@ IGDCNv3_ML_1M_271_62799a7d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9780,7 +9780,7 @@ IGDCNv3_ML_1M_272_6f408827:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9816,7 +9816,7 @@ IGDCNv3_ML_1M_273_08e3028a:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9852,7 +9852,7 @@ IGDCNv3_ML_1M_274_6f408827:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9888,7 +9888,7 @@ IGDCNv3_ML_1M_275_4a4959f5:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9924,7 +9924,7 @@ IGDCNv3_ML_1M_276_da2c2531:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9960,7 +9960,7 @@ IGDCNv3_ML_1M_277_08e3028a:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -9996,7 +9996,7 @@ IGDCNv3_ML_1M_278_da2c2531:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10032,7 +10032,7 @@ IGDCNv3_ML_1M_279_7676fc69:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 3
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10068,7 +10068,7 @@ IGDCNv3_ML_1M_280_4bc0d378:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10104,7 +10104,7 @@ IGDCNv3_ML_1M_281_da62e26a:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10140,7 +10140,7 @@ IGDCNv3_ML_1M_282_abcd59d1:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10176,7 +10176,7 @@ IGDCNv3_ML_1M_283_da62e26a:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10212,7 +10212,7 @@ IGDCNv3_ML_1M_284_b6f7a13a:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10248,7 +10248,7 @@ IGDCNv3_ML_1M_285_e1ad3904:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10284,7 +10284,7 @@ IGDCNv3_ML_1M_286_abcd59d1:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10320,7 +10320,7 @@ IGDCNv3_ML_1M_287_e1ad3904:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -10356,7 +10356,7 @@ IGDCNv3_ML_1M_288_996fec0a:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true

@@ -24,7 +24,7 @@ SSLViTDCNv3_ML_1M_001_bf381e6c:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -66,7 +66,7 @@ SSLViTDCNv3_ML_1M_002_fd230900:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -108,7 +108,7 @@ SSLViTDCNv3_ML_1M_003_531389b1:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -150,7 +150,7 @@ SSLViTDCNv3_ML_1M_004_868f2b5b:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -192,7 +192,7 @@ SSLViTDCNv3_ML_1M_005_286ef32b:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -234,7 +234,7 @@ SSLViTDCNv3_ML_1M_006_d3bbb671:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -276,7 +276,7 @@ SSLViTDCNv3_ML_1M_007_fda854e9:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -318,7 +318,7 @@ SSLViTDCNv3_ML_1M_008_146f38b4:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -360,7 +360,7 @@ SSLViTDCNv3_ML_1M_009_6b04300a:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -402,7 +402,7 @@ SSLViTDCNv3_ML_1M_010_159b4569:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -444,7 +444,7 @@ SSLViTDCNv3_ML_1M_011_dd5f4a6c:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true
@@ -486,7 +486,7 @@ SSLViTDCNv3_ML_1M_012_805fbfe4:
     num_deep_cross_layers: 2
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
     save_best_only: true

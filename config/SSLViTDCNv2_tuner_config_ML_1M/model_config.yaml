@@ -23,7 +23,7 @@ SSLViTDCNv2_ML_1M_001_7739cea1:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -64,7 +64,7 @@ SSLViTDCNv2_ML_1M_002_382d96e1:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -105,7 +105,7 @@ SSLViTDCNv2_ML_1M_003_dc89dd37:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -146,7 +146,7 @@ SSLViTDCNv2_ML_1M_004_c85ade59:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -187,7 +187,7 @@ SSLViTDCNv2_ML_1M_005_dda38d03:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -228,7 +228,7 @@ SSLViTDCNv2_ML_1M_006_6f1d6cec:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -269,7 +269,7 @@ SSLViTDCNv2_ML_1M_007_52369916:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -310,7 +310,7 @@ SSLViTDCNv2_ML_1M_008_cd099583:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -351,7 +351,7 @@ SSLViTDCNv2_ML_1M_009_6d3a9423:
     net_regularizer: 0
     num_cross_layers: 1
     num_heads: 1
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true

@@ -23,7 +23,7 @@ DCNv2_ML_1M_001_0892b577:
     net_regularizer: 0
     num_cross_layers: 1
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -59,7 +59,7 @@ DCNv2_ML_1M_002_27c072b7:
     net_regularizer: 0
     num_cross_layers: 1
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 256]
     pickle_feature_encoder: true
@@ -95,7 +95,7 @@ DCNv2_ML_1M_003_d0c44556:
     net_regularizer: 0
     num_cross_layers: 1
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
@@ -131,7 +131,7 @@ DCNv2_ML_1M_004_a6810096:
     net_regularizer: 0
     num_cross_layers: 2
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -167,7 +167,7 @@ DCNv2_ML_1M_005_c74920e6:
     net_regularizer: 0
     num_cross_layers: 2
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 256]
     pickle_feature_encoder: true
@@ -203,7 +203,7 @@ DCNv2_ML_1M_006_9286618c:
     net_regularizer: 0
     num_cross_layers: 2
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
@@ -239,7 +239,7 @@ DCNv2_ML_1M_007_767f973e:
     net_regularizer: 0
     num_cross_layers: 3
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -275,7 +275,7 @@ DCNv2_ML_1M_008_b61a443c:
     net_regularizer: 0
     num_cross_layers: 3
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 256]
     pickle_feature_encoder: true
@@ -311,7 +311,7 @@ DCNv2_ML_1M_009_1a82daff:
     net_regularizer: 0
     num_cross_layers: 3
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
@@ -347,7 +347,7 @@ DCNv2_ML_1M_010_73b40f31:
     net_regularizer: 0
     num_cross_layers: 4
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 128]
     pickle_feature_encoder: true
@@ -383,7 +383,7 @@ DCNv2_ML_1M_011_40f60927:
     net_regularizer: 0
     num_cross_layers: 4
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 256]
     pickle_feature_encoder: true
@@ -419,7 +419,7 @@ DCNv2_ML_1M_012_56841c29:
     net_regularizer: 0
     num_cross_layers: 4
     num_experts: 4
-    num_workers: 4
+    num_workers: 16
     optimizer: adam
     parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true

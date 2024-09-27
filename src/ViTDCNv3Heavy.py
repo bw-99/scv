@@ -41,6 +41,7 @@ class ViTDCNv3Heavy(BaseModel):
                  vit_num_layers=2, 
                  vit_num_heads=8,
                  vit_after_steps=0,
+                 vit_detach_param=False,
                  **kwargs):
         super(ViTDCNv3Heavy, self).__init__(feature_map,
                                     model_id=model_id,
@@ -61,7 +62,8 @@ class ViTDCNv3Heavy(BaseModel):
                                             vit_hidden_dim=vit_hidden_dim,
                                             vit_num_layers=vit_num_layers,
                                             vit_num_heads=vit_num_heads,
-                                            vit_after_steps=vit_after_steps)
+                                            vit_after_steps=vit_after_steps,
+                                            vit_detach_param=vit_detach_param)
         self.LCN = LinearCrossViTLayer(input_dim=input_dim,
                                       num_cross_layers=num_shallow_cross_layers,
                                       net_dropout=shallow_net_dropout,
@@ -73,7 +75,8 @@ class ViTDCNv3Heavy(BaseModel):
                                       vit_hidden_dim=vit_hidden_dim,
                                       vit_num_layers=vit_num_layers,
                                       vit_num_heads=vit_num_heads,
-                                      vit_after_steps=vit_after_steps)
+                                      vit_after_steps=vit_after_steps,
+                                      vit_detach_param=vit_detach_param)
         self.cur_step=0
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
@@ -147,7 +150,8 @@ class ExponentialCrossViTNetwork(nn.Module):
                  vit_hidden_dim=768, 
                  vit_num_layers=2, 
                  vit_num_heads=4,
-                 vit_after_steps=0):
+                 vit_after_steps=0,
+                 vit_detach_param=False):
         super(ExponentialCrossViTNetwork, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
@@ -157,6 +161,7 @@ class ExponentialCrossViTNetwork(nn.Module):
         self.b = nn.ParameterList()
         self.masker_lst = nn.ModuleList()
         self.vit_after_steps = vit_after_steps
+        self.vit_detach_param = vit_detach_param
         for i in range(num_cross_layers):
             self.w.append(nn.Linear(input_dim, input_dim, bias=False))
             self.b.append(nn.Parameter(torch.zeros((input_dim,))))
@@ -186,7 +191,10 @@ class ExponentialCrossViTNetwork(nn.Module):
             if len(self.batch_norm) > i:
                 H = self.batch_norm[i](H)
             if(cur_step >= self.vit_after_steps):
-                mask = self.masker_lst[i](self.w[i].weight)
+                weight_param = self.w[i].weight
+                if(self.vit_detach_param):
+                    weight_param = weight_param.detach()
+                mask = self.masker_lst[i](weight_param)
                 H = H * mask
             # H = torch.cat([H, H * mask], dim=-1)
             x = x * (H + self.b[i]) + x
@@ -209,7 +217,8 @@ class LinearCrossViTLayer(nn.Module):
                  vit_hidden_dim=768, 
                  vit_num_layers=2, 
                  vit_num_heads=4,
-                 vit_after_steps=0):
+                 vit_after_steps=0,
+                 vit_detach_param=False):
         super(LinearCrossViTLayer, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
@@ -218,6 +227,7 @@ class LinearCrossViTLayer(nn.Module):
         self.w = nn.ModuleList()
         self.b = nn.ParameterList()
         self.masker_lst = nn.ModuleList()
+        self.vit_detach_param = vit_detach_param
         self.vit_after_steps = vit_after_steps
         for i in range(num_cross_layers):
             self.w.append(nn.Linear(input_dim, input_dim, bias=False))
@@ -249,11 +259,11 @@ class LinearCrossViTLayer(nn.Module):
             if len(self.batch_norm) > i:
                 H = self.batch_norm[i](H)
             if(cur_step >= self.vit_after_steps):
-                mask = self.masker_lst[i](self.w[i].weight)
+                weight_param = self.w[i].weight
+                if(self.vit_detach_param):
+                    weight_param = weight_param.detach()
+                mask = self.masker_lst[i](weight_param)
                 H = H * mask
-            # mask = self.masker_lst[i](self.w[i].weight)
-            # H = H * mask
-            # H = torch.cat([H, H * mask], dim=-1)
             x = x0 * (H + self.b[i]) + x
             if len(self.dropout) > i:
                 x = self.dropout[i](x)

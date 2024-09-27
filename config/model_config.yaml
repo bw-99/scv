@@ -420,10 +420,11 @@ ViTDCNv3Heavy_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    num_workers: 16
+    num_workers: 10
     vit_after_steps: 0
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
+    vit_detach_param: False
 
 ViTLinDCNv3_ML_1M:
     model: ViTLinDCNv3
@@ -635,6 +636,7 @@ ViTDCNv3Heavy_iPinYou_x1:
     shuffle: True
     seed: 2024
     num_workers: 16
+    vit_detach_param: False
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 

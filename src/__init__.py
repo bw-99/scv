@@ -8,3 +8,4 @@ from .IGDCNv3 import *
 from .SSLViTDCNv3 import *
 from .model_zoo import *
 from .SSLViTDCNv2 import *
+from .ViTDCNv3Heavy import *

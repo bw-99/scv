@@ -1,4 +1,4 @@
-ViTDCNv2_iPinYou_x1_001_9b2b493e:
+ViTDCNv2_iPinYou_x1_001_845ee478:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -26,7 +26,7 @@ ViTDCNv2_iPinYou_x1_001_9b2b493e:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -38,7 +38,7 @@ ViTDCNv2_iPinYou_x1_001_9b2b493e:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_002_b560ce44:
+ViTDCNv2_iPinYou_x1_002_242ec753:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -66,7 +66,7 @@ ViTDCNv2_iPinYou_x1_002_b560ce44:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -78,7 +78,7 @@ ViTDCNv2_iPinYou_x1_002_b560ce44:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_003_c43fde68:
+ViTDCNv2_iPinYou_x1_003_aed9459f:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -106,7 +106,7 @@ ViTDCNv2_iPinYou_x1_003_c43fde68:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -118,7 +118,7 @@ ViTDCNv2_iPinYou_x1_003_c43fde68:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_004_78c35736:
+ViTDCNv2_iPinYou_x1_004_6ee36729:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -146,7 +146,7 @@ ViTDCNv2_iPinYou_x1_004_78c35736:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -158,7 +158,7 @@ ViTDCNv2_iPinYou_x1_004_78c35736:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_005_500541eb:
+ViTDCNv2_iPinYou_x1_005_47fb39e2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -186,7 +186,7 @@ ViTDCNv2_iPinYou_x1_005_500541eb:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -198,7 +198,7 @@ ViTDCNv2_iPinYou_x1_005_500541eb:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_006_098071e0:
+ViTDCNv2_iPinYou_x1_006_e7b56ab1:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -226,7 +226,7 @@ ViTDCNv2_iPinYou_x1_006_098071e0:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -238,7 +238,7 @@ ViTDCNv2_iPinYou_x1_006_098071e0:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_007_0cdb33b9:
+ViTDCNv2_iPinYou_x1_007_72f7e2e2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -266,7 +266,7 @@ ViTDCNv2_iPinYou_x1_007_0cdb33b9:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -278,7 +278,7 @@ ViTDCNv2_iPinYou_x1_007_0cdb33b9:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_008_cc39e2f2:
+ViTDCNv2_iPinYou_x1_008_2d843393:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -306,7 +306,7 @@ ViTDCNv2_iPinYou_x1_008_cc39e2f2:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -318,7 +318,7 @@ ViTDCNv2_iPinYou_x1_008_cc39e2f2:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_009_d618b2e8:
+ViTDCNv2_iPinYou_x1_009_8586aeef:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -346,7 +346,7 @@ ViTDCNv2_iPinYou_x1_009_d618b2e8:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -358,7 +358,7 @@ ViTDCNv2_iPinYou_x1_009_d618b2e8:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_010_7b0e69d8:
+ViTDCNv2_iPinYou_x1_010_a2f008c4:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -386,7 +386,7 @@ ViTDCNv2_iPinYou_x1_010_7b0e69d8:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -398,7 +398,7 @@ ViTDCNv2_iPinYou_x1_010_7b0e69d8:
     vit_num_heads: 8
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_011_be23280c:
+ViTDCNv2_iPinYou_x1_011_c44735b3:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -426,7 +426,7 @@ ViTDCNv2_iPinYou_x1_011_be23280c:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -438,7 +438,7 @@ ViTDCNv2_iPinYou_x1_011_be23280c:
     vit_num_heads: 4
     vit_num_layers: 1
     vit_patch_size: 4
-ViTDCNv2_iPinYou_x1_012_24555db9:
+ViTDCNv2_iPinYou_x1_012_920a4590:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -466,7 +466,7 @@ ViTDCNv2_iPinYou_x1_012_24555db9:
     num_heads: 1
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [512, 512]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024

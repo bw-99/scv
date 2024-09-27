@@ -12,3 +12,8 @@ tuner_space:
     vit_hidden_dim: [64, 128]
     vit_num_layers: [1]
     vit_num_heads: [4, 8]
+    parallel_dnn_hidden_units: [
+        # [512, 128],
+        # [512, 256],
+        [512, 512]
+    ]

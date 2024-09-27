@@ -5,7 +5,7 @@ https://www.notion.so/SCV-Selectively-Crossing-Vectors-for-Accelerated-Model-Tra
 
 docker build -t vision_dcn_env .
 
-docker run -dit --name con --shm-size=10g -v ~/visionDCN:/workspace  --runtime=nvidia vision_dcn_env
+docker run -dit --name con --shm-size=20g -v ./:/workspace  --runtime=nvidia vision_dcn_env
 
 https://github.com/reczoo/Datasets
 

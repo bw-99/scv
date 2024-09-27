@@ -51,6 +51,7 @@ class ViTDCNv3Heavy(BaseModel):
                                     **kwargs)
         self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
         input_dim = feature_map.sum_emb_out_dim()
+        print(input_dim)
         self.ECN = ExponentialCrossViTNetwork(input_dim=input_dim,
                                            num_cross_layers=num_deep_cross_layers,
                                            net_dropout=deep_net_dropout,

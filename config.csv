@@ -1,0 +1,1 @@
+ 20240927-094800,[command] python run_expid.py --expid DCNv3_Criteo --gpu 2,[exp_id] DCNv3_Criteo,[dataset_id] Criteo_x4_10_h5,[train] N.A.,[val] logloss: 0.436340 - AUC: 0.815602,[test] logloss: 0.436007 - AUC: 0.815981

@@ -1,0 +1,19 @@
+base_config: ./config/
+base_expid: ViTDCNv3Heavy_iPinYou_x1
+dataset_id: iPinYou_x1_csv
+
+tuner_space:
+    model_root: './checkpoints/'
+    batch_size: 160960
+    learning_rate: 1.e-3
+    num_deep_cross_layers: [2, 1]
+    num_shallow_cross_layers: [4, 2, 1]
+    deep_net_dropout: [0.1]
+    shallow_net_dropout: [0.2]
+    vit_patch_size: [8, 16]
+    vit_hidden_dim: [256, 128, 64]
+    vit_num_layers: [1, 2]
+    vit_num_heads: [4, 8]
+    vit_after_steps: [0]
+    num_workers: 16
+    vit_detach_param: [True]

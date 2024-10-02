@@ -21,10 +21,10 @@ from fuxictr.pytorch.models import BaseModel
 from fuxictr.pytorch.layers import FeatureEmbedding, MLP_Block
 
 
-class GDCNP(BaseModel):
+class GDCNS(BaseModel):
     def __init__(self, 
                  feature_map,
-                 model_id="GDCNP",
+                 model_id="GDCNS",
                  gpu=-1,
                  learning_rate=1e-3,
                  embedding_dim=10,
@@ -36,7 +36,7 @@ class GDCNP(BaseModel):
                  embedding_regularizer=None,
                  net_regularizer=None,
                  **kwargs):
-        super(GDCNP, self).__init__(feature_map, 
+        super(GDCNS, self).__init__(feature_map, 
                                   model_id=model_id, 
                                   gpu=gpu, 
                                   embedding_regularizer=embedding_regularizer, 

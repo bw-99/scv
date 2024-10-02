@@ -1,4 +1,4 @@
-from .GDCN import GDCNP, GDCNS
+from .GDCN import GDCNS, GDCNS
 
 
 

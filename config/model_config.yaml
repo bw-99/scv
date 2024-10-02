@@ -14,7 +14,7 @@ Base:
 
 
 GDCN_default: # This is a config template
-    model: GDCNP
+    model: GDCNS
     dataset_id: TBD
     loss: 'binary_crossentropy'
     metrics: ['logloss', 'AUC']
@@ -513,7 +513,7 @@ ViTExpDCNv3_ML_1M:
     monitor_mode: 'max'
 
 GDCN_ML_1M:
-    model: GDCNP
+    model: GDCNS
     dataset_id: ML_1M_7_x1
     loss: 'binary_crossentropy'
     metrics: ['logloss', 'AUC']
@@ -721,7 +721,7 @@ ViTDCNv3Heavy_iPinYou_x1:
 
 
 GDCN_iPinYou_x1:
-    model: GDCNP
+    model: GDCNS
     dataset_id: iPinYou_x1_csv
     loss: 'binary_crossentropy'
     metrics: ['logloss', 'AUC']

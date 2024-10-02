@@ -12,8 +12,8 @@ Base:
     feature_specs: null
     feature_config: null
 
-GDCNP_test:
-    model: GDCNP
+GDCNS_test:
+    model: GDCNS
     dataset_id: tiny_npz
     loss: 'binary_crossentropy'
     metrics: ['logloss', 'AUC']
@@ -59,7 +59,7 @@ GDCNS_test:
     monitor_mode: 'max'
 
 GDCN_default: # This is a config template
-    model: GDCNP
+    model: GDCNS
     dataset_id: TBD
     loss: 'binary_crossentropy'
     metrics: ['logloss', 'AUC']

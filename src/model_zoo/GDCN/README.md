@@ -89,5 +89,5 @@ The model is tested with the following dependencies.
 Running the model on the tiny data:
 
 ```
-python run_expid.py --expid GDCNP_test --gpu 0
+python run_expid.py --expid GDCNS_test --gpu 0
 ```

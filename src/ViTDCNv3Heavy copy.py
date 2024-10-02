@@ -20,7 +20,6 @@ from fuxictr.pytorch.layers import FeatureEmbedding
 from fuxictr.pytorch.torch_utils import get_regularizer
 from tqdm import tqdm
 import logging
-import numpy as np
 import sys
 
 class ViTDCNv3Heavy(BaseModel):
@@ -55,6 +54,7 @@ class ViTDCNv3Heavy(BaseModel):
                                     **kwargs)
         self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
         input_dim = feature_map.sum_emb_out_dim()
+        print(input_dim)
         self.num_deep_cross_layers = num_deep_cross_layers
         self.num_shallow_cross_layers = num_shallow_cross_layers
         self.vit_detach_param = vit_detach_param
@@ -134,67 +134,34 @@ class ViTDCNv3Heavy(BaseModel):
         else:
             batch_iterator = tqdm(data_generator, disable=False, file=sys.stdout)
         
-        emask_lst, lmask_lst = \
-            torch.ones((self.num_deep_cross_layers, self.ECN.w[0].weight.shape[0])).to(self.device), \
-            torch.ones((self.num_shallow_cross_layers, self.LCN.w[0].weight.shape[0])).to(self.device)
+        emask_lst, lmask_lst = [], []
         
         # * deep mask
         for i in range(self.num_deep_cross_layers):
             weight_param = self.ECN.w[i].weight
             if(self.vit_detach_param):
                 mask = self.ECN.masker_lst[i](weight_param.detach())
-                emask_lst[i]=mask.to(self.device)
+                emask_lst.append(mask)
         
         # * shallow mask
         for i in range(self.num_shallow_cross_layers):
             weight_param = self.LCN.w[i].weight
             if(self.vit_detach_param):
                 mask = self.LCN.masker_lst[i](weight_param.detach())
-                lmask_lst[i]=mask.to(self.device)
+                lmask_lst.append(mask)
 
         for batch_index, batch_data in enumerate(batch_iterator):
             self._batch_index = batch_index
             self._total_steps += 1
 
-            loss = self.train_step(batch_data, emask_lst.clone().detach().requires_grad_(True), 
-                                   lmask_lst.clone().detach().requires_grad_(True))
+            loss = self.train_step(batch_data, emask_lst, lmask_lst)
             train_loss += loss.item()
             if self._total_steps % self._eval_steps == 0:
                 logging.info("Train loss: {:.6f}".format(train_loss / self._eval_steps))
                 train_loss = 0
-                self.eval_step(emask_lst, lmask_lst)
+                self.eval_step()
             if self._stop_training:
                 break
-
-    def eval_step(self, emask_lst, lmask_lst):
-        logging.info('Evaluation @epoch {} - batch {}: '.format(self._epoch_index + 1, self._batch_index + 1))
-        val_logs = self.evaluate(self.valid_gen, emask_lst, lmask_lst, metrics=self._monitor.get_metrics())
-        self.checkpoint_and_earlystop(val_logs)
-        self.train()
-    
-    def evaluate(self, data_generator, emask_lst, lmask_lst, metrics=None):
-        self.eval()  # set to evaluation mode
-        with torch.no_grad():
-            y_pred = []
-            y_true = []
-            group_id = []
-            if self._verbose > 0:
-                data_generator = tqdm(data_generator, disable=False, file=sys.stdout)
-            for batch_data in data_generator:
-                return_dict = self.forward(batch_data, emask_lst, lmask_lst)
-                y_pred.extend(return_dict["y_pred"].data.cpu().numpy().reshape(-1))
-                y_true.extend(self.get_labels(batch_data).data.cpu().numpy().reshape(-1))
-                if self.feature_map.group_id is not None:
-                    group_id.extend(self.get_group_id(batch_data).numpy().reshape(-1))
-            y_pred = np.array(y_pred, np.float64)
-            y_true = np.array(y_true, np.float64)
-            group_id = np.array(group_id) if len(group_id) > 0 else None
-            if metrics is not None:
-                val_logs = self.evaluate_metrics(y_true, y_pred, metrics, group_id)
-            else:
-                val_logs = self.evaluate_metrics(y_true, y_pred, self.validation_metrics, group_id)
-            logging.info('[Metrics] ' + ' - '.join('{}: {:.6f}'.format(k, v) for k, v in val_logs.items()))
-            return val_logs
 
 
 

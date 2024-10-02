@@ -12,6 +12,30 @@ Base:
     feature_specs: null
     feature_config: null
 
+
+GDCN_default: # This is a config template
+    model: GDCNP
+    dataset_id: TBD
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.0e-3
+    embedding_regularizer: 0
+    net_regularizer: 0
+    batch_size: 10000
+    embedding_dim: 32
+    dnn_hidden_units: [1024, 512, 256]
+    dnn_activations: relu
+    num_cross_layers: 3
+    net_dropout: 0
+    batch_norm: False
+    epochs: 100
+    shuffle: True
+    seed: 20222023
+    monitor: {'AUC': 1, 'logloss': -1}
+    monitor_mode: 'max'
+
 DCNv2_KKBox_x10:
     model: DCNv2
     dataset_id: KKBox_csv
@@ -488,6 +512,30 @@ ViTExpDCNv3_ML_1M:
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
+GDCN_ML_1M:
+    model: GDCNP
+    dataset_id: ML_1M_7_x1
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 0.01
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    dnn_hidden_units: [400, 400, 400]
+    dnn_activations: relu
+    num_cross_layers: 3
+    net_dropout: 0.5
+    batch_norm: False
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
+
 # * iPinYou
 ViTDCNv3Heavy_iPinYou_x1:
     model: ViTDCNv3Heavy
@@ -671,6 +719,30 @@ ViTDCNv3Heavy_iPinYou_x1:
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
+
+GDCN_iPinYou_x1:
+    model: GDCNP
+    dataset_id: iPinYou_x1_csv
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-3
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    dnn_hidden_units: [400, 400, 400]
+    dnn_activations: relu
+    num_cross_layers: 3
+    net_dropout: 0.5
+    batch_norm: False
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
 # * Criteo
 
 DCNv3_Criteo:
@@ -697,3 +769,4 @@ DCNv3_Criteo:
     seed: 2024
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
+

@@ -41,50 +41,7 @@ ViTDCNv3Heavy_iPinYou_x1_001_e036b0fb:
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3Heavy_iPinYou_x1_002_91ca804b:
-    batch_norm: true
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    deep_net_dropout: 0.1
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_with_bias: false
-    metrics: [logloss, AUC]
-    model: ViTDCNv3Heavy
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_regularizer: 0
-    num_deep_cross_layers: 5
-    num_heads: 1
-    num_shallow_cross_layers: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shallow_net_dropout: 0.2
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_after_steps: 0
-    vit_detach_param: true
-    vit_hidden_dim: 16
-    vit_num_heads: 8
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv3Heavy_iPinYou_x1_003_c338d7a2:
+ViTDCNv3Heavy_iPinYou_x1_002_c338d7a2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -127,7 +84,7 @@ ViTDCNv3Heavy_iPinYou_x1_003_c338d7a2:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3Heavy_iPinYou_x1_004_f6830a36:
+ViTDCNv3Heavy_iPinYou_x1_003_eb32e91b:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -144,7 +101,7 @@ ViTDCNv3Heavy_iPinYou_x1_004_f6830a36:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
-    mask_with_bias: false
+    mask_with_bias: true
     metrics: [logloss, AUC]
     model: ViTDCNv3Heavy
     model_root: ./checkpoints/
@@ -152,6 +109,221 @@ ViTDCNv3Heavy_iPinYou_x1_004_f6830a36:
     monitor_mode: max
     net_regularizer: 0
     num_deep_cross_layers: 5
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 2
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_004_c58a11ae:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 5
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 3
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_005_8ddfee2a:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 5
+    num_heads: 1
+    num_shallow_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 2
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_006_eb32e91b:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 5
+    num_heads: 1
+    num_shallow_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 3
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_007_845acfe8:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 4
+    num_heads: 1
+    num_shallow_cross_layers: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 2
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_008_b0bd7bd6:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 4
     num_workers: 16
@@ -170,7 +342,7 @@ ViTDCNv3Heavy_iPinYou_x1_004_f6830a36:
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3Heavy_iPinYou_x1_005_948ec9f5:
+ViTDCNv3Heavy_iPinYou_x1_009_66a7df82:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -194,9 +366,9 @@ ViTDCNv3Heavy_iPinYou_x1_005_948ec9f5:
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
     net_regularizer: 0
-    num_deep_cross_layers: 5
+    num_deep_cross_layers: 4
     num_heads: 1
-    num_shallow_cross_layers: 4
+    num_shallow_cross_layers: 3
     num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
@@ -209,54 +381,11 @@ ViTDCNv3Heavy_iPinYou_x1_005_948ec9f5:
     verbose: 1
     vit_after_steps: 0
     vit_detach_param: true
-    vit_hidden_dim: 32
+    vit_hidden_dim: 16
     vit_num_heads: 8
     vit_num_layers: 2
     vit_patch_size: 8
-ViTDCNv3Heavy_iPinYou_x1_006_4cf2b86b:
-    batch_norm: true
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    deep_net_dropout: 0.1
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    mask_with_bias: false
-    metrics: [logloss, AUC]
-    model: ViTDCNv3Heavy
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_regularizer: 0
-    num_deep_cross_layers: 5
-    num_heads: 1
-    num_shallow_cross_layers: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shallow_net_dropout: 0.2
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-    vit_after_steps: 0
-    vit_detach_param: true
-    vit_hidden_dim: 32
-    vit_num_heads: 8
-    vit_num_layers: 2
-    vit_patch_size: 8
-ViTDCNv3Heavy_iPinYou_x1_007_27b59b00:
+ViTDCNv3Heavy_iPinYou_x1_010_f1111394:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -280,9 +409,9 @@ ViTDCNv3Heavy_iPinYou_x1_007_27b59b00:
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
     net_regularizer: 0
-    num_deep_cross_layers: 5
+    num_deep_cross_layers: 4
     num_heads: 1
-    num_shallow_cross_layers: 4
+    num_shallow_cross_layers: 3
     num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
@@ -295,11 +424,11 @@ ViTDCNv3Heavy_iPinYou_x1_007_27b59b00:
     verbose: 1
     vit_after_steps: 0
     vit_detach_param: true
-    vit_hidden_dim: 32
+    vit_hidden_dim: 16
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8
-ViTDCNv3Heavy_iPinYou_x1_008_fe5fa72d:
+ViTDCNv3Heavy_iPinYou_x1_011_e60ef2d4:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -316,14 +445,100 @@ ViTDCNv3Heavy_iPinYou_x1_008_fe5fa72d:
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
-    mask_with_bias: false
+    mask_with_bias: true
     metrics: [logloss, AUC]
     model: ViTDCNv3Heavy
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
     net_regularizer: 0
-    num_deep_cross_layers: 5
+    num_deep_cross_layers: 4
+    num_heads: 1
+    num_shallow_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 2
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_012_66a7df82:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 4
+    num_heads: 1
+    num_shallow_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 3
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_013_66a7df82:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
     num_heads: 1
     num_shallow_cross_layers: 4
     num_workers: 16
@@ -338,7 +553,222 @@ ViTDCNv3Heavy_iPinYou_x1_008_fe5fa72d:
     verbose: 1
     vit_after_steps: 0
     vit_detach_param: true
-    vit_hidden_dim: 32
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 2
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_014_f1111394:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 3
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_015_f0d97b5c:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 2
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_016_bf9758bc:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 3
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_017_e8f4474c:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
+    vit_num_heads: 8
+    vit_num_layers: 2
+    vit_patch_size: 8
+ViTDCNv3Heavy_iPinYou_x1_018_f0d97b5c:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: true
+    metrics: [logloss, AUC]
+    model: ViTDCNv3Heavy
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+    vit_detach_param: true
+    vit_hidden_dim: 16
     vit_num_heads: 8
     vit_num_layers: 3
     vit_patch_size: 8

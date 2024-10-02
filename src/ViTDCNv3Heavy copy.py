@@ -20,6 +20,7 @@ from fuxictr.pytorch.layers import FeatureEmbedding
 from fuxictr.pytorch.torch_utils import get_regularizer
 from tqdm import tqdm
 import logging
+import numpy as np
 import sys
 
 class ViTDCNv3Heavy(BaseModel):
@@ -54,7 +55,6 @@ class ViTDCNv3Heavy(BaseModel):
                                     **kwargs)
         self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
         input_dim = feature_map.sum_emb_out_dim()
-        print(input_dim)
         self.num_deep_cross_layers = num_deep_cross_layers
         self.num_shallow_cross_layers = num_shallow_cross_layers
         self.vit_detach_param = vit_detach_param
@@ -91,11 +91,11 @@ class ViTDCNv3Heavy(BaseModel):
         self.reset_parameters()
         self.model_to_device()
 
-    def forward(self, inputs, emask_lst, lmask_lst):
+    def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X)
-        dlogit = self.ECN(feature_emb, self.cur_step, emask_lst).mean(dim=1)
-        slogit = self.LCN(feature_emb, self.cur_step, lmask_lst).mean(dim=1)
+        dlogit = self.ECN(feature_emb, self.cur_step).mean(dim=1)
+        slogit = self.LCN(feature_emb, self.cur_step).mean(dim=1)
         logit = (dlogit + slogit) * 0.5
         y_pred = self.output_activation(logit)
         return_dict = {"y_pred": y_pred,
@@ -103,9 +103,9 @@ class ViTDCNv3Heavy(BaseModel):
                        "y_s": self.output_activation(slogit)}
         return return_dict
 
-    def train_step(self, inputs, emask_lst, lmask_lst):
+    def train_step(self, inputs):
         self.optimizer.zero_grad()
-        return_dict = self.forward(inputs, emask_lst, lmask_lst)
+        return_dict = self.forward(inputs)
         y_true = self.get_labels(inputs)
         y_pred = return_dict["y_pred"]
         y_d = return_dict["y_d"]
@@ -119,50 +119,11 @@ class ViTDCNv3Heavy(BaseModel):
         weight_s = torch.where(weight_s > 0, weight_s, torch.zeros(1).to(weight_s.device))
         loss = loss + loss_d * weight_d + loss_s * weight_s
         loss += self.regularization_loss()
-        loss.backward()
+        loss.backward(retain_graph=True)
         nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
         self.optimizer.step()
         self.cur_step+=1
         return loss
-
-    def train_epoch(self, data_generator):
-        self._batch_index = 0
-        train_loss = 0
-        self.train()
-        if self._verbose == 0:
-            batch_iterator = data_generator
-        else:
-            batch_iterator = tqdm(data_generator, disable=False, file=sys.stdout)
-        
-        emask_lst, lmask_lst = [], []
-        
-        # * deep mask
-        for i in range(self.num_deep_cross_layers):
-            weight_param = self.ECN.w[i].weight
-            if(self.vit_detach_param):
-                mask = self.ECN.masker_lst[i](weight_param.detach())
-                emask_lst.append(mask)
-        
-        # * shallow mask
-        for i in range(self.num_shallow_cross_layers):
-            weight_param = self.LCN.w[i].weight
-            if(self.vit_detach_param):
-                mask = self.LCN.masker_lst[i](weight_param.detach())
-                lmask_lst.append(mask)
-
-        for batch_index, batch_data in enumerate(batch_iterator):
-            self._batch_index = batch_index
-            self._total_steps += 1
-
-            loss = self.train_step(batch_data, emask_lst, lmask_lst)
-            train_loss += loss.item()
-            if self._total_steps % self._eval_steps == 0:
-                logging.info("Train loss: {:.6f}".format(train_loss / self._eval_steps))
-                train_loss = 0
-                self.eval_step()
-            if self._stop_training:
-                break
-
 
 
 class MultiHeadFeatureEmbedding(nn.Module):
@@ -234,17 +195,16 @@ class ExponentialCrossViTNetwork(nn.Module):
         self.masker = nn.ReLU()
         self.dfc = nn.Linear(input_dim, 1)
 
-    def forward(self, x, cur_step, emask_lst):
+    def forward(self, x, cur_step):
         for i in range(self.num_cross_layers):
             H = self.w[i](x)
             if len(self.batch_norm) > i:
                 H = self.batch_norm[i](H)
             if(cur_step >= self.vit_after_steps):
-                # weight_param = self.w[i].weight
-                # if(self.vit_detach_param):
-                #     weight_param = weight_param.detach()
-                # mask = self.masker_lst[i](weight_param)
-                mask = emask_lst[i]
+                weight_param = self.w[i].weight
+                if(self.vit_detach_param):
+                    weight_param = weight_param.detach()
+                mask = self.masker_lst[i](weight_param)
                 # H = H * mask
             # H = torch.cat([H, H * mask], dim=-1)
             if(self.mask_with_bias):
@@ -308,18 +268,18 @@ class LinearCrossViTLayer(nn.Module):
         self.masker = nn.ReLU()
         self.sfc = nn.Linear(input_dim, 1)
 
-    def forward(self, x, cur_step, lmask_lst):
+    def forward(self, x, cur_step):
         x0 = x
         for i in range(self.num_cross_layers):
             H = self.w[i](x)
             if len(self.batch_norm) > i:
                 H = self.batch_norm[i](H)
             if(cur_step >= self.vit_after_steps):
-                # weight_param = self.w[i].weight
-                # if(self.vit_detach_param):
-                #     weight_param = weight_param.detach()
-                # mask = self.masker_lst[i](weight_param)
-                mask = lmask_lst[i]
+                weight_param = self.w[i].weight
+                if(self.vit_detach_param):
+                    weight_param = weight_param.detach()
+                mask = self.masker_lst[i](weight_param)
+                # mask = lmask_lst[i]
 
             if(self.mask_with_bias):
                 x = (x0 * H + self.b[i]) * mask + x

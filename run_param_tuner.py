@@ -23,6 +23,7 @@ from datetime import datetime
 import gc
 import argparse
 from fuxictr import autotuner
+import torch
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -36,6 +37,8 @@ if __name__ == '__main__':
     gpu_list = args['gpu']
     expid_tag = args['tag']
     seed_everything(2024)
+
+    torch.autograd.set_detect_anomaly(True)
 
     # generate parameter space combinations
     config_dir = autotuner.enumerate_params(args['config'])

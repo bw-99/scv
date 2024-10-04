@@ -9,3 +9,5 @@ from .SSLViTDCNv3 import *
 from .model_zoo import *
 from .SSLViTDCNv2 import *
 from .ViTDCNv3Heavy import *
+from .ViTDCNv3Eff import *
+from .ResNetDCNv3 import *

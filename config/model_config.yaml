@@ -338,7 +338,7 @@ SSLViTDCNv3_ML_1M:
     batch_size: 4096
     embedding_dim: 16
     num_deep_cross_layers: 3
-    num_shallow_cross_layers: 2
+    num_shallow_cross_layers: 4
     deep_net_dropout: 0.1
     shallow_net_dropout: 0.1
     vit_patch_size: 8
@@ -441,6 +441,40 @@ ViTDCNv3Heavy_ML_1M:
     vit_num_layers: 2
     vit_num_heads: 8
     num_heads: 1
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 10
+    vit_after_steps: 0
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+    vit_detach_param: False
+
+
+ViTDCNv3Eff_ML_1M:
+    model: ViTDCNv3Eff
+    dataset_id: ML_1M_7_x1
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-3
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    num_deep_cross_layers: 3
+    num_shallow_cross_layers: 4
+    deep_net_dropout: 0.1
+    shallow_net_dropout: 0.1
+    layer_norm: True
+    batch_norm: True
+    vit_patch_size: 8
+    vit_hidden_dim: 64
+    vit_num_layers: 2
+    vit_num_heads: 8
+    num_heads: 1
+    mask_with_bias: False
     epochs: 100
     shuffle: True
     seed: 2024
@@ -688,39 +722,6 @@ DCNv2_iPinYou_x1:
     monitor_mode: 'max'
 
 
-# ViTDCNv3Heavy_iPinYou_x1:
-#     model: ViTDCNv3Heavy
-    # dataset_id: iPinYou_x1_csv
-    # loss: 'binary_crossentropy'
-    # metrics: ['logloss', 'AUC']
-    # task: binary_classification
-    # optimizer: adam
-    # learning_rate: 1.e-3
-    # embedding_regularizer: 1.e-3
-    # net_regularizer: 0
-    # batch_size: 4096
-    # embedding_dim: 16
-    # num_deep_cross_layers: 3
-    # num_shallow_cross_layers: 4
-    # deep_net_dropout: 0.1
-    # shallow_net_dropout: 0.2
-    # layer_norm: True
-    # batch_norm: True
-    # vit_patch_size: 8
-    # vit_hidden_dim: 64
-    # vit_num_layers: 2
-    # vit_num_heads: 8
-    # num_heads: 1
-    # epochs: 100
-    # shuffle: True
-    # seed: 2024
-    # num_workers: 16
-    # vit_after_steps: 0
-    # vit_detach_param: False
-    # monitor: {'AUC': 1, 'logloss': 0}
-    # monitor_mode: 'max'
-
-
 GDCN_iPinYou_x1:
     model: GDCNS
     dataset_id: iPinYou_x1_csv
@@ -743,6 +744,71 @@ GDCN_iPinYou_x1:
     seed: 2024
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
+
+
+ViTDCNv3Eff_iPinYou_x1:
+    model: ViTDCNv3Eff
+    dataset_id: iPinYou_x1_csv
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-3
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    num_deep_cross_layers: 3
+    num_shallow_cross_layers: 4
+    deep_net_dropout: 0.1
+    shallow_net_dropout: 0.1
+    layer_norm: True
+    batch_norm: True
+    vit_patch_size: 8
+    vit_hidden_dim: 32
+    vit_num_layers: 2
+    vit_num_heads: 8
+    num_heads: 1
+    mask_with_bias: False
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 10
+    vit_after_steps: 0
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+    vit_detach_param: False
+
+ResNetDCNv3_iPinYou_x1:
+    model: ResNetDCNv3
+    dataset_id: iPinYou_x1_csv
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-3
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    num_deep_cross_layers: 3
+    num_shallow_cross_layers: 4
+    deep_net_dropout: 0.1
+    shallow_net_dropout: 0.1
+    layer_norm: True
+    batch_norm: True
+    num_heads: 1
+    resnet_type: "resnet18"
+    resnet_hidden_dim: 512
+    mask_with_bias: False
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 10
+    vit_after_steps: 0
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+    resnet_detach_param: False
 
 # * Criteo
 

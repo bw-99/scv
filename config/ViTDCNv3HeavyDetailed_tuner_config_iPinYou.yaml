@@ -11,9 +11,10 @@ tuner_space:
     deep_net_dropout: [0.1]
     shallow_net_dropout: [0.2]
     vit_patch_size: [8]
-    vit_hidden_dim: [16]
+    # vit_hidden_dim: [16]
+    vit_hidden_dim: [32]
     vit_num_layers: [2, 3]
-    mask_with_bias: [True]
+    mask_with_bias: [False]
     vit_num_heads: [8]
     vit_after_steps: [0]
     num_workers: 16

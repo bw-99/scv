@@ -46,7 +46,6 @@ RUN pip install \
     keras_preprocessing==1.1.2 \
     polars==1.1.0 \
     pyarrow==16.1.0 \
-    torchvision==0.19.1 \
     git+https://github.com/reczoo/FuxiCTR.git
 
 # Set default command to run Python

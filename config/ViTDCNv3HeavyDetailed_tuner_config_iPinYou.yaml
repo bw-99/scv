@@ -6,13 +6,13 @@ tuner_space:
     model_root: './checkpoints/'
     batch_size: 4096
     learning_rate: 1.e-3
-    num_deep_cross_layers: [5, 4, 3]
-    num_shallow_cross_layers: [4, 3, 2]
+    # num_deep_cross_layers: [6, 5, 4]
+    num_deep_cross_layers: [4]
+    num_shallow_cross_layers: [2, 1]
     deep_net_dropout: [0.1]
     shallow_net_dropout: [0.2]
     vit_patch_size: [8]
-    # vit_hidden_dim: [16]
-    vit_hidden_dim: [32]
+    vit_hidden_dim: [16, 32, 64]
     vit_num_layers: [2, 3]
     mask_with_bias: [False]
     vit_num_heads: [8]

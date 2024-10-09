@@ -627,6 +627,7 @@ PGAResNet_iPinYou_x1:
     resnet_detach_param: True
     resnet_pretrain: True
     mask_with_bias: False
+    resnet_freeze: True
     epochs: 100
     shuffle: True
     seed: 2024

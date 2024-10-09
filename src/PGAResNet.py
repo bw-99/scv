@@ -46,6 +46,7 @@ class PGAResNet(BaseModel):
                  resnet_detach_param=True,
                  mask_with_bias=False,
                  resnet_pretrain=True,
+                 resnet_freeze=False,
                  **kwargs):
         super(PGAResNet, self).__init__(feature_map,
                                             model_id=model_id,
@@ -68,7 +69,8 @@ class PGAResNet(BaseModel):
                                               resnet_after_steps=resnet_after_steps,
                                               resnet_detach_param=resnet_detach_param,
                                               mask_with_bias=mask_with_bias, 
-                                              resnet_pretrain=resnet_pretrain)
+                                              resnet_pretrain=resnet_pretrain,
+                                              resnet_freeze=resnet_freeze)
         self.LCN = LinearCrossLayer(input_dim=input_dim,
                                        num_cross_layers=num_shallow_cross_layers,
                                        net_dropout=shallow_net_dropout,
@@ -79,7 +81,8 @@ class PGAResNet(BaseModel):
                                        resnet_after_steps=resnet_after_steps,
                                        resnet_detach_param=resnet_detach_param,
                                        mask_with_bias=mask_with_bias,
-                                       resnet_pretrain=resnet_pretrain)
+                                       resnet_pretrain=resnet_pretrain,
+                                       resnet_freeze=resnet_freeze)
         self.cur_step = 0
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
@@ -151,7 +154,8 @@ class ExponentialCrossNetwork(nn.Module):
                  resnet_after_steps=0,
                  resnet_detach_param=False,
                  mask_with_bias=False,
-                 resnet_pretrain=False):
+                 resnet_pretrain=False,
+                 resnet_freeze=False):
         super(ExponentialCrossNetwork, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
@@ -177,7 +181,8 @@ class ExponentialCrossNetwork(nn.Module):
             ResNet2DEmbeddingModel(
                 input_dim=input_dim,
                 resnet_type=resnet_type,
-                resnet_pretrain=resnet_pretrain
+                resnet_pretrain=resnet_pretrain,
+                resnet_freeze=resnet_freeze
             ),
             nn.ReLU()
         )
@@ -215,7 +220,8 @@ class LinearCrossLayer(nn.Module):
                  resnet_after_steps=0,
                  resnet_detach_param=False,
                  mask_with_bias=False,
-                 resnet_pretrain=False):
+                 resnet_pretrain=False,
+                 resnet_freeze=False):
         super(LinearCrossLayer, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
@@ -241,7 +247,8 @@ class LinearCrossLayer(nn.Module):
             ResNet2DEmbeddingModel(
                 input_dim=input_dim,
                 resnet_type=resnet_type,
-                resnet_pretrain=resnet_pretrain
+                resnet_pretrain=resnet_pretrain,
+                resnet_freeze=resnet_freeze
             ),
             nn.ReLU()
         )
@@ -273,6 +280,7 @@ class ResNet2DEmbeddingModel(nn.Module):
                  input_dim,
                  resnet_type='resnet18',
                  resnet_pretrain=True,
+                 resnet_freeze=False,
                  **kwargs):
         super(ResNet2DEmbeddingModel, self).__init__()
         self.input_dim = input_dim
@@ -291,6 +299,12 @@ class ResNet2DEmbeddingModel(nn.Module):
 
         self.resnet.fc = nn.Identity()
         self.output_layer = nn.Linear(resnet_out_dim, input_dim)
+
+        if resnet_freeze:
+            print("resnet_freeze")
+            for name, param in self.resnet.named_parameters():
+                if "layer4" not in name:
+                    param.requires_grad = False
 
     def forward(self, x):
         if len(x.shape) == 2:

@@ -18,12 +18,15 @@ from torch import nn
 from fuxictr.pytorch.models import BaseModel
 from fuxictr.pytorch.layers import FeatureEmbedding
 from fuxictr.pytorch.torch_utils import get_regularizer
-import torch.nn.functional as F
+from tqdm import tqdm
+import logging
+import numpy as np
+import sys
 
-class IGDCNv3(BaseModel):
+class PGAViT(BaseModel):
     def __init__(self,
                  feature_map,
-                 model_id="IGDCNv3",
+                 model_id="PGAViT",
                  gpu=-1,
                  learning_rate=1e-3,
                  embedding_dim=10,
@@ -36,8 +39,15 @@ class IGDCNv3(BaseModel):
                  num_heads=1,
                  embedding_regularizer=None,
                  net_regularizer=None,
+                 vit_patch_size=8,
+                 vit_hidden_dim=32, 
+                 vit_num_layers=2, 
+                 vit_num_heads=8,
+                 vit_after_steps=0,
+                 vit_detach_param=False,
+                 mask_with_bias=False,
                  **kwargs):
-        super(IGDCNv3, self).__init__(feature_map,
+        super(PGAViT, self).__init__(feature_map,
                                     model_id=model_id,
                                     gpu=gpu,
                                     embedding_regularizer=embedding_regularizer,
@@ -45,18 +55,38 @@ class IGDCNv3(BaseModel):
                                     **kwargs)
         self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
         input_dim = feature_map.sum_emb_out_dim()
-        self.ECN = ExponentialCrossIGNetwork(input_dim=input_dim,
+        self.num_deep_cross_layers = num_deep_cross_layers
+        self.num_shallow_cross_layers = num_shallow_cross_layers
+        self.vit_detach_param = vit_detach_param
+        self.ECN = ExponentialCrossViTNetwork(input_dim=input_dim,
                                            num_cross_layers=num_deep_cross_layers,
                                            net_dropout=deep_net_dropout,
                                            layer_norm=layer_norm,
                                            batch_norm=batch_norm,
-                                           num_heads=num_heads)
-        self.LCN = LinearCrossIGLayer(input_dim=input_dim,
+                                           num_heads=num_heads,
+                                           vit_input_dim=input_dim,
+                                           vit_patch_size=vit_patch_size,
+                                            vit_hidden_dim=vit_hidden_dim,
+                                            vit_num_layers=vit_num_layers,
+                                            vit_num_heads=vit_num_heads,
+                                            vit_after_steps=vit_after_steps,
+                                            vit_detach_param=vit_detach_param,
+                                            mask_with_bias=mask_with_bias)
+        self.LCN = LinearCrossViTLayer(input_dim=input_dim,
                                       num_cross_layers=num_shallow_cross_layers,
                                       net_dropout=shallow_net_dropout,
                                       layer_norm=layer_norm,
                                       batch_norm=batch_norm,
-                                      num_heads=num_heads)
+                                      num_heads=num_heads,
+                                      vit_input_dim=input_dim,
+                                      vit_patch_size=vit_patch_size,
+                                      vit_hidden_dim=vit_hidden_dim,
+                                      vit_num_layers=vit_num_layers,
+                                      vit_num_heads=vit_num_heads,
+                                      vit_after_steps=vit_after_steps,
+                                      vit_detach_param=vit_detach_param, 
+                                      mask_with_bias=mask_with_bias)
+        self.cur_step=0
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
         self.model_to_device()
@@ -64,8 +94,8 @@ class IGDCNv3(BaseModel):
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X)
-        dlogit = self.ECN(feature_emb).mean(dim=1)
-        slogit = self.LCN(feature_emb).mean(dim=1)
+        dlogit = self.ECN(feature_emb, self.cur_step).mean(dim=1)
+        slogit = self.LCN(feature_emb, self.cur_step).mean(dim=1)
         logit = (dlogit + slogit) * 0.5
         y_pred = self.output_activation(logit)
         return_dict = {"y_pred": y_pred,
@@ -89,13 +119,11 @@ class IGDCNv3(BaseModel):
         weight_s = torch.where(weight_s > 0, weight_s, torch.zeros(1).to(weight_s.device))
         loss = loss + loss_d * weight_d + loss_s * weight_s
         loss += self.regularization_loss()
-        loss.backward()
+        loss.backward(retain_graph=True)
         nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
         self.optimizer.step()
+        self.cur_step+=1
         return loss
-    
-    # def save_weights(self, checkpoint):
-    #     return
 
 
 class MultiHeadFeatureEmbedding(nn.Module):
@@ -117,93 +145,204 @@ class MultiHeadFeatureEmbedding(nn.Module):
         return multihead_feature_emb  # B × H × FD/H
 
 
-class ExponentialCrossIGNetwork(nn.Module):
+class ExponentialCrossViTNetwork(nn.Module):
     def __init__(self,
                  input_dim,
                  num_cross_layers=3,
                  layer_norm=True,
                  batch_norm=False,
                  net_dropout=0.1,
-                 num_heads=1,):
-        super(ExponentialCrossIGNetwork, self).__init__()
+                 num_heads=1,
+                 vit_input_dim=100, 
+                 vit_patch_size=16,
+                 vit_hidden_dim=768, 
+                 vit_num_layers=2, 
+                 vit_num_heads=4,
+                 vit_after_steps=0,
+                 vit_detach_param=False,
+                 mask_with_bias=False):
+        super(ExponentialCrossViTNetwork, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
         self.dropout = nn.ModuleList()
         self.w = nn.ModuleList()
         self.b = nn.ParameterList()
-        self.masker_lst = nn.ParameterList()
+        self.masker_lst = nn.ModuleList()
+        self.vit_after_steps = vit_after_steps
+        self.vit_detach_param = vit_detach_param
+        self.mask_with_bias = mask_with_bias
         for i in range(num_cross_layers):
-            self.w.append(nn.Linear(input_dim, input_dim // 2, bias=False))
+            self.w.append(nn.Linear(input_dim, input_dim, bias=False))
             self.b.append(nn.Parameter(torch.zeros((input_dim,))))
             if layer_norm:
-                self.layer_norm.append(nn.LayerNorm(input_dim // 2))
+                self.layer_norm.append(nn.LayerNorm(input_dim))
             if batch_norm:
                 self.batch_norm.append(nn.BatchNorm1d(num_heads))
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
-            self.masker_lst.append(nn.Parameter(torch.zeros((input_dim//2))))
             nn.init.uniform_(self.b[i].data)
-            nn.init.uniform_(self.masker_lst[i].data)
-        self.masker = nn.ReLU()
+        self.masker = nn.Sequential(
+            VIT2DEmbeddingModel(
+                vit_input_dim=vit_input_dim,
+                vit_patch_size=vit_patch_size,
+                vit_hidden_dim=vit_hidden_dim,
+                vit_num_layers=vit_num_layers,
+                vit_num_heads=vit_num_heads
+            ),
+            nn.ReLU()
+        )
         self.dfc = nn.Linear(input_dim, 1)
 
-    def forward(self, x):
+    def forward(self, x, cur_step):
         for i in range(self.num_cross_layers):
             H = self.w[i](x)
             if len(self.batch_norm) > i:
                 H = self.batch_norm[i](H)
-            mask = F.relu(self.masker_lst[i])
-            H = torch.cat([H, H * mask], dim=-1)
-            x = x * (H + self.b[i]) + x
+            if(cur_step >= self.vit_after_steps):
+                weight_param = self.w[i].weight
+                if(self.vit_detach_param):
+                    weight_param = weight_param.detach()
+                mask = self.masker(weight_param)
+
+            if(self.mask_with_bias):
+                x = x * (H + self.b[i]) * mask + x
+            else:
+                x = x * (H * mask + self.b[i]) + x
             if len(self.dropout) > i:
                 x = self.dropout[i](x)
         logit = self.dfc(x)
         return logit
 
 
-class LinearCrossIGLayer(nn.Module):
+class LinearCrossViTLayer(nn.Module):
     def __init__(self,
                  input_dim,
                  num_cross_layers=3,
                  layer_norm=True,
                  batch_norm=True,
                  net_dropout=0.1,
-                 num_heads=1,):
-        super(LinearCrossIGLayer, self).__init__()
+                 num_heads=1,
+                 vit_input_dim=100, 
+                 vit_patch_size=16,
+                 vit_hidden_dim=768, 
+                 vit_num_layers=2, 
+                 vit_num_heads=4,
+                 vit_after_steps=0,
+                 vit_detach_param=False,
+                 mask_with_bias=False):
+        super(LinearCrossViTLayer, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
         self.dropout = nn.ModuleList()
         self.w = nn.ModuleList()
         self.b = nn.ParameterList()
-        self.masker_lst = nn.ParameterList()
+        self.masker_lst = nn.ModuleList()
+        self.vit_detach_param = vit_detach_param
+        self.vit_after_steps = vit_after_steps
+        self.mask_with_bias=mask_with_bias
         for i in range(num_cross_layers):
-            self.w.append(nn.Linear(input_dim, input_dim // 2, bias=False))
+            self.w.append(nn.Linear(input_dim, input_dim, bias=False))
             self.b.append(nn.Parameter(torch.zeros((input_dim,))))
             if layer_norm:
-                self.layer_norm.append(nn.LayerNorm(input_dim // 2))
+                self.layer_norm.append(nn.LayerNorm(input_dim))
             if batch_norm:
                 self.batch_norm.append(nn.BatchNorm1d(num_heads))
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
-            self.masker_lst.append(nn.Parameter(torch.zeros((input_dim//2))))
             nn.init.uniform_(self.b[i].data)
-            nn.init.uniform_(self.masker_lst[i].data)
-        self.masker = nn.ReLU()
+        self.masker = nn.Sequential(
+            VIT2DEmbeddingModel(
+                vit_input_dim=vit_input_dim,
+                vit_patch_size=vit_patch_size,
+                vit_hidden_dim=vit_hidden_dim,
+                vit_num_layers=vit_num_layers,
+                vit_num_heads=vit_num_heads
+            ),
+            nn.ReLU()
+        )
         self.sfc = nn.Linear(input_dim, 1)
 
-    def forward(self, x):
+    def forward(self, x, cur_step):
         x0 = x
         for i in range(self.num_cross_layers):
             H = self.w[i](x)
             if len(self.batch_norm) > i:
                 H = self.batch_norm[i](H)
-            mask = F.relu(self.masker_lst[i])
-            H = torch.cat([H, H * mask], dim=-1)
-            x = x0 * (H + self.b[i]) + x
+            if(cur_step >= self.vit_after_steps):
+                weight_param = self.w[i].weight
+                if(self.vit_detach_param):
+                    weight_param = weight_param.detach()
+                mask = self.masker(weight_param)
+
+            if(self.mask_with_bias):
+                x = x0 * (H + self.b[i]) * mask + x
+            else:
+                x = x0* (H * mask + self.b[i]) + x
+
             if len(self.dropout) > i:
                 x = self.dropout[i](x)
         logit = self.sfc(x)
         return logit
 
+
+
+class VIT2DEmbeddingModel(nn.Module):
+    def __init__(self, 
+                 vit_input_dim, 
+                 vit_patch_size,
+                 vit_hidden_dim, 
+                 vit_num_layers, 
+                 vit_num_heads,
+                 **kawrgs):
+        super(VIT2DEmbeddingModel, self).__init__()
+        assert vit_input_dim % vit_patch_size == 0, "Input dimension must be divisible by patch size"
+
+        self.input_dim = vit_input_dim
+        self.patch_size = vit_patch_size
+        self.hidden_dim = vit_hidden_dim
+
+        self.patch_embedding = nn.Conv2d(
+            in_channels=1,
+            out_channels=vit_hidden_dim,
+            kernel_size=vit_patch_size,
+            stride=vit_patch_size
+        )
+
+        self.class_token = nn.Parameter(torch.zeros(1, 1, vit_hidden_dim))
+
+        encoder_layer = nn.TransformerEncoderLayer(d_model=vit_hidden_dim, nhead=vit_num_heads)
+        self.transformer_encoder = nn.TransformerEncoder(encoder_layer, num_layers=vit_num_layers)
+        
+        # Position embedding을 __init__에서 생성
+        num_patches = (vit_input_dim // vit_patch_size) ** 2
+        self.position_embedding = nn.Parameter(torch.zeros(1, num_patches + 1, vit_hidden_dim))
+
+        self.output_layer = nn.Linear(vit_hidden_dim, vit_input_dim)
+
+
+    def forward(self, x):
+        if(len(x.shape) == 2):
+            x = x.unsqueeze(0).unsqueeze(0)
+        elif(len(x.shape) == 3):
+            x = x.unsqueeze(1)
+
+        x = self.patch_embedding(x)
+        batch_size, hidden_dim, num_patches_h, num_patches_w = x.size()
+        num_patches = num_patches_h * num_patches_w
+
+        x = x.flatten(2)
+        x = x.transpose(1, 2)
+
+        cls_token = self.class_token.expand(batch_size, -1, -1)
+        x = torch.cat((cls_token, x), dim=1)
+
+        x = x + self.position_embedding
+
+        x = x.permute(1, 0, 2)
+        x = self.transformer_encoder(x)
+        x = x[0, :, :]
+        x = self.output_layer(x)
+        x = x.squeeze(0)
+        return x

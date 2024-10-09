@@ -31,7 +31,7 @@ class PGAResNet(BaseModel):
                  model_id="PGAResNet",  # 모델 ID 업데이트
                  gpu=-1,
                  learning_rate=1e-3,
-                 embedding_dim=10,
+                 embedding_dim=16,
                  num_deep_cross_layers=4,
                  num_shallow_cross_layers=4,
                  deep_net_dropout=0.1,
@@ -42,10 +42,10 @@ class PGAResNet(BaseModel):
                  embedding_regularizer=None,
                  net_regularizer=None,
                  resnet_type='resnet18',  # ResNet 파라미터 추가
-                 resnet_hidden_dim=512,
                  resnet_after_steps=0,
-                 resnet_detach_param=False,
+                 resnet_detach_param=True,
                  mask_with_bias=False,
+                 resnet_pretrain=True,
                  **kwargs):
         super(PGAResNet, self).__init__(feature_map,
                                             model_id=model_id,
@@ -58,28 +58,28 @@ class PGAResNet(BaseModel):
         self.num_deep_cross_layers = num_deep_cross_layers
         self.num_shallow_cross_layers = num_shallow_cross_layers
         self.resnet_detach_param = resnet_detach_param
-        self.ECN = ExponentialCrossViTNetwork(input_dim=input_dim,
+        self.ECN = ExponentialCrossNetwork(input_dim=input_dim,
                                               num_cross_layers=num_deep_cross_layers,
                                               net_dropout=deep_net_dropout,
                                               layer_norm=layer_norm,
                                               batch_norm=batch_norm,
                                               num_heads=num_heads,
                                               resnet_type=resnet_type,
-                                              resnet_hidden_dim=resnet_hidden_dim,
                                               resnet_after_steps=resnet_after_steps,
                                               resnet_detach_param=resnet_detach_param,
-                                              mask_with_bias=mask_with_bias)
-        self.LCN = LinearCrossViTLayer(input_dim=input_dim,
+                                              mask_with_bias=mask_with_bias, 
+                                              resnet_pretrain=resnet_pretrain)
+        self.LCN = LinearCrossLayer(input_dim=input_dim,
                                        num_cross_layers=num_shallow_cross_layers,
                                        net_dropout=shallow_net_dropout,
                                        layer_norm=layer_norm,
                                        batch_norm=batch_norm,
                                        num_heads=num_heads,
                                        resnet_type=resnet_type,
-                                       resnet_hidden_dim=resnet_hidden_dim,
                                        resnet_after_steps=resnet_after_steps,
                                        resnet_detach_param=resnet_detach_param,
-                                       mask_with_bias=mask_with_bias)
+                                       mask_with_bias=mask_with_bias,
+                                       resnet_pretrain=resnet_pretrain)
         self.cur_step = 0
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
@@ -139,7 +139,7 @@ class MultiHeadFeatureEmbedding(nn.Module):
         return multihead_feature_emb  # B × H × FD/H
 
 
-class ExponentialCrossViTNetwork(nn.Module):
+class ExponentialCrossNetwork(nn.Module):
     def __init__(self,
                  input_dim,
                  num_cross_layers=3,
@@ -148,11 +148,11 @@ class ExponentialCrossViTNetwork(nn.Module):
                  net_dropout=0.1,
                  num_heads=1,
                  resnet_type='resnet18',  # ResNet 파라미터 추가
-                 resnet_hidden_dim=512,
                  resnet_after_steps=0,
                  resnet_detach_param=False,
-                 mask_with_bias=False):
-        super(ExponentialCrossViTNetwork, self).__init__()
+                 mask_with_bias=False,
+                 resnet_pretrain=False):
+        super(ExponentialCrossNetwork, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
@@ -172,16 +172,15 @@ class ExponentialCrossViTNetwork(nn.Module):
                 self.batch_norm.append(nn.BatchNorm1d(num_heads))
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
-            self.masker_lst.append(nn.Sequential(
-                ResNet2DEmbeddingModel(
-                    input_dim=input_dim,
-                    resnet_type=resnet_type,
-                    resnet_hidden_dim=resnet_hidden_dim
-                ),
-                nn.ReLU()
-            ))
             nn.init.uniform_(self.b[i].data)
-        self.masker = nn.ReLU()
+        self.masker = nn.Sequential(
+            ResNet2DEmbeddingModel(
+                input_dim=input_dim,
+                resnet_type=resnet_type,
+                resnet_pretrain=resnet_pretrain
+            ),
+            nn.ReLU()
+        )
         self.dfc = nn.Linear(input_dim, 1)
 
     def forward(self, x, cur_step):
@@ -193,18 +192,18 @@ class ExponentialCrossViTNetwork(nn.Module):
                 weight_param = self.w[i].weight
                 if (self.resnet_detach_param):
                     weight_param = weight_param.detach()
-                mask = self.masker_lst[i](weight_param)
-            if (self.mask_with_bias):
-                x = (x * H + self.b[i]) * mask + x
+                mask = self.masker(weight_param)
+            if(self.mask_with_bias):
+                x = x * (H + self.b[i]) * mask + x
             else:
-                x = (x * (H * mask) + self.b[i]) + x
+                x = x * (H * mask + self.b[i]) + x
             if len(self.dropout) > i:
                 x = self.dropout[i](x)
         logit = self.dfc(x)
         return logit
 
 
-class LinearCrossViTLayer(nn.Module):
+class LinearCrossLayer(nn.Module):
     def __init__(self,
                  input_dim,
                  num_cross_layers=3,
@@ -213,11 +212,11 @@ class LinearCrossViTLayer(nn.Module):
                  net_dropout=0.1,
                  num_heads=1,
                  resnet_type='resnet18',  # ResNet 파라미터 추가
-                 resnet_hidden_dim=512,
                  resnet_after_steps=0,
                  resnet_detach_param=False,
-                 mask_with_bias=False):
-        super(LinearCrossViTLayer, self).__init__()
+                 mask_with_bias=False,
+                 resnet_pretrain=False):
+        super(LinearCrossLayer, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
@@ -237,16 +236,15 @@ class LinearCrossViTLayer(nn.Module):
                 self.batch_norm.append(nn.BatchNorm1d(num_heads))
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
-            self.masker_lst.append(nn.Sequential(
-                ResNet2DEmbeddingModel(
-                    input_dim=input_dim,
-                    resnet_type=resnet_type,
-                    resnet_hidden_dim=resnet_hidden_dim
-                ),
-                nn.ReLU()
-            ))
             nn.init.uniform_(self.b[i].data)
-        self.masker = nn.ReLU()
+        self.masker = nn.Sequential(
+            ResNet2DEmbeddingModel(
+                input_dim=input_dim,
+                resnet_type=resnet_type,
+                resnet_pretrain=resnet_pretrain
+            ),
+            nn.ReLU()
+        )
         self.sfc = nn.Linear(input_dim, 1)
 
     def forward(self, x, cur_step):
@@ -259,11 +257,11 @@ class LinearCrossViTLayer(nn.Module):
                 weight_param = self.w[i].weight
                 if (self.resnet_detach_param):
                     weight_param = weight_param.detach()
-                mask = self.masker_lst[i](weight_param)
-            if (self.mask_with_bias):
-                x = (x0 * H + self.b[i]) * mask + x
+                mask = self.masker(weight_param)
+            if(self.mask_with_bias):
+                x = x0 * (H + self.b[i]) * mask + x
             else:
-                x = (x0 * (H * mask) + self.b[i]) + x
+                x = x0 * (H * mask + self.b[i]) + x
             if len(self.dropout) > i:
                 x = self.dropout[i](x)
         logit = self.sfc(x)
@@ -274,24 +272,23 @@ class ResNet2DEmbeddingModel(nn.Module):
     def __init__(self,
                  input_dim,
                  resnet_type='resnet18',
-                 resnet_hidden_dim=512,
+                 resnet_pretrain=True,
                  **kwargs):
         super(ResNet2DEmbeddingModel, self).__init__()
         self.input_dim = input_dim
 
         if resnet_type == 'resnet18':
-            self.resnet = models.resnet18(pretrained=False)
+            self.resnet = models.resnet18(pretrained=resnet_pretrain)
             resnet_out_dim = 512
         elif resnet_type == 'resnet34':
-            self.resnet = models.resnet34(pretrained=False)
+            self.resnet = models.resnet34(pretrained=resnet_pretrain)
             resnet_out_dim = 512
         elif resnet_type == 'resnet50':
-            self.resnet = models.resnet50(pretrained=False)
+            self.resnet = models.resnet50(pretrained=resnet_pretrain)
             resnet_out_dim = 2048
         else:
             raise ValueError("Invalid resnet_type")
 
-        self.resnet.conv1 = nn.Conv2d(1, 64, kernel_size=8, stride=2, padding=3, bias=False)
         self.resnet.fc = nn.Identity()
         self.output_layer = nn.Linear(resnet_out_dim, input_dim)
 
@@ -302,6 +299,7 @@ class ResNet2DEmbeddingModel(nn.Module):
             x = x.unsqueeze(1)
 
         min_size = 32
+        x = x.repeat(1, 3, 1, 1)
         if x.size(2) < min_size or x.size(3) < min_size:
             x = F.interpolate(x, size=(min_size, min_size), mode='bilinear', align_corners=False)
 

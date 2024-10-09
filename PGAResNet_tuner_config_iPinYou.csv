@@ -1,0 +1,1 @@
+ 20241009-134136,[command] python run_expid.py --config config/PGAResNet_tuner_config_iPinYou --expid PGAResNet_iPinYou_x1_003_f56f9230 --gpu 2,[exp_id] PGAResNet_iPinYou_x1_003_f56f9230,[dataset_id] iPinYou_x1_csv,[train] N.A.,[val] logloss: 0.005694 - AUC: 0.741983,[test] logloss: 0.005694 - AUC: 0.741983

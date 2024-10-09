@@ -300,11 +300,21 @@ class ResNet2DEmbeddingModel(nn.Module):
         self.resnet.fc = nn.Identity()
         self.output_layer = nn.Linear(resnet_out_dim, input_dim)
 
+        # * initialize layer4
+        self.resnet.layer4.apply(self.initialize_weights)
+
+        # * freeze backbone layers
         if resnet_freeze:
             print("resnet_freeze")
             for name, param in self.resnet.named_parameters():
                 if "layer4" not in name:
                     param.requires_grad = False
+
+    def initialize_weights(self,module):
+        if isinstance(module, nn.Conv2d) or isinstance(module, nn.Linear):
+            nn.init.xavier_uniform_(module.weight)
+            if module.bias is not None:
+                nn.init.zeros_(module.bias)
 
     def forward(self, x):
         if len(x.shape) == 2:

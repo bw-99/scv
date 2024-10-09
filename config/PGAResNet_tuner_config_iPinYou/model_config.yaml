@@ -1,4 +1,4 @@
-PGAResNet_iPinYou_x1_001_fa1ab776:
+PGAResNet_iPinYou_x1_001_02b47259:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -25,7 +25,7 @@ PGAResNet_iPinYou_x1_001_fa1ab776:
     num_deep_cross_layers: 5
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -40,7 +40,7 @@ PGAResNet_iPinYou_x1_001_fa1ab776:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_002_f56f9230:
+PGAResNet_iPinYou_x1_002_9baa0cb2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -67,7 +67,7 @@ PGAResNet_iPinYou_x1_002_f56f9230:
     num_deep_cross_layers: 5
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -82,7 +82,7 @@ PGAResNet_iPinYou_x1_002_f56f9230:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_003_f56f9230:
+PGAResNet_iPinYou_x1_003_9baa0cb2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -109,7 +109,7 @@ PGAResNet_iPinYou_x1_003_f56f9230:
     num_deep_cross_layers: 5
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -124,7 +124,7 @@ PGAResNet_iPinYou_x1_003_f56f9230:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_004_b55b58c7:
+PGAResNet_iPinYou_x1_004_4f88666b:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -151,7 +151,7 @@ PGAResNet_iPinYou_x1_004_b55b58c7:
     num_deep_cross_layers: 5
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -166,7 +166,7 @@ PGAResNet_iPinYou_x1_004_b55b58c7:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_005_a33bd3ff:
+PGAResNet_iPinYou_x1_005_c6b5a358:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -193,7 +193,7 @@ PGAResNet_iPinYou_x1_005_a33bd3ff:
     num_deep_cross_layers: 5
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -208,7 +208,7 @@ PGAResNet_iPinYou_x1_005_a33bd3ff:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_006_35291c34:
+PGAResNet_iPinYou_x1_006_ed8994e5:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -235,7 +235,7 @@ PGAResNet_iPinYou_x1_006_35291c34:
     num_deep_cross_layers: 5
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -250,7 +250,7 @@ PGAResNet_iPinYou_x1_006_35291c34:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_007_35291c34:
+PGAResNet_iPinYou_x1_007_ed8994e5:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -277,7 +277,7 @@ PGAResNet_iPinYou_x1_007_35291c34:
     num_deep_cross_layers: 5
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -292,7 +292,7 @@ PGAResNet_iPinYou_x1_007_35291c34:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_008_2b38e480:
+PGAResNet_iPinYou_x1_008_6763766c:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -319,7 +319,7 @@ PGAResNet_iPinYou_x1_008_2b38e480:
     num_deep_cross_layers: 5
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -334,7 +334,175 @@ PGAResNet_iPinYou_x1_008_2b38e480:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_009_def1942f:
+PGAResNet_iPinYou_x1_009_fc28977f:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 5
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: true
+    resnet_pretrain: true
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_010_4cbb3551:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 5
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: false
+    resnet_pretrain: true
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_011_4cbb3551:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 5
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: true
+    resnet_pretrain: false
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_012_c777e572:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 5
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: false
+    resnet_pretrain: false
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_013_1f92fc35:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -361,7 +529,7 @@ PGAResNet_iPinYou_x1_009_def1942f:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -376,7 +544,7 @@ PGAResNet_iPinYou_x1_009_def1942f:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_010_c9bd6195:
+PGAResNet_iPinYou_x1_014_1ac13f40:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -403,7 +571,7 @@ PGAResNet_iPinYou_x1_010_c9bd6195:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -418,7 +586,7 @@ PGAResNet_iPinYou_x1_010_c9bd6195:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_011_c9bd6195:
+PGAResNet_iPinYou_x1_015_1ac13f40:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -445,7 +613,7 @@ PGAResNet_iPinYou_x1_011_c9bd6195:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -460,7 +628,7 @@ PGAResNet_iPinYou_x1_011_c9bd6195:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_012_576c87b2:
+PGAResNet_iPinYou_x1_016_5065f9ab:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -487,7 +655,7 @@ PGAResNet_iPinYou_x1_012_576c87b2:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 1
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -502,7 +670,7 @@ PGAResNet_iPinYou_x1_012_576c87b2:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_013_420c812d:
+PGAResNet_iPinYou_x1_017_28bb4ff4:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -529,7 +697,7 @@ PGAResNet_iPinYou_x1_013_420c812d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -544,7 +712,7 @@ PGAResNet_iPinYou_x1_013_420c812d:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_014_3e5e0471:
+PGAResNet_iPinYou_x1_018_253ec44d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -571,7 +739,7 @@ PGAResNet_iPinYou_x1_014_3e5e0471:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -586,7 +754,7 @@ PGAResNet_iPinYou_x1_014_3e5e0471:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_015_3e5e0471:
+PGAResNet_iPinYou_x1_019_253ec44d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -613,7 +781,7 @@ PGAResNet_iPinYou_x1_015_3e5e0471:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 16
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true
@@ -628,7 +796,7 @@ PGAResNet_iPinYou_x1_015_3e5e0471:
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_016_c9880f3d:
+PGAResNet_iPinYou_x1_020_d87b90f3:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -655,7 +823,679 @@ PGAResNet_iPinYou_x1_016_c9880f3d:
     num_deep_cross_layers: 4
     num_heads: 1
     num_shallow_cross_layers: 2
-    num_workers: 16
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: false
+    resnet_pretrain: false
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_021_5143aa83:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 4
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: true
+    resnet_pretrain: true
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_022_b16d0418:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 4
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: false
+    resnet_pretrain: true
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_023_b16d0418:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 4
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: true
+    resnet_pretrain: false
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_024_8ea41e48:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 4
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: false
+    resnet_pretrain: false
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_025_7e638002:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 1
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: true
+    resnet_pretrain: true
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_026_f00a5e70:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 1
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: false
+    resnet_pretrain: true
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_027_f00a5e70:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 1
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: true
+    resnet_pretrain: false
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_028_d147b5ba:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 1
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: false
+    resnet_pretrain: false
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_029_4a21d871:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 2
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: true
+    resnet_pretrain: true
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_030_1d786635:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 2
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: false
+    resnet_pretrain: true
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_031_1d786635:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 2
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: true
+    resnet_pretrain: false
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_032_7e98fcca:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 2
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: false
+    resnet_pretrain: false
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_033_64cc9f9e:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: true
+    resnet_pretrain: true
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_034_ac660f91:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: false
+    resnet_pretrain: true
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_035_ac660f91:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
+    optimizer: adam
+    pickle_feature_encoder: true
+    resnet_detach_param: true
+    resnet_freeze: true
+    resnet_pretrain: false
+    resnet_type: resnet18
+    save_best_only: true
+    seed: 2024
+    shallow_net_dropout: 0.2
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    vit_after_steps: 0
+PGAResNet_iPinYou_x1_036_d21eee85:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    deep_net_dropout: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_with_bias: false
+    metrics: [logloss, AUC]
+    model: PGAResNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_deep_cross_layers: 3
+    num_heads: 1
+    num_shallow_cross_layers: 3
+    num_workers: 32
     optimizer: adam
     pickle_feature_encoder: true
     resnet_detach_param: true

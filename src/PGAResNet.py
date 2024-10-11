@@ -46,8 +46,10 @@ class PGAResNet(BaseModel):
                  resnet_detach_param=True,
                  mask_with_bias=False,
                  resnet_pretrain=True,
+                 mask_feature=False,
                  resnet_freeze=False,
                  resnet_initialize=True,
+                 resnet_mask_activation="ReLU",
                  **kwargs):
         super(PGAResNet, self).__init__(feature_map,
                                             model_id=model_id,
@@ -69,10 +71,12 @@ class PGAResNet(BaseModel):
                                               resnet_type=resnet_type,
                                               resnet_after_steps=resnet_after_steps,
                                               resnet_detach_param=resnet_detach_param,
+                                              mask_feature=mask_feature,
                                               mask_with_bias=mask_with_bias, 
                                               resnet_pretrain=resnet_pretrain,
                                               resnet_freeze=resnet_freeze,
-                                              resnet_initialize=resnet_initialize)
+                                              resnet_initialize=resnet_initialize,
+                                              resnet_mask_activation=resnet_mask_activation)
         self.LCN = LinearCrossLayer(input_dim=input_dim,
                                        num_cross_layers=num_shallow_cross_layers,
                                        net_dropout=shallow_net_dropout,
@@ -82,10 +86,12 @@ class PGAResNet(BaseModel):
                                        resnet_type=resnet_type,
                                        resnet_after_steps=resnet_after_steps,
                                        resnet_detach_param=resnet_detach_param,
+                                       mask_feature=mask_feature,
                                        mask_with_bias=mask_with_bias,
                                        resnet_pretrain=resnet_pretrain,
                                        resnet_freeze=resnet_freeze,
-                                       resnet_initialize=resnet_initialize)
+                                       resnet_initialize=resnet_initialize,
+                                       resnet_mask_activation=resnet_mask_activation)
         self.cur_step = 0
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
@@ -158,8 +164,10 @@ class ExponentialCrossNetwork(nn.Module):
                  resnet_detach_param=False,
                  mask_with_bias=False,
                  resnet_pretrain=False,
+                 mask_feature=False,
                  resnet_freeze=False,
-                 resnet_initialize=True):
+                 resnet_initialize=True,
+                 resnet_mask_activation="ReLU"):
         super(ExponentialCrossNetwork, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
@@ -171,6 +179,7 @@ class ExponentialCrossNetwork(nn.Module):
         self.resnet_after_steps = resnet_after_steps
         self.resnet_detach_param = resnet_detach_param
         self.mask_with_bias = mask_with_bias
+        self.mask_feature = mask_feature
         for i in range(num_cross_layers):
             self.w.append(nn.Linear(input_dim, input_dim, bias=False))
             self.b.append(nn.Parameter(torch.zeros((input_dim,))))
@@ -189,7 +198,7 @@ class ExponentialCrossNetwork(nn.Module):
                 resnet_freeze=resnet_freeze,
                 resnet_initialize=resnet_initialize
             ),
-            nn.ReLU()
+            getattr(nn, resnet_mask_activation)()
         )
         self.dfc = nn.Linear(input_dim, 1)
 
@@ -203,10 +212,13 @@ class ExponentialCrossNetwork(nn.Module):
                 if (self.resnet_detach_param):
                     weight_param = weight_param.detach()
                 mask = self.masker(weight_param)
-            if(self.mask_with_bias):
-                x = x * (H + self.b[i]) * mask + x
+            if self.mask_feature:
+                x = x * (H + self.b[i]) + x * mask
             else:
-                x = x * (H * mask + self.b[i]) + x
+                if self.mask_with_bias:
+                    x = x * (H + self.b[i]) * mask + x
+                else:
+                    x = x * (H * mask + self.b[i]) + x
             if len(self.dropout) > i:
                 x = self.dropout[i](x)
         logit = self.dfc(x)
@@ -225,9 +237,11 @@ class LinearCrossLayer(nn.Module):
                  resnet_after_steps=0,
                  resnet_detach_param=False,
                  mask_with_bias=False,
+                 mask_feature=False,
                  resnet_pretrain=False,
                  resnet_freeze=False,
-                 resnet_initialize=True):
+                 resnet_initialize=True,
+                 resnet_mask_activation="ReLU"):
         super(LinearCrossLayer, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
@@ -239,6 +253,7 @@ class LinearCrossLayer(nn.Module):
         self.resnet_after_steps = resnet_after_steps
         self.resnet_detach_param = resnet_detach_param
         self.mask_with_bias = mask_with_bias
+        self.mask_feature = mask_feature
         for i in range(num_cross_layers):
             self.w.append(nn.Linear(input_dim, input_dim, bias=False))
             self.b.append(nn.Parameter(torch.zeros((input_dim,))))
@@ -257,7 +272,7 @@ class LinearCrossLayer(nn.Module):
                 resnet_freeze=resnet_freeze,
                 resnet_initialize=resnet_initialize
             ),
-            nn.ReLU()
+            getattr(nn, resnet_mask_activation)()
         )
         self.sfc = nn.Linear(input_dim, 1)
 
@@ -272,10 +287,13 @@ class LinearCrossLayer(nn.Module):
                 if (self.resnet_detach_param):
                     weight_param = weight_param.detach()
                 mask = self.masker(weight_param)
-            if(self.mask_with_bias):
-                x = x0 * (H + self.b[i]) * mask + x
+            if self.mask_feature:
+                x = x0 * (H + self.b[i]) + x * mask
             else:
-                x = x0 * (H * mask + self.b[i]) + x
+                if self.mask_with_bias:
+                    x = x0 * (H + self.b[i]) * mask + x
+                else:
+                    x = x0 * (H * mask + self.b[i]) + x
             if len(self.dropout) > i:
                 x = self.dropout[i](x)
         logit = self.sfc(x)

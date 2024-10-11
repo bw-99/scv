@@ -47,6 +47,7 @@ class PGAResNet(BaseModel):
                  mask_with_bias=False,
                  resnet_pretrain=True,
                  resnet_freeze=False,
+                 resnet_initialize=True,
                  **kwargs):
         super(PGAResNet, self).__init__(feature_map,
                                             model_id=model_id,
@@ -70,7 +71,8 @@ class PGAResNet(BaseModel):
                                               resnet_detach_param=resnet_detach_param,
                                               mask_with_bias=mask_with_bias, 
                                               resnet_pretrain=resnet_pretrain,
-                                              resnet_freeze=resnet_freeze)
+                                              resnet_freeze=resnet_freeze,
+                                              resnet_initialize=resnet_initialize)
         self.LCN = LinearCrossLayer(input_dim=input_dim,
                                        num_cross_layers=num_shallow_cross_layers,
                                        net_dropout=shallow_net_dropout,
@@ -82,7 +84,8 @@ class PGAResNet(BaseModel):
                                        resnet_detach_param=resnet_detach_param,
                                        mask_with_bias=mask_with_bias,
                                        resnet_pretrain=resnet_pretrain,
-                                       resnet_freeze=resnet_freeze)
+                                       resnet_freeze=resnet_freeze,
+                                       resnet_initialize=resnet_initialize)
         self.cur_step = 0
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
@@ -155,7 +158,8 @@ class ExponentialCrossNetwork(nn.Module):
                  resnet_detach_param=False,
                  mask_with_bias=False,
                  resnet_pretrain=False,
-                 resnet_freeze=False):
+                 resnet_freeze=False,
+                 resnet_initialize=True):
         super(ExponentialCrossNetwork, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
@@ -182,7 +186,8 @@ class ExponentialCrossNetwork(nn.Module):
                 input_dim=input_dim,
                 resnet_type=resnet_type,
                 resnet_pretrain=resnet_pretrain,
-                resnet_freeze=resnet_freeze
+                resnet_freeze=resnet_freeze,
+                resnet_initialize=resnet_initialize
             ),
             nn.ReLU()
         )
@@ -221,7 +226,8 @@ class LinearCrossLayer(nn.Module):
                  resnet_detach_param=False,
                  mask_with_bias=False,
                  resnet_pretrain=False,
-                 resnet_freeze=False):
+                 resnet_freeze=False,
+                 resnet_initialize=True):
         super(LinearCrossLayer, self).__init__()
         self.num_cross_layers = num_cross_layers
         self.layer_norm = nn.ModuleList()
@@ -248,7 +254,8 @@ class LinearCrossLayer(nn.Module):
                 input_dim=input_dim,
                 resnet_type=resnet_type,
                 resnet_pretrain=resnet_pretrain,
-                resnet_freeze=resnet_freeze
+                resnet_freeze=resnet_freeze,
+                resnet_initialize=resnet_initialize
             ),
             nn.ReLU()
         )
@@ -281,6 +288,7 @@ class ResNet2DEmbeddingModel(nn.Module):
                  resnet_type='resnet18',
                  resnet_pretrain=True,
                  resnet_freeze=False,
+                 resnet_initialize=True,
                  **kwargs):
         super(ResNet2DEmbeddingModel, self).__init__()
         self.input_dim = input_dim
@@ -301,7 +309,8 @@ class ResNet2DEmbeddingModel(nn.Module):
         self.output_layer = nn.Linear(resnet_out_dim, input_dim)
 
         # * initialize layer4
-        self.resnet.layer4.apply(self.initialize_weights)
+        if resnet_initialize:
+            self.resnet.layer4.apply(self.initialize_weights)
 
         # * freeze backbone layers
         if resnet_freeze:

@@ -22,7 +22,7 @@ sys.path.append("/home/lhh/code")
 from datetime import datetime
 import gc
 import argparse
-from fuxictr import autotuner
+import autotuner
 import torch
 
 if __name__ == '__main__':
@@ -42,4 +42,5 @@ if __name__ == '__main__':
 
     # generate parameter space combinations
     config_dir = autotuner.enumerate_params(args['config'])
+    print(config_dir)
     autotuner.grid_search(config_dir, gpu_list, expid_tag)

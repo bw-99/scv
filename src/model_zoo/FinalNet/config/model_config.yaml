@@ -37,7 +37,7 @@ FinalNet_test:
     shuffle: True
     seed: 20222023
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 FinalNet_default: # This is a config template
     model: FinalNet
@@ -65,4 +65,4 @@ FinalNet_default: # This is a config template
     shuffle: True
     seed: 20222023
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'

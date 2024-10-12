@@ -43,7 +43,7 @@ ETA_test:
     shuffle: True
     seed: 20222023
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 ETA_default: # This is a config template
     model: ETA
@@ -76,5 +76,5 @@ ETA_default: # This is a config template
     shuffle: True
     seed: 20222023
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 

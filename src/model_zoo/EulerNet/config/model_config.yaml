@@ -32,7 +32,7 @@ EulerNet_test: # This is a config template
     shuffle: True
     seed: 2021
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 EulerNet_test: # This is a config template
     model: EulerNet
@@ -54,4 +54,4 @@ EulerNet_test: # This is a config template
     shuffle: True
     seed: 2021
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'

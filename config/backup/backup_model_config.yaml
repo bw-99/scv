@@ -32,8 +32,8 @@ ECN_Avazu:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 DCNv3_Avazu:
     model: DCNv3
@@ -57,8 +57,8 @@ DCNv3_Avazu:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 ECN_Criteo: # This is a config template
     model: ECN
@@ -80,8 +80,8 @@ ECN_Criteo: # This is a config template
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 DCNv3_Criteo:
     model: DCNv3
@@ -105,8 +105,8 @@ DCNv3_Criteo:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 ECN_ML_1M: # This is a config template
     model: ECN
@@ -128,8 +128,8 @@ ECN_ML_1M: # This is a config template
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 DCNv3_ML_1M:
     model: DCNv3
@@ -154,8 +154,8 @@ DCNv3_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 ECN_iPinYou_x1: # This is a config template
     model: ECN
@@ -177,8 +177,8 @@ ECN_iPinYou_x1: # This is a config template
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 DCNv3_iPinYou_x1:
     model: DCNv3
@@ -203,8 +203,8 @@ DCNv3_iPinYou_x1:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 ECN_KKBox_x10: # This is a config template
     model: ECN
@@ -226,8 +226,8 @@ ECN_KKBox_x10: # This is a config template
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 DCNv3_KKBox_x10:
     model: DCNv3
@@ -252,8 +252,8 @@ DCNv3_KKBox_x10:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 ECN_KDD12: # This is a config template
     model: ECN
@@ -275,8 +275,8 @@ ECN_KDD12: # This is a config template
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 DCNv3_KDD12:
     model: DCNv3
@@ -300,5 +300,5 @@ DCNv3_KDD12:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'

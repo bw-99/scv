@@ -40,7 +40,7 @@ DESTINE_test:
     shuffle: True
     seed: 2021
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 DESTINE_default: # This is a config template
     model: DESTINE
@@ -70,5 +70,5 @@ DESTINE_default: # This is a config template
     shuffle: True
     seed: 2021
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 

@@ -32,7 +32,7 @@ PNN_test:
     shuffle: True
     seed: 2019
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 PNN_default: # This is a config template
     model: PNN
@@ -54,4 +54,4 @@ PNN_default: # This is a config template
     shuffle: True
     seed: 2019
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'

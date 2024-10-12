@@ -35,7 +35,7 @@ DSSM_test:
     shuffle: True
     seed: 2022
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 DSSM_default: # This is a config template
     model: DSSM
@@ -60,5 +60,5 @@ DSSM_default: # This is a config template
     shuffle: True
     seed: 2022
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 

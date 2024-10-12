@@ -631,6 +631,8 @@ PGAResNet_iPinYou_x1:
     mask_with_bias: False
     resnet_freeze: True
     resnet_initialize: True
+    exp_mask_layer_cnt: "single"
+    sha_mask_layer_cnt: "single"
     epochs: 100
     shuffle: True
     seed: 2024

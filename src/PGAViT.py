@@ -47,7 +47,8 @@ class PGAViT(BaseModel):
                  vit_detach_param=False,
                  mask_feature=False,
                  mask_with_bias=False,
-                 mask_layer_cnt="single",
+                 exp_mask_layer_cnt="single",
+                 sha_mask_layer_cnt="single",
                  **kwargs):
         super(PGAViT, self).__init__(feature_map,
                                     model_id=model_id,
@@ -55,7 +56,8 @@ class PGAViT(BaseModel):
                                     embedding_regularizer=embedding_regularizer,
                                     net_regularizer=net_regularizer,
                                     **kwargs)
-        assert mask_layer_cnt in ["single", "multiple", "none"]
+        assert exp_mask_layer_cnt in ["single", "multiple", "none"]
+        assert sha_mask_layer_cnt in ["single", "multiple", "none"]
         self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
         input_dim = feature_map.sum_emb_out_dim()
         self.num_deep_cross_layers = num_deep_cross_layers
@@ -75,7 +77,7 @@ class PGAViT(BaseModel):
                                             vit_after_steps=vit_after_steps,
                                             mask_feature=mask_feature,
                                             vit_detach_param=vit_detach_param,
-                                            mask_layer_cnt=mask_layer_cnt,
+                                            exp_mask_layer_cnt=exp_mask_layer_cnt,
                                             mask_with_bias=mask_with_bias)
         self.LCN = LinearCrossViTLayer(input_dim=input_dim,
                                       num_cross_layers=num_shallow_cross_layers,
@@ -91,7 +93,7 @@ class PGAViT(BaseModel):
                                       vit_after_steps=vit_after_steps,
                                       mask_feature=mask_feature,
                                       vit_detach_param=vit_detach_param, 
-                                      mask_layer_cnt=mask_layer_cnt,
+                                      sha_mask_layer_cnt=sha_mask_layer_cnt,
                                       mask_with_bias=mask_with_bias)
         self.cur_step=0
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
@@ -168,7 +170,7 @@ class ExponentialCrossViTNetwork(nn.Module):
                  vit_after_steps=0,
                  mask_feature=False,
                  vit_detach_param=False,
-                 mask_layer_cnt="single",
+                 exp_mask_layer_cnt="single",
                  mask_with_bias=False):
         super(ExponentialCrossViTNetwork, self).__init__()
         self.num_cross_layers = num_cross_layers
@@ -181,7 +183,7 @@ class ExponentialCrossViTNetwork(nn.Module):
         self.vit_detach_param = vit_detach_param
         self.mask_with_bias = mask_with_bias
         self.mask_feature = mask_feature
-        self.mask_layer_cnt = mask_layer_cnt
+        self.mask_layer_cnt = exp_mask_layer_cnt
         self.masker_lst = nn.ModuleList()
         for i in range(num_cross_layers):
             self.w.append(nn.Linear(input_dim, input_dim, bias=False))
@@ -265,7 +267,7 @@ class LinearCrossViTLayer(nn.Module):
                  vit_after_steps=0,
                  vit_detach_param=False,
                  mask_feature=False,
-                 mask_layer_cnt="single",
+                 sha_mask_layer_cnt="single",
                  mask_with_bias=False):
         super(LinearCrossViTLayer, self).__init__()
         self.num_cross_layers = num_cross_layers
@@ -278,7 +280,7 @@ class LinearCrossViTLayer(nn.Module):
         self.vit_after_steps = vit_after_steps
         self.mask_with_bias=mask_with_bias
         self.mask_feature = mask_feature
-        self.mask_layer_cnt = mask_layer_cnt
+        self.mask_layer_cnt = sha_mask_layer_cnt
         self.masker_lst = nn.ModuleList()
         for i in range(num_cross_layers):
             self.w.append(nn.Linear(input_dim, input_dim, bias=False))

@@ -1,0 +1,335 @@
+# =========================================================================
+# Copyright (C) 2024 salmon@github
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# =========================================================================
+
+import torch
+from torch import nn
+from fuxictr.pytorch.models import BaseModel
+from fuxictr.pytorch.layers import FeatureEmbedding
+from fuxictr.pytorch.torch_utils import get_regularizer
+from tqdm import tqdm
+import logging
+import numpy as np
+import sys
+import torchvision.models as models  # torchvision 모델 임포트
+import torch.nn.functional as F
+
+class PGAResNetDCNv3(BaseModel):
+    def __init__(self,
+                 feature_map,
+                 model_id="PGAResNetDCNv3",  # 모델 ID 업데이트
+                 gpu=-1,
+                 learning_rate=1e-3,
+                 embedding_dim=16,
+                 num_deep_cross_layers=4,
+                 num_shallow_cross_layers=4,
+                 deep_net_dropout=0.1,
+                 shallow_net_dropout=0.3,
+                 layer_norm=True,
+                 batch_norm=False,
+                 num_heads=1,
+                 embedding_regularizer=None,
+                 net_regularizer=None,
+                 resnet_type='resnet18',  # ResNet 파라미터 추가
+                 resnet_after_steps=0,
+                 resnet_detach_param=True,
+                 resnet_pretrain=True,
+                 resnet_freeze=False,
+                 resnet_initialize=True,
+                 resnet_mask_activation="ReLU",
+                 **kwargs):
+        super(PGAResNetDCNv3, self).__init__(feature_map,
+                                            model_id=model_id,
+                                            gpu=gpu,
+                                            embedding_regularizer=embedding_regularizer,
+                                            net_regularizer=net_regularizer,
+                                            **kwargs)
+        self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
+        input_dim = feature_map.sum_emb_out_dim()
+        self.num_deep_cross_layers = num_deep_cross_layers
+        self.num_shallow_cross_layers = num_shallow_cross_layers
+        self.resnet_detach_param = resnet_detach_param
+        self.ECN = ExponentialCrossNetwork(input_dim=input_dim,
+                                              num_cross_layers=num_deep_cross_layers,
+                                              net_dropout=deep_net_dropout,
+                                              layer_norm=layer_norm,
+                                              batch_norm=batch_norm,
+                                              num_heads=num_heads,
+                                              resnet_type=resnet_type,
+                                              resnet_after_steps=resnet_after_steps,
+                                              resnet_detach_param=resnet_detach_param,
+                                              resnet_pretrain=resnet_pretrain,
+                                              resnet_freeze=resnet_freeze,
+                                              resnet_initialize=resnet_initialize,
+                                              resnet_mask_activation=resnet_mask_activation)
+        self.LCN = LinearCrossLayer(input_dim=input_dim,
+                                       num_cross_layers=num_shallow_cross_layers,
+                                       net_dropout=shallow_net_dropout,
+                                       layer_norm=layer_norm,
+                                       batch_norm=batch_norm,
+                                       num_heads=num_heads,
+                                       resnet_type=resnet_type,
+                                       resnet_after_steps=resnet_after_steps,
+                                       resnet_detach_param=resnet_detach_param,
+                                       resnet_pretrain=resnet_pretrain,
+                                       resnet_freeze=resnet_freeze,
+                                       resnet_initialize=resnet_initialize,
+                                       resnet_mask_activation=resnet_mask_activation)
+        self.cur_step = 0
+        self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
+        self.reset_parameters()
+        self.model_to_device()
+
+    def forward(self, inputs):
+        X = self.get_inputs(inputs)
+        feature_emb = self.embedding_layer(X)
+        dlogit = self.ECN(feature_emb, self.cur_step).mean(dim=1)
+        slogit = self.LCN(feature_emb, self.cur_step).mean(dim=1)
+        logit = (dlogit + slogit) * 0.5
+        y_pred = self.output_activation(logit)
+        return_dict = {"y_pred": y_pred,
+                       "y_d": self.output_activation(dlogit),
+                       "y_s": self.output_activation(slogit)}
+        return return_dict
+
+    def train_step(self, inputs):
+        self.optimizer.zero_grad()
+        return_dict = self.forward(inputs)
+        y_true = self.get_labels(inputs)
+        y_pred = return_dict["y_pred"]
+        y_d = return_dict["y_d"]
+        y_s = return_dict["y_s"]
+        loss = self.loss_fn(y_pred, y_true, reduction='mean')
+        loss_d = self.loss_fn(y_d, y_true, reduction='mean')
+        loss_s = self.loss_fn(y_s, y_true, reduction='mean')
+        weight_d = loss_d - loss
+        weight_s = loss_s - loss
+        weight_d = torch.where(weight_d > 0, weight_d, torch.zeros(1).to(weight_d.device))
+        weight_s = torch.where(weight_s > 0, weight_s, torch.zeros(1).to(weight_s.device))
+        loss = loss + loss_d * weight_d + loss_s * weight_s
+        loss += self.regularization_loss()
+        loss.backward(retain_graph=True)
+        nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
+        self.optimizer.step()
+        self.cur_step += 1
+        return loss
+
+
+class MultiHeadFeatureEmbedding(nn.Module):
+    def __init__(self, feature_map, embedding_dim, num_heads=2):
+        super(MultiHeadFeatureEmbedding, self).__init__()
+        self.num_heads = num_heads
+        self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
+
+    def forward(self, X):  # H = num_heads
+        feature_emb = self.embedding_layer(X)  # B × F × D
+        multihead_feature_emb = torch.tensor_split(feature_emb, self.num_heads, dim=-1)
+        multihead_feature_emb = torch.stack(multihead_feature_emb, dim=1)  # B × H × F × D/H
+        multihead_feature_emb1, multihead_feature_emb2 = torch.tensor_split(multihead_feature_emb, 2,
+                                                                            dim=-1)  # B × H × F × D/2H
+        multihead_feature_emb1, multihead_feature_emb2 = multihead_feature_emb1.flatten(start_dim=2), \
+                                                         multihead_feature_emb2.flatten(
+                                                             start_dim=2)  # B × H × FD/2H; B × H × FD/2H
+        multihead_feature_emb = torch.cat([multihead_feature_emb1, multihead_feature_emb2], dim=-1)
+        return multihead_feature_emb  # B × H × FD/H
+
+
+class ExponentialCrossNetwork(nn.Module):
+    def __init__(self,
+                 input_dim,
+                 num_cross_layers=3,
+                 layer_norm=True,
+                 batch_norm=False,
+                 net_dropout=0.1,
+                 num_heads=1,
+                 resnet_type='resnet18',  # ResNet 파라미터 추가
+                 resnet_after_steps=0,
+                 resnet_detach_param=False,
+                 resnet_pretrain=False,
+                 resnet_freeze=False,
+                 resnet_initialize=True,
+                 resnet_mask_activation="ReLU"):
+        super(ExponentialCrossNetwork, self).__init__()
+        self.num_cross_layers = num_cross_layers
+        self.layer_norm = nn.ModuleList()
+        self.batch_norm = nn.ModuleList()
+        self.dropout = nn.ModuleList()
+        self.w = nn.ModuleList()
+        self.b = nn.ParameterList()
+        self.masker_lst = nn.ModuleList()
+        self.resnet_after_steps = resnet_after_steps
+        self.resnet_detach_param = resnet_detach_param
+        for i in range(num_cross_layers):
+            self.w.append(nn.Linear(input_dim, input_dim//2, bias=False))
+            self.b.append(nn.Parameter(torch.zeros((input_dim,))))
+            if layer_norm:
+                self.layer_norm.append(nn.LayerNorm(input_dim//2))
+            if batch_norm:
+                self.batch_norm.append(nn.BatchNorm1d(num_heads))
+            if net_dropout > 0:
+                self.dropout.append(nn.Dropout(net_dropout))
+            nn.init.uniform_(self.b[i].data)
+        self.masker = nn.Sequential(
+            ResNet2DEmbeddingModel(
+                input_dim=input_dim//2,
+                resnet_type=resnet_type,
+                resnet_pretrain=resnet_pretrain,
+                resnet_freeze=resnet_freeze,
+                resnet_initialize=resnet_initialize
+            ),
+            getattr(nn, resnet_mask_activation)()
+        )
+        self.dfc = nn.Linear(input_dim, 1)
+
+    def forward(self, x, cur_step):
+        for i in range(self.num_cross_layers):
+            H = self.w[i](x)
+            if len(self.batch_norm) > i:
+                H = self.batch_norm[i](H)
+            if (cur_step >= self.resnet_after_steps):
+                weight_param = self.w[i].weight
+                if (self.resnet_detach_param):
+                    weight_param = weight_param.detach()
+                mask = self.masker(weight_param)
+            H = torch.cat([H, H * mask], dim=-1)
+            x = x * (H + self.b[i]) + x
+            if len(self.dropout) > i:
+                x = self.dropout[i](x)
+        logit = self.dfc(x)
+        return logit
+
+
+class LinearCrossLayer(nn.Module):
+    def __init__(self,
+                 input_dim,
+                 num_cross_layers=3,
+                 layer_norm=True,
+                 batch_norm=True,
+                 net_dropout=0.1,
+                 num_heads=1,
+                 resnet_type='resnet18',  # ResNet 파라미터 추가
+                 resnet_after_steps=0,
+                 resnet_detach_param=False,
+                 resnet_pretrain=False,
+                 resnet_freeze=False,
+                 resnet_initialize=True,
+                 resnet_mask_activation="ReLU"):
+        super(LinearCrossLayer, self).__init__()
+        self.num_cross_layers = num_cross_layers
+        self.layer_norm = nn.ModuleList()
+        self.batch_norm = nn.ModuleList()
+        self.dropout = nn.ModuleList()
+        self.w = nn.ModuleList()
+        self.b = nn.ParameterList()
+        self.masker_lst = nn.ModuleList()
+        self.resnet_after_steps = resnet_after_steps
+        self.resnet_detach_param = resnet_detach_param
+        for i in range(num_cross_layers):
+            self.w.append(nn.Linear(input_dim, input_dim//2, bias=False))
+            self.b.append(nn.Parameter(torch.zeros((input_dim,))))
+            if layer_norm:
+                self.layer_norm.append(nn.LayerNorm(input_dim//2))
+            if batch_norm:
+                self.batch_norm.append(nn.BatchNorm1d(num_heads))
+            if net_dropout > 0:
+                self.dropout.append(nn.Dropout(net_dropout))
+            nn.init.uniform_(self.b[i].data)
+        self.masker = nn.Sequential(
+            ResNet2DEmbeddingModel(
+                input_dim=input_dim//2,
+                resnet_type=resnet_type,
+                resnet_pretrain=resnet_pretrain,
+                resnet_freeze=resnet_freeze,
+                resnet_initialize=resnet_initialize
+            ),
+            getattr(nn, resnet_mask_activation)()
+        )
+        self.sfc = nn.Linear(input_dim, 1)
+
+    def forward(self, x, cur_step):
+        x0 = x
+        for i in range(self.num_cross_layers):
+            H = self.w[i](x)
+            if len(self.batch_norm) > i:
+                H = self.batch_norm[i](H)
+            if (cur_step >= self.resnet_after_steps):
+                weight_param = self.w[i].weight
+                if (self.resnet_detach_param):
+                    weight_param = weight_param.detach()
+                mask = self.masker(weight_param)
+            H = torch.cat([H, H * mask], dim=-1)
+            x = x0 * (H + self.b[i]) + x
+            if len(self.dropout) > i:
+                x = self.dropout[i](x)
+        logit = self.sfc(x)
+        return logit
+
+
+class ResNet2DEmbeddingModel(nn.Module):
+    def __init__(self,
+                 input_dim,
+                 resnet_type='resnet18',
+                 resnet_pretrain=True,
+                 resnet_freeze=False,
+                 resnet_initialize=True,
+                 **kwargs):
+        super(ResNet2DEmbeddingModel, self).__init__()
+        self.input_dim = input_dim
+
+        if resnet_type == 'resnet18':
+            self.resnet = models.resnet18(pretrained=resnet_pretrain)
+            resnet_out_dim = 512
+        elif resnet_type == 'resnet34':
+            self.resnet = models.resnet34(pretrained=resnet_pretrain)
+            resnet_out_dim = 512
+        elif resnet_type == 'resnet50':
+            self.resnet = models.resnet50(pretrained=resnet_pretrain)
+            resnet_out_dim = 2048
+        else:
+            raise ValueError("Invalid resnet_type")
+
+        self.resnet.fc = nn.Identity()
+        self.output_layer = nn.Linear(resnet_out_dim, input_dim)
+
+        # * initialize layer4
+        if resnet_initialize:
+            self.resnet.layer4.apply(self.initialize_weights)
+
+        # * freeze backbone layers
+        if resnet_freeze:
+            print("resnet_freeze")
+            for name, param in self.resnet.named_parameters():
+                if "layer4" not in name:
+                    param.requires_grad = False
+
+    def initialize_weights(self,module):
+        if isinstance(module, nn.Conv2d) or isinstance(module, nn.Linear):
+            nn.init.xavier_uniform_(module.weight)
+            if module.bias is not None:
+                nn.init.zeros_(module.bias)
+
+    def forward(self, x):
+        if len(x.shape) == 2:
+            x = x.unsqueeze(0)
+        if len(x.shape) == 3:
+            x = x.unsqueeze(1)
+
+        min_size = 32
+        x = x.repeat(1, 3, 1, 1)
+        if x.size(2) < min_size or x.size(3) < min_size:
+            x = F.interpolate(x, size=(min_size, min_size), mode='bilinear', align_corners=False)
+
+        x = self.resnet(x)
+        x = self.output_layer(x)
+        return x

@@ -45,7 +45,9 @@ class PGAViT(BaseModel):
                  vit_num_heads=8,
                  vit_after_steps=0,
                  vit_detach_param=False,
+                 mask_feature=False,
                  mask_with_bias=False,
+                 mask_layer_cnt="single",
                  **kwargs):
         super(PGAViT, self).__init__(feature_map,
                                     model_id=model_id,
@@ -53,6 +55,7 @@ class PGAViT(BaseModel):
                                     embedding_regularizer=embedding_regularizer,
                                     net_regularizer=net_regularizer,
                                     **kwargs)
+        assert mask_layer_cnt in ["single", "multiple", "none"]
         self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
         input_dim = feature_map.sum_emb_out_dim()
         self.num_deep_cross_layers = num_deep_cross_layers
@@ -70,7 +73,9 @@ class PGAViT(BaseModel):
                                             vit_num_layers=vit_num_layers,
                                             vit_num_heads=vit_num_heads,
                                             vit_after_steps=vit_after_steps,
+                                            mask_feature=mask_feature,
                                             vit_detach_param=vit_detach_param,
+                                            mask_layer_cnt=mask_layer_cnt,
                                             mask_with_bias=mask_with_bias)
         self.LCN = LinearCrossViTLayer(input_dim=input_dim,
                                       num_cross_layers=num_shallow_cross_layers,
@@ -84,7 +89,9 @@ class PGAViT(BaseModel):
                                       vit_num_layers=vit_num_layers,
                                       vit_num_heads=vit_num_heads,
                                       vit_after_steps=vit_after_steps,
+                                      mask_feature=mask_feature,
                                       vit_detach_param=vit_detach_param, 
+                                      mask_layer_cnt=mask_layer_cnt,
                                       mask_with_bias=mask_with_bias)
         self.cur_step=0
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
@@ -159,7 +166,9 @@ class ExponentialCrossViTNetwork(nn.Module):
                  vit_num_layers=2, 
                  vit_num_heads=4,
                  vit_after_steps=0,
+                 mask_feature=False,
                  vit_detach_param=False,
+                 mask_layer_cnt="single",
                  mask_with_bias=False):
         super(ExponentialCrossViTNetwork, self).__init__()
         self.num_cross_layers = num_cross_layers
@@ -168,10 +177,12 @@ class ExponentialCrossViTNetwork(nn.Module):
         self.dropout = nn.ModuleList()
         self.w = nn.ModuleList()
         self.b = nn.ParameterList()
-        self.masker_lst = nn.ModuleList()
         self.vit_after_steps = vit_after_steps
         self.vit_detach_param = vit_detach_param
         self.mask_with_bias = mask_with_bias
+        self.mask_feature = mask_feature
+        self.mask_layer_cnt = mask_layer_cnt
+        self.masker_lst = nn.ModuleList()
         for i in range(num_cross_layers):
             self.w.append(nn.Linear(input_dim, input_dim, bias=False))
             self.b.append(nn.Parameter(torch.zeros((input_dim,))))
@@ -182,16 +193,30 @@ class ExponentialCrossViTNetwork(nn.Module):
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
             nn.init.uniform_(self.b[i].data)
-        self.masker = nn.Sequential(
-            VIT2DEmbeddingModel(
-                vit_input_dim=vit_input_dim,
-                vit_patch_size=vit_patch_size,
-                vit_hidden_dim=vit_hidden_dim,
-                vit_num_layers=vit_num_layers,
-                vit_num_heads=vit_num_heads
-            ),
-            nn.ReLU()
-        )
+
+            if self.mask_layer_cnt == "multiple":
+                self.masker_lst.append(nn.Sequential(
+                    VIT2DEmbeddingModel(
+                        vit_input_dim=vit_input_dim,
+                        vit_patch_size=vit_patch_size,
+                        vit_hidden_dim=vit_hidden_dim,
+                        vit_num_layers=vit_num_layers,
+                        vit_num_heads=vit_num_heads
+                    ),
+                    nn.ReLU()
+                ))
+        
+        if self.mask_layer_cnt == "single":
+            self.masker = nn.Sequential(
+                VIT2DEmbeddingModel(
+                    vit_input_dim=vit_input_dim,
+                    vit_patch_size=vit_patch_size,
+                    vit_hidden_dim=vit_hidden_dim,
+                    vit_num_layers=vit_num_layers,
+                    vit_num_heads=vit_num_heads
+                ),
+                nn.ReLU()
+            )
         self.dfc = nn.Linear(input_dim, 1)
 
     def forward(self, x, cur_step):
@@ -203,12 +228,21 @@ class ExponentialCrossViTNetwork(nn.Module):
                 weight_param = self.w[i].weight
                 if(self.vit_detach_param):
                     weight_param = weight_param.detach()
-                mask = self.masker(weight_param)
 
-            if(self.mask_with_bias):
-                x = x * (H + self.b[i]) * mask + x
+                if self.mask_layer_cnt == "single":
+                    mask = self.masker(weight_param)
+                elif self.mask_layer_cnt == "multiple":
+                    mask = self.masker_lst[i](weight_param)
+                else:
+                    mask = torch.ones_like(x)
+
+            if self.mask_feature:
+                x = x * (H + self.b[i]) + x * mask
             else:
-                x = x * (H * mask + self.b[i]) + x
+                if self.mask_with_bias:
+                    x = x * (H + self.b[i]) * mask + x
+                else:
+                    x = x * (H * mask + self.b[i]) + x
             if len(self.dropout) > i:
                 x = self.dropout[i](x)
         logit = self.dfc(x)
@@ -230,6 +264,8 @@ class LinearCrossViTLayer(nn.Module):
                  vit_num_heads=4,
                  vit_after_steps=0,
                  vit_detach_param=False,
+                 mask_feature=False,
+                 mask_layer_cnt="single",
                  mask_with_bias=False):
         super(LinearCrossViTLayer, self).__init__()
         self.num_cross_layers = num_cross_layers
@@ -238,10 +274,12 @@ class LinearCrossViTLayer(nn.Module):
         self.dropout = nn.ModuleList()
         self.w = nn.ModuleList()
         self.b = nn.ParameterList()
-        self.masker_lst = nn.ModuleList()
         self.vit_detach_param = vit_detach_param
         self.vit_after_steps = vit_after_steps
         self.mask_with_bias=mask_with_bias
+        self.mask_feature = mask_feature
+        self.mask_layer_cnt = mask_layer_cnt
+        self.masker_lst = nn.ModuleList()
         for i in range(num_cross_layers):
             self.w.append(nn.Linear(input_dim, input_dim, bias=False))
             self.b.append(nn.Parameter(torch.zeros((input_dim,))))
@@ -252,16 +290,30 @@ class LinearCrossViTLayer(nn.Module):
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
             nn.init.uniform_(self.b[i].data)
-        self.masker = nn.Sequential(
-            VIT2DEmbeddingModel(
-                vit_input_dim=vit_input_dim,
-                vit_patch_size=vit_patch_size,
-                vit_hidden_dim=vit_hidden_dim,
-                vit_num_layers=vit_num_layers,
-                vit_num_heads=vit_num_heads
-            ),
-            nn.ReLU()
-        )
+
+            if self.mask_layer_cnt == "multiple":
+                self.masker_lst.append(nn.Sequential(
+                    VIT2DEmbeddingModel(
+                        vit_input_dim=vit_input_dim,
+                        vit_patch_size=vit_patch_size,
+                        vit_hidden_dim=vit_hidden_dim,
+                        vit_num_layers=vit_num_layers,
+                        vit_num_heads=vit_num_heads
+                    ),
+                    nn.ReLU()
+                ))
+        
+        if self.mask_layer_cnt == "single":
+            self.masker = nn.Sequential(
+                VIT2DEmbeddingModel(
+                    vit_input_dim=vit_input_dim,
+                    vit_patch_size=vit_patch_size,
+                    vit_hidden_dim=vit_hidden_dim,
+                    vit_num_layers=vit_num_layers,
+                    vit_num_heads=vit_num_heads
+                ),
+                nn.ReLU()
+            )
         self.sfc = nn.Linear(input_dim, 1)
 
     def forward(self, x, cur_step):
@@ -274,13 +326,21 @@ class LinearCrossViTLayer(nn.Module):
                 weight_param = self.w[i].weight
                 if(self.vit_detach_param):
                     weight_param = weight_param.detach()
-                mask = self.masker(weight_param)
 
-            if(self.mask_with_bias):
-                x = x0 * (H + self.b[i]) * mask + x
+                if self.mask_layer_cnt == "single":
+                    mask = self.masker(weight_param)
+                elif self.mask_layer_cnt == "multiple":
+                    mask = self.masker_lst[i](weight_param)
+                else:
+                    mask = torch.ones_like(x)
+
+            if self.mask_feature:
+                x = x * (H + self.b[i]) + x * mask
             else:
-                x = x0* (H * mask + self.b[i]) + x
-
+                if self.mask_with_bias:
+                    x = x * (H + self.b[i]) * mask + x
+                else:
+                    x = x * (H * mask + self.b[i]) + x
             if len(self.dropout) > i:
                 x = self.dropout[i](x)
         logit = self.sfc(x)

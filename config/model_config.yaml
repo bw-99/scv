@@ -594,6 +594,7 @@ PGAViT_iPinYou_x1:
     vit_num_layers: 2
     vit_num_heads: 8
     num_heads: 1
+    mask_feature: False
     mask_with_bias: False
     epochs: 100
     shuffle: True

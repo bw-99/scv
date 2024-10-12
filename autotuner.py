@@ -126,10 +126,14 @@ def load_experiment_ids(config_dir):
 
 def grid_search(config_dir, gpu_list, expid_tag=None, script='run_expid.py'):
     expname = config_dir.split("/")[-1]
-    exp_history = pd.read_csv(f"{expname}.csv", header=None)
-    exp_history_lst = exp_history[2].tolist()
-    exp_history_lst = [item.replace("[exp_id]", "").strip() for item in exp_history_lst]
 
+    try:
+        exp_history = pd.read_csv(f"{expname}.csv", header=None)
+        exp_history_lst = exp_history[2].tolist()
+        exp_history_lst = [item.replace("[exp_id]", "").strip() for item in exp_history_lst]
+    except:
+        exp_history_lst = []
+        
     experiment_id_list = load_experiment_ids(config_dir)
     if expid_tag is not None:
         experiment_id_list = [expid for expid in experiment_id_list if str(expid_tag) in expid]

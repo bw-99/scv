@@ -762,6 +762,32 @@ LogDCNv2_iPinYou_x1: # This is a config template
     monitor_mode: 'min'
 
 
+LogCN_iPinYou_x1: # This is a config template
+    model: LogCN
+    dataset_id: iPinYou_x1_csv
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-3
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    num_mask_blocks: 3
+    num_mask_heads: 2
+    net_dropout: 0.1
+    layer_norm: True
+    batch_norm: True
+    num_heads: 1
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 16
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
+
+
 
 ViTDCNv2_iPinYou_x1:
     model: ViTDCNv2

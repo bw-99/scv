@@ -32,7 +32,7 @@ ECN_Avazu:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 DCNv3_Avazu:
@@ -57,7 +57,7 @@ DCNv3_Avazu:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 ECN_Criteo: # This is a config template
@@ -80,7 +80,7 @@ ECN_Criteo: # This is a config template
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 DCNv3_Criteo:
@@ -105,7 +105,7 @@ DCNv3_Criteo:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 ECN_ML_1M: # This is a config template
@@ -128,7 +128,7 @@ ECN_ML_1M: # This is a config template
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 DCNv3_ML_1M:
@@ -154,7 +154,7 @@ DCNv3_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 ECN_iPinYou_x1: # This is a config template
@@ -177,7 +177,7 @@ ECN_iPinYou_x1: # This is a config template
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 DCNv3_iPinYou_x1:
@@ -203,7 +203,7 @@ DCNv3_iPinYou_x1:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 ECN_KKBox_x10: # This is a config template
@@ -226,7 +226,7 @@ ECN_KKBox_x10: # This is a config template
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 DCNv3_KKBox_x10:
@@ -252,7 +252,7 @@ DCNv3_KKBox_x10:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 ECN_KDD12: # This is a config template
@@ -275,7 +275,7 @@ ECN_KDD12: # This is a config template
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 DCNv3_KDD12:
@@ -300,5 +300,5 @@ DCNv3_KDD12:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'

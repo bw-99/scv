@@ -8,8 +8,7 @@ tuner_space:
     batch_size: [4096]
     # batch_size: [40960]
     # num_mask_heads: [4, 3, 2, 1]
-    num_mask_heads: [4]
-    num_mask_blocks: [2]
+    num_mask_heads: [5, 4, 3, 2, 1]
+    num_mask_blocks: [1, 2, 3, 4]
     net_dropout: [0]
     batch_norm: [True, False]
-    monitor_mode: "min"

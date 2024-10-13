@@ -59,7 +59,7 @@ DCNv2_KKBox_x10:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 ViTDCNv2_KKBox_x10:
@@ -89,7 +89,7 @@ ViTDCNv2_KKBox_x10:
     seed: 2024
     num_workers: 16
     mask_activation: "ReLU"
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 DCNv3_KKBox_x10:
@@ -115,7 +115,7 @@ DCNv3_KKBox_x10:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -146,7 +146,7 @@ ViTDCNv3_KKBox_x10:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -178,7 +178,7 @@ ViTLinDCNv3_KKBox_x10:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -210,7 +210,7 @@ ViTExpDCNv3_KKBox_x10:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 DCNv2_ML_1M:
@@ -236,7 +236,7 @@ DCNv2_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -263,7 +263,7 @@ DCNv3_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -294,7 +294,7 @@ ViTDCNv2_ML_1M:
     seed: 2024
     num_workers: 16
     mask_activation: "ReLU"
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 IGDCNv3_ML_1M:
@@ -320,7 +320,7 @@ IGDCNv3_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
     
 
@@ -354,7 +354,7 @@ SSLViTDCNv3_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 SSLViTDCNv2_ML_1M:
@@ -385,7 +385,7 @@ SSLViTDCNv2_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 ViTDCNv3_ML_1M:
@@ -415,7 +415,7 @@ ViTDCNv3_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 ViTDCNv3Heavy_ML_1M:
@@ -446,7 +446,7 @@ ViTDCNv3Heavy_ML_1M:
     seed: 2024
     num_workers: 16
     vit_after_steps: 0
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
     vit_detach_param: False
 
@@ -480,7 +480,7 @@ ViTDCNv3Eff_ML_1M:
     seed: 2024
     num_workers: 16
     vit_after_steps: 0
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
     vit_detach_param: False
 
@@ -511,7 +511,7 @@ ViTLinDCNv3_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -543,7 +543,7 @@ ViTExpDCNv3_ML_1M:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 GDCN_ML_1M:
@@ -566,7 +566,7 @@ GDCN_ML_1M:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -601,7 +601,7 @@ PGAViT_iPinYou_x1:
     seed: 2024
     num_workers: 16
     vit_after_steps: 0
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
     vit_detach_param: False
 
@@ -638,7 +638,7 @@ PGAResNet_iPinYou_x1:
     seed: 2024
     num_workers: 16
     vit_after_steps: 0
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -672,7 +672,7 @@ PGAResNetDCNv3_iPinYou_x1:
     seed: 2024
     num_workers: 16
     vit_after_steps: 0
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -705,7 +705,7 @@ ViTDCNv3Heavy_iPinYou_x1:
     seed: 2024
     num_workers: 16
     vit_after_steps: 0
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
     vit_detach_param: False
 
@@ -732,7 +732,7 @@ DCNv3_iPinYou_x1:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -758,7 +758,7 @@ LogDCNv2_iPinYou_x1: # This is a config template
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -784,7 +784,7 @@ LogCN_iPinYou_x1: # This is a config template
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -816,7 +816,7 @@ ViTDCNv2_iPinYou_x1:
     seed: 2024
     num_workers: 16
     mask_activation: "ReLU"
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -848,7 +848,7 @@ ViTLinDCNv3_iPinYou_x1:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -875,7 +875,7 @@ DCNv2_iPinYou_x1:
     shuffle: True
     seed: 2024
     num_workers: 16
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -899,7 +899,7 @@ GDCN_iPinYou_x1:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
 
@@ -932,7 +932,7 @@ ViTDCNv3Eff_iPinYou_x1:
     seed: 2024
     num_workers: 16
     vit_after_steps: 0
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
     vit_detach_param: False
 
@@ -963,7 +963,7 @@ ResNetDCNv3_iPinYou_x1:
     seed: 2024
     num_workers: 16
     vit_after_steps: 0
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
     resnet_detach_param: False
 
@@ -991,6 +991,6 @@ DCNv3_Criteo:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 10}
+    monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 

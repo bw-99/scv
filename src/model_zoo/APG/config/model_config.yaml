@@ -42,7 +42,7 @@ APG_DeepFM_test:
     shuffle: True
     seed: 2019
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 APG_DeepFM: # This is a config template
     model: APG_DeepFM
@@ -74,7 +74,7 @@ APG_DeepFM: # This is a config template
     shuffle: True
     seed: 2019
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 APG_DCNv2_test:
     model: APG_DCNv2
@@ -112,7 +112,7 @@ APG_DCNv2_test:
     shuffle: True
     seed: 2019
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 APG_DCNv2: # This is a config template
     model: APG_DCNv2
@@ -150,6 +150,6 @@ APG_DCNv2: # This is a config template
     shuffle: True
     seed: 2019
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'
     
     

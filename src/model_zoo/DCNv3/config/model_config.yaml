@@ -32,8 +32,8 @@ ECN_test:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'
 
 DCNv3_test:
     model: DCNv3
@@ -57,5 +57,5 @@ DCNv3_test:
     epochs: 100
     shuffle: True
     seed: 2024
-    monitor: {'AUC': 1, 'logloss': 0}
-    monitor_mode: 'max'
+    monitor: {'AUC': 0, 'logloss': 1}
+    monitor_mode: 'min'

@@ -32,7 +32,7 @@ ONN_test:
     shuffle: True
     seed: 2019
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 ONN_default: # This is a config template
     model: ONN
@@ -54,7 +54,7 @@ ONN_default: # This is a config template
     shuffle: True
     seed: 2019
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 ONNv2_test:
     model: ONNv2
@@ -76,7 +76,7 @@ ONNv2_test:
     shuffle: True
     seed: 2019
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 ONNv2_default: # This is a config template
     model: ONNv2
@@ -98,4 +98,4 @@ ONNv2_default: # This is a config template
     shuffle: True
     seed: 2019
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'

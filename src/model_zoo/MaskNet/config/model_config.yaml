@@ -37,7 +37,7 @@ MaskNet_test:
     shuffle: True
     seed: 2021
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 MaskNet_default: # This is a config template
     model: MaskNet
@@ -64,4 +64,4 @@ MaskNet_default: # This is a config template
     shuffle: True
     seed: 2021
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'

@@ -34,7 +34,7 @@ EDCN_test:
     shuffle: True
     seed: 2022
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 EDCN_default: # This is a config template
     model: EDCN
@@ -58,5 +58,5 @@ EDCN_default: # This is a config template
     shuffle: True
     seed: 2022
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 

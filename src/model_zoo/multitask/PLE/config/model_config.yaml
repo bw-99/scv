@@ -38,4 +38,4 @@ PLE_test:
     shuffle: True
     seed: 2023
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'

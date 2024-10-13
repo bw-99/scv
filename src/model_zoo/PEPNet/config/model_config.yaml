@@ -34,7 +34,7 @@ PPNet_test:
     shuffle: True
     seed: 20222023
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 PPNet_default: # This is a config template
     model: PPNet
@@ -59,5 +59,5 @@ PPNet_default: # This is a config template
     shuffle: True
     seed: 20222023
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 

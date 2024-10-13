@@ -38,7 +38,7 @@ DIN_test:
     shuffle: True
     seed: 2019
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 DIN_test2:
     model: DIN
@@ -66,7 +66,7 @@ DIN_test2:
     shuffle: True
     seed: 2019
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 DIN_default: # This is a config template
     model: DIN
@@ -95,5 +95,5 @@ DIN_default: # This is a config template
     shuffle: True
     seed: 2019
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 

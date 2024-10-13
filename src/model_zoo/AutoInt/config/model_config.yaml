@@ -39,7 +39,7 @@ AutoInt_test:
     shuffle: True
     seed: 2019
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 AutoInt_default:
     model: AutoInt
@@ -68,5 +68,5 @@ AutoInt_default:
     shuffle: True
     seed: 2019
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 

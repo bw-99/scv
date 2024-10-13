@@ -34,7 +34,7 @@ HFM_test:
     shuffle: True
     seed: 2019
     monitor: 'AUC'
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 HFM_default: # This is a config template
     model: HFM
@@ -58,4 +58,4 @@ HFM_default: # This is a config template
     shuffle: True
     seed: 2019
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'

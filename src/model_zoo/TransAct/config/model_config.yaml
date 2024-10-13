@@ -44,7 +44,7 @@ TransAct_default: # This is a config template
     shuffle: True
     seed: 20242025
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'
 
 TransAct_test:
     model: TransAct
@@ -78,4 +78,4 @@ TransAct_test:
     shuffle: False
     seed: 20242025
     monitor: {'AUC': 1, 'logloss': -1}
-    monitor_mode: 'max'
+    monitor_mode: 'min'

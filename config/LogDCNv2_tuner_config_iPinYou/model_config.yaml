@@ -1,3364 +1,4 @@
-LogDCNv2_iPinYou_x1_001_50d3c5ff:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_002_22a66f8a:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_003_80927f25:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_004_6cd6cb9f:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_005_e87c2bc4:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_006_72be144f:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_007_4484ad30:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_008_15641370:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_009_6ddfc093:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_010_33ef52df:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_011_bd2c58b6:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_012_d066c8a6:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_013_475b37d4:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_014_813c2557:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_015_4835592d:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_016_5298f4ae:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_017_50777354:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_018_70c11dad:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_019_44e32b08:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_020_900295a3:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_021_038342e7:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_022_19452165:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_023_ba17d08b:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_024_39cb6129:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 4
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_025_4484ad30:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_026_15641370:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_027_6ddfc093:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_028_33ef52df:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_029_bd2c58b6:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_030_d066c8a6:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_031_9c2f0ae4:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_032_07481873:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_033_fb1a7398:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_034_0058918c:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_035_82077c87:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_036_ddd99fa1:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_037_138a6021:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_038_bf4f2c40:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_039_664000de:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_040_c649925b:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_041_fb89f528:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_042_f206fc68:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_043_6ea64518:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_044_17717e3d:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_045_fc6fb24d:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_046_c88c84ab:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_047_9f302899:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_048_7714af42:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 3
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_049_475b37d4:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_050_813c2557:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_051_4835592d:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_052_5298f4ae:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_053_50777354:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_054_70c11dad:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_055_138a6021:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_056_bf4f2c40:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_057_664000de:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_058_c649925b:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_059_fb89f528:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_060_f206fc68:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_061_0e25d2c4:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_062_b87f388f:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_063_c853dcd5:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_064_7e762d39:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_065_02984331:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_066_2648fa89:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_067_c00d5ce8:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_068_048312ec:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_069_fca7da2c:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_070_ec20ef75:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_071_c17bad69:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_072_6fdad357:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 2
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_073_44e32b08:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_074_900295a3:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_075_038342e7:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_076_19452165:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_077_ba17d08b:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_078_39cb6129:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 4
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_079_6ea64518:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_080_17717e3d:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_081_fc6fb24d:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_082_c88c84ab:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_083_9f302899:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_084_7714af42:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 3
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_085_c00d5ce8:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_086_048312ec:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_087_fca7da2c:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_088_ec20ef75:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_089_c17bad69:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_090_6fdad357:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 2
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_091_63baf95f:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_092_5a9b441e:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_093_400d29e4:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_094_e17f8fa0:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.2
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_095_b59eda08:
-    batch_norm: true
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_096_92eb4a68:
-    batch_norm: false
-    batch_size: 40960
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: LogDCNv2
-    model_root: ./checkpoints/
-    monitor: {AUC: 0, logloss: 1}
-    monitor_mode: min
-    net_dropout: 0.5
-    net_regularizer: 0
-    num_heads: 1
-    num_mask_blocks: 1
-    num_mask_heads: 1
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-LogDCNv2_iPinYou_x1_097_cf9ddfaf:
+LogDCNv2_iPinYou_x1_001_cf9ddfaf:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3393,7 +33,7 @@ LogDCNv2_iPinYou_x1_097_cf9ddfaf:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_098_f9ff8eac:
+LogDCNv2_iPinYou_x1_002_f9ff8eac:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3428,7 +68,7 @@ LogDCNv2_iPinYou_x1_098_f9ff8eac:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_099_4a8d682f:
+LogDCNv2_iPinYou_x1_003_4a8d682f:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3463,7 +103,7 @@ LogDCNv2_iPinYou_x1_099_4a8d682f:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_100_b67a257e:
+LogDCNv2_iPinYou_x1_004_b67a257e:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3498,7 +138,7 @@ LogDCNv2_iPinYou_x1_100_b67a257e:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_101_369778b5:
+LogDCNv2_iPinYou_x1_005_369778b5:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3533,7 +173,7 @@ LogDCNv2_iPinYou_x1_101_369778b5:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_102_2f941800:
+LogDCNv2_iPinYou_x1_006_2f941800:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3568,7 +208,7 @@ LogDCNv2_iPinYou_x1_102_2f941800:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_103_515bf739:
+LogDCNv2_iPinYou_x1_007_515bf739:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3603,7 +243,7 @@ LogDCNv2_iPinYou_x1_103_515bf739:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_104_f3c1f801:
+LogDCNv2_iPinYou_x1_008_f3c1f801:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3638,7 +278,7 @@ LogDCNv2_iPinYou_x1_104_f3c1f801:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_105_9e43615a:
+LogDCNv2_iPinYou_x1_009_9e43615a:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3673,7 +313,7 @@ LogDCNv2_iPinYou_x1_105_9e43615a:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_106_d5e2ad2b:
+LogDCNv2_iPinYou_x1_010_d5e2ad2b:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3708,7 +348,7 @@ LogDCNv2_iPinYou_x1_106_d5e2ad2b:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_107_491b146d:
+LogDCNv2_iPinYou_x1_011_491b146d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3743,7 +383,7 @@ LogDCNv2_iPinYou_x1_107_491b146d:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_108_61a5714a:
+LogDCNv2_iPinYou_x1_012_61a5714a:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3778,7 +418,7 @@ LogDCNv2_iPinYou_x1_108_61a5714a:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_109_a33f8798:
+LogDCNv2_iPinYou_x1_013_a33f8798:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3813,7 +453,7 @@ LogDCNv2_iPinYou_x1_109_a33f8798:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_110_0924c1e0:
+LogDCNv2_iPinYou_x1_014_0924c1e0:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3848,7 +488,7 @@ LogDCNv2_iPinYou_x1_110_0924c1e0:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_111_5935fae2:
+LogDCNv2_iPinYou_x1_015_5935fae2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3883,7 +523,7 @@ LogDCNv2_iPinYou_x1_111_5935fae2:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_112_549453db:
+LogDCNv2_iPinYou_x1_016_549453db:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3918,7 +558,7 @@ LogDCNv2_iPinYou_x1_112_549453db:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_113_afc7a913:
+LogDCNv2_iPinYou_x1_017_afc7a913:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3953,7 +593,7 @@ LogDCNv2_iPinYou_x1_113_afc7a913:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_114_df8049cb:
+LogDCNv2_iPinYou_x1_018_df8049cb:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -3988,7 +628,7 @@ LogDCNv2_iPinYou_x1_114_df8049cb:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_115_cd4f8590:
+LogDCNv2_iPinYou_x1_019_cd4f8590:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4023,7 +663,7 @@ LogDCNv2_iPinYou_x1_115_cd4f8590:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_116_44285484:
+LogDCNv2_iPinYou_x1_020_44285484:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4058,7 +698,7 @@ LogDCNv2_iPinYou_x1_116_44285484:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_117_3fec12e2:
+LogDCNv2_iPinYou_x1_021_3fec12e2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4093,7 +733,7 @@ LogDCNv2_iPinYou_x1_117_3fec12e2:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_118_1e40bcfd:
+LogDCNv2_iPinYou_x1_022_1e40bcfd:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4128,7 +768,7 @@ LogDCNv2_iPinYou_x1_118_1e40bcfd:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_119_50dbd808:
+LogDCNv2_iPinYou_x1_023_50dbd808:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4163,7 +803,7 @@ LogDCNv2_iPinYou_x1_119_50dbd808:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_120_9485ed94:
+LogDCNv2_iPinYou_x1_024_9485ed94:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4198,7 +838,7 @@ LogDCNv2_iPinYou_x1_120_9485ed94:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_121_515bf739:
+LogDCNv2_iPinYou_x1_025_515bf739:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4233,7 +873,7 @@ LogDCNv2_iPinYou_x1_121_515bf739:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_122_f3c1f801:
+LogDCNv2_iPinYou_x1_026_f3c1f801:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4268,7 +908,7 @@ LogDCNv2_iPinYou_x1_122_f3c1f801:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_123_9e43615a:
+LogDCNv2_iPinYou_x1_027_9e43615a:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4303,7 +943,7 @@ LogDCNv2_iPinYou_x1_123_9e43615a:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_124_d5e2ad2b:
+LogDCNv2_iPinYou_x1_028_d5e2ad2b:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4338,7 +978,7 @@ LogDCNv2_iPinYou_x1_124_d5e2ad2b:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_125_491b146d:
+LogDCNv2_iPinYou_x1_029_491b146d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4373,7 +1013,7 @@ LogDCNv2_iPinYou_x1_125_491b146d:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_126_61a5714a:
+LogDCNv2_iPinYou_x1_030_61a5714a:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4408,7 +1048,7 @@ LogDCNv2_iPinYou_x1_126_61a5714a:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_127_eaf67f62:
+LogDCNv2_iPinYou_x1_031_eaf67f62:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4443,7 +1083,7 @@ LogDCNv2_iPinYou_x1_127_eaf67f62:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_128_80a5c7cb:
+LogDCNv2_iPinYou_x1_032_80a5c7cb:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4478,7 +1118,7 @@ LogDCNv2_iPinYou_x1_128_80a5c7cb:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_129_e3ed5496:
+LogDCNv2_iPinYou_x1_033_e3ed5496:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4513,7 +1153,7 @@ LogDCNv2_iPinYou_x1_129_e3ed5496:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_130_08acb2b5:
+LogDCNv2_iPinYou_x1_034_08acb2b5:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4548,7 +1188,7 @@ LogDCNv2_iPinYou_x1_130_08acb2b5:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_131_a91219eb:
+LogDCNv2_iPinYou_x1_035_a91219eb:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4583,7 +1223,7 @@ LogDCNv2_iPinYou_x1_131_a91219eb:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_132_655387f9:
+LogDCNv2_iPinYou_x1_036_655387f9:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4618,7 +1258,7 @@ LogDCNv2_iPinYou_x1_132_655387f9:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_133_cf84edbd:
+LogDCNv2_iPinYou_x1_037_cf84edbd:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4653,7 +1293,7 @@ LogDCNv2_iPinYou_x1_133_cf84edbd:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_134_0047a52a:
+LogDCNv2_iPinYou_x1_038_0047a52a:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4688,7 +1328,7 @@ LogDCNv2_iPinYou_x1_134_0047a52a:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_135_47cbb4a5:
+LogDCNv2_iPinYou_x1_039_47cbb4a5:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4723,7 +1363,7 @@ LogDCNv2_iPinYou_x1_135_47cbb4a5:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_136_5950821d:
+LogDCNv2_iPinYou_x1_040_5950821d:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4758,7 +1398,7 @@ LogDCNv2_iPinYou_x1_136_5950821d:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_137_033b45b6:
+LogDCNv2_iPinYou_x1_041_033b45b6:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4793,7 +1433,7 @@ LogDCNv2_iPinYou_x1_137_033b45b6:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_138_a1f6aff0:
+LogDCNv2_iPinYou_x1_042_a1f6aff0:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4828,7 +1468,7 @@ LogDCNv2_iPinYou_x1_138_a1f6aff0:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_139_7e6bc69d:
+LogDCNv2_iPinYou_x1_043_7e6bc69d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4863,7 +1503,7 @@ LogDCNv2_iPinYou_x1_139_7e6bc69d:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_140_79b32b25:
+LogDCNv2_iPinYou_x1_044_79b32b25:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4898,7 +1538,7 @@ LogDCNv2_iPinYou_x1_140_79b32b25:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_141_37640e53:
+LogDCNv2_iPinYou_x1_045_37640e53:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4933,7 +1573,7 @@ LogDCNv2_iPinYou_x1_141_37640e53:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_142_c7f2cc64:
+LogDCNv2_iPinYou_x1_046_c7f2cc64:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -4968,7 +1608,7 @@ LogDCNv2_iPinYou_x1_142_c7f2cc64:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_143_fc383730:
+LogDCNv2_iPinYou_x1_047_fc383730:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5003,7 +1643,7 @@ LogDCNv2_iPinYou_x1_143_fc383730:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_144_694baa5c:
+LogDCNv2_iPinYou_x1_048_694baa5c:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5038,7 +1678,7 @@ LogDCNv2_iPinYou_x1_144_694baa5c:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_145_a33f8798:
+LogDCNv2_iPinYou_x1_049_a33f8798:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5073,7 +1713,7 @@ LogDCNv2_iPinYou_x1_145_a33f8798:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_146_0924c1e0:
+LogDCNv2_iPinYou_x1_050_0924c1e0:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5108,7 +1748,7 @@ LogDCNv2_iPinYou_x1_146_0924c1e0:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_147_5935fae2:
+LogDCNv2_iPinYou_x1_051_5935fae2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5143,7 +1783,7 @@ LogDCNv2_iPinYou_x1_147_5935fae2:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_148_549453db:
+LogDCNv2_iPinYou_x1_052_549453db:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5178,7 +1818,7 @@ LogDCNv2_iPinYou_x1_148_549453db:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_149_afc7a913:
+LogDCNv2_iPinYou_x1_053_afc7a913:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5213,7 +1853,7 @@ LogDCNv2_iPinYou_x1_149_afc7a913:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_150_df8049cb:
+LogDCNv2_iPinYou_x1_054_df8049cb:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5248,7 +1888,7 @@ LogDCNv2_iPinYou_x1_150_df8049cb:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_151_cf84edbd:
+LogDCNv2_iPinYou_x1_055_cf84edbd:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5283,7 +1923,7 @@ LogDCNv2_iPinYou_x1_151_cf84edbd:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_152_0047a52a:
+LogDCNv2_iPinYou_x1_056_0047a52a:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5318,7 +1958,7 @@ LogDCNv2_iPinYou_x1_152_0047a52a:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_153_47cbb4a5:
+LogDCNv2_iPinYou_x1_057_47cbb4a5:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5353,7 +1993,7 @@ LogDCNv2_iPinYou_x1_153_47cbb4a5:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_154_5950821d:
+LogDCNv2_iPinYou_x1_058_5950821d:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5388,7 +2028,7 @@ LogDCNv2_iPinYou_x1_154_5950821d:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_155_033b45b6:
+LogDCNv2_iPinYou_x1_059_033b45b6:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5423,7 +2063,7 @@ LogDCNv2_iPinYou_x1_155_033b45b6:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_156_a1f6aff0:
+LogDCNv2_iPinYou_x1_060_a1f6aff0:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5458,7 +2098,7 @@ LogDCNv2_iPinYou_x1_156_a1f6aff0:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_157_6c9dca9d:
+LogDCNv2_iPinYou_x1_061_6c9dca9d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5493,7 +2133,7 @@ LogDCNv2_iPinYou_x1_157_6c9dca9d:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_158_c9af9c16:
+LogDCNv2_iPinYou_x1_062_c9af9c16:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5528,7 +2168,7 @@ LogDCNv2_iPinYou_x1_158_c9af9c16:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_159_96fe3db2:
+LogDCNv2_iPinYou_x1_063_96fe3db2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5563,7 +2203,7 @@ LogDCNv2_iPinYou_x1_159_96fe3db2:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_160_e220324d:
+LogDCNv2_iPinYou_x1_064_e220324d:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5598,7 +2238,7 @@ LogDCNv2_iPinYou_x1_160_e220324d:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_161_ed285482:
+LogDCNv2_iPinYou_x1_065_ed285482:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5633,7 +2273,7 @@ LogDCNv2_iPinYou_x1_161_ed285482:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_162_96f16ca2:
+LogDCNv2_iPinYou_x1_066_96f16ca2:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5668,7 +2308,7 @@ LogDCNv2_iPinYou_x1_162_96f16ca2:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_163_edce7859:
+LogDCNv2_iPinYou_x1_067_edce7859:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5703,7 +2343,7 @@ LogDCNv2_iPinYou_x1_163_edce7859:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_164_ff3ddac4:
+LogDCNv2_iPinYou_x1_068_ff3ddac4:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5738,7 +2378,7 @@ LogDCNv2_iPinYou_x1_164_ff3ddac4:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_165_d185a135:
+LogDCNv2_iPinYou_x1_069_d185a135:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5773,7 +2413,7 @@ LogDCNv2_iPinYou_x1_165_d185a135:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_166_59ad5c88:
+LogDCNv2_iPinYou_x1_070_59ad5c88:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5808,7 +2448,7 @@ LogDCNv2_iPinYou_x1_166_59ad5c88:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_167_dbedd29b:
+LogDCNv2_iPinYou_x1_071_dbedd29b:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5843,7 +2483,7 @@ LogDCNv2_iPinYou_x1_167_dbedd29b:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_168_32305340:
+LogDCNv2_iPinYou_x1_072_32305340:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5878,7 +2518,7 @@ LogDCNv2_iPinYou_x1_168_32305340:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_169_cd4f8590:
+LogDCNv2_iPinYou_x1_073_cd4f8590:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5913,7 +2553,7 @@ LogDCNv2_iPinYou_x1_169_cd4f8590:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_170_44285484:
+LogDCNv2_iPinYou_x1_074_44285484:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5948,7 +2588,7 @@ LogDCNv2_iPinYou_x1_170_44285484:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_171_3fec12e2:
+LogDCNv2_iPinYou_x1_075_3fec12e2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -5983,7 +2623,7 @@ LogDCNv2_iPinYou_x1_171_3fec12e2:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_172_1e40bcfd:
+LogDCNv2_iPinYou_x1_076_1e40bcfd:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6018,7 +2658,7 @@ LogDCNv2_iPinYou_x1_172_1e40bcfd:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_173_50dbd808:
+LogDCNv2_iPinYou_x1_077_50dbd808:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6053,7 +2693,7 @@ LogDCNv2_iPinYou_x1_173_50dbd808:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_174_9485ed94:
+LogDCNv2_iPinYou_x1_078_9485ed94:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6088,7 +2728,7 @@ LogDCNv2_iPinYou_x1_174_9485ed94:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_175_7e6bc69d:
+LogDCNv2_iPinYou_x1_079_7e6bc69d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6123,7 +2763,7 @@ LogDCNv2_iPinYou_x1_175_7e6bc69d:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_176_79b32b25:
+LogDCNv2_iPinYou_x1_080_79b32b25:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6158,7 +2798,7 @@ LogDCNv2_iPinYou_x1_176_79b32b25:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_177_37640e53:
+LogDCNv2_iPinYou_x1_081_37640e53:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6193,7 +2833,7 @@ LogDCNv2_iPinYou_x1_177_37640e53:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_178_c7f2cc64:
+LogDCNv2_iPinYou_x1_082_c7f2cc64:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6228,7 +2868,7 @@ LogDCNv2_iPinYou_x1_178_c7f2cc64:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_179_fc383730:
+LogDCNv2_iPinYou_x1_083_fc383730:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6263,7 +2903,7 @@ LogDCNv2_iPinYou_x1_179_fc383730:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_180_694baa5c:
+LogDCNv2_iPinYou_x1_084_694baa5c:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6298,7 +2938,7 @@ LogDCNv2_iPinYou_x1_180_694baa5c:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_181_edce7859:
+LogDCNv2_iPinYou_x1_085_edce7859:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6333,7 +2973,7 @@ LogDCNv2_iPinYou_x1_181_edce7859:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_182_ff3ddac4:
+LogDCNv2_iPinYou_x1_086_ff3ddac4:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6368,7 +3008,7 @@ LogDCNv2_iPinYou_x1_182_ff3ddac4:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_183_d185a135:
+LogDCNv2_iPinYou_x1_087_d185a135:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6403,7 +3043,7 @@ LogDCNv2_iPinYou_x1_183_d185a135:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_184_59ad5c88:
+LogDCNv2_iPinYou_x1_088_59ad5c88:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6438,7 +3078,7 @@ LogDCNv2_iPinYou_x1_184_59ad5c88:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_185_dbedd29b:
+LogDCNv2_iPinYou_x1_089_dbedd29b:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6473,7 +3113,7 @@ LogDCNv2_iPinYou_x1_185_dbedd29b:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_186_32305340:
+LogDCNv2_iPinYou_x1_090_32305340:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6508,7 +3148,7 @@ LogDCNv2_iPinYou_x1_186_32305340:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_187_8911537a:
+LogDCNv2_iPinYou_x1_091_8911537a:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6543,7 +3183,7 @@ LogDCNv2_iPinYou_x1_187_8911537a:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_188_e33206f4:
+LogDCNv2_iPinYou_x1_092_e33206f4:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6578,7 +3218,7 @@ LogDCNv2_iPinYou_x1_188_e33206f4:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_189_4ad2e667:
+LogDCNv2_iPinYou_x1_093_4ad2e667:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6613,7 +3253,7 @@ LogDCNv2_iPinYou_x1_189_4ad2e667:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_190_53be69cf:
+LogDCNv2_iPinYou_x1_094_53be69cf:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6648,7 +3288,7 @@ LogDCNv2_iPinYou_x1_190_53be69cf:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_191_bc8dc7b2:
+LogDCNv2_iPinYou_x1_095_bc8dc7b2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -6683,7 +3323,7 @@ LogDCNv2_iPinYou_x1_191_bc8dc7b2:
     task: binary_classification
     use_features: null
     verbose: 1
-LogDCNv2_iPinYou_x1_192_54e6a1cc:
+LogDCNv2_iPinYou_x1_096_54e6a1cc:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf

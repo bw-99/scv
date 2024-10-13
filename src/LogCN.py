@@ -27,7 +27,7 @@ class LogCN(BaseModel):
                  gpu=-1,
                  learning_rate=1e-3,
                  embedding_dim=10,
-                 num_log_heads=1,
+                 num_mask_heads=1,
                  num_mask_blocks=1,
                  net_dropout=0.1,
                  layer_norm=True,
@@ -45,13 +45,13 @@ class LogCN(BaseModel):
         self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
         input_dim = feature_map.sum_emb_out_dim()
         print("LogCNLogCNLogCNLogCNLogCN input_dim", input_dim)
-        self.num_log_heads = num_log_heads
+        self.num_mask_heads = num_mask_heads
         self.log_tower = nn.ModuleList([CrossNetwork(input_dim=input_dim,
                                 net_dropout=net_dropout,
                                 num_mask_blocks=num_mask_blocks,
                                 layer_norm=layer_norm,
                                 batch_norm=batch_norm,
-                                num_heads=num_heads) for _ in range(num_log_heads)])
+                                num_heads=num_heads) for _ in range(num_mask_heads)])
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
         self.model_to_device()
@@ -60,10 +60,12 @@ class LogCN(BaseModel):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X)
         output_lst = torch.cat([
-            self.log_tower[i](feature_emb).mean(dim=1) for i in range(self.num_log_heads)
+            self.log_tower[i](feature_emb).mean(dim=1) for i in range(self.num_mask_heads)
         ], dim=-1)
-        y_pred = torch.mean(output_lst)
-        logit_lst = [self.output_activation(logit) for logit in logit_lst]
+        # print(output_lst.shape)
+        # print(torch.mean(output_lst, dim=0).shape, torch.mean(output_lst, dim=1, keepdim=True).shape, torch.mean(output_lst, dim=-1).shape)
+        y_pred = torch.mean(output_lst, dim=1,  keepdim=True)
+        logit_lst = self.output_activation(output_lst)
         y_pred = self.output_activation(y_pred)
         return_dict = {"y_pred": y_pred, "logit_lst": logit_lst}
         return return_dict
@@ -76,10 +78,12 @@ class LogCN(BaseModel):
         logit_lst = return_dict["logit_lst"]
 
         loss = self.loss_fn(y_pred, y_true, reduction='mean')
-        loss_lst = [self.loss_fn(logit, y_true, reduction='mean') for logit in logit_lst]
-        weight_lst = [item - loss for item in loss_lst]
-        weight_lst = [torch.where(item > 0, item, torch.zeros(1).to(item.device)) for item in weight_lst]
-        additional_loss = torch.cat(loss_lst, dim=-1) * torch.cat(weight_lst, dim=-1)
+        loss_lst = [self.loss_fn(logit_lst[:, idx].unsqueeze(dim=-1), y_true, reduction='mean') for idx in range(logit_lst.shape[-1])]
+        loss_lst = torch.stack(loss_lst, dim=-1)
+
+        weight_lst = loss_lst - loss
+        weight_lst = torch.where(weight_lst > 0, weight_lst, torch.zeros(1).to(weight_lst.device))
+        additional_loss = loss_lst * weight_lst
 
         loss = loss + additional_loss.sum()
         loss += self.regularization_loss()

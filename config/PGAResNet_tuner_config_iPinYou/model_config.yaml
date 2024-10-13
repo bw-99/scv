@@ -1,4 +1,4 @@
-PGAResNet_iPinYou_x1_001_02b47259:
+PGAResNet_iPinYou_x1_001_4c4df604:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -9,12 +9,14 @@ PGAResNet_iPinYou_x1_001_02b47259:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -30,17 +32,19 @@ PGAResNet_iPinYou_x1_001_02b47259:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_002_9baa0cb2:
+PGAResNet_iPinYou_x1_002_5680a794:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -51,12 +55,14 @@ PGAResNet_iPinYou_x1_002_9baa0cb2:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -72,17 +78,19 @@ PGAResNet_iPinYou_x1_002_9baa0cb2:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_003_9baa0cb2:
+PGAResNet_iPinYou_x1_003_5680a794:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -93,12 +101,14 @@ PGAResNet_iPinYou_x1_003_9baa0cb2:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -114,17 +124,19 @@ PGAResNet_iPinYou_x1_003_9baa0cb2:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_004_4f88666b:
+PGAResNet_iPinYou_x1_004_7824828f:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -135,12 +147,14 @@ PGAResNet_iPinYou_x1_004_4f88666b:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -156,17 +170,19 @@ PGAResNet_iPinYou_x1_004_4f88666b:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_005_c6b5a358:
+PGAResNet_iPinYou_x1_005_85afb925:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -177,12 +193,14 @@ PGAResNet_iPinYou_x1_005_c6b5a358:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -198,17 +216,19 @@ PGAResNet_iPinYou_x1_005_c6b5a358:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_006_ed8994e5:
+PGAResNet_iPinYou_x1_006_d664e737:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -219,12 +239,14 @@ PGAResNet_iPinYou_x1_006_ed8994e5:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -240,17 +262,19 @@ PGAResNet_iPinYou_x1_006_ed8994e5:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_007_ed8994e5:
+PGAResNet_iPinYou_x1_007_d664e737:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -261,12 +285,14 @@ PGAResNet_iPinYou_x1_007_ed8994e5:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -282,17 +308,19 @@ PGAResNet_iPinYou_x1_007_ed8994e5:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_008_6763766c:
+PGAResNet_iPinYou_x1_008_e2e54131:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -303,12 +331,14 @@ PGAResNet_iPinYou_x1_008_6763766c:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -324,17 +354,19 @@ PGAResNet_iPinYou_x1_008_6763766c:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_009_fc28977f:
+PGAResNet_iPinYou_x1_009_96cabb70:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -345,12 +377,14 @@ PGAResNet_iPinYou_x1_009_fc28977f:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -366,17 +400,19 @@ PGAResNet_iPinYou_x1_009_fc28977f:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_010_4cbb3551:
+PGAResNet_iPinYou_x1_010_f08109ad:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -387,12 +423,14 @@ PGAResNet_iPinYou_x1_010_4cbb3551:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -408,17 +446,19 @@ PGAResNet_iPinYou_x1_010_4cbb3551:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_011_4cbb3551:
+PGAResNet_iPinYou_x1_011_f08109ad:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -429,12 +469,14 @@ PGAResNet_iPinYou_x1_011_4cbb3551:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -450,17 +492,19 @@ PGAResNet_iPinYou_x1_011_4cbb3551:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_012_c777e572:
+PGAResNet_iPinYou_x1_012_c058fc09:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -471,12 +515,14 @@ PGAResNet_iPinYou_x1_012_c777e572:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -492,17 +538,19 @@ PGAResNet_iPinYou_x1_012_c777e572:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_013_1f92fc35:
+PGAResNet_iPinYou_x1_013_78d3e932:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -513,12 +561,14 @@ PGAResNet_iPinYou_x1_013_1f92fc35:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -534,17 +584,19 @@ PGAResNet_iPinYou_x1_013_1f92fc35:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_014_1ac13f40:
+PGAResNet_iPinYou_x1_014_d6184a9a:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -555,12 +607,14 @@ PGAResNet_iPinYou_x1_014_1ac13f40:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -576,17 +630,19 @@ PGAResNet_iPinYou_x1_014_1ac13f40:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_015_1ac13f40:
+PGAResNet_iPinYou_x1_015_d6184a9a:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -597,12 +653,14 @@ PGAResNet_iPinYou_x1_015_1ac13f40:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -618,17 +676,19 @@ PGAResNet_iPinYou_x1_015_1ac13f40:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_016_5065f9ab:
+PGAResNet_iPinYou_x1_016_fdcd5126:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -639,12 +699,14 @@ PGAResNet_iPinYou_x1_016_5065f9ab:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -660,17 +722,19 @@ PGAResNet_iPinYou_x1_016_5065f9ab:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_017_28bb4ff4:
+PGAResNet_iPinYou_x1_017_871c555b:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -681,12 +745,14 @@ PGAResNet_iPinYou_x1_017_28bb4ff4:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -702,17 +768,19 @@ PGAResNet_iPinYou_x1_017_28bb4ff4:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_018_253ec44d:
+PGAResNet_iPinYou_x1_018_e24d8415:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -723,12 +791,14 @@ PGAResNet_iPinYou_x1_018_253ec44d:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -744,17 +814,19 @@ PGAResNet_iPinYou_x1_018_253ec44d:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_019_253ec44d:
+PGAResNet_iPinYou_x1_019_e24d8415:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -765,12 +837,14 @@ PGAResNet_iPinYou_x1_019_253ec44d:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -786,17 +860,19 @@ PGAResNet_iPinYou_x1_019_253ec44d:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_020_d87b90f3:
+PGAResNet_iPinYou_x1_020_20e6298c:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -807,12 +883,14 @@ PGAResNet_iPinYou_x1_020_d87b90f3:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -828,17 +906,19 @@ PGAResNet_iPinYou_x1_020_d87b90f3:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_021_5143aa83:
+PGAResNet_iPinYou_x1_021_6167d476:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -849,12 +929,14 @@ PGAResNet_iPinYou_x1_021_5143aa83:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -870,17 +952,19 @@ PGAResNet_iPinYou_x1_021_5143aa83:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_022_b16d0418:
+PGAResNet_iPinYou_x1_022_3a4e01b6:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -891,12 +975,14 @@ PGAResNet_iPinYou_x1_022_b16d0418:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -912,17 +998,19 @@ PGAResNet_iPinYou_x1_022_b16d0418:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_023_b16d0418:
+PGAResNet_iPinYou_x1_023_3a4e01b6:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -933,12 +1021,14 @@ PGAResNet_iPinYou_x1_023_b16d0418:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -954,17 +1044,19 @@ PGAResNet_iPinYou_x1_023_b16d0418:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_024_8ea41e48:
+PGAResNet_iPinYou_x1_024_0ccdc96e:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -975,12 +1067,14 @@ PGAResNet_iPinYou_x1_024_8ea41e48:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -996,17 +1090,19 @@ PGAResNet_iPinYou_x1_024_8ea41e48:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_025_7e638002:
+PGAResNet_iPinYou_x1_025_0b9ff4d4:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1017,12 +1113,14 @@ PGAResNet_iPinYou_x1_025_7e638002:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1038,17 +1136,19 @@ PGAResNet_iPinYou_x1_025_7e638002:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_026_f00a5e70:
+PGAResNet_iPinYou_x1_026_b0a1b81d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1059,12 +1159,14 @@ PGAResNet_iPinYou_x1_026_f00a5e70:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1080,17 +1182,19 @@ PGAResNet_iPinYou_x1_026_f00a5e70:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_027_f00a5e70:
+PGAResNet_iPinYou_x1_027_b0a1b81d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1101,12 +1205,14 @@ PGAResNet_iPinYou_x1_027_f00a5e70:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1122,17 +1228,19 @@ PGAResNet_iPinYou_x1_027_f00a5e70:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_028_d147b5ba:
+PGAResNet_iPinYou_x1_028_d5c6c08d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1143,12 +1251,14 @@ PGAResNet_iPinYou_x1_028_d147b5ba:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1164,17 +1274,19 @@ PGAResNet_iPinYou_x1_028_d147b5ba:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_029_4a21d871:
+PGAResNet_iPinYou_x1_029_a937d21a:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1185,12 +1297,14 @@ PGAResNet_iPinYou_x1_029_4a21d871:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1206,17 +1320,19 @@ PGAResNet_iPinYou_x1_029_4a21d871:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_030_1d786635:
+PGAResNet_iPinYou_x1_030_ec5ec2bd:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1227,12 +1343,14 @@ PGAResNet_iPinYou_x1_030_1d786635:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1248,17 +1366,19 @@ PGAResNet_iPinYou_x1_030_1d786635:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_031_1d786635:
+PGAResNet_iPinYou_x1_031_ec5ec2bd:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1269,12 +1389,14 @@ PGAResNet_iPinYou_x1_031_1d786635:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1290,17 +1412,19 @@ PGAResNet_iPinYou_x1_031_1d786635:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_032_7e98fcca:
+PGAResNet_iPinYou_x1_032_1b6703ff:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1311,12 +1435,14 @@ PGAResNet_iPinYou_x1_032_7e98fcca:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1332,17 +1458,19 @@ PGAResNet_iPinYou_x1_032_7e98fcca:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_033_64cc9f9e:
+PGAResNet_iPinYou_x1_033_a07c3138:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1353,12 +1481,14 @@ PGAResNet_iPinYou_x1_033_64cc9f9e:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1374,17 +1504,19 @@ PGAResNet_iPinYou_x1_033_64cc9f9e:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_034_ac660f91:
+PGAResNet_iPinYou_x1_034_305fe9b2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1395,12 +1527,14 @@ PGAResNet_iPinYou_x1_034_ac660f91:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1416,17 +1550,19 @@ PGAResNet_iPinYou_x1_034_ac660f91:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: true
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_035_ac660f91:
+PGAResNet_iPinYou_x1_035_305fe9b2:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1437,12 +1573,14 @@ PGAResNet_iPinYou_x1_035_ac660f91:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1458,17 +1596,19 @@ PGAResNet_iPinYou_x1_035_ac660f91:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: true
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification
     use_features: null
     verbose: 1
     vit_after_steps: 0
-PGAResNet_iPinYou_x1_036_d21eee85:
+PGAResNet_iPinYou_x1_036_cffd0483:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -1479,12 +1619,14 @@ PGAResNet_iPinYou_x1_036_d21eee85:
     embedding_regularizer: 0.001
     epochs: 100
     eval_steps: null
+    exp_mask_layer_cnt: single
     feature_config: null
     feature_specs: null
     group_id: null
     layer_norm: true
     learning_rate: 0.001
     loss: binary_crossentropy
+    mask_feature: false
     mask_with_bias: false
     metrics: [logloss, AUC]
     model: PGAResNet
@@ -1500,10 +1642,12 @@ PGAResNet_iPinYou_x1_036_d21eee85:
     pickle_feature_encoder: true
     resnet_detach_param: true
     resnet_freeze: false
+    resnet_initialize: true
     resnet_pretrain: false
     resnet_type: resnet18
     save_best_only: true
     seed: 2024
+    sha_mask_layer_cnt: single
     shallow_net_dropout: 0.2
     shuffle: true
     task: binary_classification

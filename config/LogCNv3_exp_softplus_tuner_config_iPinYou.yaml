@@ -1,15 +1,15 @@
 base_config: ./config/
-base_expid: LogDCNv2_iPinYou_x1
+base_expid: LogCNv3_iPinYou_x1
 dataset_id: iPinYou_x1_csv
 
 tuner_space:
     model_root: './checkpoints/'
     learning_rate: [1.e-3]
     batch_size: [4096]
-    # batch_size: [40960]
-    # num_mask_heads: [4, 3, 2, 1]
-    num_mask_heads: [4, 3, 2, 1]
+    num_mask_heads: [5, 4, 3, 2, 1]
     num_mask_blocks: [4, 3, 2, 1]
     net_dropout: [0]
-    batch_norm: [True, False]
+    batch_norm: [True]
+    output_log: [False]
+    # batch_norm: [True, False]
     monitor_mode: "max"

@@ -5,3 +5,5 @@ from .PGAViT import *
 from .PGAResNet import *
 from .LogDCNv2 import *
 from .LogCN import *
+from .LogCNv2 import *
+from .LogCNv3 import *

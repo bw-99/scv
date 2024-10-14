@@ -160,9 +160,6 @@ class CrossNetwork(nn.Module):
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
 
-            # nn.init.uniform_(self.masker[i].data)
-            # nn.init.uniform_(self.w[i].data)
-            # nn.init.uniform_(self.b[i].data)
             nn.init.xavier_uniform_(self.w[i].data)
             nn.init.xavier_uniform_(self.masker[i].data)
             nn.init.constant_(self.b[i].data, 0.01)
@@ -182,7 +179,7 @@ class CrossNetwork(nn.Module):
                 masked_weight = F.relu(self.w[idx])
             x_emb = log_x @ masked_weight
             if not self.exp_bias_on_final:
-                x_emb += self.b[idx]
+                x_emb = x_emb + self.b[idx]
 
             if len(self.batch_norm) > idx:
                 x_emb = self.batch_norm[idx](x_emb)
@@ -190,7 +187,7 @@ class CrossNetwork(nn.Module):
                 x_emb = torch.exp(x_emb)
             
             if self.exp_bias_on_final:
-                x_emb += self.b[idx]
+                x_emb = x_emb + self.b[idx]
             
             # print(idx, x_emb)
         logit = self.sfc(x_emb)

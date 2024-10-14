@@ -1,1 +1,0 @@
- 20240927-104451,[command] python run_expid.py --config ./config/DCNv2_tuner_config_iPinYou --expid DCNv2_iPinYou_x1_001_5efcc6da --gpu 2,[exp_id] DCNv2_iPinYou_x1_001_5efcc6da,[dataset_id] iPinYou_x1_csv,[train] N.A.,[val] logloss: 0.005553 - AUC: 0.778054,[test] logloss: 0.005553 - AUC: 0.778054

@@ -153,7 +153,10 @@ class CrossNetwork(nn.Module):
             self.b.append(nn.Parameter(torch.zeros((input_dim,)), requires_grad=True))
             self.masker.append(nn.Parameter(torch.zeros((input_dim, input_dim)), requires_grad=True))
             if exp_positive_activation:
-                self.make_positive.append(nn.Softplus())
+                self.make_positive.append(nn.Sequential(
+                    nn.Linear(input_dim, input_dim),
+                    nn.Softplus()
+                ))
             else:
                 self.make_positive.append(nn.Sequential(
                     nn.Linear(input_dim, input_dim),
@@ -189,6 +192,9 @@ class CrossNetwork(nn.Module):
 
             if len(self.batch_norm) > idx:
                 x_emb = self.batch_norm[idx](x_emb)
+            if len(self.layer_norm) > idx:
+                x_emb = self.layer_norm[idx](x_emb)
+
             if not self.output_log:
                 x_emb = torch.exp(x_emb)
             

@@ -33,6 +33,8 @@ class LogCNv3(BaseModel):
                  output_log=False,
                  layer_norm=True,
                  batch_norm=False,
+                 exp_bias_on_final=False,
+                 exp_additional_mask=True,
                  num_heads=1,
                  embedding_regularizer=None,
                  net_regularizer=None,
@@ -52,6 +54,8 @@ class LogCNv3(BaseModel):
                                 num_mask_blocks=num_mask_blocks,
                                 layer_norm=layer_norm,
                                 output_log=output_log,
+                                exp_additional_mask=exp_additional_mask,
+                                exp_bias_on_final=exp_bias_on_final,
                                 batch_norm=batch_norm,
                                 num_heads=num_heads) for _ in range(num_mask_heads)])
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
@@ -122,12 +126,16 @@ class CrossNetwork(nn.Module):
                  layer_norm=True,
                  batch_norm=True,
                  output_log=False,
+                 exp_additional_mask=True,
+                 exp_bias_on_final=False,
                  num_mask_blocks=1,
                  net_dropout=0.1,
                  num_heads=1):
         super(CrossNetwork, self).__init__()
         self.num_mask_blocks = num_mask_blocks
         self.output_log = output_log
+        self.exp_bias_on_final = exp_bias_on_final
+        self.exp_additional_mask = exp_additional_mask
 
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
@@ -168,13 +176,21 @@ class CrossNetwork(nn.Module):
         for idx in range(self.num_mask_blocks):
             pos_x = self.make_positive[idx](x_emb) + 1
             log_x = torch.log(pos_x)
-            masked_weight = F.relu(self.masker[idx] * self.w[idx])
-            # masked_weight = F.relu(self.masker[idx] * self.w[idx])
-            x_emb = log_x @ masked_weight + self.b[idx]
+            if self.exp_additional_mask:
+                masked_weight = F.relu(self.masker[idx] * self.w[idx])
+            else:
+                masked_weight = F.relu(self.w[idx])
+            x_emb = log_x @ masked_weight
+            if not self.exp_bias_on_final:
+                x_emb += self.b[idx]
+
             if len(self.batch_norm) > idx:
                 x_emb = self.batch_norm[idx](x_emb)
             if not self.output_log:
                 x_emb = torch.exp(x_emb)
+            
+            if self.exp_bias_on_final:
+                x_emb += self.b[idx]
             
             # print(idx, x_emb)
         logit = self.sfc(x_emb)

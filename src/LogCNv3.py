@@ -33,6 +33,7 @@ class LogCNv3(BaseModel):
                  output_log=False,
                  layer_norm=True,
                  batch_norm=False,
+                 exp_positive_activation=False,
                  exp_bias_on_final=False,
                  exp_additional_mask=True,
                  num_heads=1,
@@ -54,6 +55,7 @@ class LogCNv3(BaseModel):
                                 num_mask_blocks=num_mask_blocks,
                                 layer_norm=layer_norm,
                                 output_log=output_log,
+                                exp_positive_activation=exp_positive_activation,
                                 exp_additional_mask=exp_additional_mask,
                                 exp_bias_on_final=exp_bias_on_final,
                                 batch_norm=batch_norm,
@@ -126,6 +128,7 @@ class CrossNetwork(nn.Module):
                  layer_norm=True,
                  batch_norm=True,
                  output_log=False,
+                 exp_positive_activation=False,
                  exp_additional_mask=True,
                  exp_bias_on_final=False,
                  num_mask_blocks=1,
@@ -149,10 +152,13 @@ class CrossNetwork(nn.Module):
             self.w.append(nn.Parameter(torch.zeros((input_dim, input_dim)), requires_grad=True))
             self.b.append(nn.Parameter(torch.zeros((input_dim,)), requires_grad=True))
             self.masker.append(nn.Parameter(torch.zeros((input_dim, input_dim)), requires_grad=True))
-            self.make_positive.append(nn.Sequential(
-                nn.Linear(input_dim, input_dim),
-                nn.ReLU()
-            ))
+            if exp_positive_activation:
+                self.make_positive.append(nn.Softplus())
+            else:
+                self.make_positive.append(nn.Sequential(
+                    nn.Linear(input_dim, input_dim),
+                    nn.ReLU()
+                ))
             if layer_norm:
                 self.layer_norm.append(nn.LayerNorm(input_dim))
             if batch_norm:

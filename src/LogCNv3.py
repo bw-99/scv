@@ -19,6 +19,10 @@ from fuxictr.pytorch.models import BaseModel
 from fuxictr.pytorch.layers import FeatureEmbedding
 from fuxictr.pytorch.torch_utils import get_regularizer
 import torch.nn.functional as F
+from tqdm import tqdm
+import sys
+import logging
+import numpy as np
 
 class LogCNv3(BaseModel):
     def __init__(self,
@@ -32,7 +36,7 @@ class LogCNv3(BaseModel):
                  net_dropout=0.1,
                  output_log=False,
                  layer_norm=True,
-                 batch_norm=False,
+                 batch_norm=True,
                  exp_positive_activation=False,
                  exp_bias_on_final=False,
                  exp_additional_mask=True,
@@ -46,6 +50,11 @@ class LogCNv3(BaseModel):
                                     embedding_regularizer=embedding_regularizer,
                                     net_regularizer=net_regularizer,
                                     **kwargs)
+        self.batch_norm = batch_norm
+        self.layer_norm = layer_norm
+        self.num_mask_blocks = num_mask_blocks
+        self.num_mask_heads = num_mask_heads
+
         self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
         input_dim = feature_map.sum_emb_out_dim()
         print("LogCNv3LogCNv3LogCNv3LogCNv3LogCNv3 input_dim", input_dim)
@@ -63,15 +72,23 @@ class LogCNv3(BaseModel):
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
         self.model_to_device()
+        self.tmp_val_lst = []
+        self.val_lst = []
 
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X)
-        output_lst = torch.cat([
-            self.log_tower[i](feature_emb).mean(dim=1) for i in range(self.num_mask_heads)
-        ], dim=-1)
-        # print(output_lst.shape)
-        # print(torch.mean(output_lst, dim=0).shape, torch.mean(output_lst, dim=1, keepdim=True).shape, torch.mean(output_lst, dim=-1).shape)
+        output_lst, var_lst = [], []
+        for i in range(self.num_mask_heads):
+            logit, x_emb = self.log_tower[i](feature_emb)
+            feature_variances = torch.var(x_emb, dim=0)
+            var_lst.append(feature_variances.mean().detach().cpu())
+            output_lst.append(logit.mean(dim=1))
+        output_lst = torch.cat(output_lst, dim=-1)
+        self.tmp_val_lst.append((sum(var_lst)/len(var_lst)).item())
+        # output_lst = torch.cat([
+        #     self.log_tower[i](feature_emb).mean(dim=1) for i in range(self.num_mask_heads)
+        # ], dim=-1)
         y_pred = torch.mean(output_lst, dim=1,  keepdim=True)
         logit_lst = self.output_activation(output_lst)
         y_pred = self.output_activation(y_pred)
@@ -99,6 +116,30 @@ class LogCNv3(BaseModel):
         nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
         self.optimizer.step()
         return loss
+    
+    def train_epoch(self, data_generator):
+        self._batch_index = 0
+        train_loss = 0
+        self.train()
+        if self._verbose == 0:
+            batch_iterator = data_generator
+        else:
+            batch_iterator = tqdm(data_generator, disable=False, file=sys.stdout)
+        for batch_index, batch_data in enumerate(batch_iterator):
+            self._batch_index = batch_index
+            self._total_steps += 1
+            loss = self.train_step(batch_data)
+            # print(sum(self.tmp_val_lst)/len(self.tmp_val_lst))
+            train_loss += loss.item()
+            if self._total_steps % self._eval_steps == 0:
+                logging.info("Train loss: {:.6f}".format(train_loss / self._eval_steps))
+                train_loss = 0
+                self.eval_step()
+            if self._stop_training:
+                break
+        # var_data = np.array(self.tmp_val_lst)
+        self.tmp_val_lst.clear()
+        # np.save(f"bn{self.batch_norm}_ln{self.layer_norm}_mb{self.num_mask_blocks}_mh{self.num_mask_heads}.npy", var_data)
 
 
 
@@ -187,6 +228,7 @@ class CrossNetwork(nn.Module):
             else:
                 masked_weight = F.relu(self.w[idx])
             x_emb = log_x @ masked_weight
+
             if not self.exp_bias_on_final:
                 x_emb = x_emb + self.b[idx]
 
@@ -200,7 +242,9 @@ class CrossNetwork(nn.Module):
             
             if self.exp_bias_on_final:
                 x_emb = x_emb + self.b[idx]
-            
-            # print(idx, x_emb)
+
+            if len(self.dropout) > idx:
+                x_emb = self.dropout[idx](x_emb)
+
         logit = self.sfc(x_emb)
-        return logit
+        return logit, x_emb

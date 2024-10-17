@@ -858,6 +858,8 @@ LogDCN_iPinYou_x1: # This is a config template
     net_dropout: 0
     layer_norm: True
     batch_norm: True
+    last_batch_norm: False
+    last_layer_norm: False
     output_log: False
     exp_positive_activation: False
     exp_additional_mask: True

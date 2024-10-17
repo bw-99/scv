@@ -100,10 +100,18 @@ class CrossNetwork(nn.Module):
                  layer_norm=True,
                  batch_norm=True,
                  exp_positive_activation=False,
+                 output_log=False,
+                 last_layer_norm=False,
+                 last_batch_norm=False,
                  num_mask_blocks=1,
                  net_dropout=0.1):
         super(CrossNetwork, self).__init__()
         self.num_mask_blocks = num_mask_blocks
+        self.output_log = output_log
+
+        self.last_layer_norm = nn.LayerNorm(input_dim) if last_layer_norm else None
+        self.last_batch_norm = nn.BatchNorm1d(input_dim) if last_batch_norm else None
+        
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
         self.dropout = nn.ModuleList()
@@ -150,6 +158,18 @@ class CrossNetwork(nn.Module):
             x_emb = x_emb + self.b[idx]
             if len(self.batch_norm) > idx:
                 x_emb = self.batch_norm[idx](x_emb)
-            x_emb = torch.exp(x_emb)
+            if len(self.layer_norm) > idx:
+                x_emb = self.layer_norm[idx](x_emb)
             
+            if not self.output_log:
+                x_emb = torch.exp(x_emb)
+
+            if len(self.dropout) > idx:
+                x_emb = self.dropout[idx](x_emb)
+        
+        if self.last_batch_norm:
+            x_emb = self.last_batch_norm(x_emb)        
+        if self.last_layer_norm:
+            x_emb = self.last_layer_norm(x_emb)
+
         return x_emb

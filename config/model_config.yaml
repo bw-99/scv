@@ -855,7 +855,7 @@ LogDCN_iPinYou_x1: # This is a config template
     embedding_dim: 16
     num_mask_heads: 2
     num_mask_blocks: 2
-    net_dropout: 0.1
+    net_dropout: 0
     layer_norm: True
     batch_norm: True
     output_log: False

@@ -48,6 +48,7 @@ if __name__ == '__main__':
     experiment_id = args['expid']
     params = load_config(args['config'], experiment_id)
     params['gpu'] = args['gpu']
+    params["experiment_id"] = f"{experiment_id}"
     set_logger(params)
     logging.info("Params: " + print_to_json(params))
     seed_everything(seed=params['seed'])

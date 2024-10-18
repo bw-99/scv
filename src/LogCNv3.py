@@ -172,6 +172,7 @@ class CrossNetwork(nn.Module):
                  exp_positive_activation=False,
                  exp_additional_mask=True,
                  exp_bias_on_final=False,
+                 exp_add1_before_log=True,
                  num_mask_blocks=1,
                  net_dropout=0.1,
                  num_heads=1):
@@ -180,6 +181,7 @@ class CrossNetwork(nn.Module):
         self.output_log = output_log
         self.exp_bias_on_final = exp_bias_on_final
         self.exp_additional_mask = exp_additional_mask
+        self.exp_add1_before_log = exp_add1_before_log
 
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
@@ -221,7 +223,9 @@ class CrossNetwork(nn.Module):
         x_emb = x
         x = None
         for idx in range(self.num_mask_blocks):
-            pos_x = self.make_positive[idx](x_emb) + 1
+            pos_x = self.make_positive[idx](x_emb)
+            if self.exp_add1_before_log:
+                pos_x=pos_x+1
             log_x = torch.log(pos_x)
             if self.exp_additional_mask:
                 masked_weight = F.relu(self.masker[idx] * self.w[idx])

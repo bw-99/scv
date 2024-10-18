@@ -7,3 +7,4 @@ from .LogCN import *
 from .LogCNv2 import *
 from .LogCNv3 import *
 from .LogDCN import *
+from .LogCNv3_exp_var import *

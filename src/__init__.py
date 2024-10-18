@@ -3,7 +3,7 @@ from .DCNv3 import *
 from .model_zoo import *
 from .PGAViT import *
 from .PGAResNet import *
-from .LogDCNv2 import *
 from .LogCN import *
 from .LogCNv2 import *
 from .LogCNv3 import *
+from .LogCNv3_exp_var import *

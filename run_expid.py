@@ -62,7 +62,7 @@ if __name__ == '__main__':
     feature_map = FeatureMap(params['dataset_id'], data_dir)
     feature_map.load(feature_map_json, params)
     logging.info("Feature specs: " + print_to_json(feature_map.features))
-    
+    # LogCNv3_exp_var_iPinYou_x1_058_febf35a5
 
     model_class = getattr(model_zoo, params['model'])
     model = model_class(feature_map, **params)

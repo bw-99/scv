@@ -37,6 +37,7 @@ class LogCNv3(BaseModel):
                  output_log=False,
                  layer_norm=True,
                  batch_norm=True,
+                 exp_norm_before_log=False,
                  exp_positive_activation=False,
                  exp_bias_on_final=False,
                  exp_additional_mask=True,
@@ -54,6 +55,7 @@ class LogCNv3(BaseModel):
         self.layer_norm = layer_norm
         self.num_mask_blocks = num_mask_blocks
         self.num_mask_heads = num_mask_heads
+        self.exp_norm_before_log = exp_norm_before_log
 
         self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
         input_dim = feature_map.sum_emb_out_dim()
@@ -67,6 +69,7 @@ class LogCNv3(BaseModel):
                                 exp_positive_activation=exp_positive_activation,
                                 exp_additional_mask=exp_additional_mask,
                                 exp_bias_on_final=exp_bias_on_final,
+                                exp_norm_before_log=exp_norm_before_log,
                                 batch_norm=batch_norm,
                                 num_heads=num_heads) for _ in range(num_mask_heads)])
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
@@ -173,6 +176,7 @@ class CrossNetwork(nn.Module):
                  exp_additional_mask=True,
                  exp_bias_on_final=False,
                  exp_add1_before_log=True,
+                 exp_norm_before_log=False,
                  num_mask_blocks=1,
                  net_dropout=0.1,
                  num_heads=1):
@@ -182,6 +186,7 @@ class CrossNetwork(nn.Module):
         self.exp_bias_on_final = exp_bias_on_final
         self.exp_additional_mask = exp_additional_mask
         self.exp_add1_before_log = exp_add1_before_log
+        self.exp_norm_before_log = exp_norm_before_log
 
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
@@ -226,6 +231,13 @@ class CrossNetwork(nn.Module):
             pos_x = self.make_positive[idx](x_emb)
             if self.exp_add1_before_log:
                 pos_x=pos_x+1
+            
+            if self.exp_norm_before_log:
+                if len(self.batch_norm) > idx:
+                    x_emb = self.batch_norm[idx](x_emb)
+                if len(self.layer_norm) > idx:
+                    x_emb = self.layer_norm[idx](x_emb)
+
             log_x = torch.log(pos_x)
             if self.exp_additional_mask:
                 masked_weight = F.relu(self.masker[idx] * self.w[idx])
@@ -236,11 +248,13 @@ class CrossNetwork(nn.Module):
             if not self.exp_bias_on_final:
                 x_emb = x_emb + self.b[idx]
 
-            if len(self.batch_norm) > idx:
-                x_emb = self.batch_norm[idx](x_emb)
-            if len(self.layer_norm) > idx:
-                x_emb = self.layer_norm[idx](x_emb)
-
+            
+            if not self.exp_norm_before_log:
+                if len(self.batch_norm) > idx:
+                    x_emb = self.batch_norm[idx](x_emb)
+                if len(self.layer_norm) > idx:
+                    x_emb = self.layer_norm[idx](x_emb)
+            
             if not self.output_log:
                 x_emb = torch.exp(x_emb)
             

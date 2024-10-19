@@ -833,6 +833,7 @@ LogCNv3_iPinYou_x1: # This is a config template
     exp_positive_activation: False
     exp_additional_mask: True
     exp_bias_on_final: False
+    exp_norm_before_log: False
     exp_add1_before_log: True
     num_heads: 1
     epochs: 100

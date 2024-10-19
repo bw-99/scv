@@ -206,12 +206,12 @@ class CrossNetwork(nn.Module):
         x_emb = x
         x = None
         for idx in range(self.num_mask_blocks):
-            instance_guided_mask = self.instance_guided_masker[idx](x_emb)
             pos_x = self.make_positive[idx](x_emb)
             if self.exp_add1_before_log:
                 pos_x=pos_x+1
             
-            log_x = torch.log(pos_x) * instance_guided_mask
+            log_x = torch.log(pos_x)
+            log_x = log_x * self.instance_guided_masker[idx](log_x)
             masked_weight = F.relu(self.masker[idx] * self.w[idx])
             x_emb = (log_x @ masked_weight) + self.b[idx]
 

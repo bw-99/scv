@@ -24,10 +24,10 @@ import sys
 import logging
 import numpy as np
 
-class LogCNv3(BaseModel):
+class LogCNv4(BaseModel):
     def __init__(self,
                  feature_map,
-                 model_id="LogCNv3",
+                 model_id="LogCNv4",
                  gpu=-1,
                  learning_rate=1e-3,
                  embedding_dim=10,
@@ -45,7 +45,7 @@ class LogCNv3(BaseModel):
                  embedding_regularizer=None,
                  net_regularizer=None,
                  **kwargs):
-        super(LogCNv3, self).__init__(feature_map,
+        super(LogCNv4, self).__init__(feature_map,
                                     model_id=model_id,
                                     gpu=gpu,
                                     embedding_regularizer=embedding_regularizer,
@@ -59,7 +59,7 @@ class LogCNv3(BaseModel):
 
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         input_dim = feature_map.sum_emb_out_dim()
-        print("LogCNv3LogCNv3LogCNv3LogCNv3LogCNv3 input_dim", input_dim)
+        print("LogCNv4LogCNv4LogCNv4LogCNv4LogCNv4 input_dim", input_dim)
         self.num_mask_heads = num_mask_heads
         self.log_tower = nn.ModuleList([CrossNetwork(input_dim=input_dim,
                                 net_dropout=net_dropout,
@@ -174,25 +174,24 @@ class CrossNetwork(nn.Module):
         self.make_positive = nn.ModuleList()
         self.b = nn.ParameterList()
         self.masker = nn.ParameterList()
+        self.instance_guided_masker = nn.ParameterList()
         
         for i in range(self.num_mask_blocks):
             self.w.append(nn.Parameter(torch.zeros((input_dim, input_dim)), requires_grad=True))
             self.b.append(nn.Parameter(torch.zeros((input_dim,)), requires_grad=True))
             self.masker.append(nn.Parameter(torch.zeros((input_dim, input_dim)), requires_grad=True))
-            if exp_positive_activation:
-                self.make_positive.append(nn.Sequential(
-                    nn.Linear(input_dim, input_dim),
-                    nn.Softplus()
-                ))
-            else:
-                self.make_positive.append(nn.Sequential(
-                    nn.Linear(input_dim, input_dim),
-                    nn.ReLU()
-                ))
+            self.make_positive.append(nn.Sequential(
+                nn.Linear(input_dim, input_dim),
+                nn.ReLU()
+            ))
+            self.instance_guided_masker.append(nn.Sequential(
+                nn.Linear(input_dim, input_dim),
+                nn.ReLU()
+            ))
             if layer_norm:
                 self.layer_norm.append(nn.LayerNorm(input_dim))
             if batch_norm:
-                self.batch_norm.append(nn.BatchNorm1d(num_heads))
+                self.batch_norm.append(nn.BatchNorm1d(input_dim))
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
 
@@ -207,39 +206,20 @@ class CrossNetwork(nn.Module):
         x_emb = x
         x = None
         for idx in range(self.num_mask_blocks):
-            if self.exp_norm_before_log:
-                if len(self.batch_norm) > idx:
-                    x_emb = self.batch_norm[idx](x_emb)
-                if len(self.layer_norm) > idx:
-                    x_emb = self.layer_norm[idx](x_emb)
-
+            instance_guided_mask = self.instance_guided_masker[idx](x_emb)
             pos_x = self.make_positive[idx](x_emb)
             if self.exp_add1_before_log:
                 pos_x=pos_x+1
             
-            log_x = torch.log(pos_x)
-            if self.exp_additional_mask:
-                masked_weight = F.relu(self.masker[idx] * self.w[idx])
-            else:
-                masked_weight = F.relu(self.w[idx])
-            x_emb = log_x @ masked_weight
+            log_x = torch.log(pos_x) * instance_guided_mask
+            masked_weight = F.relu(self.masker[idx] * self.w[idx])
+            x_emb = (log_x @ masked_weight) + self.b[idx]
 
-            if not self.exp_bias_on_final:
-                x_emb = x_emb + self.b[idx]
-
-            
-            if not self.exp_norm_before_log:
-                if len(self.batch_norm) > idx:
-                    x_emb = self.batch_norm[idx](x_emb)
-                if len(self.layer_norm) > idx:
-                    x_emb = self.layer_norm[idx](x_emb)
-            
-            if not self.output_log:
-                x_emb = torch.exp(x_emb)
-            
-            if self.exp_bias_on_final:
-                x_emb = x_emb + self.b[idx]
-
+            if len(self.batch_norm) > idx:
+                x_emb = self.batch_norm[idx](x_emb)
+            if len(self.layer_norm) > idx:
+                x_emb = self.layer_norm[idx](x_emb)
+        
             if len(self.dropout) > idx:
                 x_emb = self.dropout[idx](x_emb)
 

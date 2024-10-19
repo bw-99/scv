@@ -57,7 +57,7 @@ class LogCNv3(BaseModel):
         self.num_mask_heads = num_mask_heads
         self.exp_norm_before_log = exp_norm_before_log
 
-        self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
+        self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         input_dim = feature_map.sum_emb_out_dim()
         print("LogCNv3LogCNv3LogCNv3LogCNv3LogCNv3 input_dim", input_dim)
         self.num_mask_heads = num_mask_heads
@@ -80,7 +80,7 @@ class LogCNv3(BaseModel):
 
     def forward(self, inputs):
         X = self.get_inputs(inputs)
-        feature_emb = self.embedding_layer(X)
+        feature_emb = self.embedding_layer(X, flatten_emb=True)
         output_lst, var_lst = [], []
         for i in range(self.num_mask_heads):
             logit, x_emb = self.log_tower[i](feature_emb)
@@ -143,27 +143,6 @@ class LogCNv3(BaseModel):
         # var_data = np.array(self.tmp_val_lst)
         self.tmp_val_lst.clear()
         # np.save(f"bn{self.batch_norm}_ln{self.layer_norm}_mb{self.num_mask_blocks}_mh{self.num_mask_heads}.npy", var_data)
-
-
-
-class MultiHeadFeatureEmbedding(nn.Module):
-    def __init__(self, feature_map, embedding_dim, num_heads=2):
-        super(MultiHeadFeatureEmbedding, self).__init__()
-        self.num_heads = num_heads
-        self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
-
-    def forward(self, X):  # H = num_heads
-        feature_emb = self.embedding_layer(X)  # B × F × D
-        multihead_feature_emb = torch.tensor_split(feature_emb, self.num_heads, dim=-1)
-        multihead_feature_emb = torch.stack(multihead_feature_emb, dim=1)  # B × H × F × D/H
-        multihead_feature_emb1, multihead_feature_emb2 = torch.tensor_split(multihead_feature_emb, 2,
-                                                                            dim=-1)  # B × H × F × D/2H
-        multihead_feature_emb1, multihead_feature_emb2 = multihead_feature_emb1.flatten(start_dim=2), \
-                                                         multihead_feature_emb2.flatten(
-                                                             start_dim=2)  # B × H × FD/2H; B × H × FD/2H
-        multihead_feature_emb = torch.cat([multihead_feature_emb1, multihead_feature_emb2], dim=-1)
-        return multihead_feature_emb  # B × H × FD/H
-
 
 
 class CrossNetwork(nn.Module):

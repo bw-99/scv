@@ -875,6 +875,37 @@ LogCNv4_iPinYou_x1: # This is a config template
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
+LogCNv5_iPinYou_x1: # This is a config template
+    model: LogCNv5
+    dataset_id: iPinYou_x1_csv
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-3
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    num_mask_heads: 3
+    num_mask_blocks: 1
+    net_dropout: 0.1
+    layer_norm: False
+    batch_norm: False
+    output_log: False
+    exp_positive_activation: False
+    exp_additional_mask: True
+    exp_bias_on_final: False
+    exp_norm_before_log: False
+    exp_add1_before_log: True
+    num_heads: 1
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 16
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
 LogCNv3_exp_var_iPinYou_x1: # This is a config template
     model: LogCNv3_exp_var
     dataset_id: iPinYou_x1_csv

@@ -8,3 +8,5 @@ from .LogCNv2 import *
 from .LogCNv3 import *
 from .LogDCN import *
 from .LogCNv3_exp_var import *
+from .LogCNv4 import *
+from .LogCNv5 import *

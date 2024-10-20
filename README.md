@@ -10,3 +10,6 @@ cd ../../ && docker run -dit --name con --shm-size=20g -v ./:/workspace  --runti
 https://github.com/reczoo/Datasets
 
 https://our-ef.tistory.com/entry/맥북-화면뚜껑-덮어도-안꺼지게-설정하는법-잠자기-방지
+
+
+source .venv/bin/activate

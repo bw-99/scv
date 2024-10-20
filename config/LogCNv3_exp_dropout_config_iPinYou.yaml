@@ -1,6 +1,10 @@
 base_config: ./config/
 base_expid: LogCNv3_iPinYou_x1
 dataset_id: iPinYou_x1_csv
+# base_config: ./config/
+# base_expid: LogCNv3_exp_dropout_config_iPinYou
+# dataset_id: iPinYou_x1_csv
+
 
 tuner_space:
     model_root: './checkpoints/'

@@ -46,14 +46,21 @@ if __name__ == '__main__':
     args = vars(parser.parse_args())
     
     experiment_id = args['expid']
+    
     params = load_config(args['config'], experiment_id)
+    print('**************')
+    print(args['config'], experiment_id)
     params['gpu'] = args['gpu']
     params["experiment_id"] = f"{experiment_id}"
+    print('**************')
+    print(params["experiment_id"])
     set_logger(params)
     logging.info("Params: " + print_to_json(params))
     seed_everything(seed=params['seed'])
 
     data_dir = os.path.join(params['data_root'], params['dataset_id'])
+    print('*******************')
+    print(data_dir)
     feature_map_json = os.path.join(data_dir, "feature_map.json")
     if params["data_format"] == "csv":
         feature_encoder = FeatureProcessor(**params)

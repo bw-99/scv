@@ -40,6 +40,7 @@ class LogCNv4(BaseModel):
                  exp_norm_before_log=False,
                  exp_positive_activation=False,
                  exp_bias_on_final=False,
+                 exp_ig_on_log=True,
                  exp_additional_mask=True,
                  num_heads=1,
                  embedding_regularizer=None,
@@ -71,6 +72,7 @@ class LogCNv4(BaseModel):
                                 exp_bias_on_final=exp_bias_on_final,
                                 exp_norm_before_log=exp_norm_before_log,
                                 batch_norm=batch_norm,
+                                exp_ig_on_log=exp_ig_on_log,
                                 num_heads=num_heads) for _ in range(num_mask_heads)])
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
@@ -156,6 +158,7 @@ class CrossNetwork(nn.Module):
                  exp_bias_on_final=False,
                  exp_add1_before_log=True,
                  exp_norm_before_log=False,
+                 exp_ig_on_log=True,
                  num_mask_blocks=1,
                  net_dropout=0.1,
                  num_heads=1):
@@ -165,6 +168,7 @@ class CrossNetwork(nn.Module):
         self.exp_bias_on_final = exp_bias_on_final
         self.exp_additional_mask = exp_additional_mask
         self.exp_add1_before_log = exp_add1_before_log
+        self.exp_ig_on_log = exp_ig_on_log
         self.exp_norm_before_log = exp_norm_before_log
 
         self.layer_norm = nn.ModuleList()
@@ -211,7 +215,12 @@ class CrossNetwork(nn.Module):
                 pos_x=pos_x+1
             
             log_x = torch.log(pos_x)
-            log_x = log_x * self.instance_guided_masker[idx](log_x)
+            if self.exp_ig_on_log:
+                ig =  self.instance_guided_masker[idx](log_x)
+            else:
+                ig = self.instance_guided_masker[idx](pos_x)
+            
+            log_x = log_x * ig
             masked_weight = F.relu(self.masker[idx] * self.w[idx])
             x_emb = (log_x @ masked_weight) + self.b[idx]
 

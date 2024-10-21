@@ -862,6 +862,7 @@ LogCNv4_iPinYou_x1: # This is a config template
     layer_norm: False
     batch_norm: False
     output_log: False
+    exp_ig_on_log: True
     exp_positive_activation: False
     exp_additional_mask: True
     exp_bias_on_final: False

@@ -24,10 +24,10 @@ import sys
 import logging
 import numpy as np
 
-class LogCNv5(BaseModel):
+class LogCNv5_v2(BaseModel):
     def __init__(self,
                  feature_map,
-                 model_id="LogCNv5",
+                 model_id="LogCNv5_v2",
                  gpu=-1,
                  learning_rate=1e-3,
                  embedding_dim=10,
@@ -45,7 +45,7 @@ class LogCNv5(BaseModel):
                  embedding_regularizer=None,
                  net_regularizer=None,
                  **kwargs):
-        super(LogCNv5, self).__init__(feature_map,
+        super(LogCNv5_v2, self).__init__(feature_map,
                                     model_id=model_id,
                                     gpu=gpu,
                                     embedding_regularizer=embedding_regularizer,
@@ -59,7 +59,7 @@ class LogCNv5(BaseModel):
 
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         input_dim = feature_map.sum_emb_out_dim()
-        print("LogCNv5LogCNv5LogCNv5LogCNv5LogCNv5 input_dim", input_dim)
+        print("LogCNv5_v2LogCNv5_v2LogCNv5_v2LogCNv5_v2LogCNv5_v2 input_dim", input_dim)
         self.num_mask_heads = num_mask_heads
         self.log_tower = nn.ModuleList([CrossNetwork(input_dim=input_dim,
                                 net_dropout=net_dropout,
@@ -177,10 +177,10 @@ class CrossNetwork(nn.Module):
         self.projection_layers = nn.ModuleList()
         
         for i in range(self.num_mask_blocks):
-            self.w.append(nn.Parameter(torch.zeros((2*input_dim, 2*input_dim)), requires_grad=True))
-            self.b.append(nn.Parameter(torch.zeros((2*input_dim,)), requires_grad=True))
-            self.masker.append(nn.Parameter(torch.zeros((2*input_dim, 2*input_dim)), requires_grad=True))
-            self.projection_layers.append(nn.Linear(input_dim*2, input_dim))
+            self.w.append(nn.Parameter(torch.zeros((input_dim, input_dim)), requires_grad=True))
+            self.b.append(nn.Parameter(torch.zeros((input_dim,)), requires_grad=True))
+            self.masker.append(nn.Parameter(torch.zeros((input_dim, input_dim)), requires_grad=True))
+            # self.projection_layers.append(nn.Linear(input_dim, input_dim))
 
             if layer_norm:
                 self.layer_norm.append(nn.LayerNorm(input_dim))
@@ -202,16 +202,21 @@ class CrossNetwork(nn.Module):
         for idx in range(self.num_mask_blocks):
             pos_x = F.relu(x_emb)
             neg_x = F.relu(-x_emb)
-            concat_x = torch.cat([pos_x, neg_x], dim=-1)
+            # concat_x = pos_x + neg_x
 
             if self.exp_add1_before_log:
-                concat_x=concat_x+1
+                pos_x=1+ pos_x
+                neg_x=1+neg_x
+                # concat_x=concat_x+1
+            log_pos_x = torch.log(pos_x)
+            log_neg_x = torch.log(neg_x)
+
+            log_x = log_pos_x-log_neg_x
             
-            log_x = torch.log(concat_x)
+            # log_x = torch.log(concat_x)
             masked_weight = F.relu(self.masker[idx] * self.w[idx])
             x_emb = (log_x @ masked_weight) + self.b[idx]
 
-            x_emb = self.projection_layers[idx](x_emb)
 
             if len(self.batch_norm) > idx:
                 x_emb = self.batch_norm[idx](x_emb)

@@ -1,0 +1,1 @@
+from .LogCNv2 import LogCNv2

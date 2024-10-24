@@ -1,12 +1,16 @@
-from .ECN import *
-from .DCNv3 import *
-from .model_zoo import *
-from .PGAViT import *
-from .PGAResNet import *
-from .LogCN import *
+
+# * log operation
+from .LogCNv1 import *
 from .LogCNv2 import *
 from .LogCNv3 import *
-from .LogDCN import *
-from .LogCNv3_exp_var import *
 from .LogCNv4 import *
 from .LogCNv5 import *
+
+# * log operation + implicit interaction
+from .LogDCN import *
+
+# * baseline
+from .DCNv3 import *
+
+# * vision model
+from .PGA import *

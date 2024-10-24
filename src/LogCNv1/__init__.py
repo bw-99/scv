@@ -1,0 +1,1 @@
+from .LogCN import LogCN

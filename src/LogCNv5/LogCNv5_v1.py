@@ -24,10 +24,10 @@ import sys
 import logging
 import numpy as np
 
-class LogCNv4(BaseModel):
+class LogCNv5_v1(BaseModel):
     def __init__(self,
                  feature_map,
-                 model_id="LogCNv4",
+                 model_id="LogCNv5_v1",
                  gpu=-1,
                  learning_rate=1e-3,
                  embedding_dim=10,
@@ -45,7 +45,7 @@ class LogCNv4(BaseModel):
                  embedding_regularizer=None,
                  net_regularizer=None,
                  **kwargs):
-        super(LogCNv4, self).__init__(feature_map,
+        super(LogCNv5_v1, self).__init__(feature_map,
                                     model_id=model_id,
                                     gpu=gpu,
                                     embedding_regularizer=embedding_regularizer,
@@ -59,7 +59,7 @@ class LogCNv4(BaseModel):
 
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         input_dim = feature_map.sum_emb_out_dim()
-        print("LogCNv4LogCNv4LogCNv4LogCNv4LogCNv4 input_dim", input_dim)
+        print("LogCNv5_v1LogCNv5_v1LogCNv5_v1LogCNv5_v1LogCNv5_v1 input_dim", input_dim)
         self.num_mask_heads = num_mask_heads
         self.log_tower = nn.ModuleList([CrossNetwork(input_dim=input_dim,
                                 net_dropout=net_dropout,
@@ -174,20 +174,14 @@ class CrossNetwork(nn.Module):
         self.make_positive = nn.ModuleList()
         self.b = nn.ParameterList()
         self.masker = nn.ParameterList()
-        self.instance_guided_masker = nn.ParameterList()
+        self.projection_layers = nn.ModuleList()
         
         for i in range(self.num_mask_blocks):
-            self.w.append(nn.Parameter(torch.zeros((input_dim, input_dim)), requires_grad=True))
-            self.b.append(nn.Parameter(torch.zeros((input_dim,)), requires_grad=True))
-            self.masker.append(nn.Parameter(torch.zeros((input_dim, input_dim)), requires_grad=True))
-            self.make_positive.append(nn.Sequential(
-                nn.Linear(input_dim, input_dim),
-                nn.ReLU()
-            ))
-            self.instance_guided_masker.append(nn.Sequential(
-                nn.Linear(input_dim, input_dim),
-                nn.ReLU()
-            ))
+            self.w.append(nn.Parameter(torch.zeros((2*input_dim, 2*input_dim)), requires_grad=True))
+            self.b.append(nn.Parameter(torch.zeros((2*input_dim,)), requires_grad=True))
+            self.masker.append(nn.Parameter(torch.zeros((2*input_dim, 2*input_dim)), requires_grad=True))
+            self.projection_layers.append(nn.Linear(input_dim*2, input_dim))
+
             if layer_norm:
                 self.layer_norm.append(nn.LayerNorm(input_dim))
             if batch_norm:
@@ -206,14 +200,18 @@ class CrossNetwork(nn.Module):
         x_emb = x
         x = None
         for idx in range(self.num_mask_blocks):
-            pos_x = self.make_positive[idx](x_emb)
+            pos_x = F.relu(x_emb)
+            neg_x = F.relu(-x_emb)
+            concat_x = torch.cat([pos_x, neg_x], dim=-1)
+
             if self.exp_add1_before_log:
-                pos_x=pos_x+1
+                concat_x=concat_x+1
             
-            log_x = torch.log(pos_x)
-            log_x = log_x * self.instance_guided_masker[idx](log_x)
+            log_x = torch.log(concat_x)
             masked_weight = F.relu(self.masker[idx] * self.w[idx])
             x_emb = (log_x @ masked_weight) + self.b[idx]
+
+            x_emb = self.projection_layers[idx](x_emb)
 
             if len(self.batch_norm) > idx:
                 x_emb = self.batch_norm[idx](x_emb)

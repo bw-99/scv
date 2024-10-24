@@ -20,10 +20,10 @@ from fuxictr.pytorch.layers import FeatureEmbedding
 from fuxictr.pytorch.torch_utils import get_regularizer
 import torch.nn.functional as F
 
-class LogDCNv2(BaseModel):
+class LogCN(BaseModel):
     def __init__(self,
                  feature_map,
-                 model_id="LogDCNv2",
+                 model_id="LogCN",
                  gpu=-1,
                  learning_rate=1e-3,
                  embedding_dim=10,
@@ -36,7 +36,7 @@ class LogDCNv2(BaseModel):
                  embedding_regularizer=None,
                  net_regularizer=None,
                  **kwargs):
-        super(LogDCNv2, self).__init__(feature_map,
+        super(LogCN, self).__init__(feature_map,
                                     model_id=model_id,
                                     gpu=gpu,
                                     embedding_regularizer=embedding_regularizer,
@@ -44,14 +44,14 @@ class LogDCNv2(BaseModel):
                                     **kwargs)
         self.embedding_layer = MultiHeadFeatureEmbedding(feature_map, embedding_dim * num_heads, num_heads)
         input_dim = feature_map.sum_emb_out_dim()
-        print("LogDCNv2LogDCNv2LogDCNv2LogDCNv2LogDCNv2 input_dim", input_dim)
-        self.CN = CrossNetwork(input_dim=input_dim,
+        print("LogCNLogCNLogCNLogCNLogCN input_dim", input_dim)
+        self.num_mask_heads = num_mask_heads
+        self.log_tower = nn.ModuleList([CrossNetwork(input_dim=input_dim,
                                 net_dropout=net_dropout,
                                 num_mask_blocks=num_mask_blocks,
-                                num_mask_heads=num_mask_heads,
                                 layer_norm=layer_norm,
                                 batch_norm=batch_norm,
-                                num_heads=num_heads)
+                                num_heads=num_heads) for _ in range(num_mask_heads)])
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
         self.model_to_device()
@@ -59,10 +59,39 @@ class LogDCNv2(BaseModel):
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X)
-        logit = self.CN(feature_emb).mean(dim=1)
-        y_pred = self.output_activation(logit)
-        return_dict = {"y_pred": y_pred}
+        output_lst = torch.cat([
+            self.log_tower[i](feature_emb).mean(dim=1) for i in range(self.num_mask_heads)
+        ], dim=-1)
+        # print(output_lst.shape)
+        # print(torch.mean(output_lst, dim=0).shape, torch.mean(output_lst, dim=1, keepdim=True).shape, torch.mean(output_lst, dim=-1).shape)
+        y_pred = torch.mean(output_lst, dim=1,  keepdim=True)
+        logit_lst = self.output_activation(output_lst)
+        y_pred = self.output_activation(y_pred)
+        return_dict = {"y_pred": y_pred, "logit_lst": logit_lst}
         return return_dict
+    
+    def train_step(self, inputs):
+        self.optimizer.zero_grad()
+        return_dict = self.forward(inputs)
+        y_true = self.get_labels(inputs)
+        y_pred = return_dict["y_pred"]
+        logit_lst = return_dict["logit_lst"]
+
+        loss = self.loss_fn(y_pred, y_true, reduction='mean')
+        loss_lst = [self.loss_fn(logit_lst[:, idx].unsqueeze(dim=-1), y_true, reduction='mean') for idx in range(logit_lst.shape[-1])]
+        loss_lst = torch.stack(loss_lst, dim=-1)
+
+        weight_lst = loss_lst - loss
+        weight_lst = torch.where(weight_lst > 0, weight_lst, torch.zeros(1).to(weight_lst.device))
+        additional_loss = loss_lst * weight_lst
+
+        loss = loss + additional_loss.sum()
+        loss += self.regularization_loss()
+        loss.backward()
+        nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
+        self.optimizer.step()
+        return loss
+
 
 
 class MultiHeadFeatureEmbedding(nn.Module):
@@ -91,23 +120,21 @@ class CrossNetwork(nn.Module):
                  layer_norm=True,
                  batch_norm=True,
                  num_mask_blocks=1,
-                 num_mask_heads=1,
                  net_dropout=0.1,
                  num_heads=1):
         super(CrossNetwork, self).__init__()
+        self.num_mask_blocks = num_mask_blocks
+
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
         self.dropout = nn.ModuleList()
         self.w = nn.ModuleList()
         self.masker = nn.ModuleList()
-        self.projection = nn.ModuleList()
-
-        self.num_mask_heads = num_mask_heads
-        self.num_mask_blocks = num_mask_blocks
-
+        
         for i in range(self.num_mask_blocks):
-            self.w.append(nn.ModuleList([nn.Linear(input_dim, input_dim) for _ in range(self.num_mask_heads)]))
-            self.masker.append(nn.ModuleList([nn.Linear(input_dim, input_dim) for _ in range(self.num_mask_heads)]))
+            self.w.append(nn.Linear(input_dim, input_dim))
+            self.masker.append(nn.Linear(input_dim, input_dim))
+            
             if layer_norm:
                 self.layer_norm.append(nn.LayerNorm(input_dim))
             if batch_norm:
@@ -116,20 +143,14 @@ class CrossNetwork(nn.Module):
                 self.dropout.append(nn.Dropout(net_dropout))
         
         self.sfc = nn.Linear(input_dim, 1)
-        self.projection_layer = nn.Linear(input_dim * num_mask_heads, input_dim)
 
     def forward(self, x):
         x_emb = x
         x = None
         for idx in range(self.num_mask_blocks):
-            x_lst = []
-            for i in range(self.num_mask_heads):
-                mask = self.masker[idx][i](x_emb)
-                tmpx = torch.log(F.relu(x_emb * mask) + 1)
-                tmpx = torch.exp(self.w[idx][i](tmpx))
-                x_lst.append(tmpx)
-            x_emb = torch.cat(x_lst, dim=-1)
-            x_emb = self.projection_layer(x_emb)
+            mask = self.masker[idx](x_emb)
+            tmpx = torch.log(F.relu(x_emb * mask) + 1)
+            x_emb = torch.exp(self.w[idx](tmpx))
 
             if len(self.batch_norm) > idx:
                 x_emb = self.batch_norm[idx](x_emb)

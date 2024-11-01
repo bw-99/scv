@@ -1,10 +1,10 @@
-
 # * log operation
 from .LogCNv1 import *
 from .LogCNv2 import *
 from .LogCNv3 import *
 from .LogCNv4 import *
 from .LogCNv5 import *
+from .LogCNv6 import *
 
 # * log operation + implicit interaction
 from .LogDCN import *

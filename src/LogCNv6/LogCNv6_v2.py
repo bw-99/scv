@@ -25,10 +25,10 @@ import sys
 import logging
 import numpy as np
 
-class LogCNv6_v1(BaseModel):
+class LogCNv6_v2(BaseModel):
     def __init__(self,
                  feature_map,
-                 model_id="LogCNv6_v1",
+                 model_id="LogCNv6_v2",
                  gpu=-1,
                  learning_rate=1e-3,
                  embedding_dim=10,
@@ -41,12 +41,13 @@ class LogCNv6_v1(BaseModel):
                  exp_norm_before_log=False,
                  exp_positive_activation=False,
                  exp_bias_on_final=False,
+                 parallel_dnn_hidden_units=[400, 400, 400],
                  exp_additional_mask=True,
                  num_heads=1,
                  embedding_regularizer=None,
                  net_regularizer=None,
                  **kwargs):
-        super(LogCNv6_v1, self).__init__(feature_map,
+        super(LogCNv6_v2, self).__init__(feature_map,
                                     model_id=model_id,
                                     gpu=gpu,
                                     embedding_regularizer=embedding_regularizer,
@@ -60,7 +61,7 @@ class LogCNv6_v1(BaseModel):
 
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         input_dim = feature_map.sum_emb_out_dim()
-        print("LogCNv6_v1LogCNv6_v1LogCNv6_v1LogCNv6_v1LogCNv6_v1 input_dim", input_dim)
+        print("LogCNv6_v2LogCNv6_v2LogCNv6_v2LogCNv6_v2LogCNv6_v2 input_dim", input_dim)
 
         self.log_tower = CrossNetwork(input_dim=input_dim,
                                 net_dropout=net_dropout,
@@ -72,18 +73,22 @@ class LogCNv6_v1(BaseModel):
                                 exp_bias_on_final=exp_bias_on_final,
                                 exp_norm_before_log=exp_norm_before_log,
                                 batch_norm=batch_norm)
-        # self.shallow_tower = LinearCrossNetwork(
-        #     input_dim=input_dim,
-        #     layer_norm=layer_norm,
-        #     num_cross_layers=num_shallow_layers,
-        #     batch_norm=batch_norm,
-        #     net_dropout=net_dropout
-        # )
         self.shallow_tower = nn.Sequential(CrossNetV2(
             input_dim=input_dim,
             num_layers=num_shallow_layers,
         ), nn.Linear(input_dim,1),
         )
+        self.parallel_dnn = nn.Sequential(
+            MLP_Block(input_dim=input_dim,
+                                          output_dim=None, # output hidden layer
+                                          hidden_units=parallel_dnn_hidden_units,
+                                          hidden_activations="ReLU",
+                                          output_activation=None, 
+                                          dropout_rates=net_dropout, 
+                                          batch_norm=batch_norm), 
+            nn.Linear(parallel_dnn_hidden_units[-1],1),
+        )
+        
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
         self.model_to_device()
@@ -97,7 +102,8 @@ class LogCNv6_v1(BaseModel):
 
         log_logit, x_emb = self.log_tower(feature_emb)
         shal_logit = self.shallow_tower(feature_emb)
-        output_lst = torch.cat([log_logit, shal_logit], dim=-1)
+        mlp_logit = self.parallel_dnn(feature_emb)
+        output_lst = torch.cat([log_logit, shal_logit, mlp_logit], dim=-1)
 
         y_pred = torch.mean(output_lst, dim=1,  keepdim=True)
         logit_lst = self.output_activation(output_lst)
@@ -147,9 +153,7 @@ class LogCNv6_v1(BaseModel):
                 self.eval_step()
             if self._stop_training:
                 break
-        # var_data = np.array(self.tmp_val_lst)
         self.tmp_val_lst.clear()
-        # np.save(f"bn{self.batch_norm}_ln{self.layer_norm}_mb{self.num_log_layers}_mh{self.num_mask_heads}.npy", var_data)
 
 class LinearCrossNetwork(nn.Module):
     def __init__(self,

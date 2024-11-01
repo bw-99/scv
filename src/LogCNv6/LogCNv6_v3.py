@@ -83,7 +83,7 @@ class LogCNv6_v3(BaseModel):
                                     hidden_activations="ReLU",
                                     output_activation=None, 
                                     dropout_rates=net_dropout, 
-                                    batch_norm=batch_norm), 
+                                    batch_norm=batch_norm)
         final_dim = parallel_dnn_hidden_units[-1] + input_dim*2
         self.scorer = nn.Sequential(
             nn.Linear(final_dim, final_dim),

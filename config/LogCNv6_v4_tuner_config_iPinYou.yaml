@@ -11,6 +11,6 @@ tuner_space:
     net_dropout: [0]
     batch_norm: [True, False]
     layer_norm: [True, False]
-    output_log: [True]
+    output_log: [True, False]
     parallel_dnn_hidden_units: [[400, 400, 400]]
     monitor_mode: "max"

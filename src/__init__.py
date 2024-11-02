@@ -10,6 +10,7 @@ from .LogCNv6 import *
 from .LogDCN import *
 
 # * baseline
+from model_zoo import *
 from .DCNv3 import *
 
 # * vision model

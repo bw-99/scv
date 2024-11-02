@@ -1,0 +1,21 @@
+base_config: ./config/
+base_expid: FinalMLP_iPinYou_x1
+dataset_id: iPinYou_x1_csv
+
+tuner_space:
+    model_root: './checkpoints/'
+    learning_rate: [1.e-3]
+    batch_size: [4096]
+    mlp1_hidden_units: [[1024, 512]]
+    mlp1_hidden_activations: relu
+    mlp1_dropout: [0, 0.1]
+    mlp1_batch_norm: [True, False]
+    mlp2_hidden_units: [[1024, 512, 256]]
+    mlp2_hidden_activations: relu
+    mlp2_dropout: [0, 0.1]
+    mlp2_batch_norm: [True, False]
+    use_fs: [True, False]
+    fs_hidden_units: [[1024, 512]]
+    fs1_context: []
+    fs2_context: []
+    num_heads: [1, 2, 3]

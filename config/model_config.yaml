@@ -448,9 +448,6 @@ EulerNet_iPinYou_x1:
     net_ex_dropout: 0.0
     net_im_dropout: 0.0
     layer_norm: true
-    learning_rate: 1.0e-3
-    embedding_regularizer: 0
-    net_regularizer: 0
 
 DCN_iPinYou_x1:
     model: DCN

@@ -13,4 +13,3 @@ tuner_space:
     layer_norm: [True, False]
     output_log: [True, False]
     parallel_dnn_hidden_units: [[400, 400, 400]]
-    monitor_mode: "max"

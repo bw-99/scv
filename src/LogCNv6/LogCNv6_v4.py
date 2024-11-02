@@ -123,14 +123,14 @@ class LogCNv6_v4(BaseModel):
         loss_lst = [self.loss_fn(logit_lst[:, idx].unsqueeze(dim=-1), y_true, reduction='mean') for idx in range(logit_lst.shape[-1])]
         loss_lst = torch.stack(loss_lst, dim=-1)
         target_loss = torch.stack([loss for _ in range(loss_lst.shape[0])], dim=-1)
-        additional_loss = self.loss_fn(target_loss, loss_lst)
-
+        
+        additional_loss = self.loss_fn(loss_lst, target_loss, reduction='mean')
         # weight_lst = loss_lst - loss
         # weight_lst = torch.where(weight_lst > 0, weight_lst, torch.zeros(1).to(weight_lst.device))
         # weight_lst = torch.ones_like(loss_lst)
         # additional_loss = loss_lst * weight_lst
 
-        loss = loss + additional_loss.sum()
+        loss = loss + additional_loss
         loss += self.regularization_loss()
         loss.backward()
         nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)

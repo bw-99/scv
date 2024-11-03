@@ -85,6 +85,8 @@ class LogCNv6_v3(BaseModel):
                                     dropout_rates=net_dropout, 
                                     batch_norm=batch_norm)
         final_dim = parallel_dnn_hidden_units[-1] + input_dim*2
+        self.layer_norm_layer = nn.LayerNorm(final_dim)
+
         self.scorer = nn.Sequential(
             nn.Linear(final_dim, final_dim),
             nn.ReLU(),
@@ -105,6 +107,7 @@ class LogCNv6_v3(BaseModel):
         shal_emb = self.shallow_tower(feature_emb)
         mlp_emb = self.parallel_dnn(feature_emb)
         output_lst = torch.cat([log_emb, shal_emb, mlp_emb], dim=-1)
+        output_lst = self.layer_norm_layer(output_lst)
         y_pred = self.scorer(output_lst)
         y_pred = self.output_activation(y_pred)
         return_dict = {"y_pred": y_pred}

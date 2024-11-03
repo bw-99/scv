@@ -526,6 +526,7 @@ LogCNv6_v3_iPinYou_x1: # This is a config template
     exp_add1_before_log: True
     exp_layer_norm_before_concat: True
     parallel_dnn_hidden_units: [400, 400, 400]
+    exp_distill_loss: True
     num_heads: 1
     epochs: 100
     shuffle: True

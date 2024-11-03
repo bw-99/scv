@@ -42,6 +42,7 @@ class LogCNv6_v3(BaseModel):
                  exp_positive_activation=False,
                  exp_bias_on_final=False,
                  exp_layer_norm_before_concat=True,
+                 exp_distill_loss=True,
                  parallel_dnn_hidden_units=[400, 400, 400],
                  exp_additional_mask=True,
                  num_heads=1,
@@ -102,7 +103,8 @@ class LogCNv6_v3(BaseModel):
         self.log_scorer = nn.Linear(input_dim, 1)
         self.shallow_scorer = nn.Linear(input_dim, 1)
         self.mlp_scorer = nn.Linear(parallel_dnn_hidden_units[-1], 1)
-        
+        self.exp_distill_loss = exp_distill_loss
+
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
         self.model_to_device()
@@ -144,8 +146,12 @@ class LogCNv6_v3(BaseModel):
 
         loss = self.loss_fn(y_pred, y_true, reduction='mean')
 
-        kd_loss_lst = [self.loss_fn(logit_lst[:, idx].unsqueeze(dim=-1), y_pred, reduction='mean') for idx in range(logit_lst.shape[-1])]
-        kd_loss_lst = torch.stack(kd_loss_lst, dim=-1)
+        if self.exp_distill_loss:
+            kd_loss_lst = [self.loss_fn(logit_lst[:, idx].unsqueeze(dim=-1), y_pred, reduction='mean') for idx in range(logit_lst.shape[-1])]
+            kd_loss_lst = torch.stack(kd_loss_lst, dim=-1)
+        else:
+            kd_loss_lst = [self.loss_fn(logit_lst[:, idx].unsqueeze(dim=-1), y_true, reduction='mean') for idx in range(logit_lst.shape[-1])]
+            kd_loss_lst = torch.stack(kd_loss_lst, dim=-1)
 
         loss += kd_loss_lst.sum()
         loss += self.regularization_loss()

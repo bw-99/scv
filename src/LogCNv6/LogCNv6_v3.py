@@ -41,6 +41,7 @@ class LogCNv6_v3(BaseModel):
                  exp_norm_before_log=False,
                  exp_positive_activation=False,
                  exp_bias_on_final=False,
+                 exp_layer_norm_before_concat=True,
                  parallel_dnn_hidden_units=[400, 400, 400],
                  exp_additional_mask=True,
                  num_heads=1,
@@ -85,13 +86,23 @@ class LogCNv6_v3(BaseModel):
                                     dropout_rates=net_dropout, 
                                     batch_norm=batch_norm)
         final_dim = parallel_dnn_hidden_units[-1] + input_dim*2
-        self.layer_norm_layer = nn.LayerNorm(final_dim)
-
+        
         self.scorer = nn.Sequential(
             nn.Linear(final_dim, final_dim),
             nn.ReLU(),
             nn.Linear(final_dim, 1)
         )
+
+        self.exp_layer_norm_before_concat = exp_layer_norm_before_concat
+        if exp_layer_norm_before_concat:
+            self.log_layer_norm = nn.LayerNorm(input_dim)
+            self.shal_layer_norm = nn.LayerNorm(input_dim)
+            self.mlp_layer_norm = nn.LayerNorm(parallel_dnn_hidden_units[-1])
+
+        self.log_scorer = nn.Linear(input_dim, 1)
+        self.shallow_scorer = nn.Linear(input_dim, 1)
+        self.mlp_scorer = nn.Linear(parallel_dnn_hidden_units[-1], 1)
+        
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
         self.model_to_device()
@@ -106,19 +117,37 @@ class LogCNv6_v3(BaseModel):
         log_emb = self.log_tower(feature_emb)
         shal_emb = self.shallow_tower(feature_emb)
         mlp_emb = self.parallel_dnn(feature_emb)
+
+        log_logit = self.log_scorer(log_emb)
+        shal_logit = self.shallow_scorer(shal_emb)
+        mlp_logit = self.mlp_scorer(mlp_emb)
+
+        if self.exp_layer_norm_before_concat:
+            log_emb = self.log_layer_norm(log_emb)
+            shal_emb = self.shal_layer_norm(shal_emb)
+            mlp_emb = self.mlp_layer_norm(mlp_emb)
+
+        logit_lst = self.output_activation(torch.cat([log_logit, shal_logit, mlp_logit], dim=-1))
         output_lst = torch.cat([log_emb, shal_emb, mlp_emb], dim=-1)
-        output_lst = self.layer_norm_layer(output_lst)
         y_pred = self.scorer(output_lst)
         y_pred = self.output_activation(y_pred)
-        return_dict = {"y_pred": y_pred}
+        return_dict = {"y_pred": y_pred, "logit_lst": logit_lst}
         return return_dict
 
     def train_step(self, inputs):
         self.optimizer.zero_grad()
         return_dict = self.forward(inputs)
         y_true = self.get_labels(inputs)
+        
         y_pred = return_dict["y_pred"]
+        logit_lst = return_dict["logit_lst"]
+
         loss = self.loss_fn(y_pred, y_true, reduction='mean')
+
+        kd_loss_lst = [self.loss_fn(logit_lst[:, idx].unsqueeze(dim=-1), y_pred, reduction='mean') for idx in range(logit_lst.shape[-1])]
+        kd_loss_lst = torch.stack(kd_loss_lst, dim=-1)
+
+        loss += kd_loss_lst.sum()
         loss += self.regularization_loss()
         loss.backward()
         nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
@@ -195,7 +224,7 @@ class CrossNetwork(nn.Module):
                 self.batch_norm.append(nn.BatchNorm1d(input_dim))
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
-
+            
             nn.init.xavier_uniform_(self.w[i].data)
             nn.init.xavier_uniform_(self.masker[i].data)
             nn.init.uniform_(self.b[i].data, 0.01)
@@ -224,7 +253,6 @@ class CrossNetwork(nn.Module):
             if not self.exp_bias_on_final:
                 x_emb = x_emb + self.b[idx]
 
-            
             if not self.exp_norm_before_log:
                 if len(self.batch_norm) > idx:
                     x_emb = self.batch_norm[idx](x_emb)

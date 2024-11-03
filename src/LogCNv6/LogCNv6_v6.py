@@ -188,7 +188,7 @@ class CrossNetwork(nn.Module):
         for i in range(self.num_log_layers):
             self.w.append(nn.Parameter(torch.zeros((input_dim, input_dim)), requires_grad=True))
             self.b.append(nn.Parameter(torch.zeros((input_dim,)), requires_grad=True))
-            self.masker.append(nn.Parameter(torch.eye((input_dim, input_dim)), requires_grad=True))
+            self.masker.append(nn.Parameter(torch.eye(input_dim), requires_grad=True))
             if exp_positive_activation:
                 self.make_positive.append(nn.Sequential(
                     nn.Linear(input_dim, input_dim),

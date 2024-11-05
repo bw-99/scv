@@ -5,3 +5,4 @@ from .LogCNv6_v4 import LogCNv6_v4
 from .LogCNv6_v5 import LogCNv6_v5
 from .LogCNv6_v6 import LogCNv6_v6
 from .LogCNv6_v7 import LogCNv6_v7
+from .LogCNv6_v8 import LogCNv6_v8

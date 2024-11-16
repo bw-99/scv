@@ -7,17 +7,18 @@ from fuxictr.pytorch.layers import FeatureEmbedding, MLP_Block, CrossNetV2, Cros
 import torch.nn.functional as F
 
 class GlobalPooling(nn.Module):
-    def __init__(self, pooling_type='mean'):
+    def __init__(self, pooling_type='mean', pooling_dim=2):
         super(GlobalPooling, self).__init__()
         self.pooling_type = pooling_type
+        self.pooling_dim = pooling_dim
         
     def forward(self, x):
         if self.pooling_type == 'mean':
-            return torch.mean(x, dim=1)
+            return torch.mean(x, dim=self.pooling_dim )
         elif self.pooling_type == 'sum':
-            return torch.sum(x, dim=1)
+            return torch.sum(x, dim=self.pooling_dim )
         elif self.pooling_type == 'max':
-            return torch.max(x, dim=1)[0]
+            return torch.max(x, dim=self.pooling_dim )[0]
         else:
             raise ValueError(f"Unknown pooling type: {self.pooling_type}")
 

@@ -72,7 +72,7 @@ class GNNv1_v1(BaseModel):
             ) for _ in range(self.num_tower)
         ])
         
-        final_dim = embedding_dim if pooling_dim==2 else self.num_fields
+        final_dim = embedding_dim if pooling_dim==1 else self.num_fields
         self.scorer = nn.Sequential(
             nn.Linear(self.num_tower * final_dim, self.num_tower * final_dim),
             nn.ReLU(),

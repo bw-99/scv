@@ -83,6 +83,9 @@ class DCNv2(BaseModel):
         self.reset_parameters()
         self.model_to_device()
 
+        print("without emb dim")
+        self.count_parameters(count_embedding=False)
+
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X, flatten_emb=True)

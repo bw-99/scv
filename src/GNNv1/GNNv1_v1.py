@@ -85,6 +85,7 @@ class GNNv1_v1(BaseModel):
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X, flatten_emb=False)
+        # feature_emb = feature_emb.transpose(1, 2) # (bs, feat size, num field)
         # print("feature_emb ", feature_emb.shape)
         output_lst, var_lst = [], []
 
@@ -141,9 +142,9 @@ class CrossNetwork(nn.Module):
             x = self.convs[idx](x, adj_matrix)
 
             if len(self.batch_norm) > idx:
-                x = x.transpose(1, 2)  # (batch_size, hidden_dim, num_nodes)
+                # x = x.transpose(1, 2)  # (batch_size, hidden_dim, num_nodes)
                 x = self.batch_norm[idx](x)
-                x = x.transpose(1, 2)  # (batch_size, num_nodes, hidden_dim) 
+                # x = x.transpose(1, 2)  # (batch_size, num_nodes, hidden_dim) 
             if len(self.layer_norm) > idx:
                 x = self.layer_norm[idx](x)
 

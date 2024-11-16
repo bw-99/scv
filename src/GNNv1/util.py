@@ -13,11 +13,11 @@ class GlobalPooling(nn.Module):
         
     def forward(self, x):
         if self.pooling_type == 'mean':
-            return torch.mean(x, dim=-1)
+            return torch.mean(x, dim=1)
         elif self.pooling_type == 'sum':
-            return torch.sum(x, dim=-1)
+            return torch.sum(x, dim=1)
         elif self.pooling_type == 'max':
-            return torch.max(x, dim=-1)[0]
+            return torch.max(x, dim=1)[0]
         else:
             raise ValueError(f"Unknown pooling type: {self.pooling_type}")
 
@@ -85,9 +85,9 @@ class SAGEConv(nn.Module):
         # adj 행렬을 정규화 (각 행의 합이 1이 되도록)
         deg = adj.sum(dim=1, keepdim=True)
         adj_norm = adj / (deg + 1e-6)  # 0으로 나누는 것을 방지
-        
+
         # 이웃 노드들의 특성을 집계
-        neigh_features = torch.matmul(x, adj_norm)
+        neigh_features = adj_norm @ x
         out_neigh = self.linear_neigh(neigh_features)
 
         # print(out_neigh.shape, out_self.shape)

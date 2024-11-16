@@ -1089,3 +1089,27 @@ AFN_Criteo: # This is a config template
     dnn_activations: relu
     dnn_dropout: 0
     batch_norm: False
+
+
+EulerNet_Criteo:
+    model: EulerNet
+    dataset_id: Criteo_x4_10_h5
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-3
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 16
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+    shape: [40, 40]
+    net_ex_dropout: 0.0
+    net_im_dropout: 0.0
+    layer_norm: true

@@ -53,18 +53,19 @@ class DiffPool(nn.Module):
 
 
 class AttentionPooling(nn.Module):
-    def __init__(self, in_channels, hidden_channels):
+    def __init__(self, in_channels, hidden_channels, pooling_dim):
         super(AttentionPooling, self).__init__()
         self.attention = nn.Sequential(
             nn.Linear(in_channels, hidden_channels),
             nn.Tanh(),
             nn.Linear(hidden_channels, 1)
         )
+        self.pooling_dim=pooling_dim
         
     def forward(self, x):
         weights = self.attention(x)
-        weights = F.softmax(weights, dim=-1)
-        weighted_x = torch.sum(weights * x, dim=-1)
+        weights = F.softmax(weights, dim=self.pooling_dim)
+        weighted_x = torch.sum(weights * x, dim=self.pooling_dim)
         return weighted_x
 
 

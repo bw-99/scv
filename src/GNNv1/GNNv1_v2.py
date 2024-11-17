@@ -31,8 +31,11 @@ class GNNv1_v2(BaseModel):
                  embedding_dim=10,
                  net_dropout=0.1,
                  num_hops=2,
+                 num_tower=1,
                  layer_norm=True,
                  batch_norm=True,
+                 pooling_dim=2,
+                 pooling_type="mean",
                  embedding_regularizer=None,
                  net_regularizer=None,
                  **kwargs):
@@ -45,6 +48,8 @@ class GNNv1_v2(BaseModel):
         self.batch_norm = batch_norm
         self.layer_norm = layer_norm
         self.num_hops = num_hops
+        self.pooling_dim = pooling_dim
+        self.num_tower = num_tower
 
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         input_dim = feature_map.sum_emb_out_dim()
@@ -54,19 +59,24 @@ class GNNv1_v2(BaseModel):
         self.input_dim = input_dim
         print("GNNv1_v2GNNv1_v2GNNv1_v2GNNv1_v2GNNv1_v2 input_dim", input_dim)
 
-        self.gnn_tower = CrossNetwork(
-                                num_fields=self.num_fields,
-                                embedding_dim=embedding_dim,
-                                net_dropout=net_dropout,
-                                num_hops=num_hops,
-                                layer_norm=layer_norm,
-                                batch_norm=batch_norm)
+        self.gnn_tower = nn.ModuleList([
+            CrossNetwork(
+                num_fields=self.num_fields,
+                embedding_dim=embedding_dim,
+                net_dropout=net_dropout,
+                num_hops=num_hops,
+                layer_norm=layer_norm,
+                pooling_type=pooling_type,
+                pooling_dim=pooling_dim,
+                batch_norm=batch_norm
+            ) for _ in range(self.num_tower)
+        ])
         
-        final_dim = embedding_dim
+        final_dim = embedding_dim if pooling_dim==1 else self.num_fields
         self.scorer = nn.Sequential(
-            nn.Linear(final_dim, final_dim),
+            nn.Linear(self.num_tower * final_dim, self.num_tower * final_dim),
             nn.ReLU(),
-            nn.Linear(final_dim, 1)
+            nn.Linear(self.num_tower * final_dim, 1)
         )
 
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
@@ -83,9 +93,14 @@ class GNNv1_v2(BaseModel):
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X, flatten_emb=False)
-
-        gnn_emb = self.gnn_tower(feature_emb)
-        gnn_logit = self.scorer(gnn_emb)
+        # feature_emb = feature_emb.transpose(1, 2) # (bs, feat size, num field)
+        # print("feature_emb ", feature_emb.shape)
+        output_lst, var_lst = [], []
+        gnn_emb_lst = []
+        for idx in range(self.num_tower):
+            gnn_emb_lst.append(self.gnn_tower[idx](feature_emb))
+        gnn_emb_lst = torch.cat(gnn_emb_lst, dim=-1)
+        gnn_logit = self.scorer(gnn_emb_lst)
 
         y_pred = self.output_activation(gnn_logit)
         return_dict = {"y_pred": y_pred}
@@ -97,6 +112,8 @@ class CrossNetwork(nn.Module):
                  embedding_dim,
                  layer_norm=True,
                  batch_norm=True,
+                 pooling_type="mean",
+                 pooling_dim=2,
                  num_hops=2,
                  net_dropout=0.1):
         super(CrossNetwork, self).__init__()
@@ -109,8 +126,12 @@ class CrossNetwork(nn.Module):
         self.masker = nn.ParameterList()
 
         self.convs = nn.ModuleList()
-        self.pool = AttentionPooling(embedding_dim, embedding_dim)
-        
+
+        # Pooling layers
+        self.pool = AttentionPooling(in_channels=embedding_dim, 
+                                     hidden_channels=embedding_dim, 
+                                     pooling_dim=pooling_dim)
+
         for i in range(self.num_hops):
             self.convs.append(SAGEConv(embedding_dim, embedding_dim))
             self.w.append(nn.Parameter(torch.zeros((num_fields, num_fields)), requires_grad=True))
@@ -134,9 +155,9 @@ class CrossNetwork(nn.Module):
             x = self.convs[idx](x, adj_matrix)
 
             if len(self.batch_norm) > idx:
-                x = x.transpose(1, 2)  # (batch_size, hidden_dim, num_nodes)
+                # x = x.transpose(1, 2)  # (batch_size, hidden_dim, num_nodes)
                 x = self.batch_norm[idx](x)
-                x = x.transpose(1, 2)  # (batch_size, num_nodes, hidden_dim) 
+                # x = x.transpose(1, 2)  # (batch_size, num_nodes, hidden_dim) 
             if len(self.layer_norm) > idx:
                 x = self.layer_norm[idx](x)
 
@@ -146,5 +167,3 @@ class CrossNetwork(nn.Module):
         # * graph embedding pooling
         x_emb = self.pool(x)
         return x_emb
-
-

@@ -32,6 +32,7 @@ class GNNv1_v1(BaseModel):
                  net_dropout=0.1,
                  num_hops=2,
                  num_tower=1,
+                 nomalize_adj=True,
                  layer_norm=True,
                  batch_norm=True,
                  pooling_dim=2,
@@ -50,6 +51,7 @@ class GNNv1_v1(BaseModel):
         self.num_hops = num_hops
         self.pooling_dim = pooling_dim
         self.num_tower = num_tower
+        self.nomalize_adj = nomalize_adj
 
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         input_dim = feature_map.sum_emb_out_dim()
@@ -68,7 +70,8 @@ class GNNv1_v1(BaseModel):
                 layer_norm=layer_norm,
                 pooling_type=pooling_type,
                 pooling_dim=pooling_dim,
-                batch_norm=batch_norm
+                batch_norm=batch_norm,
+                nomalize_adj=self.nomalize_adj
             ) for _ in range(self.num_tower)
         ])
         
@@ -114,10 +117,12 @@ class CrossNetwork(nn.Module):
                  batch_norm=True,
                  pooling_type="mean",
                  pooling_dim=2,
+                 nomalize_adj=True,
                  num_hops=2,
                  net_dropout=0.1):
         super(CrossNetwork, self).__init__()
         self.num_hops=num_hops
+        self.nomalize_adj = nomalize_adj
         
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
@@ -131,7 +136,7 @@ class CrossNetwork(nn.Module):
         self.pool = GlobalPooling(pooling_type, pooling_dim=pooling_dim)
 
         for i in range(self.num_hops):
-            self.convs.append(SAGEConv(embedding_dim, embedding_dim))
+            self.convs.append(SAGEConv(embedding_dim, embedding_dim, nomalize_adj=nomalize_adj))
             self.w.append(nn.Parameter(torch.zeros((num_fields, num_fields)), requires_grad=True))
             self.masker.append(nn.Parameter(torch.zeros((num_fields, num_fields)), requires_grad=True))
             

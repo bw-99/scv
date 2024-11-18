@@ -674,6 +674,7 @@ GNNv1_v1_iPinYou_x1: # This is a config template
     learning_rate: 1.e-3
     embedding_regularizer: 1.e-3
     net_regularizer: 0
+    nomalize_adj: True
     batch_size: 4096
     embedding_dim: 16
     num_hops: 2

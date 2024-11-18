@@ -70,10 +70,11 @@ class AttentionPooling(nn.Module):
 
 
 class SAGEConv(nn.Module):
-    def __init__(self, in_channels, out_channels):
+    def __init__(self, in_channels, out_channels, nomalize_adj=True):
         super(SAGEConv, self).__init__()
         self.linear_self = nn.Linear(in_channels, out_channels)
         self.linear_neigh = nn.Linear(in_channels, out_channels)
+        self.nomalize_adj = nomalize_adj
 
     def forward(self, x, adj):
         """
@@ -85,8 +86,11 @@ class SAGEConv(nn.Module):
 
         # 이웃 노드들의 평균 계산
         # adj 행렬을 정규화 (각 행의 합이 1이 되도록)
-        deg = adj.sum(dim=1, keepdim=True)
-        adj_norm = adj / (deg + 1e-6)  # 0으로 나누는 것을 방지
+        if self.nomalize_adj:
+            deg = adj.sum(dim=1, keepdim=True)
+            adj_norm = adj / (deg + 1e-6)  # 0으로 나누는 것을 방지
+        else:
+            adj_norm = adj
 
         # 이웃 노드들의 특성을 집계
         neigh_features = adj_norm @ x

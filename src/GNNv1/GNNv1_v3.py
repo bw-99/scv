@@ -30,11 +30,13 @@ class GNNv1_v3(BaseModel):
                  learning_rate=1e-3,
                  embedding_dim=10,
                  net_dropout=0.1,
-                lambda_pool=1.0,
                  num_hops=2,
+                 num_tower=1,
+                 nomalize_adj=True,
                  layer_norm=True,
                  batch_norm=True,
-                 num_clusters=4,
+                 pooling_dim=2,
+                 pooling_type="mean",
                  embedding_regularizer=None,
                  net_regularizer=None,
                  **kwargs):
@@ -47,7 +49,9 @@ class GNNv1_v3(BaseModel):
         self.batch_norm = batch_norm
         self.layer_norm = layer_norm
         self.num_hops = num_hops
-        self.lambda_pool = lambda_pool
+        self.pooling_dim = pooling_dim
+        self.num_tower = num_tower
+        self.nomalize_adj = nomalize_adj
 
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         input_dim = feature_map.sum_emb_out_dim()
@@ -57,20 +61,25 @@ class GNNv1_v3(BaseModel):
         self.input_dim = input_dim
         print("GNNv1_v3GNNv1_v3GNNv1_v3GNNv1_v3GNNv1_v3 input_dim", input_dim)
 
-        self.gnn_tower = CrossNetwork(
-                                num_fields=self.num_fields,
-                                embedding_dim=embedding_dim,
-                                net_dropout=net_dropout,
-                                num_hops=num_hops,
-                                num_clusters=num_clusters,
-                                layer_norm=layer_norm,
-                                batch_norm=batch_norm)
+        self.gnn_tower = nn.ModuleList([
+            CrossNetwork(
+                num_fields=self.num_fields,
+                embedding_dim=embedding_dim,
+                net_dropout=net_dropout,
+                num_hops=num_hops,
+                layer_norm=layer_norm,
+                pooling_type=pooling_type,
+                pooling_dim=pooling_dim,
+                batch_norm=batch_norm,
+                nomalize_adj=self.nomalize_adj
+            ) for _ in range(self.num_tower)
+        ])
         
-        final_dim = embedding_dim
+        final_dim = embedding_dim if pooling_dim==1 else self.num_fields
         self.scorer = nn.Sequential(
-            nn.Linear(final_dim, final_dim),
+            nn.Linear(self.num_tower * final_dim, self.num_tower * final_dim),
             nn.ReLU(),
-            nn.Linear(final_dim, 1)
+            nn.Linear(self.num_tower * final_dim, 1)
         )
 
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
@@ -87,29 +96,18 @@ class GNNv1_v3(BaseModel):
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X, flatten_emb=False)
-
-        gnn_emb, pool_loss = self.gnn_tower(feature_emb)
-        gnn_logit = self.scorer(gnn_emb)
+        # feature_emb = feature_emb.transpose(1, 2) # (bs, feat size, num field)
+        # print("feature_emb ", feature_emb.shape)
+        output_lst, var_lst = [], []
+        gnn_emb_lst = []
+        for idx in range(self.num_tower):
+            gnn_emb_lst.append(self.gnn_tower[idx](feature_emb))
+        gnn_emb_lst = torch.cat(gnn_emb_lst, dim=-1)
+        gnn_logit = self.scorer(gnn_emb_lst)
 
         y_pred = self.output_activation(gnn_logit)
-        return_dict = {"y_pred": y_pred, "pool_loss": self.lambda_pool * pool_loss}
+        return_dict = {"y_pred": y_pred}
         return return_dict
-    
-    def train_step(self, inputs):
-        self.optimizer.zero_grad()
-        return_dict = self.forward(inputs)
-        y_true = self.get_labels(inputs)
-        
-        y_pred = return_dict["y_pred"]
-        pool_loss = return_dict["pool_loss"]
-
-        loss = self.loss_fn(y_pred, y_true, reduction='mean') + pool_loss
-
-        loss += self.regularization_loss()
-        loss.backward()
-        nn.utils.clip_grad_norm_(self.parameters(), self._max_gradient_norm)
-        self.optimizer.step()
-        return loss
 
 class CrossNetwork(nn.Module):
     def __init__(self,
@@ -117,61 +115,56 @@ class CrossNetwork(nn.Module):
                  embedding_dim,
                  layer_norm=True,
                  batch_norm=True,
+                 pooling_type="mean",
+                 pooling_dim=2,
+                 nomalize_adj=True,
                  num_hops=2,
-                 num_clusters=4,
                  net_dropout=0.1):
         super(CrossNetwork, self).__init__()
         self.num_hops=num_hops
+        self.nomalize_adj = nomalize_adj
         
         self.layer_norm = nn.ModuleList()
         self.batch_norm = nn.ModuleList()
-        self.dropout = nn.ModuleList()
-        self.w = nn.ParameterList()
+        self.dropout = None
+        # self.w = nn.ParameterList()
         self.masker = nn.ParameterList()
 
         self.convs = nn.ModuleList()
 
-        self.pool = DiffPool(embedding_dim, num_clusters)
-
-        self.meta_adj_matrix = nn.Parameter(torch.zeros((num_fields, num_fields)), requires_grad=True)
-        self.meta_adj_matrix2 = nn.Parameter(torch.zeros((num_fields, num_fields)), requires_grad=True)
+        # Pooling layers
+        self.pool = GlobalPooling(pooling_type, pooling_dim=pooling_dim)
 
         for i in range(self.num_hops):
-            self.convs.append(SAGEConv(embedding_dim, embedding_dim))
-            self.w.append(nn.Parameter(torch.zeros((num_fields, num_fields)), requires_grad=True))
+            self.convs.append(SAGEConv(embedding_dim, embedding_dim, nomalize_adj=nomalize_adj))
+            # self.w.append(nn.Parameter(torch.zeros((num_fields, num_fields)), requires_grad=True))
             self.masker.append(nn.Parameter(torch.zeros((num_fields, num_fields)), requires_grad=True))
             
-            # if layer_norm:
-            #     self.layer_norm.append(nn.LayerNorm(input_dim))
-            # if batch_norm:
-            #     self.batch_norm.append(nn.BatchNorm1d(input_dim))
-            # if net_dropout > 0:
-            #     self.dropout.append(nn.Dropout(net_dropout))
+            if layer_norm:
+                self.layer_norm.append(nn.LayerNorm(embedding_dim))
+            if batch_norm:
+                self.batch_norm.append(nn.BatchNorm1d(embedding_dim))
+            if net_dropout > 0:
+                self.dropout = nn.Dropout(net_dropout)
             
-            nn.init.xavier_uniform_(self.w[i].data)
+            # nn.init.xavier_uniform_(self.w[i].data)
             nn.init.xavier_uniform_(self.masker[i].data)
-
-    def normalize_adj(self, adj):
-        degree = adj.sum(dim=-1)
-        degree = torch.clamp(degree, min=1e-12)
-        degree_inv = 1.0 / degree
-        adj_norm = degree_inv.unsqueeze(-1) * adj
-        return adj_norm
         
     def forward(self, x):
         for idx in range(self.num_hops):
             # * adj_matrix: (num_fields, num_fields)
             # * x: (num_fields, embedding_dim)
-            adj_matrix = F.relu(self.masker[idx] * self.w[idx])
+            adj_matrix = F.relu(self.masker[idx])
             x = self.convs[idx](x, adj_matrix)
 
+            if len(self.batch_norm) > idx:
+                x = self.batch_norm[idx](x)
+            if len(self.layer_norm) > idx:
+                x = self.layer_norm[idx](x)
+
+        if self.dropout:
+            x = self.dropout(x)
+
         # * graph embedding pooling
-        adj_norm = self.normalize_adj(F.relu(self.meta_adj_matrix * self.meta_adj_matrix2))
-
-        x, adj_norm, link_loss, ent_loss = self.pool(x, adj_norm)
-        x = torch.mean(x, dim=1)  # Global pooling after DiffPool
-        pool_loss = link_loss + ent_loss
-
-        return x, pool_loss
-
-
+        x_emb = self.pool(x)
+        return x_emb

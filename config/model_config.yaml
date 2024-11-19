@@ -727,11 +727,14 @@ GNNv1_v3_iPinYou_x1: # This is a config template
     learning_rate: 1.e-3
     embedding_regularizer: 1.e-3
     net_regularizer: 0
+    nomalize_adj: True
     batch_size: 4096
     embedding_dim: 16
     num_hops: 2
-    num_clusters: 4
+    pooling_dim: 1
+    num_tower: 1
     net_dropout: 0.1
+    pooling_type: "mean"
     layer_norm: False
     batch_norm: False
     epochs: 100

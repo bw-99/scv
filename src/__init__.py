@@ -8,6 +8,7 @@ from .LogCNv6 import *
 
 # * gnn operation
 from .GNNv1 import *
+from .GNNv2 import *
 
 # * log operation + implicit interaction
 from .LogDCN import *

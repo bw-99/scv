@@ -222,7 +222,10 @@ class CrossNetwork(nn.Module):
                 x_emb = self.batch_norm[idx](x_emb)
             if len(self.layer_norm) > idx:
                 x_emb = self.layer_norm[idx](x_emb)
-        
+
+            if not self.output_log:
+                x_emb  = torch.exp(x_emb)
+                
             if len(self.dropout) > idx:
                 x_emb = self.dropout[idx](x_emb)
 

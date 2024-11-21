@@ -192,7 +192,7 @@ class CrossNetwork(nn.Module):
             if layer_norm:
                 self.layer_norm.append(nn.LayerNorm(input_dim))
             if batch_norm:
-                self.batch_norm.append(nn.BatchNorm1d(num_heads))
+                self.batch_norm.append(nn.BatchNorm1d(input_dim))
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
 

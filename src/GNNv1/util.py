@@ -105,3 +105,39 @@ class SAGEConv(nn.Module):
         out = out_self + out_neigh
         return out
     
+
+class SAGEConv2(nn.Module):
+    def __init__(self, in_channels, out_channels, nomalize_adj=True):
+        super(SAGEConv2, self).__init__()
+        # self.linear_self = nn.Linear(in_channels, out_channels)
+        # self.linear_neigh = nn.Linear(in_channels, out_channels)
+        self.linear = nn.Linear(in_channels*2, out_channels)
+        self.nomalize_adj = nomalize_adj
+
+        nn.init.xavier_uniform_(self.linear.weight.data)
+        # nn.init.xavier_uniform_(self.linear_neigh.weight.data)
+
+    def forward(self, x, adj):
+        """
+        x: 노드 특성 행렬 (num_nodes, in_channels)
+        adj: 인접 행렬 (num_nodes, num_nodes)
+        """
+        # 자기 자신의 변환
+        # out_self = self.linear_self(x)
+
+        # 이웃 노드들의 평균 계산
+        # adj 행렬을 정규화 (각 행의 합이 1이 되도록)
+        if self.nomalize_adj:
+            deg = adj.sum(dim=1, keepdim=True)
+            adj_norm = adj / (deg + 1e-6)  # 0으로 나누는 것을 방지
+        else:
+            adj_norm = adj
+
+        # 이웃 노드들의 특성을 집계
+        neigh_features = adj_norm @ x
+
+        h_concat = torch.cat([x, neigh_features], dim=-1)
+        h_out = self.linear(h_concat)
+        h_out = F.relu(h_out)
+
+        return h_out

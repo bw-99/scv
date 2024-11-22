@@ -84,7 +84,7 @@ class GNNv3_v2(BaseModel):
             ) for _ in range(self.num_tower)
         ])
 
-        parallel_dnn_hidden_units = parallel_dnn_hidden_units + 1
+        parallel_dnn_hidden_units = parallel_dnn_hidden_units + [1]
         self.parallel_dnn = MLP_Block(input_dim=input_dim,
                                           output_dim=None, # output hidden layer
                                           hidden_units=parallel_dnn_hidden_units,

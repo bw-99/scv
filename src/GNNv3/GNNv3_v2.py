@@ -84,9 +84,8 @@ class GNNv3_v2(BaseModel):
             ) for _ in range(self.num_tower)
         ])
 
-        parallel_dnn_hidden_units = parallel_dnn_hidden_units + [1]
         self.parallel_dnn = MLP_Block(input_dim=input_dim,
-                                          output_dim=None, # output hidden layer
+                                          output_dim=1, # output hidden layer
                                           hidden_units=parallel_dnn_hidden_units,
                                           hidden_activations="ReLU",
                                           output_activation=None, 
@@ -118,6 +117,7 @@ class GNNv3_v2(BaseModel):
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X, flatten_emb=False)
+        flattened_emb = feature_emb.view(feature_emb.shape[0], -1)
         # feature_emb = feature_emb.transpose(1, 2) # (bs, feat size, num field)
         # print("feature_emb ", feature_emb.shape)
         output_lst, var_lst = [], []
@@ -125,9 +125,10 @@ class GNNv3_v2(BaseModel):
         for idx in range(self.num_tower):
             gnn_emb_lst.append(self.gnn_tower[idx](feature_emb))
         gnn_emb_lst = torch.cat(gnn_emb_lst, dim=-1)
+        dnn_emb = self.parallel_dnn(flattened_emb)
 
         gnn_pred = self.output_activation(self.scorer(gnn_emb_lst))
-        deep_pred = self.output_activation(self.parallel_dnn(feature_emb.view(feature_emb.shape[0], -1)))
+        deep_pred = self.output_activation(dnn_emb)
 
         y_pred = (gnn_pred+deep_pred)/2
 

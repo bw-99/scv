@@ -127,7 +127,7 @@ class GNNv3_v2(BaseModel):
         gnn_emb_lst = torch.cat(gnn_emb_lst, dim=-1)
 
         gnn_pred = self.output_activation(self.scorer(gnn_emb_lst))
-        deep_pred = self.output_activation(self.parallel_dnn(torch.cat(X, dim=-1)))
+        deep_pred = self.output_activation(self.parallel_dnn(feature_emb.view(feature_emb.shape[0], -1)))
 
         y_pred = (gnn_pred+deep_pred)/2
 

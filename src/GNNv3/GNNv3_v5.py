@@ -168,7 +168,7 @@ class CrossNetwork(nn.Module):
         self.pool = GlobalPooling(pooling_type, pooling_dim=pooling_dim)
 
         for i in range(self.num_hops):
-            self.convs.append(SAGEConv4(embedding_dim, embedding_dim, nomalize_adj=nomalize_adj))
+            self.convs.append(SAGEConv4(embedding_dim, embedding_dim, num_fields, nomalize_adj=nomalize_adj))
             
             if self.use_same_adj:
                 self.masker = [

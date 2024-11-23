@@ -17,6 +17,7 @@ from .LogDCN import *
 # * baseline
 from .model_zoo import *
 from .DCNv3 import *
+from .MLP import *
 
 # # * vision model
 # from .PGA import *

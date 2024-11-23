@@ -192,3 +192,58 @@ class SAGEConv3(nn.Module):
         # 자기 자신과 이웃의 특성을 결합
         out = out_self + out_neigh
         return out
+
+
+class SAGEConv4(nn.Module):
+    def __init__(self, in_channels, out_channels, num_fields, nomalize_adj=True):
+        super(SAGEConv4, self).__init__()
+        self.linear_self = nn.Sequential(
+            nn.Linear(in_channels, in_channels),
+            nn.ReLU(),
+            nn.Linear(in_channels, out_channels)
+        )
+        self.linear_neigh = nn.Sequential(
+            nn.Linear(in_channels, in_channels),
+            nn.ReLU(),
+            nn.Linear(in_channels, out_channels)
+        )
+
+        self.nomalize_adj = nomalize_adj
+        self.positional_encoding = nn.Parameter(torch.ones((num_fields, out_channels)), requires_grad=True)
+
+        # Xavier Initialization
+        self._init_weights()
+        
+    def _init_weights(self):
+        for module in self.modules():
+            if isinstance(module, nn.Linear):
+                nn.init.xavier_uniform_(module.weight)
+                if module.bias is not None:
+                    nn.init.zeros_(module.bias)
+        nn.init.xavier_uniform_(self.positional_encoding)
+
+    def forward(self, x, adj):
+        """
+        x: 노드 특성 행렬 (num_nodes, in_channels)
+        adj: 인접 행렬 (num_nodes, num_nodes)
+        """
+        x = x + self.positional_encoding
+        # 자기 자신의 변환
+        out_self = self.linear_self(x)
+
+        # 이웃 노드들의 평균 계산
+        # adj 행렬을 정규화 (각 행의 합이 1이 되도록)
+        if self.nomalize_adj:
+            deg = adj.sum(dim=1, keepdim=True)
+            adj_norm = adj / (deg + 1e-6)  # 0으로 나누는 것을 방지
+        else:
+            adj_norm = adj
+
+        # 이웃 노드들의 특성을 집계
+        neigh_features = adj_norm @ x
+        out_neigh = self.linear_neigh(neigh_features)
+
+        # print(out_neigh.shape, out_self.shape)
+        # 자기 자신과 이웃의 특성을 결합
+        out = out_self + out_neigh
+        return out

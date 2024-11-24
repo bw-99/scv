@@ -76,9 +76,16 @@ class SAGEConv(nn.Module):
         self.linear_neigh = nn.Linear(in_channels, out_channels)
         self.nomalize_adj = nomalize_adj
 
-        nn.init.xavier_uniform_(self.linear_self.weight.data)
-        nn.init.xavier_uniform_(self.linear_neigh.weight.data)
+        # Xavier Initialization
+        self._init_weights()
 
+    def _init_weights(self):
+        for module in self.modules():
+            if isinstance(module, nn.Linear):
+                nn.init.xavier_uniform_(module.weight)
+                if module.bias is not None:
+                    nn.init.zeros_(module.bias)
+                    
     def forward(self, x, adj):
         """
         x: 노드 특성 행렬 (num_nodes, in_channels)

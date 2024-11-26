@@ -94,12 +94,13 @@ class GNNv3_v3(BaseModel):
                                           dropout_rates=net_dropout, 
                                           batch_norm=batch_norm)
 
+        concat_dim = (self.num_tower + 1) * final_dim
         self.scorer = nn.Sequential(
-            nn.Linear(2 * final_dim, 2 * final_dim),
+            nn.Linear(concat_dim, concat_dim),
             nn.ReLU(),
-            nn.Linear(2 * final_dim, 2 * final_dim),
+            nn.Linear(concat_dim, concat_dim),
             nn.ReLU(),
-            nn.Linear(2 * final_dim, 1)
+            nn.Linear(concat_dim, 1)
         )
 
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)

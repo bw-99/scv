@@ -678,8 +678,8 @@ GNNv1_v1_iPinYou_x1: # This is a config template
     batch_size: 4096
     embedding_dim: 16
     num_hops: 2
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -704,8 +704,8 @@ GNNv1_v2_iPinYou_x1: # This is a config template
     batch_size: 4096
     embedding_dim: 16
     num_hops: 2
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -731,7 +731,7 @@ GNNv1_v3_iPinYou_x1: # This is a config template
     batch_size: 4096
     embedding_dim: 16
     num_hops: 2
-    pooling_dim: 1
+    pooling_dim: 2
     num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
@@ -759,8 +759,8 @@ GNNv1_v4_iPinYou_x1: # This is a config template
     batch_size: 4096
     embedding_dim: 16
     num_hops: 2
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -789,8 +789,8 @@ GNNv1_v5_iPinYou_x1: # This is a config template
     num_hops: 2
     num_mask: 2
     use_same_adj: False
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -819,8 +819,8 @@ GNNv1_v6_iPinYou_x1: # This is a config template
     num_hops: 2
     num_mask: 2
     use_same_adj: False
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -849,8 +849,8 @@ GNNv1_v7_iPinYou_x1: # This is a config template
     num_hops: 2
     num_mask: 2
     use_same_adj: False
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -876,8 +876,8 @@ GNNv2_v1_iPinYou_x1: # This is a config template
     batch_size: 4096
     embedding_dim: 16
     num_hops: 2
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -906,8 +906,8 @@ GNNv3_v1_iPinYou_x1: # This is a config template
     num_hops: 2
     num_mask: 2
     use_same_adj: False
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -935,8 +935,8 @@ GNNv3_v2_iPinYou_x1: # This is a config template
     num_hops: 2
     num_mask: 2
     use_same_adj: False
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -964,8 +964,8 @@ GNNv3_v3_iPinYou_x1: # This is a config template
     num_hops: 2
     num_mask: 2
     use_same_adj: False
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -993,8 +993,8 @@ GNNv3_v4_iPinYou_x1: # This is a config template
     num_hops: 2
     num_mask: 2
     use_same_adj: False
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -1022,8 +1022,8 @@ GNNv3_v5_iPinYou_x1: # This is a config template
     num_hops: 2
     num_mask: 2
     use_same_adj: False
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     pooling_type: "mean"
     layer_norm: False
@@ -1051,8 +1051,8 @@ GNNv3_v7_iPinYou_x1: # This is a config template
     num_hops: 2
     num_mask: 2
     use_same_adj: False
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     net_dropout: 0.1
     gnn_dropout: 0.1
     pooling_type: "mean"
@@ -1077,7 +1077,7 @@ MLP_iPinYou_x1: # This is a config template
     net_regularizer: 0
     batch_size: 4096
     embedding_dim: 16
-    pooling_dim: 1
+    pooling_dim: 2
     net_dropout: 0.1
     layer_norm: False
     batch_norm: False
@@ -1404,8 +1404,8 @@ GNNv1_v1_Criteo: # This is a config template
     embedding_dim: 16
     num_hops: 2
     net_dropout: 0.1
-    pooling_dim: 1
-    num_tower: 2
+    pooling_dim: 2
+    num_tower: 1
     pooling_type: "mean"
     layer_norm: False
     batch_norm: False
@@ -1467,3 +1467,32 @@ EulerNet_Criteo:
     net_ex_dropout: 0.0
     net_im_dropout: 0.0
     layer_norm: true
+
+
+GNNv3_v3_Criteo: # This is a config template
+    model: GNNv3_v3
+    dataset_id: Criteo_x4_10_h5
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-3
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    num_hops: 2
+    num_mask: 2
+    use_same_adj: False
+    pooling_dim: 2
+    num_tower: 2
+    net_dropout: 0.1
+    pooling_type: "mean"
+    layer_norm: False
+    batch_norm: False
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 16
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'

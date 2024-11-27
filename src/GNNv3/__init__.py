@@ -5,4 +5,6 @@ from .GNNv3_v4 import *
 from .GNNv3_v5 import *
 from .GNNv3_v6 import *
 from .GNNv3_v7 import *
+from .GNNv3_v3_light import *
+from .GNNv3_v8 import *
 from .util import *

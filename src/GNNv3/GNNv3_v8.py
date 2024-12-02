@@ -17,6 +17,7 @@ class GNNv3_v8(BaseModel):
                  net_dropout=0.1,
                  num_tower=2,
                  num_mask=2,
+                 num_hops=1,
                  use_same_adj=False,
                  nomalize_adj=True,
                  layer_norm=True,
@@ -42,6 +43,7 @@ class GNNv3_v8(BaseModel):
         self.num_mask = num_mask
         self.use_same_adj = use_same_adj
         self.gpu = gpu
+        self.num_hops = num_hops
 
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         input_dim = feature_map.sum_emb_out_dim()
@@ -63,7 +65,8 @@ class GNNv3_v8(BaseModel):
             pooling_dim=pooling_dim,
             batch_norm=batch_norm,
             gpu=self.gpu,
-            nomalize_adj=self.nomalize_adj
+            nomalize_adj=self.nomalize_adj,
+            num_hops=num_hops
         )
 
         final_dim = embedding_dim
@@ -123,7 +126,8 @@ class CrossNetwork(nn.Module):
                  gpu=0,
                  nomalize_adj=True,
                  num_tower=2,
-                 net_dropout=0.1):
+                 net_dropout=0.1,
+                 num_hops=1):
         super(CrossNetwork, self).__init__()
         self.num_tower = num_tower
         self.nomalize_adj = nomalize_adj
@@ -135,17 +139,15 @@ class CrossNetwork(nn.Module):
 
         self.embedding_dim = embedding_dim
         self.num_fields = num_fields
+        self.num_hops=num_hops
 
-        # 마스크 초기화
-        if self.use_same_adj:
-            self.masker = nn.Parameter(torch.zeros((self.num_mask, num_fields, num_fields)))
-            nn.init.xavier_uniform_(self.masker)
-        else:
-            self.masker = nn.Parameter(torch.zeros((self.num_tower, self.num_mask, num_fields, num_fields)))
-            nn.init.xavier_uniform_(self.masker)
+        self.masker = nn.Parameter(torch.zeros((self.num_tower, self.num_mask, num_fields, num_fields)))
+        nn.init.xavier_uniform_(self.masker)
 
         # 컨볼루션 레이어 초기화
-        self.conv = SAGEConv3(embedding_dim, embedding_dim, num_towers=self.num_tower, nomalize_adj=nomalize_adj)
+        self.conv_lst = nn.ModuleList([
+            SAGEConv3(embedding_dim, embedding_dim, num_towers=self.num_tower, nomalize_adj=nomalize_adj) for _ in range(num_hops)
+        ])
 
         # 정규화 레이어
         if self.layer_norm_flag:
@@ -177,7 +179,8 @@ class CrossNetwork(nn.Module):
             adj_matrix = adj_matrices.unsqueeze(0).expand(batch_size, -1, -1, -1)
 
         # Convolution 연산을 벡터화하여 수행
-        x = self.conv(x, adj_matrix)  # (batch_size, num_tower, num_fields, embedding_dim)
+        for idx in range(self.num_hops):
+            x = self.conv_lst[idx](x, adj_matrix)  # (batch_size, num_tower, num_fields, embedding_dim)
 
         # Normalization 적용
         if self.batch_norm_flag:

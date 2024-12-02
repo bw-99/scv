@@ -1150,6 +1150,7 @@ GNNv3_v8_iPinYou_x1: # This is a config template
     loss: binary_crossentropy
     metrics: [logloss, AUC]
     model: GNNv3_v8
+    num_hops: 1
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max

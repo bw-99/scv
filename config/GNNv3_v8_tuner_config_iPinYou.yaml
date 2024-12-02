@@ -10,7 +10,7 @@ tuner_space:
     pooling_type: ["mean"]
     net_dropout: [0.6]
     num_mask: [2, 3, 4]
-    use_same_adj: [False]
+    num_hops: [1, 2]
     embedding_dim: [16]
     batch_norm: [False]
     layer_norm: [False]

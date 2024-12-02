@@ -218,13 +218,14 @@ class SAGEConv3(nn.Module):
         # Neighbor aggregation
         if self.nomalize_adj:
             # Degree normalization
-            deg = adj.sum(dim=-1, keepdim=True) + 1e-7  # (batch_size, num_towers, num_fields, 1)
-            deg_inv_sqrt = deg.pow(-0.5)
-            adj = adj * deg_inv_sqrt * deg_inv_sqrt.transpose(-1, -2)
+            deg = adj.sum(dim=-1, keepdim=True) + 1e-6  # (batch_size, num_towers, num_fields, 1)
+            # deg_inv_sqrt = deg.pow(-0.5)
+            # adj = adj * deg_inv_sqrt * deg_inv_sqrt.transpose(-1, -2)
+            adj = adj / (deg)
 
         agg = torch.matmul(adj, x)  # (batch_size, num_towers, num_fields, embedding_dim)
         agg = self.agg_lin(agg)
 
-        out += agg
-        out = F.relu(out)
+        out = out + agg
+        # out = F.relu(out)
         return out  # (batch_size, num_towers, num_fields, out_channels)

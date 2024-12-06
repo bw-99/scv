@@ -141,7 +141,11 @@ class CrossNetwork(nn.Module):
         self.num_fields = num_fields
         self.num_hops=num_hops
 
-        self.masker = nn.Parameter(torch.zeros((self.num_tower, self.num_mask, num_fields, num_fields)))
+        if self.use_same_adj:
+            self.masker = nn.Parameter(torch.zeros((self.num_tower, self.num_mask, num_fields, num_fields)))
+        else:
+            self.masker = nn.Parameter(torch.zeros((self.num_tower, self.num_hops, self.num_mask, num_fields, num_fields)))
+
         nn.init.xavier_uniform_(self.masker)
 
         # 컨볼루션 레이어 초기화
@@ -168,19 +172,26 @@ class CrossNetwork(nn.Module):
         # x를 num_tower 차원으로 확장
         x = x.unsqueeze(1).repeat(1, self.num_tower, 1, 1)  # (batch_size, num_tower, num_fields, embedding_dim)
 
-        # Adjacent Matrices 생성
         if self.use_same_adj:
-            adj_matrix = torch.prod(self.masker, dim=0)
+            # (num_tower, num_mask, num_fields, num_fields)
+            adj_matrix = torch.prod(self.masker, dim=1) # (num_tower, num_fields, num_fields)
             adj_matrix = F.relu(adj_matrix)
-            adj_matrix = adj_matrix.unsqueeze(0).unsqueeze(0).expand(batch_size, self.num_tower, -1, -1)
-        else:
-            mask_stack = torch.prod(self.masker, dim=1)  # (num_tower, num_fields, num_fields)
-            adj_matrices = F.relu(mask_stack)
-            adj_matrix = adj_matrices.unsqueeze(0).expand(batch_size, -1, -1, -1)
+            adj_matrix = adj_matrix.unsqueeze(0).expand(batch_size, -1, -1, -1)
 
-        # Convolution 연산을 벡터화하여 수행
-        for idx in range(self.num_hops):
-            x = self.conv_lst[idx](x, adj_matrix)  # (batch_size, num_tower, num_fields, embedding_dim)
+            for idx in range(self.num_hops):
+                x = self.conv_lst[idx](x, adj_matrix)
+        else:
+            # (num_tower, num_hops, num_mask, num_fields, num_fields)
+            for idx in range(self.num_hops):
+                # (num_tower, num_mask, num_fields, num_fields)
+                adj_matrix_hop = self.masker[:, idx, ...]
+                # mask 차원을 곱해 adj_matrix 생성
+                adj_matrix_hop = torch.prod(adj_matrix_hop, dim=1) # (num_tower, num_fields, num_fields)
+                adj_matrix_hop = F.relu(adj_matrix_hop)
+                # batch 차원 확장
+                adj_matrix_hop = adj_matrix_hop.unsqueeze(0).expand(batch_size, -1, -1, -1)
+                x = self.conv_lst[idx](x, adj_matrix_hop)
+
 
         # Normalization 적용
         if self.batch_norm_flag:

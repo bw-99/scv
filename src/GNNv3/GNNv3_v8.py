@@ -20,10 +20,11 @@ class GNNv3_v8(BaseModel):
                  num_hops=1,
                  use_same_adj=False,
                  nomalize_adj=True,
-                 layer_norm=True,
-                 batch_norm=True,
+                 layer_norm=False,
+                 batch_norm=False,
                  pooling_dim=2,
                  pooling_type="mean",
+                 fusion_type="MLP",
                  embedding_regularizer=None,
                  parallel_dnn_hidden_units= [400,400,400],
                  net_regularizer=None,
@@ -243,3 +244,145 @@ class SAGEConv3(nn.Module):
         out = out + agg
         # out = F.relu(out)
         return out  # (batch_size, num_towers, num_fields, out_channels)
+
+class FusionMLP(nn.Module):
+    def __init__(self, embedding_dim, num_nodes):
+        super(FusionMLP, self).__init__()
+        concat_dim = (num_nodes) * embedding_dim
+        self.fusion_network = nn.Sequential(
+            nn.Linear(concat_dim, concat_dim),
+            nn.ReLU(),
+            nn.Linear(concat_dim, concat_dim),
+            nn.ReLU(),
+            nn.Linear(concat_dim, 1),
+        )
+    
+    def forward(self, x):
+        return self.fusion_network(x)
+    
+class FusionMaxPooling(nn.Module):
+    def __init__(self, embedding_dim, num_nodes):
+        super(FusionMaxPooling, self).__init__()
+        self.num_tower = num_nodes
+        self.embedding_dim = embedding_dim
+    def forward(self, x):
+        x = x.view(-1, self.num_tower, self.embedding_dim)
+        return torch.max(x, dim=1)
+    
+class FusionMeanPooling(nn.Module):
+    def __init__(self, embedding_dim, num_nodes):
+        super(FusionMeanPooling, self).__init__()
+        self.num_tower = num_nodes
+        self.embedding_dim = embedding_dim
+    def forward(self, x):
+        x = x.view(-1, self.num_tower, self.embedding_dim)
+        return torch.mean(x, dim=1)
+    
+
+class FusionATTN(nn.Module):
+    def __init__(self, embedding_dim, num_nodes, num_heads=4):
+        super(FusionATTN, self).__init__()
+        self.embedding_dim = embedding_dim
+        self.num_nodes = num_nodes
+        self.num_heads = num_heads
+        self.head_dim = embedding_dim // num_heads
+        assert embedding_dim % num_heads == 0, "embedding_dim must be divisible by num_heads."
+
+        concat_dim = num_nodes * embedding_dim
+
+        # Query, Key, Value projection
+        self.query_layer = nn.Linear(embedding_dim, embedding_dim)
+        self.key_layer = nn.Linear(embedding_dim, embedding_dim)
+        self.value_layer = nn.Linear(embedding_dim, embedding_dim)
+
+        # Output projection after multi-head attention
+        self.out_proj = nn.Linear(embedding_dim, embedding_dim)
+
+        # Fusion network to combine node outputs
+        self.fusion_network = nn.Sequential(
+            nn.Linear(concat_dim, concat_dim),
+            nn.ReLU(),
+            nn.Linear(concat_dim, 1),
+        )
+
+    def forward(self, x):
+        # x shape: (batch_size, num_nodes, embedding_dim)
+        B, N, D = x.size()
+        
+        # Linear projections
+        Q = self.query_layer(x) # (B, N, D)
+        K = self.key_layer(x)   # (B, N, D)
+        V = self.value_layer(x) # (B, N, D)
+
+        # Split into multiple heads
+        # Resulting shape: (B, num_heads, N, head_dim)
+        Q = Q.view(B, N, self.num_heads, self.head_dim).transpose(1, 2)
+        K = K.view(B, N, self.num_heads, self.head_dim).transpose(1, 2)
+        V = V.view(B, N, self.num_heads, self.head_dim).transpose(1, 2)
+
+        # Scaled dot-product attention
+        # attn_weights: (B, num_heads, N, N)
+        attn_weights = torch.matmul(Q, K.transpose(-1, -2)) / torch.sqrt(self.head_dim)
+        attn = torch.softmax(attn_weights, dim=-1)
+
+        # Apply attention to V
+        # out: (B, num_heads, N, head_dim)
+        out = torch.matmul(attn, V)
+
+        # Concat heads
+        out = out.transpose(1, 2).contiguous().view(B, N, D)
+
+        # Final projection and fusion
+        out = self.out_proj(out) # (B, N, D)
+        
+        # Flatten before fusion network
+        out = out.view(B, N * D)
+        out = self.fusion_network(out)
+
+        return out
+
+
+class FusionGAS(nn.Module):
+    def __init__(self, 
+                 num_fields,
+                 embedding_dim,
+                 layer_norm=True,
+                 batch_norm=True,
+                 use_same_adj=False,
+                 num_mask=2,
+                 pooling_type="mean",
+                 pooling_dim=2,
+                 gpu=0,
+                 nomalize_adj=True,
+                 num_tower=2,
+                 net_dropout=0.1,
+                 num_hops=1):
+        super(FusionGAS, self).__init__()
+        self.fusion_netowrk = CrossNetwork(
+            num_fields,
+            embedding_dim,
+            layer_norm=layer_norm,
+            batch_norm=batch_norm,
+            use_same_adj=use_same_adj,
+            num_mask=num_mask,
+            pooling_type=pooling_type,
+            pooling_dim=pooling_dim,
+            gpu=gpu,
+            nomalize_adj=nomalize_adj,
+            num_tower=num_tower,
+            net_dropout=net_dropout,
+            num_hops=num_hops
+        )
+        
+        concat_dim = embedding_dim * num_tower
+        self.embedding_dim= embedding_dim
+        self.num_tower= num_tower
+        self.scorer = nn.Sequential(
+            nn.Linear(concat_dim, concat_dim),
+            nn.ReLU(),
+            nn.Linear(concat_dim, 1),
+        )
+        
+    def forward(self, x):
+        x = x.view(-1, self.num_tower, self.embedding_dim)
+        return self.scorer(self.fusion_netowrk(x))

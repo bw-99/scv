@@ -5,6 +5,7 @@ from fuxictr.pytorch.layers import FeatureEmbedding
 from fuxictr.pytorch.torch_utils import get_regularizer
 from fuxictr.pytorch.layers import FeatureEmbedding, MLP_Block
 import torch.nn.functional as F
+import math
 from .util import *
 
 class GNNv3_v8(BaseModel):
@@ -81,12 +82,27 @@ class GNNv3_v8(BaseModel):
                                       batch_norm=batch_norm)
 
         concat_dim = (self.num_tower + 1) * final_dim
-        self.scorer = nn.Sequential(
-            nn.Linear(concat_dim, concat_dim),
-            nn.ReLU(),
-            nn.Linear(concat_dim, concat_dim),
-            nn.ReLU(),
-            nn.Linear(concat_dim, 1)
+        # self.scorer = nn.Sequential(
+        #     nn.Linear(concat_dim, concat_dim),
+        #     nn.ReLU(),
+        #     nn.Linear(concat_dim, concat_dim),
+        #     nn.ReLU(),
+        #     nn.Linear(concat_dim, 1)
+        # )
+        self.scorer = globals()[f"Fusion{fusion_type}"](
+            num_fields=num_tower+1,
+            embedding_dim=embedding_dim,
+            net_dropout=net_dropout,
+            num_tower=num_tower,
+            num_mask=self.num_mask,
+            layer_norm=layer_norm,
+            pooling_type=pooling_type,
+            use_same_adj=self.use_same_adj,
+            pooling_dim=pooling_dim,
+            batch_norm=batch_norm,
+            gpu=self.gpu,
+            nomalize_adj=self.nomalize_adj,
+            num_hops=num_hops,
         )
 
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
@@ -246,9 +262,9 @@ class SAGEConv3(nn.Module):
         return out  # (batch_size, num_towers, num_fields, out_channels)
 
 class FusionMLP(nn.Module):
-    def __init__(self, embedding_dim, num_nodes):
+    def __init__(self, embedding_dim, num_fields, **kawrgs):
         super(FusionMLP, self).__init__()
-        concat_dim = (num_nodes) * embedding_dim
+        concat_dim = (num_fields) * embedding_dim
         self.fusion_network = nn.Sequential(
             nn.Linear(concat_dim, concat_dim),
             nn.ReLU(),
@@ -261,34 +277,46 @@ class FusionMLP(nn.Module):
         return self.fusion_network(x)
     
 class FusionMaxPooling(nn.Module):
-    def __init__(self, embedding_dim, num_nodes):
+    def __init__(self, embedding_dim, num_fields, **kawrgs):
         super(FusionMaxPooling, self).__init__()
-        self.num_tower = num_nodes
+        self.num_fields = num_fields
         self.embedding_dim = embedding_dim
+        concat_dim = embedding_dim
+        self.scorer = nn.Sequential(
+            nn.Linear(concat_dim, concat_dim),
+            nn.ReLU(),
+            nn.Linear(concat_dim, 1),
+        )
     def forward(self, x):
-        x = x.view(-1, self.num_tower, self.embedding_dim)
-        return torch.max(x, dim=1)
+        x = x.view(-1, self.num_fields, self.embedding_dim)
+        return self.scorer(torch.max(x, dim=1)[0])
     
 class FusionMeanPooling(nn.Module):
-    def __init__(self, embedding_dim, num_nodes):
+    def __init__(self, embedding_dim, num_fields, **kawrgs):
         super(FusionMeanPooling, self).__init__()
-        self.num_tower = num_nodes
+        self.num_fields = num_fields
         self.embedding_dim = embedding_dim
+        concat_dim = embedding_dim
+        self.scorer = nn.Sequential(
+            nn.Linear(concat_dim, concat_dim),
+            nn.ReLU(),
+            nn.Linear(concat_dim, 1),
+        )
     def forward(self, x):
-        x = x.view(-1, self.num_tower, self.embedding_dim)
-        return torch.mean(x, dim=1)
+        x = x.view(-1, self.num_fields, self.embedding_dim)
+        return self.scorer(torch.mean(x, dim=1))
     
 
 class FusionATTN(nn.Module):
-    def __init__(self, embedding_dim, num_nodes, num_heads=4):
+    def __init__(self, embedding_dim, num_fields, num_heads=8, **kawrgs):
         super(FusionATTN, self).__init__()
         self.embedding_dim = embedding_dim
-        self.num_nodes = num_nodes
+        self.num_fields = num_fields
         self.num_heads = num_heads
         self.head_dim = embedding_dim // num_heads
         assert embedding_dim % num_heads == 0, "embedding_dim must be divisible by num_heads."
 
-        concat_dim = num_nodes * embedding_dim
+        concat_dim = num_fields * embedding_dim
 
         # Query, Key, Value projection
         self.query_layer = nn.Linear(embedding_dim, embedding_dim)
@@ -306,7 +334,8 @@ class FusionATTN(nn.Module):
         )
 
     def forward(self, x):
-        # x shape: (batch_size, num_nodes, embedding_dim)
+        # x shape: (batch_size, num_fields, embedding_dim)
+        x = x.view(-1, self.num_fields, self.embedding_dim)
         B, N, D = x.size()
         
         # Linear projections
@@ -322,7 +351,7 @@ class FusionATTN(nn.Module):
 
         # Scaled dot-product attention
         # attn_weights: (B, num_heads, N, N)
-        attn_weights = torch.matmul(Q, K.transpose(-1, -2)) / torch.sqrt(self.head_dim)
+        attn_weights = torch.matmul(Q, K.transpose(-1, -2)) / math.sqrt(self.head_dim)
         attn = torch.softmax(attn_weights, dim=-1)
 
         # Apply attention to V
@@ -356,7 +385,8 @@ class FusionGAS(nn.Module):
                  nomalize_adj=True,
                  num_tower=2,
                  net_dropout=0.1,
-                 num_hops=1):
+                 num_hops=1, 
+                 **kawrgs):
         super(FusionGAS, self).__init__()
         self.fusion_netowrk = CrossNetwork(
             num_fields,
@@ -377,6 +407,7 @@ class FusionGAS(nn.Module):
         concat_dim = embedding_dim * num_tower
         self.embedding_dim= embedding_dim
         self.num_tower= num_tower
+        self.num_fields = num_fields
         self.scorer = nn.Sequential(
             nn.Linear(concat_dim, concat_dim),
             nn.ReLU(),
@@ -384,5 +415,6 @@ class FusionGAS(nn.Module):
         )
         
     def forward(self, x):
-        x = x.view(-1, self.num_tower, self.embedding_dim)
-        return self.scorer(self.fusion_netowrk(x))
+        x = x.view(-1, self.num_fields, self.embedding_dim)
+        x = self.fusion_netowrk(x)
+        return self.scorer(x)

@@ -15,7 +15,8 @@
 # =========================================================================
 
 import sys
-# sys.path.append("/home/lhh/code")
+sys.path.append("./")
+sys.path.append("/home/lhh/code")
 import os
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 import sys
@@ -34,7 +35,72 @@ import argparse
 import os
 from pathlib import Path
 import os
-os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+# os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+
+
+def get_model(config_path, experiment_id):
+    params = load_config(config_path, experiment_id)
+    data_dir = os.path.join(params['data_root'], params['dataset_id'])
+    feature_map_json = os.path.join(data_dir, "feature_map.json")
+    feature_map = FeatureMap(params['dataset_id'], data_dir)
+    feature_map.load(feature_map_json, params)
+    logging.info("Feature specs: " + print_to_json(feature_map.features))
+
+    model_class = getattr(model_zoo, params['model'])
+    model = model_class(feature_map, **params)
+    model.count_parameters() # print number of parameters used in model
+    return model
+
+
+def train_expid(config, params, config_path):
+    print('**************')
+    config = {k: (v[0]) if (type(v) is list and len(v) == 1 and k != 'feature_cols') else v for k, v in config.items()}
+    params.update(config)
+    # params = {k: (v[0]) if (type(v) is list and len(v) == 1 and k != 'feature_cols') else v for k, v in params.items()}
+    set_logger(params)
+    logging.info("Params: " + print_to_json(params))
+    seed_everything(seed=params['seed'])
+
+    params['data_root'] = os.path.abspath('/home/dxlab/jupyter/jinhee/scv/dataset')
+    params['train_data'] = os.path.join(params['data_root'], params['train_data'])
+    params['valid_data'] = os.path.join(params['data_root'], params['valid_data'])
+    params['test_data'] = os.path.join(params['data_root'], params['test_data'])
+    data_dir = os.path.join(params['data_root'], params['dataset_id'])
+    print('*******************')
+    feature_map_json = os.path.join(data_dir, "feature_map.json")
+    if params["data_format"] == "csv":
+        feature_encoder = FeatureProcessor(**params)
+        params["train_data"], params["valid_data"], params["test_data"] = \
+            build_dataset(feature_encoder, **params)
+    feature_map = FeatureMap(params['dataset_id'], data_dir)
+    feature_map.load(feature_map_json, params)
+    logging.info("Feature specs: " + print_to_json(feature_map.features))
+
+    model_class = getattr(model_zoo, params['model'])
+    model = model_class(feature_map, **params)
+    model.count_parameters() # print number of parameters used in model
+
+    train_gen, valid_gen = RankDataLoader(feature_map, stage='train', **params).make_iterator()
+    model.fit(train_gen, validation_data=valid_gen, **params)
+
+    logging.info('****** Validation evaluation ******')
+    valid_result = model.evaluate(valid_gen)
+    del train_gen, valid_gen
+    gc.collect()
+    
+    logging.info('******** Test evaluation ********')
+    test_gen = RankDataLoader(feature_map, stage='test', **params).make_iterator()
+    test_result = {}
+    if test_gen:
+      test_result = model.evaluate(test_gen)
+    
+    # result_filename = Path(config_path).name.replace(".yaml", "") + '.csv'
+    # with open(result_filename, 'a+') as fw:
+    #     fw.write(' {},[command] python {},[exp_id] {},[dataset_id] {},[train] {},[val] {},[test] {}\n' \
+    #         .format(datetime.now().strftime('%Y%m%d-%H%M%S'), 
+    #                 ' '.join(sys.argv), experiment_id, params['dataset_id'],
+    #                 "N.A.", print_to_list(valid_result), print_to_list(test_result)))
+
 
 if __name__ == '__main__':
     ''' Usage: python run_expid.py --config {config_dir} --expid {experiment_id} --gpu {gpu_device_id}

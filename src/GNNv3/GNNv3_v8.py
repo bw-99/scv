@@ -7,6 +7,15 @@ from fuxictr.pytorch.layers import FeatureEmbedding, MLP_Block
 import torch.nn.functional as F
 import math
 from .util import *
+import logging
+import tempfile
+from pathlib import Path
+from ray import tune
+from ray import train
+from ray.train import Checkpoint, get_checkpoint
+from ray.tune.schedulers import ASHAScheduler
+import ray.cloudpickle as pickle
+
 
 class GNNv3_v8(BaseModel):
     def __init__(self,
@@ -129,6 +138,29 @@ class GNNv3_v8(BaseModel):
 
         return_dict = {"y_pred": y_pred}
         return return_dict
+    
+    def eval_step(self):
+        logging.info('BO Evaluation @epoch {} - batch {}: '.format(self._epoch_index + 1, self._batch_index + 1))
+        val_logs = self.evaluate(self.valid_gen, metrics=self._monitor.get_metrics())
+        
+        checkpoint_data = {
+            "epoch": self._epoch_index + 1,
+            "net_state_dict": self.state_dict(),
+            "optimizer_state_dict": self.optimizer.state_dict(),
+        }
+        with tempfile.TemporaryDirectory() as checkpoint_dir:
+            data_path = Path(checkpoint_dir) / "data.pkl"
+            with open(data_path, "wb") as fp:
+                pickle.dump(checkpoint_data, fp)
+
+            checkpoint = Checkpoint.from_directory(checkpoint_dir)
+            train.report(
+                {"logloss": val_logs['logloss'], "AUC": val_logs['AUC']},
+                checkpoint=checkpoint,
+            )
+            
+        self.checkpoint_and_earlystop(val_logs)
+        self.train()
 
 class CrossNetwork(nn.Module):
     def __init__(self,

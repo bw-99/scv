@@ -12,3 +12,4 @@ myenv
 *.sh
 vis.ipynb
 *.ipynb
+.venv

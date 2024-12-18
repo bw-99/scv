@@ -15,7 +15,9 @@ from ray import train
 from ray.train import Checkpoint, get_checkpoint
 from ray.tune.schedulers import ASHAScheduler
 import ray.cloudpickle as pickle
-
+from tqdm import tqdm
+import sys
+import numpy as np
 
 class GNNv3_v8(BaseModel):
     def __init__(self,
@@ -141,26 +143,48 @@ class GNNv3_v8(BaseModel):
     
     def eval_step(self):
         logging.info('BO Evaluation @epoch {} - batch {}: '.format(self._epoch_index + 1, self._batch_index + 1))
-        val_logs = self.evaluate(self.valid_gen, metrics=self._monitor.get_metrics())
-        
-        checkpoint_data = {
-            "epoch": self._epoch_index + 1,
-            "net_state_dict": self.state_dict(),
-            "optimizer_state_dict": self.optimizer.state_dict(),
-        }
-        with tempfile.TemporaryDirectory() as checkpoint_dir:
-            data_path = Path(checkpoint_dir) / "data.pkl"
-            with open(data_path, "wb") as fp:
-                pickle.dump(checkpoint_data, fp)
-
-            checkpoint = Checkpoint.from_directory(checkpoint_dir)
-            train.report(
-                {"logloss": val_logs['logloss'], "AUC": val_logs['AUC']},
-                checkpoint=checkpoint,
-            )
-            
+        val_logs = self.evaluate(self.valid_gen, metrics=self._monitor.get_metrics())    
         self.checkpoint_and_earlystop(val_logs)
         self.train()
+        
+    def evaluate(self, data_generator, metrics=None):
+        self.eval()  # set to evaluation mode
+        with torch.no_grad():
+            y_pred = []
+            y_true = []
+            group_id = []
+            if self._verbose > 0:
+                data_generator = tqdm(data_generator, disable=False, file=sys.stdout)
+            for batch_data in data_generator:
+                return_dict = self.forward(batch_data)
+                y_pred.extend(return_dict["y_pred"].data.cpu().numpy().reshape(-1))
+                y_true.extend(self.get_labels(batch_data).data.cpu().numpy().reshape(-1))
+                if self.feature_map.group_id is not None:
+                    group_id.extend(self.get_group_id(batch_data).numpy().reshape(-1))
+            y_pred = np.array(y_pred, np.float64)
+            y_true = np.array(y_true, np.float64)
+            group_id = np.array(group_id) if len(group_id) > 0 else None
+            if metrics is not None:
+                val_logs = self.evaluate_metrics(y_true, y_pred, metrics, group_id)
+            else:
+                val_logs = self.evaluate_metrics(y_true, y_pred, self.validation_metrics, group_id)
+            logging.info('[Metrics] ' + ' - '.join('{}: {:.6f}'.format(k, v) for k, v in val_logs.items()))
+            
+            checkpoint_data = {
+                "epoch": self._epoch_index + 1,
+            }
+            with tempfile.TemporaryDirectory() as checkpoint_dir:
+                data_path = Path(checkpoint_dir) / "data.pkl"
+                with open(data_path, "wb") as fp:
+                    pickle.dump(checkpoint_data, fp)
+
+                checkpoint = Checkpoint.from_directory(checkpoint_dir)
+                train.report(
+                    {"logloss": val_logs['logloss'], "AUC": val_logs['AUC']},
+                    checkpoint=checkpoint,
+                )
+            
+            return val_logs
 
 class CrossNetwork(nn.Module):
     def __init__(self,

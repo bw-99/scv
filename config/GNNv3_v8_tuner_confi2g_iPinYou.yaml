@@ -1,0 +1,18 @@
+base_config: ./config/
+base_expid: GNNv3_v8_iPinYou_x1
+dataset_id: iPinYou_x1_csv
+
+tuner_space:
+    model_root: './checkpoints/'
+    learning_rate: [1.e-3]
+    batch_size: [4096]
+    num_tower: [2, 3, 4, 5, 6]
+    net_dropout: [0.3, 0.4, 0.5, 0.6]
+    num_mask: [2, 3, 4, 5, 6]
+    num_hops: [1, 2, 3]
+    embedding_dim: [16]
+    batch_norm: [True, False]
+    layer_norm: [True, False]
+    pooling_dim: [2]
+    fusion_type: ["ATTN", "MeanPooling"]
+    monitor_mode: "max"

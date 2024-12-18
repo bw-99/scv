@@ -59,11 +59,13 @@ if __name__ == '__main__':
     print(params)
     print(tuner_space)
     algo = OptunaSearch(
-        sampler=ot.samplers.TPESampler(seed=2024),
+        sampler=ot.samplers.TPESampler(
+            seed=2024,
+            n_startup_trials=10,
+        ),
         metric=["AUC", "logloss"],
         mode=["max", "min"]
     )
-    
     tuner = tune.Tuner(
         tune.with_resources(
             partial(train_expid, params=params, config_path=args['config']), 
@@ -71,11 +73,11 @@ if __name__ == '__main__':
         ),
         tune_config=tune.TuneConfig(
             search_alg=algo,
-            num_samples=100
+            num_samples=200,
         ),
         param_space=tuner_space,
         run_config=train.RunConfig(
-            stop={"training_iteration": 10},
+            stop={"training_iteration": 20},
         ),
     )
     results = tuner.fit()

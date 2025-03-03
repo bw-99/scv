@@ -1,0 +1,492 @@
+FinalMLP_Criteo_001_01bb9579:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.1
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.1
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 10
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_002_98085167:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.1
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.1
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 50
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_003_152f1d8b:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.1
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.1
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 100
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_004_d5744ee1:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.1
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.2
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 10
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_005_70634ff1:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.1
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.2
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 50
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_006_02191064:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.1
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.2
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 100
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_007_d5744ee1:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.2
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.1
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 10
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_008_70634ff1:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.2
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.1
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 50
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_009_02191064:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.2
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.1
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 100
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_010_35923b17:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.2
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.2
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 10
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_011_e0ed7aaa:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.2
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.2
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 50
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+FinalMLP_Criteo_012_2279f46d:
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.2
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.2
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    model: xDeepFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_heads: 100
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1

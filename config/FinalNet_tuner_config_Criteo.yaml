@@ -1,0 +1,17 @@
+base_config: ./config/
+base_expid: FinalNet_Criteo
+dataset_id: Criteo_x4_10_h5
+
+tuner_space:
+    model_root: './checkpoints/'
+    block_type: "2B"
+    batch_norm: True
+    embedding_dim: [16]
+    use_feature_gating: [True]
+    block1_hidden_units: [[400, 400, 400]]
+    block1_hidden_activations: ReLU
+    block1_dropout: [0.1, 0.2, 0.3, 0.4, 0.5]
+    block2_hidden_units: [[400, 400, 400]]
+    block2_hidden_activations: ReLU
+    block2_dropout: [0.1, 0.2, 0.3, 0.4, 0.5]
+    distill_calib: [False, True, "fuck"]

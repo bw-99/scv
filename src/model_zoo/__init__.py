@@ -45,4 +45,5 @@ from .TransAct.src import TransAct
 from .multitask import SharedBottom, MMoE
 from .EulerNet.src import EulerNet
 from .GDCN.src import GDCNS
+from .WuKong.src import WuKong
 # from .DCNv3.src import DCNv3

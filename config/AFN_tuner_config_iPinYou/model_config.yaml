@@ -1,0 +1,1862 @@
+AFN_iPinYou_x1_001_b330ee6a:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_002_6063a07f:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_003_74ce3584:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_004_134e4315:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_005_1d0891b1:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.4
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_006_ad2a4ccd:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.5
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_007_9a22d877:
+    afn_activations: relu
+    afn_dropout: 0
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.6
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_008_6063a07f:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_009_e5761ebe:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_010_dfbd4522:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_011_00d279b2:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_012_0d65f83c:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.4
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_013_c46ae8c0:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.5
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_014_ab37de05:
+    afn_activations: relu
+    afn_dropout: 0.1
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.6
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_015_74ce3584:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_016_dfbd4522:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_017_0f35a7a2:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_018_90378d24:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_019_835e3145:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.4
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_020_ac1f827b:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.5
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_021_9c4dabe3:
+    afn_activations: relu
+    afn_dropout: 0.2
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.6
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_022_134e4315:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_023_00d279b2:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_024_90378d24:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_025_bc20f428:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_026_0f449b07:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.4
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_027_be58799a:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.5
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_028_302afe53:
+    afn_activations: relu
+    afn_dropout: 0.3
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.6
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_029_1d0891b1:
+    afn_activations: relu
+    afn_dropout: 0.4
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_030_0d65f83c:
+    afn_activations: relu
+    afn_dropout: 0.4
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_031_835e3145:
+    afn_activations: relu
+    afn_dropout: 0.4
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_032_0f449b07:
+    afn_activations: relu
+    afn_dropout: 0.4
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_033_2dd59ae9:
+    afn_activations: relu
+    afn_dropout: 0.4
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.4
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_034_53d27aba:
+    afn_activations: relu
+    afn_dropout: 0.4
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.5
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_035_f87da70a:
+    afn_activations: relu
+    afn_dropout: 0.4
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.6
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_036_ad2a4ccd:
+    afn_activations: relu
+    afn_dropout: 0.5
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_037_c46ae8c0:
+    afn_activations: relu
+    afn_dropout: 0.5
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_038_ac1f827b:
+    afn_activations: relu
+    afn_dropout: 0.5
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_039_be58799a:
+    afn_activations: relu
+    afn_dropout: 0.5
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_040_53d27aba:
+    afn_activations: relu
+    afn_dropout: 0.5
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.4
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_041_1b5815ed:
+    afn_activations: relu
+    afn_dropout: 0.5
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.5
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_042_00d4be83:
+    afn_activations: relu
+    afn_dropout: 0.5
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.6
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_043_9a22d877:
+    afn_activations: relu
+    afn_dropout: 0.6
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_044_ab37de05:
+    afn_activations: relu
+    afn_dropout: 0.6
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.1
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_045_9c4dabe3:
+    afn_activations: relu
+    afn_dropout: 0.6
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.2
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_046_302afe53:
+    afn_activations: relu
+    afn_dropout: 0.6
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.3
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_047_f87da70a:
+    afn_activations: relu
+    afn_dropout: 0.6
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.4
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_048_00d4be83:
+    afn_activations: relu
+    afn_dropout: 0.6
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.5
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+AFN_iPinYou_x1_049_4104f604:
+    afn_activations: relu
+    afn_dropout: 0.6
+    afn_hidden_units: [400, 400, 400]
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_activations: relu
+    dnn_dropout: 0.6
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    ensemble_dnn: false
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    logarithmic_neurons: 1200
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AFN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1

@@ -11,6 +11,8 @@ from .GNNv1 import *
 from .GNNv2 import *
 from .GNNv3 import *
 
+from .SCV import *
+
 # * log operation + implicit interaction
 from .LogDCN import *
 

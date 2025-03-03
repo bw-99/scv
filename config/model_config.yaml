@@ -1208,6 +1208,43 @@ GNNv3_v8_iPinYou_x1: # This is a config template
     use_same_adj: false
     verbose: 1
 
+GNNv3_v14_iPinYou_x1:
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v14
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    pooling_method: attn
+
 MLP_iPinYou_x1: # This is a config template
     model: MLP
     dataset_id: iPinYou_x1_csv
@@ -1501,6 +1538,214 @@ DCNv3_Criteo:
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
+DCNv2_Criteo:
+    model: DCNv2
+    dataset_id: Criteo_x4_10_h5
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-5
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    num_cross_layers: 4
+    net_dropout: 0.1
+    batch_norm: False
+    model_structure: "parallel"
+    stacked_dnn_hidden_units: [400, 400, 400]
+    parallel_dnn_hidden_units: [400, 400, 400]
+    dnn_activations: "ReLU"
+    epochs: 100
+    use_low_rank_mixture: False
+    shuffle: True
+    seed: 2024
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
+
+FinalNet_Criteo:
+    model: FinalNet
+    dataset_id: Criteo_x4_10_h5
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-5
+    net_regularizer: 0
+    batch_size: 4096
+    embedding_dim: 16
+    block_type: "2B"
+    batch_norm: True
+    use_feature_gating: False
+    block1_hidden_units: [400, 400, 400]
+    block1_hidden_activations: ReLU
+    block1_dropout: 0.4
+    block2_hidden_units: [400, 400, 400]
+    block2_hidden_activations: ReLU
+    block2_dropout: 0.4
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    distill_calib: "fuck"
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
+xDeepFM_Criteo:
+    model: xDeepFM
+    dataset_id: Criteo_x4_10_h5
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-5
+    batch_size: 4096
+    embedding_dim: 16
+    batch_norm: True
+    cin_layer_units: [64, 64, 64]
+    dnn_hidden_units: [400, 400, 400]
+    embedding_dropout: 0
+    embedding_regularizer: 1.e-4
+    every_x_epochs: 1
+    net_dropout: 0.2
+    net_regularizer: 0
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
+MaskNet_Criteo:
+    model: MaskNet
+    dataset_id: Criteo_x4_10_h5
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-5
+    batch_size: 4096
+    embedding_dim: 16
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    emb_layernorm: false
+    net_dropout: 0.3
+    net_layernorm: False
+    parallel_block_dim: 500
+    parallel_num_blocks: 2
+    model_type: ParallelMaskNet
+    reduction_ratio: 0.5
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
+FinalMLP_Criteo:
+    model: FinalMLP
+    dataset_id: Criteo_x4_10_h5
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-5
+    batch_size: 4096
+    embedding_dim: 16
+    fs1_context: []
+    fs2_context: []
+    fs_hidden_units: [1000]
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [AUC, logloss]
+    mlp1_batch_norm: false
+    mlp1_dropout: 0.2
+    mlp1_hidden_activations: relu
+    mlp1_hidden_units: [400, 400, 400]
+    mlp2_batch_norm: false
+    mlp2_dropout: 0.1
+    mlp2_hidden_activations: relu
+    mlp2_hidden_units: [400, 400, 400]
+    net_regularizer: 0
+    num_heads: 50
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
+ONN_Criteo:
+    model: ONN
+    dataset_id: Criteo_x4_10_h5
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    batch_norm: false
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-5
+    batch_size: 4096
+    embedding_dim: 16
+    net_dropout: 0.3
+    net_regularizer: 0
+    hidden_units: [400, 400, 400]
+    hidden_activations: relu
+    num_heads: 1
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 16
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
+DCN_Criteo:
+    model: DCN
+    dataset_id: Criteo_x4_10_h5
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    batch_norm: false
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-5
+    batch_size: 4096
+    embedding_dim: 16
+    dnn_hidden_units: [400, 400, 400]
+    net_dropout: 0.3
+    num_cross_layers: 4
+    net_regularizer: 0
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 16
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+
+DeepFM_Criteo:
+    model: DeepFM
+    dataset_id: Criteo_x4_10_h5
+    loss: 'binary_crossentropy'
+    metrics: ['logloss', 'AUC']
+    task: binary_classification
+    optimizer: adam
+    batch_norm: false
+    learning_rate: 1.e-3
+    embedding_regularizer: 1.e-5
+    batch_size: 4096
+    embedding_dim: 16
+    hidden_units: [400, 400, 400]
+    net_dropout: 0.3
+    net_regularizer: 0
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    num_workers: 16
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
 
 LogCNv3_Criteo:
     model: LogCNv3
@@ -1567,7 +1812,7 @@ AFN_Criteo: # This is a config template
     task: binary_classification
     optimizer: adam
     learning_rate: 1.e-3
-    embedding_regularizer: 1.e-3
+    embedding_regularizer: 1.e-5
     net_regularizer: 0
     batch_size: 4096
     embedding_dim: 16
@@ -1596,7 +1841,7 @@ EulerNet_Criteo:
     task: binary_classification
     optimizer: adam
     learning_rate: 1.e-3
-    embedding_regularizer: 1.e-3
+    embedding_regularizer: 1.e-5
     net_regularizer: 0
     batch_size: 4096
     embedding_dim: 16
@@ -1640,33 +1885,32 @@ GNNv3_v3_Criteo: # This is a config template
     monitor: {'AUC': 1, 'logloss': 0}
     monitor_mode: 'max'
 
-
 GNNv3_v8_Criteo: # This is a config template
-    batch_norm: false
+    layer_norm: true
+    batch_norm: true
     batch_size: 4096
     dataset_id: Criteo_x4_10_h5
     debug_mode: false
     embedding_dim: 16
-    embedding_regularizer: 1.e-3
+    embedding_regularizer: 1.e-5
     epochs: 100
     eval_steps: null
     feature_config: null
     feature_specs: null
     group_id: null
-    layer_norm: false
     learning_rate: 1.e-3
     loss: binary_crossentropy
     metrics: [logloss, AUC]
     model: GNNv3_v8
-    num_hops: 1
+    num_hops: 2
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.6
+    net_dropout: 0.2
     net_regularizer: 0
     nomalize_adj: true
     num_mask: 2
-    num_tower: 4
+    num_tower: 2
     num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
@@ -1679,3 +1923,805 @@ GNNv3_v8_Criteo: # This is a config template
     use_features: null
     use_same_adj: false
     verbose: 1
+    fusion_type: "ATTN"
+
+GNNv3_v9_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v9
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    nomalize_adj: true
+    num_mask: 2
+    num_tower: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    pooling_dim: 2
+    pooling_type: mean
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    use_same_adj: true
+    verbose: 1
+    fusion_type: "ATTN"
+
+
+GNNv3_v10_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v10
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_tower: 5
+    num_workers: 16
+    optimizer: adam
+    use_gru: true
+    pickle_feature_encoder: true
+    pooling_dim: 2
+    pooling_type: mean
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    fusion_type: "ATTN"
+
+
+GNNv3_v11_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v11
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_tower: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    edge_pertub_prob: 0.1
+    verbose: 1
+    num_mask: 3
+
+GNNv3_v12_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v12
+    num_hops: 1
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_tower: 16
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    edge_pertub_prob: 0
+    verbose: 1
+    num_mask: 3
+    pooling_method: mean
+
+
+GNNv3_v13_Criteo: # This is a config template
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v13
+    num_hops: 1
+    agg_rate: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_tower: 6
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+
+
+GNNv3_v14_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v14
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    alpha: 1
+    pooling_method: attn
+    distill_loss: true
+    
+GNNv3_v15_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v15
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    distill_loss: true
+    pooling_method: attn
+
+GNNv3_v17_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v17
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    pooling_method: attn
+    distill_loss: true
+
+GNNv3_v18_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v18
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    pooling_method: attn
+    distill_loss: true
+
+GNNv3_v19_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v19
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    alpha: 0.9
+    pooling_method: attn
+    distill_loss: true
+
+GNNv3_v20_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v20
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    alpha: 0.9
+    pooling_method: attn
+    distill_loss: true
+
+GNNv3_v21_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GNNv3_v21
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    alpha: 0.9
+    pooling_method: attn
+    distill_loss: true
+
+#############################################################
+#############################################################
+# SCV
+#############################################################
+#############################################################
+
+SCV_Criteo:
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: SCV
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    alpha: 1
+    pooling_method: attn
+    distill_loss: true
+
+SCV_light_Criteo:
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: SCV_light
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    pooling_method: attn
+    distill_loss: true
+
+SCV_light_loca_Criteo:
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: SCV_light_loca
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    alpha: 0.9
+    pooling_method: attn
+    distill_loss: true
+
+SCV_loca_Criteo: # This is a config template
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: SCV_loca
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    alpha: 0.9
+    pooling_method: attn
+    distill_loss: true
+
+SCV_ada_tf_Criteo:
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: SCV_ada_tf
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    alpha: 0.9
+    pooling_method: attn
+    distill_loss: true
+
+WuKong_Criteo: # This is a config template
+    model: WuKong
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    net_regularizer: 0
+    num_layers: 4
+    compression_dim: 40
+    fmb_units: [200,200]
+    fmb_dim: 40
+    project_dim: 8
+    dropout_rate: 0.2
+    hidden_activations: relu
+    mlp_hidden_units: [32,32]
+    epochs: 100
+    shuffle: True
+    seed: 2024
+    monitor: {'AUC': 1, 'logloss': -1}
+    monitor_mode: 'max'
+    optimizer: adam
+
+
+
+GNNv3_v14_Avazu:
+    model: GNNv3_v14
+    dataset_id: Avazu_x4_h5
+    optimizer: adam
+    loss: 'binary_crossentropy'
+    task: binary_classification
+    metrics: [logloss, AUC]
+    model_root: './checkpoints/'
+    embedding_dim: 16
+    embedding_regularizer: 1.e-9
+    learning_rate: 1.e-3
+    batch_size: 10000
+    seed: 2024
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+    epochs: 100
+    layer_norm: true
+    batch_norm: true
+    debug_mode: false
+    num_hops: 2
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    shuffle: true
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    pooling_method: attn
+
+
+DCNv2_Avazu:
+    model: DCNv2
+    dataset_id: Avazu_x4_h5
+    optimizer: adam
+    loss: 'binary_crossentropy'
+    task: binary_classification
+    metrics: [logloss, AUC]
+    model_root: './checkpoints/'
+    embedding_dim: 16
+    embedding_regularizer: 1.e-9
+    learning_rate: 1.e-3
+    batch_size: 10000
+    seed: 2024
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+    epochs: 100
+    batch_norm: true
+    debug_mode: false
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    shuffle: true
+    use_features: null
+    verbose: 1
+    num_cross_layers: 4
+    net_dropout: 0.1
+    model_structure: 'parallel'
+    use_low_rank_mixture: false
+    stacked_dnn_hidden_units: [400, 400, 400]
+    parallel_dnn_hidden_units: [400, 400, 400]
+    dnn_activations: "ReLU"
+
+FinalNet_Avazu:
+    model: FinalNet
+    dataset_id: Avazu_x4_h5
+    optimizer: adam
+    loss: 'binary_crossentropy'
+    task: binary_classification
+    metrics: [logloss, AUC]
+    model_root: './checkpoints/'
+    embedding_dim: 16
+    embedding_regularizer: 1.e-9
+    learning_rate: 1.e-3
+    batch_size: 10000
+    seed: 2024
+    monitor: {'AUC': 1, 'logloss': 0}
+    monitor_mode: 'max'
+    epochs: 100
+    batch_norm: true
+    debug_mode: false
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    shuffle: true
+    use_features: null
+    verbose: 1
+    block_type: "2B"
+    batch_norm: True
+    use_feature_gating: True
+    block1_hidden_units: [400, 400, 400]
+    block1_hidden_activations: ReLU
+    block1_dropout: 0
+    block2_hidden_units: [400, 400, 400]
+    block2_hidden_activations: ReLU
+    block2_dropout: 0

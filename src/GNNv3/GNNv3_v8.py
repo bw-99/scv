@@ -170,19 +170,19 @@ class GNNv3_v8(BaseModel):
                 val_logs = self.evaluate_metrics(y_true, y_pred, self.validation_metrics, group_id)
             logging.info('[Metrics] ' + ' - '.join('{}: {:.6f}'.format(k, v) for k, v in val_logs.items()))
             
-            checkpoint_data = {
-                "epoch": self._epoch_index + 1,
-            }
-            with tempfile.TemporaryDirectory() as checkpoint_dir:
-                data_path = Path(checkpoint_dir) / "data.pkl"
-                with open(data_path, "wb") as fp:
-                    pickle.dump(checkpoint_data, fp)
+            # checkpoint_data = {
+            #     "epoch": self._epoch_index + 1,
+            # }
+            # with tempfile.TemporaryDirectory() as checkpoint_dir:
+            #     data_path = Path(checkpoint_dir) / "data.pkl"
+            #     with open(data_path, "wb") as fp:
+            #         pickle.dump(checkpoint_data, fp)
 
-                checkpoint = Checkpoint.from_directory(checkpoint_dir)
-                train.report(
-                    {"logloss": val_logs['logloss'], "AUC": val_logs['AUC']},
-                    checkpoint=checkpoint,
-                )
+            #     checkpoint = Checkpoint.from_directory(checkpoint_dir)
+            #     train.report(
+            #         {"logloss": val_logs['logloss'], "AUC": val_logs['AUC']},
+            #         checkpoint=checkpoint,
+            #     )
             
             return val_logs
 

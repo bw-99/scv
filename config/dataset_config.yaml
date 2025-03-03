@@ -1,5 +1,5 @@
 Avazu_x4_h5:
-    data_format: h5
+    data_format: csv
     data_root: dataset/
     feature_cols:
         - { active: false, dtype: str, name: id, type: categorical }
@@ -14,9 +14,9 @@ Avazu_x4_h5:
         - { active: true, dtype: str, name: weekend, preprocess: convert_weekend, type: categorical }
     label_col: { dtype: float, name: click }
     min_categr_count: 2
-    test_data: dataset/Avazu_x4_h5/test.h5
-    train_data: dataset/Avazu_x4_h5/train.h5
-    valid_data: dataset/Avazu_x4_h5/valid.h5
+    test_data: dataset/Avazu_x4_h5/test.csv
+    train_data: dataset/Avazu_x4_h5/train.csv
+    valid_data: dataset/Avazu_x4_h5/valid.csv
 
 Criteo_x4_10_h5:
     data_format: csv

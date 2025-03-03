@@ -42,6 +42,7 @@ class FinalNet(BaseModel):
                  residual_type="concat",
                  embedding_regularizer=None,
                  net_regularizer=None,
+                 distill_calib=False,
                  **kwargs):
         super(FinalNet, self).__init__(feature_map, 
                                        model_id=model_id, 
@@ -73,6 +74,14 @@ class FinalNet(BaseModel):
                                      batch_norm=batch_norm,
                                      residual_type=residual_type)
             self.fc2 = nn.Linear(block2_hidden_units[-1], 1)
+        
+        ###########
+        self.distill_calib = distill_calib
+        print(distill_calib*100, "LoCaDistillationLoss")
+        self.distill_loss = LoCaDistillationLoss(alpha=0.7) if distill_calib == True else nn.BCELoss(reduction="mean")
+        print(self.distill_loss)
+        ###########
+
         self.compile(kwargs["optimizer"], loss=kwargs["loss"], lr=learning_rate)
         self.reset_parameters()
         self.model_to_device()
@@ -102,18 +111,41 @@ class FinalNet(BaseModel):
         block2_out = self.block2(X.flatten(start_dim=1))
         y_pred = self.fc2(block2_out)
         return y_pred
+    
 
-    def add_loss(self, inputs):
-        return_dict = self.forward(inputs)
-        y_true = self.get_labels(inputs)
+    def compute_loss(self, return_dict, y_true):
         loss = self.loss_fn(return_dict["y_pred"], y_true, reduction='mean')
-        if self.block_type == "2B":
+        loss += self.regularization_loss()
+
+        # loss = self.loss_fn(return_dict["y_pred"], y_true, reduction='mean')
+        if self.block_type == "2B" and self.distill_calib != "fuck":
             y1 = self.output_activation(return_dict["y1"])
             y2 = self.output_activation(return_dict["y2"])
-            loss1 = self.loss_fn(y1, return_dict["y_pred"].detach(), reduction='mean')
-            loss2 = self.loss_fn(y2, return_dict["y_pred"].detach(), reduction='mean')
+            # loss1 = self.loss_fn(y1, return_dict["y_pred"].detach(), reduction='mean')
+            # loss2 = self.loss_fn(y2, return_dict["y_pred"].detach(), reduction='mean')
+            if self.distill_calib == True:
+                loss1 = self.distill_loss(y1, return_dict["y_pred"].detach(), y_true)
+                loss2 = self.distill_loss(y2, return_dict["y_pred"].detach(), y_true)
+            else:
+                loss1 = self.loss_fn(y1, return_dict["y_pred"].detach(), reduction='mean')
+                loss2 = self.loss_fn(y2, return_dict["y_pred"].detach(), reduction='mean')
             loss = loss + loss1 + loss2
+
         return loss
+
+    # def add_loss(self, inputs):
+    #     return_dict = self.forward(inputs)
+    #     y_true = self.get_labels(inputs)
+    #     loss = self.loss_fn(return_dict["y_pred"], y_true, reduction='mean')
+    #     if self.block_type == "2B":
+    #         y1 = self.output_activation(return_dict["y1"])
+    #         y2 = self.output_activation(return_dict["y2"])
+    #         # loss1 = self.loss_fn(y1, return_dict["y_pred"].detach(), reduction='mean')
+    #         # loss2 = self.loss_fn(y2, return_dict["y_pred"].detach(), reduction='mean')
+    #         loss1 = self.distill_loss(y1, return_dict["y_pred"].detach(), y_true, reduction='mean')
+    #         loss2 = self.distill_loss(y2, return_dict["y_pred"].detach(), y_true, reduction='mean')
+    #         loss = loss + loss1 + loss2
+    #     return loss
 
 
 class FeatureGating(nn.Module):
@@ -196,3 +228,24 @@ class FactorizedInteraction(nn.Module):
         elif self.residual_type == "sum":
             h = h2 + h1 * h2
         return h
+
+class LoCaDistillationLoss(nn.Module):
+    def __init__(self, alpha=0.9):
+        super(LoCaDistillationLoss, self).__init__()
+        self.alpha = alpha  # 보정 강도 설정
+
+    def forward(self, student_output, teacher_output, true_labels, reduction='mean'):
+        
+        teacher_probs_corrected = torch.where(
+            true_labels == 1,  # 실제 정답이 1인 경우
+            self.alpha * teacher_output + (1 - self.alpha),  # 정답 클래스 확률 ↑
+            self.alpha * teacher_output  # 오답 클래스 확률 ↓
+        )
+
+        # # Step 3: 보정된 확률 (sigmoid 다시 적용)
+        # teacher_probs_corrected = torch.sigmoid(teacher_logits_corrected)
+
+        # Step 4: 보정된 교사 확률을 이용한 BCE 손실 계산
+        loss = F.binary_cross_entropy(student_output, teacher_probs_corrected, reduction=reduction)
+
+        return loss

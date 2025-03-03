@@ -2585,6 +2585,45 @@ SCV_ada_tf_Criteo:
     pooling_method: attn
     distill_loss: true
 
+SCV_heavy_loca_Criteo:
+    layer_norm: true
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    embedding_dim: 16
+    embedding_regularizer: 1.e-5
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 1.e-3
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: SCV_heavy_loca
+    num_hops: 2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    use_bilinear_fusion: true
+    net_regularizer: 0
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    num_mask: 3
+    alpha: 0.9
+    pooling_method: attn
+    distill_loss: true
+
 WuKong_Criteo: # This is a config template
     model: WuKong
     batch_norm: true

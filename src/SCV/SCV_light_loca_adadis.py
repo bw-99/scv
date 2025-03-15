@@ -114,6 +114,7 @@ class SCV_light_loca_adadis(BaseModel):
                  learning_rate=1e-3,
                  embedding_dim=10,
                  net_dropout=0.1,
+                 scv_dropout=None,
                  num_tower=2,
                  num_hops=1,
                  num_mask=3,
@@ -148,6 +149,8 @@ class SCV_light_loca_adadis(BaseModel):
         self.distill_criterion = LoCaDistillationLoss(alpha)
         input_dim = feature_map.sum_emb_out_dim()
 
+        scv_dropout = net_dropout if scv_dropout == None else scv_dropout
+
         print("num fields", feature_map.get_num_fields())
         self.num_fields = feature_map.get_num_fields()
         self.input_dim = input_dim
@@ -157,7 +160,7 @@ class SCV_light_loca_adadis(BaseModel):
         self.gnn_tower = CrossNetwork(
             num_fields=self.num_fields,
             embedding_dim=embedding_dim,
-            net_dropout=net_dropout,
+            net_dropout=scv_dropout,
             num_tower=num_tower,
             layer_norm=layer_norm,
             batch_norm=batch_norm,

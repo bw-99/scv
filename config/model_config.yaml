@@ -2529,6 +2529,7 @@ SCV_light_loca_adadis_Criteo:
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
     net_dropout: 0
+    scv_dropout: 0.1
     use_bilinear_fusion: true
     net_regularizer: 0
     num_tower: 4

@@ -5,8 +5,6 @@ from torch.nn import Parameter as Param
 from fuxictr.pytorch.models import BaseModel
 from fuxictr.pytorch.layers import FeatureEmbedding, MLP_Block
 
-# GNNv3_v19
-
 class CrossNetwork(nn.Module):
     def __init__(self,
                  num_fields,
@@ -16,8 +14,7 @@ class CrossNetwork(nn.Module):
                  num_tower=2,
                  pooling_method="attn",
                  net_dropout=0.1,
-                 num_mask=3,
-                 num_hops=1):
+                 num_mask=3):
         super(CrossNetwork, self).__init__()
         self.num_tower = num_tower
         self.layer_norm_flag = layer_norm
@@ -25,11 +22,10 @@ class CrossNetwork(nn.Module):
         self.embedding_dim = embedding_dim
         self.num_fields = num_fields
         self.pooling_method=pooling_method
-        self.num_hops = num_hops
         self.num_mask = num_mask
 
-        self.gnn_transform_weight = Param(torch.Tensor(1, num_tower, num_hops, 2*embedding_dim, embedding_dim))
-        self.gnn_transform_bias = Param(torch.Tensor(num_tower, num_hops, num_fields, embedding_dim))
+        self.gnn_transform_weight = Param(torch.Tensor(1, num_tower, 1, 2*embedding_dim, embedding_dim))
+        self.gnn_transform_bias = Param(torch.Tensor(num_tower, 1, num_fields, embedding_dim))
         nn.init.xavier_uniform_(self.gnn_transform_weight)
         nn.init.xavier_uniform_(self.gnn_transform_bias)
 
@@ -38,22 +34,10 @@ class CrossNetwork(nn.Module):
         self.diag_adj = nn.Parameter(torch.eye(self.num_fields, self.num_fields).unsqueeze(dim=0), requires_grad=False)
         
         self.layer_norm = nn.LayerNorm(num_fields)
-        self.batch_norm = nn.ModuleList()
-        self.dropout = nn.ModuleList()
-        for i in range(num_hops):
-            if batch_norm:
-                self.batch_norm.append(nn.BatchNorm1d(self.num_tower * self.num_fields * 2 * self.embedding_dim))
-            if net_dropout > 0:
-                self.dropout.append(nn.Dropout(net_dropout))
+
         
-        if self.pooling_method == "attn":
-            self.gating_network = nn.Sequential(
-                nn.Linear(embedding_dim * num_fields, num_fields),
-                nn.Softmax(dim=2)
-            )
-        
-        self.tower_moe_gate = nn.Sequential(
-            nn.Linear(embedding_dim * num_fields, num_tower),
+        self.gating_network = nn.Sequential(
+            nn.Linear(embedding_dim * num_fields, 1),
             nn.Softmax(dim=1)
         )
 
@@ -74,42 +58,28 @@ class CrossNetwork(nn.Module):
         x_masked = adj_matrix_hop + (1 - mask) * -1e9 + self.diag_adj
         adj_matrix_hop = torch.nn.functional.softmax(x_masked, dim=1) * mask
 
-        for idx in range(self.num_hops):
-            # 1) Linear transform => (B, T, N, D)
-            nei_features = torch.matmul(x.transpose(-2, -1), adj_matrix_hop).transpose(-2, -1)
-            nei_features = nei_features
-            
-            transform = self.gnn_transform_weight[:, :, idx, ...]
-            x = torch.cat([x, nei_features], dim=-1) # B, T, N, 2D
-            
-            if len(self.batch_norm) > idx:
-                x_reshaped = x.view(x.size(0), -1)  # => (B, T*N*D)
-                x_reshaped = self.batch_norm[idx](x_reshaped)
-                x = x_reshaped.view(x.size(0), self.num_tower, self.num_fields, -1)
-                
-            x = torch.matmul(x, transform) + self.gnn_transform_bias[:, idx, ...]
-            if len(self.dropout) > idx:
-                x = self.dropout[idx](x)
-
-        if self.pooling_method == "attn":
-            weights = self.gating_network(x.view(x.shape[0], x.shape[1], -1)) # B, T, N*D -> B, T, N
-            x = torch.sum(x * weights.unsqueeze(dim=-1), dim=2)
-        else:
-            x = x.mean(dim=2)
+        # 1) Linear transform => (B, T, N, D)
+        nei_features = torch.matmul(x.transpose(-2, -1), adj_matrix_hop).transpose(-2, -1)
+        nei_features = nei_features
         
-        # x: (B, T, D)
-        # tower_weight: (B, T, 1)
-        # => x: (B, D)
-        tower_weight = self.tower_moe_gate(_feat.view(_feat.shape[0], -1)).unsqueeze(dim=-1)
-        x = torch.sum(x * tower_weight, dim=1)
+        idx = 0
+        transform = self.gnn_transform_weight[:, :, idx, ...]
+        x = torch.cat([x, nei_features], dim=-1) # B, T, N, 2D
+        
+        
+        x = torch.matmul(x, transform) + self.gnn_transform_bias[:, idx, ...]
+        x = x.view(x.shape[0],x.shape[1],-1)
 
+        weights = self.gating_network(x.view(x.shape[0], x.shape[1], -1)) # B, T, N*D -> B, T, 1
+        
+        x = torch.sum(x * weights, dim=1).view(_feat.shape[0], _feat.shape[1], _feat.shape[2])
         return x
 
 
-class SCV_light_loca(BaseModel):
+class SCV_coe(BaseModel):
     def __init__(self,
                  feature_map,
-                 model_id="SCV_light_loca",
+                 model_id="SCV_coe",
                  gpu=-1,
                  learning_rate=1e-3,
                  embedding_dim=10,
@@ -127,7 +97,7 @@ class SCV_light_loca(BaseModel):
                  net_regularizer=None,
                  alpha=0.9,
                  **kwargs):
-        super(SCV_light_loca, self).__init__(feature_map,
+        super(SCV_coe, self).__init__(feature_map,
                                        model_id=model_id,
                                        gpu=gpu,
                                        embedding_regularizer=embedding_regularizer,
@@ -150,19 +120,30 @@ class SCV_light_loca(BaseModel):
         print("num fields", feature_map.get_num_fields())
         self.num_fields = feature_map.get_num_fields()
         self.input_dim = input_dim
-        print("SCV_light_loca input_dim", input_dim)
+        print("SCV_coe input_dim", input_dim)
 
-        self.gnn_tower = CrossNetwork(
-            num_fields=self.num_fields,
-            embedding_dim=embedding_dim,
-            net_dropout=net_dropout,
-            num_tower=num_tower,
-            layer_norm=layer_norm,
-            batch_norm=batch_norm,
-            pooling_method=pooling_method,
-            num_hops=num_hops,
-            num_mask=num_mask,
-        )
+        self.gnn_tower = nn.ModuleList([
+            CrossNetwork(
+                num_fields=self.num_fields,
+                embedding_dim=embedding_dim,
+                net_dropout=net_dropout,
+                num_tower=num_tower,
+                layer_norm=layer_norm,
+                batch_norm=batch_norm,
+                pooling_method=pooling_method,
+                num_mask=num_mask,
+            ) for _ in range(num_hops)
+        ] )
+        
+        self.batch_norm = nn.ModuleList()
+        self.dropout = nn.ModuleList()
+        
+        for _ in range(num_hops):
+            if batch_norm:
+                # self.batch_norm.append(nn.BatchNorm1d(self.num_tower * self.num_fields * embedding_dim))
+                self.batch_norm.append(nn.LayerNorm(embedding_dim))
+            if net_dropout > 0:
+                self.dropout.append(nn.Dropout(net_dropout))
 
         self.parallel_dnn = MLP_Block(input_dim=input_dim,
                                       output_dim=None,  # output hidden layer
@@ -174,7 +155,7 @@ class SCV_light_loca(BaseModel):
 
         
         if self.use_bilinear_fusion:
-            concat_dim = embedding_dim
+            concat_dim = embedding_dim * self.num_fields
             print("concat_dim ", concat_dim)
             self.bias = nn.Parameter(torch.tensor(0.0))
             self.w1 = nn.Parameter(torch.randn(concat_dim, 1))  # Shape: (d1, 1)
@@ -200,11 +181,25 @@ class SCV_light_loca(BaseModel):
         self.count_parameters(count_embedding=False)
 
     def forward(self, inputs):
-        X = self.get_inputs(inputs)
-        feature_emb = self.embedding_layer(X, flatten_emb=False)
+        feature_emb = self.embedding_layer(self.get_inputs(inputs), flatten_emb=False)
 
-        # B, T, D
-        graph_embeddings = self.gnn_tower(feature_emb).view(feature_emb.shape[0], -1)
+        # B, N, D
+        graph_embeddings = feature_emb
+        for idx in range(self.num_hops):
+            x = self.gnn_tower[idx](graph_embeddings)
+            
+            if len(self.batch_norm) > idx:
+                # x_reshaped = x.view(x.size(0), -1)  # => (B, N*D)
+                x = self.batch_norm[idx](x)
+                # x = x_reshaped.view(x.size(0), self.num_fields, -1)
+            
+            if len(self.dropout) > idx:
+                x = self.dropout[idx](x)
+                
+            # graph_embeddings = x + graph_embeddings
+            graph_embeddings = x
+        
+        graph_embeddings = graph_embeddings.view(feature_emb.shape[0], -1)
         mlp_embeddings = self.parallel_dnn(feature_emb.view(feature_emb.shape[0], -1))
 
         linear_term1 = graph_embeddings @ self.w1  # (B, output_dim)
@@ -221,25 +216,7 @@ class SCV_light_loca(BaseModel):
     def compute_loss(self, return_dict, y_true):
         loss = self.loss_fn(return_dict["y_pred"], y_true, reduction='mean')
         loss += self.regularization_loss()
-        
-        term_lst = [return_dict["y1"], return_dict["y2"]]
-        if self.distill_loss == "with_bilinear":
-            term_lst.append(return_dict["y3"])
-            
-        term_loss = torch.tensor([self.loss_fn(self.output_activation(item), y_true, reduction='mean') for item in term_lst])
-        term_loss = F.softmax(term_loss)
-        
         if self.distill_loss:
-        #     y1 = self.output_activation(return_dict["y1"])
-        #     y2 = self.output_activation(return_dict["y2"])
-        #     loss1 = self.distill_criterion(y1, return_dict["y_pred"].detach(), y_true) * term_loss[0]
-        #     loss2 = self.distill_criterion(y2, return_dict["y_pred"].detach(), y_true) * term_loss[1]
-        #     loss += loss1+loss2
-            
-        # if self.distill_loss == "with_bilinear":
-        #     y3 = self.output_activation(return_dict["y3"])
-        #     loss3 = self.distill_criterion(y3, return_dict["y_pred"].detach(), y_true) * term_loss[2]
-        #     loss += loss3
             y1 = self.output_activation(return_dict["y1"])
             y2 = self.output_activation(return_dict["y2"])
             loss1 = self.distill_criterion(y1, return_dict["y_pred"].detach(), y_true)

@@ -58,6 +58,7 @@ class FinalNet(BaseModel):
             self.feature_gating = FeatureGating(num_fields, gate_residual="concat")
             gate_out_dim = embedding_dim * num_fields * 2
         self.block_type = block_type
+        print(block1_hidden_units)
         self.block1 = FinalBlock(input_dim=gate_out_dim if use_feature_gating \
                                            else embedding_dim * num_fields,
                                  hidden_units=block1_hidden_units,

@@ -1,0 +1,1 @@
+ 20250315-041911,[command] python run_expid.py --config config/SCV_light_loca_adadis_dropout_tuner_config_Criteo --expid SCV_light_loca_adadis_Criteo_006_5d6df47d --gpu 0,[exp_id] SCV_light_loca_adadis_Criteo_006_5d6df47d,[dataset_id] Criteo_x4_10_h5,[train] N.A.,[val] logloss: 0.437638 - AUC: 0.814324,[test] logloss: 0.437317 - AUC: 0.814705

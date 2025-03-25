@@ -1,5 +1,5 @@
-2025-03-15 00:58:59,367 P197 INFO FuxiCTR version: 2.3.7
-2025-03-15 00:58:59,367 P197 INFO Params: {
+2025-03-15 16:56:01,127 P1419394 INFO FuxiCTR version: 2.3.3
+2025-03-15 16:56:01,128 P1419394 INFO Params: {
     "alpha": "0.7",
     "batch_norm": "True",
     "batch_size": "4096",
@@ -52,11 +52,11 @@
     "valid_data": "dataset/Criteo_x4_10_h5/valid.csv",
     "verbose": "1"
 }
-2025-03-15 00:58:59,368 P197 INFO Set up feature processor...
-2025-03-15 00:58:59,368 P197 WARNING Skip rebuilding dataset/Criteo_x4_10_h5/feature_map.json. Please delete it manually if rebuilding is required.
-2025-03-15 00:58:59,368 P197 INFO Load feature_map from json: dataset/Criteo_x4_10_h5/feature_map.json
-2025-03-15 00:58:59,369 P197 INFO Set column index...
-2025-03-15 00:58:59,369 P197 INFO Feature specs: {
+2025-03-15 16:56:01,128 P1419394 INFO Set up feature processor...
+2025-03-15 16:56:01,129 P1419394 WARNING Skip rebuilding dataset/Criteo_x4_10_h5/feature_map.json. Please delete it manually if rebuilding is required.
+2025-03-15 16:56:01,129 P1419394 INFO Load feature_map from json: dataset/Criteo_x4_10_h5/feature_map.json
+2025-03-15 16:56:01,129 P1419394 INFO Set column index...
+2025-03-15 16:56:01,129 P1419394 INFO Feature specs: {
     "C1": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 1446}",
     "C10": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 39530}",
     "C11": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 5131}",
@@ -97,6 +97,105 @@
     "I8": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 69}",
     "I9": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 92}"
 }
-2025-03-15 00:59:02,443 P197 INFO Total number of parameters: 666516.
-2025-03-15 00:59:02,444 P197 INFO Total number of parameters: 15238468.
-2025-03-15 00:59:02,444 P197 INFO Loading datasets...
+2025-03-15 16:56:02,274 P1419394 INFO Total number of parameters: 666516.
+2025-03-15 16:56:02,275 P1419394 INFO Total number of parameters: 15238468.
+2025-03-15 16:56:02,275 P1419394 INFO Loading datasets...
+2025-03-15 16:57:51,854 P1419394 INFO Train samples: total/36672493, blocks/1
+2025-03-15 16:57:54,454 P1419394 INFO Validation samples: total/4584062, blocks/1
+2025-03-15 16:57:54,454 P1419394 INFO Loading train and validation data done.
+2025-03-15 16:57:55,165 P1419394 INFO FLOPs: 8126595072
+2025-03-15 16:57:55,165 P1419394 INFO Start training: 8954 batches/epoch
+2025-03-15 16:57:55,165 P1419394 INFO ************ Epoch=1 start ************
+2025-03-15 17:04:58,863 P1419394 INFO Train loss: 0.913893
+2025-03-15 17:04:58,863 P1419394 INFO Evaluation @epoch 1 - batch 8954: 
+2025-03-15 17:05:19,601 P1419394 INFO [Metrics] AUC: 0.804941 - logloss: 0.446746
+2025-03-15 17:05:19,602 P1419394 INFO Save best model: monitor(max)=0.804941
+2025-03-15 17:05:20,042 P1419394 INFO ************ Epoch=1 end ************
+2025-03-15 17:12:23,361 P1419394 INFO Train loss: 0.902010
+2025-03-15 17:12:23,361 P1419394 INFO Evaluation @epoch 2 - batch 8954: 
+2025-03-15 17:12:44,173 P1419394 INFO [Metrics] AUC: 0.807295 - logloss: 0.444028
+2025-03-15 17:12:44,177 P1419394 INFO Save best model: monitor(max)=0.807295
+2025-03-15 17:12:44,678 P1419394 INFO ************ Epoch=2 end ************
+2025-03-15 17:19:51,506 P1419394 INFO Train loss: 0.898381
+2025-03-15 17:19:51,506 P1419394 INFO Evaluation @epoch 3 - batch 8954: 
+2025-03-15 17:20:15,066 P1419394 INFO [Metrics] AUC: 0.808537 - logloss: 0.442912
+2025-03-15 17:20:15,070 P1419394 INFO Save best model: monitor(max)=0.808537
+2025-03-15 17:20:15,539 P1419394 INFO ************ Epoch=3 end ************
+2025-03-15 17:27:27,739 P1419394 INFO Train loss: 0.896498
+2025-03-15 17:27:27,739 P1419394 INFO Evaluation @epoch 4 - batch 8954: 
+2025-03-15 17:27:48,877 P1419394 INFO [Metrics] AUC: 0.808994 - logloss: 0.442677
+2025-03-15 17:27:48,881 P1419394 INFO Save best model: monitor(max)=0.808994
+2025-03-15 17:27:49,407 P1419394 INFO ************ Epoch=4 end ************
+2025-03-15 17:34:56,165 P1419394 INFO Train loss: 0.895175
+2025-03-15 17:34:56,165 P1419394 INFO Evaluation @epoch 5 - batch 8954: 
+2025-03-15 17:35:19,070 P1419394 INFO [Metrics] AUC: 0.809658 - logloss: 0.442141
+2025-03-15 17:35:19,073 P1419394 INFO Save best model: monitor(max)=0.809658
+2025-03-15 17:35:19,611 P1419394 INFO ************ Epoch=5 end ************
+2025-03-15 17:42:29,357 P1419394 INFO Train loss: 0.894204
+2025-03-15 17:42:29,357 P1419394 INFO Evaluation @epoch 6 - batch 8954: 
+2025-03-15 17:42:50,906 P1419394 INFO [Metrics] AUC: 0.809787 - logloss: 0.441776
+2025-03-15 17:42:50,911 P1419394 INFO Save best model: monitor(max)=0.809787
+2025-03-15 17:42:51,470 P1419394 INFO ************ Epoch=6 end ************
+2025-03-15 17:50:00,957 P1419394 INFO Train loss: 0.893380
+2025-03-15 17:50:00,958 P1419394 INFO Evaluation @epoch 7 - batch 8954: 
+2025-03-15 17:50:22,517 P1419394 INFO [Metrics] AUC: 0.809990 - logloss: 0.441611
+2025-03-15 17:50:22,520 P1419394 INFO Save best model: monitor(max)=0.809990
+2025-03-15 17:50:22,998 P1419394 INFO ************ Epoch=7 end ************
+2025-03-15 17:58:53,981 P1419394 INFO Train loss: 0.892723
+2025-03-15 17:58:53,981 P1419394 INFO Evaluation @epoch 8 - batch 8954: 
+2025-03-15 17:59:22,826 P1419394 INFO [Metrics] AUC: 0.810119 - logloss: 0.441649
+2025-03-15 17:59:22,829 P1419394 INFO Save best model: monitor(max)=0.810119
+2025-03-15 17:59:23,294 P1419394 INFO ************ Epoch=8 end ************
+2025-03-15 18:07:55,164 P1419394 INFO Train loss: 0.892130
+2025-03-15 18:07:55,165 P1419394 INFO Evaluation @epoch 9 - batch 8954: 
+2025-03-15 18:08:24,284 P1419394 INFO [Metrics] AUC: 0.810148 - logloss: 0.441428
+2025-03-15 18:08:24,288 P1419394 INFO Save best model: monitor(max)=0.810148
+2025-03-15 18:08:24,795 P1419394 INFO ************ Epoch=9 end ************
+2025-03-15 18:17:05,689 P1419394 INFO Train loss: 0.891603
+2025-03-15 18:17:05,689 P1419394 INFO Evaluation @epoch 10 - batch 8954: 
+2025-03-15 18:17:34,316 P1419394 INFO [Metrics] AUC: 0.810255 - logloss: 0.441297
+2025-03-15 18:17:34,320 P1419394 INFO Save best model: monitor(max)=0.810255
+2025-03-15 18:17:35,023 P1419394 INFO ************ Epoch=10 end ************
+2025-03-15 18:26:06,978 P1419394 INFO Train loss: 0.891119
+2025-03-15 18:26:06,978 P1419394 INFO Evaluation @epoch 11 - batch 8954: 
+2025-03-15 18:26:36,144 P1419394 INFO [Metrics] AUC: 0.810326 - logloss: 0.441383
+2025-03-15 18:26:36,155 P1419394 INFO Save best model: monitor(max)=0.810326
+2025-03-15 18:26:36,661 P1419394 INFO ************ Epoch=11 end ************
+2025-03-15 18:35:03,429 P1419394 INFO Train loss: 0.890664
+2025-03-15 18:35:03,429 P1419394 INFO Evaluation @epoch 12 - batch 8954: 
+2025-03-15 18:35:32,674 P1419394 INFO [Metrics] AUC: 0.810404 - logloss: 0.441264
+2025-03-15 18:35:32,677 P1419394 INFO Save best model: monitor(max)=0.810404
+2025-03-15 18:35:33,278 P1419394 INFO ************ Epoch=12 end ************
+2025-03-15 18:43:55,592 P1419394 INFO Train loss: 0.890251
+2025-03-15 18:43:55,592 P1419394 INFO Evaluation @epoch 13 - batch 8954: 
+2025-03-15 18:44:24,646 P1419394 INFO [Metrics] AUC: 0.810310 - logloss: 0.441323
+2025-03-15 18:44:24,649 P1419394 INFO Monitor(max)=0.810310 STOP!
+2025-03-15 18:44:24,649 P1419394 INFO Reduce learning rate on plateau: 0.000100
+2025-03-15 18:44:25,045 P1419394 INFO ************ Epoch=13 end ************
+2025-03-15 18:52:42,982 P1419394 INFO Train loss: 0.872166
+2025-03-15 18:52:42,982 P1419394 INFO Evaluation @epoch 14 - batch 8954: 
+2025-03-15 18:53:12,002 P1419394 INFO [Metrics] AUC: 0.812757 - logloss: 0.439264
+2025-03-15 18:53:12,005 P1419394 INFO Save best model: monitor(max)=0.812757
+2025-03-15 18:53:12,512 P1419394 INFO ************ Epoch=14 end ************
+2025-03-15 19:01:28,754 P1419394 INFO Train loss: 0.864848
+2025-03-15 19:01:28,754 P1419394 INFO Evaluation @epoch 15 - batch 8954: 
+2025-03-15 19:01:57,760 P1419394 INFO [Metrics] AUC: 0.812725 - logloss: 0.439422
+2025-03-15 19:01:57,763 P1419394 INFO Monitor(max)=0.812725 STOP!
+2025-03-15 19:01:57,763 P1419394 INFO Reduce learning rate on plateau: 0.000010
+2025-03-15 19:01:58,145 P1419394 INFO ************ Epoch=15 end ************
+2025-03-15 19:10:15,679 P1419394 INFO Train loss: 0.857757
+2025-03-15 19:10:15,679 P1419394 INFO Evaluation @epoch 16 - batch 8954: 
+2025-03-15 19:10:43,994 P1419394 INFO [Metrics] AUC: 0.812243 - logloss: 0.440233
+2025-03-15 19:10:43,998 P1419394 INFO Monitor(max)=0.812243 STOP!
+2025-03-15 19:10:43,998 P1419394 INFO Reduce learning rate on plateau: 0.000001
+2025-03-15 19:10:43,998 P1419394 INFO ********* Epoch=16 early stop *********
+2025-03-15 19:10:44,350 P1419394 INFO Training finished.
+2025-03-15 19:10:44,350 P1419394 INFO Load best model: /home/dxlab/jupyter/jinhee/scv/checkpoints/Criteo_x4_10_h5/SCV_light_loca_adadis_Criteo_001_fecfc590.model
+2025-03-15 19:10:44,400 P1419394 INFO ****** Validation evaluation ******
+2025-03-15 19:11:15,494 P1419394 INFO [Metrics] logloss: 0.439264 - AUC: 0.812757
+2025-03-15 19:11:15,961 P1419394 INFO ******** Test evaluation ********
+2025-03-15 19:11:15,961 P1419394 INFO Loading datasets...
+2025-03-15 19:11:18,174 P1419394 INFO Test samples: total/4584062, blocks/1
+2025-03-15 19:11:18,174 P1419394 INFO Loading test data done.
+2025-03-15 19:11:50,331 P1419394 INFO [Metrics] logloss: 0.438936 - AUC: 0.813157
+2025-03-15 19:11:50,334 P1419394 INFO ******** Remove Model Weights ********

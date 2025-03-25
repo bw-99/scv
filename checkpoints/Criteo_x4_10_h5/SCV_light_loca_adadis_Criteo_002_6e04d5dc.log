@@ -1,5 +1,5 @@
-2025-03-15 05:03:47,028 P142 INFO FuxiCTR version: 2.3.7
-2025-03-15 05:03:47,028 P142 INFO Params: {
+2025-03-15 14:24:09,962 P1333336 INFO FuxiCTR version: 2.3.3
+2025-03-15 14:24:09,962 P1333336 INFO Params: {
     "alpha": "0.7",
     "batch_norm": "True",
     "batch_size": "4096",
@@ -52,11 +52,11 @@
     "valid_data": "dataset/Criteo_x4_10_h5/valid.csv",
     "verbose": "1"
 }
-2025-03-15 05:03:47,028 P142 INFO Set up feature processor...
-2025-03-15 05:03:47,029 P142 WARNING Skip rebuilding dataset/Criteo_x4_10_h5/feature_map.json. Please delete it manually if rebuilding is required.
-2025-03-15 05:03:47,029 P142 INFO Load feature_map from json: dataset/Criteo_x4_10_h5/feature_map.json
-2025-03-15 05:03:47,029 P142 INFO Set column index...
-2025-03-15 05:03:47,029 P142 INFO Feature specs: {
+2025-03-15 14:24:09,963 P1333336 INFO Set up feature processor...
+2025-03-15 14:24:09,963 P1333336 WARNING Skip rebuilding dataset/Criteo_x4_10_h5/feature_map.json. Please delete it manually if rebuilding is required.
+2025-03-15 14:24:09,963 P1333336 INFO Load feature_map from json: dataset/Criteo_x4_10_h5/feature_map.json
+2025-03-15 14:24:09,963 P1333336 INFO Set column index...
+2025-03-15 14:24:09,963 P1333336 INFO Feature specs: {
     "C1": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 1446}",
     "C10": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 39530}",
     "C11": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 5131}",
@@ -97,11 +97,90 @@
     "I8": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 69}",
     "I9": "{'source': '', 'type': 'categorical', 'padding_idx': 0, 'vocab_size': 92}"
 }
-2025-03-15 05:03:49,468 P142 INFO Total number of parameters: 666516.
-2025-03-15 05:03:49,469 P142 INFO Total number of parameters: 15238468.
-2025-03-15 05:03:49,469 P142 INFO Loading datasets...
-2025-03-15 05:04:06,949 P142 INFO Train samples: total/36672493, blocks/1
-2025-03-15 05:04:08,900 P142 INFO Validation samples: total/4584062, blocks/1
-2025-03-15 05:04:08,900 P142 INFO Loading train and validation data done.
-2025-03-15 05:04:08,900 P142 INFO Start training: 8954 batches/epoch
-2025-03-15 05:04:08,900 P142 INFO ************ Epoch=1 start ************
+2025-03-15 14:24:11,185 P1333336 INFO Total number of parameters: 666516.
+2025-03-15 14:24:11,186 P1333336 INFO Total number of parameters: 15238468.
+2025-03-15 14:24:11,186 P1333336 INFO Loading datasets...
+2025-03-15 14:25:48,907 P1333336 INFO Train samples: total/36672493, blocks/1
+2025-03-15 14:25:51,665 P1333336 INFO Validation samples: total/4584062, blocks/1
+2025-03-15 14:25:51,666 P1333336 INFO Loading train and validation data done.
+2025-03-15 14:25:52,348 P1333336 INFO FLOPs: 8126595072
+2025-03-15 14:25:52,348 P1333336 INFO Start training: 8954 batches/epoch
+2025-03-15 14:25:52,348 P1333336 INFO ************ Epoch=1 start ************
+2025-03-15 14:32:57,698 P1333336 INFO Train loss: 0.914311
+2025-03-15 14:32:57,698 P1333336 INFO Evaluation @epoch 1 - batch 8954: 
+2025-03-15 14:33:18,988 P1333336 INFO [Metrics] AUC: 0.804861 - logloss: 0.446527
+2025-03-15 14:33:18,989 P1333336 INFO Save best model: monitor(max)=0.804861
+2025-03-15 14:33:19,422 P1333336 INFO ************ Epoch=1 end ************
+2025-03-15 14:40:23,279 P1333336 INFO Train loss: 0.902838
+2025-03-15 14:40:23,279 P1333336 INFO Evaluation @epoch 2 - batch 8954: 
+2025-03-15 14:40:44,160 P1333336 INFO [Metrics] AUC: 0.807000 - logloss: 0.444261
+2025-03-15 14:40:44,162 P1333336 INFO Save best model: monitor(max)=0.807000
+2025-03-15 14:40:44,606 P1333336 INFO ************ Epoch=2 end ************
+2025-03-15 14:47:49,870 P1333336 INFO Train loss: 0.899179
+2025-03-15 14:47:49,871 P1333336 INFO Evaluation @epoch 3 - batch 8954: 
+2025-03-15 14:48:10,042 P1333336 INFO [Metrics] AUC: 0.808446 - logloss: 0.443015
+2025-03-15 14:48:10,045 P1333336 INFO Save best model: monitor(max)=0.808446
+2025-03-15 14:48:10,516 P1333336 INFO ************ Epoch=3 end ************
+2025-03-15 14:55:17,243 P1333336 INFO Train loss: 0.897163
+2025-03-15 14:55:17,244 P1333336 INFO Evaluation @epoch 4 - batch 8954: 
+2025-03-15 14:55:36,856 P1333336 INFO [Metrics] AUC: 0.808886 - logloss: 0.442832
+2025-03-15 14:55:36,859 P1333336 INFO Save best model: monitor(max)=0.808886
+2025-03-15 14:55:37,321 P1333336 INFO ************ Epoch=4 end ************
+2025-03-15 15:02:41,826 P1333336 INFO Train loss: 0.895838
+2025-03-15 15:02:41,826 P1333336 INFO Evaluation @epoch 5 - batch 8954: 
+2025-03-15 15:03:01,429 P1333336 INFO [Metrics] AUC: 0.809363 - logloss: 0.442379
+2025-03-15 15:03:01,432 P1333336 INFO Save best model: monitor(max)=0.809363
+2025-03-15 15:03:01,851 P1333336 INFO ************ Epoch=5 end ************
+2025-03-15 15:10:04,934 P1333336 INFO Train loss: 0.894857
+2025-03-15 15:10:04,934 P1333336 INFO Evaluation @epoch 6 - batch 8954: 
+2025-03-15 15:10:25,485 P1333336 INFO [Metrics] AUC: 0.809635 - logloss: 0.441915
+2025-03-15 15:10:25,490 P1333336 INFO Save best model: monitor(max)=0.809635
+2025-03-15 15:10:25,974 P1333336 INFO ************ Epoch=6 end ************
+2025-03-15 15:17:25,814 P1333336 INFO Train loss: 0.894068
+2025-03-15 15:17:25,814 P1333336 INFO Evaluation @epoch 7 - batch 8954: 
+2025-03-15 15:17:46,541 P1333336 INFO [Metrics] AUC: 0.809745 - logloss: 0.441836
+2025-03-15 15:17:46,545 P1333336 INFO Save best model: monitor(max)=0.809745
+2025-03-15 15:17:47,065 P1333336 INFO ************ Epoch=7 end ************
+2025-03-15 15:24:51,213 P1333336 INFO Train loss: 0.893393
+2025-03-15 15:24:51,213 P1333336 INFO Evaluation @epoch 8 - batch 8954: 
+2025-03-15 15:25:11,961 P1333336 INFO [Metrics] AUC: 0.809971 - logloss: 0.441685
+2025-03-15 15:25:11,965 P1333336 INFO Save best model: monitor(max)=0.809971
+2025-03-15 15:25:12,467 P1333336 INFO ************ Epoch=8 end ************
+2025-03-15 15:32:17,176 P1333336 INFO Train loss: 0.892807
+2025-03-15 15:32:17,176 P1333336 INFO Evaluation @epoch 9 - batch 8954: 
+2025-03-15 15:32:37,831 P1333336 INFO [Metrics] AUC: 0.809857 - logloss: 0.441660
+2025-03-15 15:32:37,838 P1333336 INFO Monitor(max)=0.809857 STOP!
+2025-03-15 15:32:37,838 P1333336 INFO Reduce learning rate on plateau: 0.000100
+2025-03-15 15:32:38,157 P1333336 INFO ************ Epoch=9 end ************
+2025-03-15 15:39:43,771 P1333336 INFO Train loss: 0.875598
+2025-03-15 15:39:43,772 P1333336 INFO Evaluation @epoch 10 - batch 8954: 
+2025-03-15 15:40:05,142 P1333336 INFO [Metrics] AUC: 0.812934 - logloss: 0.438865
+2025-03-15 15:40:05,145 P1333336 INFO Save best model: monitor(max)=0.812934
+2025-03-15 15:40:05,590 P1333336 INFO ************ Epoch=10 end ************
+2025-03-15 15:47:23,503 P1333336 INFO Train loss: 0.868695
+2025-03-15 15:47:23,503 P1333336 INFO Evaluation @epoch 11 - batch 8954: 
+2025-03-15 15:47:44,716 P1333336 INFO [Metrics] AUC: 0.813262 - logloss: 0.438725
+2025-03-15 15:47:44,720 P1333336 INFO Save best model: monitor(max)=0.813262
+2025-03-15 15:47:45,229 P1333336 INFO ************ Epoch=11 end ************
+2025-03-15 15:54:55,955 P1333336 INFO Train loss: 0.865205
+2025-03-15 15:54:55,956 P1333336 INFO Evaluation @epoch 12 - batch 8954: 
+2025-03-15 15:55:17,677 P1333336 INFO [Metrics] AUC: 0.813113 - logloss: 0.438937
+2025-03-15 15:55:17,683 P1333336 INFO Monitor(max)=0.813113 STOP!
+2025-03-15 15:55:17,683 P1333336 INFO Reduce learning rate on plateau: 0.000010
+2025-03-15 15:55:18,066 P1333336 INFO ************ Epoch=12 end ************
+2025-03-15 16:02:45,000 P1333336 INFO Train loss: 0.858198
+2025-03-15 16:02:45,001 P1333336 INFO Evaluation @epoch 13 - batch 8954: 
+2025-03-15 16:03:09,163 P1333336 INFO [Metrics] AUC: 0.812626 - logloss: 0.439724
+2025-03-15 16:03:09,166 P1333336 INFO Monitor(max)=0.812626 STOP!
+2025-03-15 16:03:09,166 P1333336 INFO Reduce learning rate on plateau: 0.000001
+2025-03-15 16:03:09,166 P1333336 INFO ********* Epoch=13 early stop *********
+2025-03-15 16:03:09,504 P1333336 INFO Training finished.
+2025-03-15 16:03:09,504 P1333336 INFO Load best model: /home/dxlab/jupyter/jinhee/scv/checkpoints/Criteo_x4_10_h5/SCV_light_loca_adadis_Criteo_002_6e04d5dc.model
+2025-03-15 16:03:09,548 P1333336 INFO ****** Validation evaluation ******
+2025-03-15 16:03:29,841 P1333336 INFO [Metrics] logloss: 0.438725 - AUC: 0.813262
+2025-03-15 16:03:30,292 P1333336 INFO ******** Test evaluation ********
+2025-03-15 16:03:30,292 P1333336 INFO Loading datasets...
+2025-03-15 16:03:32,568 P1333336 INFO Test samples: total/4584062, blocks/1
+2025-03-15 16:03:32,568 P1333336 INFO Loading test data done.
+2025-03-15 16:03:55,174 P1333336 INFO [Metrics] logloss: 0.438235 - AUC: 0.813842
+2025-03-15 16:03:55,175 P1333336 INFO ******** Remove Model Weights ********

@@ -2489,7 +2489,7 @@ SCV_light_loca_Criteo:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0
+    net_dropout: 0.1
     use_bilinear_fusion: true
     net_regularizer: 0
     num_tower: 4
@@ -2521,18 +2521,19 @@ SCV_light_loca_adadis_Criteo:
     feature_specs: null
     group_id: null
     learning_rate: 1.e-3
+    mask_strategy: product
     loss: binary_crossentropy
     metrics: [logloss, AUC]
     model: SCV_light_loca_adadis
-    num_hops: 2
+    num_hops: 1
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0
-    scv_dropout: 0.1
+    net_dropout: 0.1
+    scv_dropout: 0
     use_bilinear_fusion: true
     net_regularizer: 0
-    num_tower: 4
+    num_tower: 6
     num_workers: 16
     optimizer: adam
     pickle_feature_encoder: true
@@ -2542,10 +2543,10 @@ SCV_light_loca_adadis_Criteo:
     task: binary_classification
     use_features: null
     verbose: 1
-    num_mask: 3
-    alpha: 0.9
+    num_mask: 4
+    alpha: 0.7
     pooling_method: attn
-    distill_loss: with_bilinear
+    distill_loss: true
     subs_origin_loss: false
 
 

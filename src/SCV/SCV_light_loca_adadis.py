@@ -5,8 +5,6 @@ from torch.nn import Parameter as Param
 from fuxictr.pytorch.models import BaseModel
 from fuxictr.pytorch.layers import FeatureEmbedding, MLP_Block
 
-# GNNv3_v19
-
 class CrossNetwork(nn.Module):
     def __init__(self,
                  num_fields,
@@ -17,7 +15,9 @@ class CrossNetwork(nn.Module):
                  pooling_method="attn",
                  net_dropout=0.1,
                  num_mask=3,
-                 num_hops=1):
+                 num_hops=1,
+                 mask_strategy="product"
+                ):
         super(CrossNetwork, self).__init__()
         self.num_tower = num_tower
         self.layer_norm_flag = layer_norm
@@ -27,6 +27,7 @@ class CrossNetwork(nn.Module):
         self.pooling_method=pooling_method
         self.num_hops = num_hops
         self.num_mask = num_mask
+        self.mask_strategy = mask_strategy
 
         self.gnn_transform_weight = Param(torch.Tensor(1, num_tower, num_hops, 2*embedding_dim, embedding_dim))
         self.gnn_transform_bias = Param(torch.Tensor(num_tower, num_hops, num_fields, embedding_dim))
@@ -57,17 +58,28 @@ class CrossNetwork(nn.Module):
             nn.Softmax(dim=1)
         )
 
+        if self.mask_strategy == "weighted_sum":
+            self.mask_weight = nn.Parameter(torch.rand(self.num_tower, self.num_mask, 1, 1))
+        elif self.mask_strategy == "hybrid":
+            self.mask_fc_layer = nn.Linear(self.num_fields * self.embedding_dim, self.num_mask * self.num_tower)
+
 
     def forward(self, _feat):
-        """
-        x: (batch_size, num_fields, embedding_dim)
-        Output: (batch_size, num_tower * embedding_dim)
-        """
-        # Expand x for multiple towers => (B, T, N, D)
         x = _feat.unsqueeze(1).repeat(1, self.num_tower, 1, 1)
+        if self.mask_strategy == "product":
+            adj_matrix_hop = torch.prod(self.masker, dim=1) # (num_tower, num_fields, num_fields)
+        elif self.mask_strategy == "mean":
+            adj_matrix_hop = torch.mean(self.masker, dim=1) # (num_tower, num_fields, num_fields)
+        elif self.mask_strategy == "weighted_sum":
+            adj_matrix_hop = torch.sum(self.masker * self.mask_weight, dim=1) # (num_tower, num_fields, num_fields)
+        elif self.mask_strategy == "inner":
+            adj_matrix_hop = torch.einsum('btnd,btkd->bnk',x, x).unsqueeze(dim=1).repeat(1, self.num_tower, 1, 1)
+        elif self.mask_strategy == "hybrid":
+            # B,T,M
+            weight = self.mask_fc_layer(_feat.view(_feat.shape[0], -1)).view(-1, self.num_tower, self.num_mask)
+            adj_matrix_hop = torch.einsum('btm,tmnk->btnk',weight, self.masker)
 
-        # shape => (num_tower, num_hops, num_mask, N, N)
-        adj_matrix_hop = torch.prod(self.masker, dim=1) # (num_tower, num_fields, num_fields)
+
         adj_matrix_hop = F.relu(adj_matrix_hop)
         mask = (adj_matrix_hop != 0).float()
         adj_matrix_hop = self.layer_norm(adj_matrix_hop.transpose(-2, -1)).transpose(-2, -1)
@@ -97,9 +109,6 @@ class CrossNetwork(nn.Module):
         else:
             x = x.mean(dim=2)
         
-        # x: (B, T, D)
-        # tower_weight: (B, T, 1)
-        # => x: (B, D)
         tower_weight = self.tower_moe_gate(_feat.view(_feat.shape[0], -1)).unsqueeze(dim=-1)
         x = torch.sum(x * tower_weight, dim=1)
 
@@ -119,6 +128,7 @@ class SCV_light_loca_adadis(BaseModel):
                  num_hops=1,
                  num_mask=3,
                  pooling_method="attn",
+                 mask_strategy="product",
                  subs_origin_loss=False,
                  use_bilinear_fusion=False,
                  distill_loss=True,
@@ -143,6 +153,7 @@ class SCV_light_loca_adadis(BaseModel):
         self.num_hops = num_hops
         self.use_bilinear_fusion = use_bilinear_fusion
         self.num_mask = num_mask
+        self.mask_strategy = mask_strategy
         self.distill_loss = distill_loss
 
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
@@ -167,9 +178,10 @@ class SCV_light_loca_adadis(BaseModel):
             pooling_method=pooling_method,
             num_hops=num_hops,
             num_mask=num_mask,
+            mask_strategy=mask_strategy
         )
         self.subs_origin_loss = subs_origin_loss
-
+        
         self.parallel_dnn = MLP_Block(input_dim=input_dim,
                                       output_dim=None,  # output hidden layer
                                       hidden_units=parallel_dnn_hidden_units,
@@ -181,22 +193,17 @@ class SCV_light_loca_adadis(BaseModel):
         
         if self.use_bilinear_fusion:
             concat_dim = embedding_dim
-            print("concat_dim ", concat_dim)
-            self.bias = nn.Parameter(torch.tensor(0.0))
-            self.w1 = nn.Parameter(torch.randn(concat_dim, 1))  # Shape: (d1, 1)
-            self.w2 = nn.Parameter(torch.randn(parallel_dnn_hidden_units[-1], 1))  # Shape: (d2, 1)
-            self.W3 = nn.Parameter(torch.randn(concat_dim, parallel_dnn_hidden_units[-1]))  # Shape: (d1, d2)
-            nn.init.xavier_uniform_(self.w1)
-            nn.init.xavier_uniform_(self.w2)
-            nn.init.xavier_uniform_(self.W3)
+            self.W3 = nn.Parameter(torch.randn(concat_dim, parallel_dnn_hidden_units[-1]))
         else:
             concat_dim = embedding_dim + parallel_dnn_hidden_units[-1]
-            print("concat_dim ", concat_dim)
-            self.scorer = nn.Sequential(
-                nn.Linear(concat_dim, concat_dim),
-                nn.ReLU(),
-                nn.Linear(concat_dim, 1)
-            )
+            self.W3 = nn.Parameter(torch.randn(concat_dim, 1))
+        print("concat_dim ", concat_dim)
+        self.bias = nn.Parameter(torch.tensor(0.0))
+        self.w1 = nn.Parameter(torch.randn(embedding_dim, 1))  # Shape: (d1, 1)
+        self.w2 = nn.Parameter(torch.randn(parallel_dnn_hidden_units[-1], 1))  # Shape: (d2, 1)
+        nn.init.xavier_uniform_(self.w1)
+        nn.init.xavier_uniform_(self.w2)
+        nn.init.xavier_uniform_(self.W3)
 
         self.compile(kwargs["optimizer"], kwargs["loss"], learning_rate)
         self.reset_parameters()
@@ -215,7 +222,10 @@ class SCV_light_loca_adadis(BaseModel):
 
         linear_term1 = graph_embeddings @ self.w1  # (B, output_dim)
         linear_term2 = mlp_embeddings @ self.w2  # (B, output_dim)
-        bilinear_term = torch.einsum('bi,ij,bj->b', graph_embeddings, self.W3, mlp_embeddings).unsqueeze(1)  # (B, 1)
+        if self.use_bilinear_fusion:
+            bilinear_term = torch.einsum('bi,ij,bj->b', graph_embeddings, self.W3, mlp_embeddings).unsqueeze(1)  # (B, 1)
+        else:
+            bilinear_term = torch.cat([graph_embeddings, mlp_embeddings], dim=-1) @ self.W3
         y_pred = self.bias + linear_term1 + linear_term2 + bilinear_term
 
         y_pred = self.output_activation(y_pred)

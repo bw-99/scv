@@ -3610,6 +3610,8 @@ FiGNN_KKBox_x1:
     optimizer: adam
     use_gru: true
     use_residual: true
+    trash1: 0
+    trash2: 0
 
 GraphFM_KKBox_x1:
     model: GraphFM

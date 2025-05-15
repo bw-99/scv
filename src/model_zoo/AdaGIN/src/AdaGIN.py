@@ -14,7 +14,7 @@ class AdaGIN(BaseModel):
                  embedding_dim=10,
                  fi_hidden_units=[64, 64, 64],
                  w_hidden_units=[64, 64, 64],
-                 hidden_activations="leaky_relu",
+                 hidden_activations="LeakyReLU",
                  warm_dim=10,
                  cold_dim=10,
                  warm_tau=1.0,
@@ -58,7 +58,7 @@ class AdaGIN(BaseModel):
                             output_dim=1,
                             hidden_units=w_hidden_units,
                             hidden_activations=hidden_activations,
-                            output_activation='leaky_relu',
+                            output_activation='LeakyReLU',
                             dropout_rates=net_dropout,
                             batch_norm=batch_norm)
         self.mlp2 = MLP_Block(input_dim=self.ip_dim,
@@ -72,7 +72,7 @@ class AdaGIN(BaseModel):
                             output_dim=1,
                             hidden_units=w_hidden_units,
                             hidden_activations=hidden_activations,
-                            output_activation='leaky_relu',
+                            output_activation='LeakyReLU',
                             dropout_rates=net_dropout,
                             batch_norm=batch_norm)
         self.mlp3 = MLP_Block(input_dim=self.flatten_dim,
@@ -86,7 +86,7 @@ class AdaGIN(BaseModel):
                             output_dim=1,
                             hidden_units=w_hidden_units,
                             hidden_activations=hidden_activations,
-                            output_activation='leaky_relu',
+                            output_activation='LeakyReLU',
                             dropout_rates=net_dropout,
                             batch_norm=batch_norm)
         self.AutoGraph = AutoGraph_Layer(num_fields=self.num_fields,
@@ -182,7 +182,7 @@ class AutoGraph_Layer(nn.Module):
         self.cold_tau = cold_tau
         self.all_node_index = nn.Parameter(
             torch.triu_indices(self.num_fields, self.num_fields, offset=-(self.num_fields - 1)), requires_grad=False)
-        self.leaky_relu = nn.LeakyReLU(negative_slope=0.01)
+        self.LeakyReLU = nn.LeakyReLU(negative_slope=0.01)
         self.warm_W_transform = nn.Sequential(nn.Linear(self.embedding_dim, self.warm_dim),
                                               nn.ReLU(),
                                               nn.Linear(self.warm_dim, 1, bias=False))
@@ -203,7 +203,7 @@ class AutoGraph_Layer(nn.Module):
         emb1 = torch.index_select(feature_emb, 1, self.all_node_index[0])
         emb2 = torch.index_select(feature_emb, 1, self.all_node_index[1])
         concat_emb = torch.cat((emb1, emb2), dim=-1)
-        alpha = self.leaky_relu(self.cold_W_transform(concat_emb))
+        alpha = self.LeakyReLU(self.cold_W_transform(concat_emb))
         alpha = alpha.view(-1, self.num_fields, self.num_fields)
         cold_matrix = F.gumbel_softmax(alpha, tau=cold_tau, dim=-1)
         mask = cold_matrix.gt(0)
@@ -234,7 +234,7 @@ class AutoGraph_Layer(nn.Module):
             new_feature_emb = torch.matmul(self.W_GraphSage, new_feature_emb.unsqueeze(-1)).squeeze(-1)
             warm_matrix = self.build_warm_matrix(new_feature_emb, self.warm_tau)
             new_feature_emb = new_feature_emb * warm_matrix
-            new_feature_emb = self.leaky_relu(new_feature_emb)
+            new_feature_emb = self.LeakyReLU(new_feature_emb)
             if not self.only_use_last_layer:
                 h_list.append(h)
             else:
@@ -257,7 +257,7 @@ class AutoGraph_Layer(nn.Module):
             new_feature_emb = torch.matmul(self.W_GraphSage, new_feature_emb.unsqueeze(-1)).squeeze(-1)
             warm_matrix = self.build_warm_matrix(new_feature_emb, self.warm_tau)
             new_feature_emb = new_feature_emb * warm_matrix
-            new_feature_emb = self.leaky_relu(new_feature_emb)
+            new_feature_emb = self.LeakyReLU(new_feature_emb)
             if not self.only_use_last_layer:
                 h_list.append(h)
             else:

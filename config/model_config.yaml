@@ -3606,7 +3606,7 @@ FiGNN_KKBox_x1:
     monitor_mode: 'max'
     epochs: 100
 
-    gnn_layers: 6
+    gnn_layers: 3
     optimizer: adam
     use_gru: true
     use_residual: true

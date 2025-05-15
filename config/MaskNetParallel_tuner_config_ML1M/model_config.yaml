@@ -1,0 +1,1260 @@
+MaskNet_Movielens_x1_001_c7d5939b:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_002_40707b7c:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_003_8143a8b3:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_004_2baea96b:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_005_ff7b11df:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_006_7861bb84:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_007_0509dcdf:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_008_ff9c5de4:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_009_f040d6fc:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_010_e2bb3275:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_011_23b22893:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_012_41ecc0d9:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_013_f8ec7c6d:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_014_be494c47:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_015_56d5d4ec:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_016_d01f0d3c:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_017_581e4a38:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_018_7e792ae7:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_019_2baea96b:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_020_ff7b11df:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_021_7861bb84:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_022_da911977:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_023_55228f47:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_024_6f67d0a1:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_025_e2bb3275:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_026_23b22893:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_027_41ecc0d9:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_028_24e31e4c:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_029_4a85e552:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_030_0c7d5d5e:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_031_d01f0d3c:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_032_581e4a38:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_033_7e792ae7:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_034_d33c9ee7:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_035_a4799238:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_Movielens_x1_036_81cb2970:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1

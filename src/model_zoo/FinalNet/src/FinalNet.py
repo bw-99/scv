@@ -21,11 +21,12 @@ import numpy as np
 from fuxictr.pytorch.models import BaseModel
 from fuxictr.pytorch.layers import FeatureEmbedding, MLP_Block
 from fuxictr.pytorch.torch_utils import get_activation
-
+import os
 
 class FinalNet(BaseModel):
     def __init__(self, 
                  feature_map, 
+                 mask_rate=0,
                  model_id="FinalNet",
                  gpu=-1,
                  learning_rate=1e-3,
@@ -42,7 +43,7 @@ class FinalNet(BaseModel):
                  residual_type="concat",
                  embedding_regularizer=None,
                  net_regularizer=None,
-                 distill_calib=False,
+                 distill_calib="fuck",
                  **kwargs):
         super(FinalNet, self).__init__(feature_map, 
                                        model_id=model_id, 
@@ -59,12 +60,26 @@ class FinalNet(BaseModel):
             gate_out_dim = embedding_dim * num_fields * 2
         self.block_type = block_type
         print(block1_hidden_units)
+
+        self.mask_rate = mask_rate
+        self.binary_mat1 = None
+        # if os.path.exists(f"./{self.experiment_id}_weight.pt"):
+        #     block1_mask = torch.load(f"./{self.experiment_id}_weight.pt")
+        #     flat = block1_mask.view(-1)
+        #     _, indices = torch.topk(flat.abs(), max(1, min(flat.numel(), int(block1_mask.numel() * mask_rate))), largest=False)
+        #     mask = torch.ones_like(flat)
+        #     mask[indices] = 0
+        #     binary_mat1 = mask.view(block1_mask.shape[0], block1_mask.shape[1])
+        #     self.binary_mat1 = binary_mat1
+
         self.block1 = FinalBlock(input_dim=gate_out_dim if use_feature_gating \
                                            else embedding_dim * num_fields,
                                  hidden_units=block1_hidden_units,
                                  hidden_activations=block1_hidden_activations,
                                  dropout_rates=block1_dropout,
                                  batch_norm=batch_norm,
+                                 block_idx=0,
+                                 mask=self.binary_mat1,
                                  residual_type=residual_type)
         self.fc1 = nn.Linear(block1_hidden_units[-1], 1)
         if block_type == "2B":
@@ -72,14 +87,20 @@ class FinalNet(BaseModel):
                                      hidden_units=block2_hidden_units,
                                      hidden_activations=block2_hidden_activations,
                                      dropout_rates=block2_dropout,
+                                     block_idx=1,
                                      batch_norm=batch_norm,
                                      residual_type=residual_type)
             self.fc2 = nn.Linear(block2_hidden_units[-1], 1)
         
+        
+
         ###########
+        # self.mask2 = nn.Parameter(mask2, requires_grad=False) if mask2 is not None else None
+
         self.distill_calib = distill_calib
         print(distill_calib*100, "LoCaDistillationLoss")
-        self.distill_loss = LoCaDistillationLoss(alpha=0.7) if distill_calib == True else nn.BCELoss(reduction="mean")
+        # self.distill_loss = LoCaDistillationLoss(alpha=0.7) if distill_calib == True else nn.BCELoss(reduction="mean")
+        self.distill_loss = nn.BCELoss(reduction="mean")
         print(self.distill_loss)
         ###########
 
@@ -112,41 +133,6 @@ class FinalNet(BaseModel):
         block2_out = self.block2(X.flatten(start_dim=1))
         y_pred = self.fc2(block2_out)
         return y_pred
-    
-
-    def compute_loss(self, return_dict, y_true):
-        loss = self.loss_fn(return_dict["y_pred"], y_true, reduction='mean')
-        loss += self.regularization_loss()
-
-        # loss = self.loss_fn(return_dict["y_pred"], y_true, reduction='mean')
-        if self.block_type == "2B" and self.distill_calib != "fuck":
-            y1 = self.output_activation(return_dict["y1"])
-            y2 = self.output_activation(return_dict["y2"])
-            # loss1 = self.loss_fn(y1, return_dict["y_pred"].detach(), reduction='mean')
-            # loss2 = self.loss_fn(y2, return_dict["y_pred"].detach(), reduction='mean')
-            if self.distill_calib == True:
-                loss1 = self.distill_loss(y1, return_dict["y_pred"].detach(), y_true)
-                loss2 = self.distill_loss(y2, return_dict["y_pred"].detach(), y_true)
-            else:
-                loss1 = self.loss_fn(y1, return_dict["y_pred"].detach(), reduction='mean')
-                loss2 = self.loss_fn(y2, return_dict["y_pred"].detach(), reduction='mean')
-            loss = loss + loss1 + loss2
-
-        return loss
-
-    # def add_loss(self, inputs):
-    #     return_dict = self.forward(inputs)
-    #     y_true = self.get_labels(inputs)
-    #     loss = self.loss_fn(return_dict["y_pred"], y_true, reduction='mean')
-    #     if self.block_type == "2B":
-    #         y1 = self.output_activation(return_dict["y1"])
-    #         y2 = self.output_activation(return_dict["y2"])
-    #         # loss1 = self.loss_fn(y1, return_dict["y_pred"].detach(), reduction='mean')
-    #         # loss2 = self.loss_fn(y2, return_dict["y_pred"].detach(), reduction='mean')
-    #         loss1 = self.distill_loss(y1, return_dict["y_pred"].detach(), y_true, reduction='mean')
-    #         loss2 = self.distill_loss(y2, return_dict["y_pred"].detach(), y_true, reduction='mean')
-    #         loss = loss + loss1 + loss2
-    #     return loss
 
 
 class FeatureGating(nn.Module):
@@ -171,9 +157,10 @@ class FeatureGating(nn.Module):
 
 class FinalBlock(nn.Module):
     def __init__(self, input_dim, hidden_units=[], hidden_activations=None, 
-                 dropout_rates=[], batch_norm=True, residual_type="sum"):
+                 dropout_rates=[], batch_norm=True, residual_type="sum", block_idx=0, mask=None):
         # Factorized Interaction Block: Replacement of MLP block
         super(FinalBlock, self).__init__()
+        self.block_idx = block_idx
         if type(dropout_rates) != list:
             dropout_rates = [dropout_rates] * len(hidden_units)
         if type(hidden_activations) != list:
@@ -186,7 +173,8 @@ class FinalBlock(nn.Module):
         for idx in range(len(hidden_units) - 1):
             self.layer.append(FactorizedInteraction(hidden_units[idx],
                                                     hidden_units[idx + 1],
-                                                    residual_type=residual_type))
+                                                    residual_type=residual_type,
+                                                    mask=mask))
             if batch_norm:
                 self.norm.append(nn.BatchNorm1d(hidden_units[idx + 1]))
             if dropout_rates[idx] > 0:
@@ -196,7 +184,7 @@ class FinalBlock(nn.Module):
     def forward(self, X):
         X_i = X
         for i in range(len(self.layer)):
-            X_i = self.layer[i](X_i)
+            X_i = self.layer[i](X_i, block_idx=self.block_idx, idx=i)
             if len(self.norm) > i:
                 X_i = self.norm[i](X_i)
             if self.activation[i] is not None:
@@ -204,10 +192,20 @@ class FinalBlock(nn.Module):
             if len(self.dropout) > i:
                 X_i = self.dropout[i](X_i)
         return X_i
+        # X_i = X
+        # for i in range(len(self.layer)):
+        #     X_i = self.layer[i](X_i)
+        #     if len(self.norm) > i:
+        #         X_i = self.norm[i](X_i)
+        #     if self.activation[i] is not None:
+        #         X_i = self.activation[i](X_i)
+        #     if len(self.dropout) > i:
+        #         X_i = self.dropout[i](X_i)
+        # return X_i
 
 
 class FactorizedInteraction(nn.Module):
-    def __init__(self, input_dim, output_dim, bias=True, residual_type="sum"):
+    def __init__(self, input_dim, output_dim, bias=True, residual_type="sum", mask=None):
         """ FactorizedInteraction layer is an improvement of nn.Linear to capture quadratic 
             interactions between features.
             Setting `residual_type="concat"` keeps the same number of parameters as nn.Linear
@@ -220,33 +218,27 @@ class FactorizedInteraction(nn.Module):
         else:
             assert output_dim % 2 == 0, "output_dim should be divisible by 2."
         self.linear = nn.Linear(input_dim, output_dim, bias=bias)
+        if mask is not None:
+            print("mask is not none"*100)
+            print(mask.sum(), mask.numel())
+        self.mask = nn.Parameter(mask, requires_grad=False) if mask is not None else None
 
-    def forward(self, x):
-        h = self.linear(x)
+    def forward(self, x, block_idx=0, idx=None):
+        if block_idx==0 and self.mask is not None and idx == 0:
+            weight, bias = self.linear.weight, self.linear.bias
+            h = (x @ ((weight*self.mask).T) + bias)
+        else:
+            h = self.linear(x)
         h2, h1 = torch.chunk(h, chunks=2, dim=-1)
         if self.residual_type == "concat":
             h = torch.cat([h2, h1 * h2], dim=-1)
         elif self.residual_type == "sum":
             h = h2 + h1 * h2
         return h
-
-class LoCaDistillationLoss(nn.Module):
-    def __init__(self, alpha=0.9):
-        super(LoCaDistillationLoss, self).__init__()
-        self.alpha = alpha  # 보정 강도 설정
-
-    def forward(self, student_output, teacher_output, true_labels, reduction='mean'):
-        
-        teacher_probs_corrected = torch.where(
-            true_labels == 1,  # 실제 정답이 1인 경우
-            self.alpha * teacher_output + (1 - self.alpha),  # 정답 클래스 확률 ↑
-            self.alpha * teacher_output  # 오답 클래스 확률 ↓
-        )
-
-        # # Step 3: 보정된 확률 (sigmoid 다시 적용)
-        # teacher_probs_corrected = torch.sigmoid(teacher_logits_corrected)
-
-        # Step 4: 보정된 교사 확률을 이용한 BCE 손실 계산
-        loss = F.binary_cross_entropy(student_output, teacher_probs_corrected, reduction=reduction)
-
-        return loss
+        # h = self.linear(x)
+        # h2, h1 = torch.chunk(h, chunks=2, dim=-1)
+        # if self.residual_type == "concat":
+        #     h = torch.cat([h2, h1 * h2], dim=-1)
+        # elif self.residual_type == "sum":
+        #     h = h2 + h1 * h2
+        # return h

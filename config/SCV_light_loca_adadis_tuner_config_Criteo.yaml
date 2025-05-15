@@ -16,5 +16,5 @@ tuner_space:
     distill_loss: [True, "with_bilinear"]
     subs_origin_loss: [True, False]
     pooling_method: ["attn"]
-    alpha: [0.9, 0.7]
+    alpha: [0.7]
     monitor_mode: "max"

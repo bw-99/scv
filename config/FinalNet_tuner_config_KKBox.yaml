@@ -1,0 +1,12 @@
+base_config: ./config/
+base_expid: FinalNet_KKBox_x1
+dataset_id: KKBox_x1
+
+tuner_space:
+    model_root: './checkpoints/'
+    monitor_mode: "max"
+    block1_dropout: [0, 0.1, 0.2]
+    block2_dropout: [0, 0.1, 0.2]
+    block1_hidden_units: [[1000, 1000, 1000], [400, 400, 400]]
+    block2_hidden_units: [[1000, 1000, 1000], [400, 400, 400]]
+    

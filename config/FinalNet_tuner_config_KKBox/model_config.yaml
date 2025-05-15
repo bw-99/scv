@@ -1,0 +1,1404 @@
+FinalNet_KKBox_x1_001_ed874b95:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_002_49881c72:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_003_25ebb490:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_004_8da92e54:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_005_b7aef3a3:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_006_86eb1c01:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_007_49881c72:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_008_4163a761:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_009_ff28f069:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_010_b7aef3a3:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_011_8679b3cf:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_012_887b59f9:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_013_25ebb490:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_014_ff28f069:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_015_b798a088:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_016_86eb1c01:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_017_887b59f9:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_018_cc9e09ad:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_019_8da92e54:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_020_b7aef3a3:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_021_86eb1c01:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_022_3bbada4c:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_023_c1a8581e:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_024_2a593a11:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_025_b7aef3a3:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_026_8679b3cf:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_027_887b59f9:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_028_c1a8581e:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_029_3c4cb188:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_030_36b04667:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_031_86eb1c01:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_032_887b59f9:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_033_cc9e09ad:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_034_2a593a11:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_035_36b04667:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1
+FinalNet_KKBox_x1_036_f60dbb0e:
+    batch_norm: true
+    batch_size: 10000
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    distill_calib: fuck
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: false
+    use_features: null
+    verbose: 1

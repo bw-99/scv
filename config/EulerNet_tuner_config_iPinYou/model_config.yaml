@@ -592,601 +592,7 @@ EulerNet_iPinYou_x1_018_c8c8d0d0:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_019_501dc8bc:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0
-    net_im_dropout: 0
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_020_76c6ad60:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: false
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0
-    net_im_dropout: 0
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_021_ef3226bc:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0
-    net_im_dropout: 0.1
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_022_08cb2fe4:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: false
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0
-    net_im_dropout: 0.1
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_023_df66b942:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0
-    net_im_dropout: 0.2
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_024_47780229:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: false
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0
-    net_im_dropout: 0.2
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_025_ef3226bc:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.1
-    net_im_dropout: 0
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_026_08cb2fe4:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: false
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.1
-    net_im_dropout: 0
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_027_bb432b4a:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.1
-    net_im_dropout: 0.1
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_028_9703657a:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: false
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.1
-    net_im_dropout: 0.1
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_029_4864bdd1:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.1
-    net_im_dropout: 0.2
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_030_c8c8d0d0:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: false
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.1
-    net_im_dropout: 0.2
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_031_df66b942:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.2
-    net_im_dropout: 0
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_032_47780229:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: false
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.2
-    net_im_dropout: 0
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_033_4864bdd1:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.2
-    net_im_dropout: 0.1
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_034_c8c8d0d0:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: false
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.2
-    net_im_dropout: 0.1
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_035_ade43725:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: true
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.2
-    net_im_dropout: 0.2
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_036_1127a2f6:
-    batch_size: 4096
-    dataset_id: iPinYou_x1_csv_c2b11acf
-    debug_mode: false
-    early_stop_patience: 2
-    embedding_dim: 16
-    embedding_regularizer: 0.001
-    epochs: 100
-    eval_steps: null
-    feature_config: null
-    feature_specs: null
-    group_id: null
-    layer_norm: false
-    learning_rate: 0.001
-    loss: binary_crossentropy
-    metrics: [logloss, AUC]
-    model: EulerNet
-    model_root: ./checkpoints/
-    monitor: {AUC: 1, logloss: 0}
-    monitor_mode: max
-    net_ex_dropout: 0.2
-    net_im_dropout: 0.2
-    net_regularizer: 0
-    num_workers: 16
-    optimizer: adam
-    pickle_feature_encoder: true
-    save_best_only: true
-    seed: 2024
-    shape: [20]
-    shuffle: true
-    task: binary_classification
-    use_features: null
-    verbose: 1
-EulerNet_iPinYou_x1_037_7dd0d8f0:
+EulerNet_iPinYou_x1_019_7dd0d8f0:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1219,7 +625,7 @@ EulerNet_iPinYou_x1_037_7dd0d8f0:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_038_689fc9f4:
+EulerNet_iPinYou_x1_020_689fc9f4:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1252,7 +658,7 @@ EulerNet_iPinYou_x1_038_689fc9f4:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_039_532947f6:
+EulerNet_iPinYou_x1_021_532947f6:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1285,7 +691,7 @@ EulerNet_iPinYou_x1_039_532947f6:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_040_213b1207:
+EulerNet_iPinYou_x1_022_213b1207:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1318,7 +724,7 @@ EulerNet_iPinYou_x1_040_213b1207:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_041_51f37872:
+EulerNet_iPinYou_x1_023_51f37872:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1351,7 +757,7 @@ EulerNet_iPinYou_x1_041_51f37872:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_042_900db237:
+EulerNet_iPinYou_x1_024_900db237:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1384,7 +790,7 @@ EulerNet_iPinYou_x1_042_900db237:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_043_532947f6:
+EulerNet_iPinYou_x1_025_532947f6:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1417,7 +823,7 @@ EulerNet_iPinYou_x1_043_532947f6:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_044_213b1207:
+EulerNet_iPinYou_x1_026_213b1207:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1450,7 +856,7 @@ EulerNet_iPinYou_x1_044_213b1207:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_045_8c19414c:
+EulerNet_iPinYou_x1_027_8c19414c:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1483,7 +889,7 @@ EulerNet_iPinYou_x1_045_8c19414c:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_046_ab94cbc9:
+EulerNet_iPinYou_x1_028_ab94cbc9:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1516,7 +922,7 @@ EulerNet_iPinYou_x1_046_ab94cbc9:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_047_0e7954b3:
+EulerNet_iPinYou_x1_029_0e7954b3:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1549,7 +955,7 @@ EulerNet_iPinYou_x1_047_0e7954b3:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_048_6b686c58:
+EulerNet_iPinYou_x1_030_6b686c58:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1582,7 +988,7 @@ EulerNet_iPinYou_x1_048_6b686c58:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_049_51f37872:
+EulerNet_iPinYou_x1_031_51f37872:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1615,7 +1021,7 @@ EulerNet_iPinYou_x1_049_51f37872:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_050_900db237:
+EulerNet_iPinYou_x1_032_900db237:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1648,7 +1054,7 @@ EulerNet_iPinYou_x1_050_900db237:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_051_0e7954b3:
+EulerNet_iPinYou_x1_033_0e7954b3:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1681,7 +1087,7 @@ EulerNet_iPinYou_x1_051_0e7954b3:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_052_6b686c58:
+EulerNet_iPinYou_x1_034_6b686c58:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1714,7 +1120,7 @@ EulerNet_iPinYou_x1_052_6b686c58:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_053_13cc56c7:
+EulerNet_iPinYou_x1_035_13cc56c7:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1747,7 +1153,7 @@ EulerNet_iPinYou_x1_053_13cc56c7:
     task: binary_classification
     use_features: null
     verbose: 1
-EulerNet_iPinYou_x1_054_d31b62cb:
+EulerNet_iPinYou_x1_036_d31b62cb:
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
     debug_mode: false
@@ -1776,6 +1182,600 @@ EulerNet_iPinYou_x1_054_d31b62cb:
     save_best_only: true
     seed: 2024
     shape: [30]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_037_0eed2f17:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_038_7b7f1d3f:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_039_44ca8bf5:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_040_fc123462:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_041_9a908dd0:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_042_329f0397:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_043_44ca8bf5:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_044_fc123462:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_045_228f09c6:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_046_66223c86:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_047_bf559b75:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_048_b99d7d89:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_049_9a908dd0:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_050_329f0397:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_051_bf559b75:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_052_b99d7d89:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_053_902ff484:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_iPinYou_x1_054_7d6c7c10:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.2
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
     shuffle: true
     task: binary_classification
     use_features: null

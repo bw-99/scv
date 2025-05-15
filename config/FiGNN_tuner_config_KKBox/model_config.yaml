@@ -1,0 +1,372 @@
+FiGNN_KKBox_x1_001_f34eb826:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 5
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: true
+    verbose: 1
+FiGNN_KKBox_x1_002_fa5003a3:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 5
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: false
+    verbose: 1
+FiGNN_KKBox_x1_003_fa5003a3:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 5
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: true
+    verbose: 1
+FiGNN_KKBox_x1_004_c2ba240d:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 5
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: false
+    verbose: 1
+FiGNN_KKBox_x1_005_634680c5:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 7
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: true
+    verbose: 1
+FiGNN_KKBox_x1_006_133517c0:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 7
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: false
+    verbose: 1
+FiGNN_KKBox_x1_007_133517c0:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 7
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: true
+    verbose: 1
+FiGNN_KKBox_x1_008_929642f2:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 7
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: false
+    verbose: 1
+FiGNN_KKBox_x1_009_d56db7e4:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 10
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: true
+    verbose: 1
+FiGNN_KKBox_x1_010_844ea579:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 10
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: false
+    verbose: 1
+FiGNN_KKBox_x1_011_844ea579:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 10
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: true
+    verbose: 1
+FiGNN_KKBox_x1_012_7ba7019b:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 10
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: false
+    verbose: 1

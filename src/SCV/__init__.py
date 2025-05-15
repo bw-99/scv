@@ -7,3 +7,4 @@ from .SCV_light import SCV_light
 from .SCV_heavy_loca import SCV_heavy_loca
 from .SCV_light_loca_adadis import SCV_light_loca_adadis
 from .SCV_coe import SCV_coe
+from .GraphFM import GraphFM

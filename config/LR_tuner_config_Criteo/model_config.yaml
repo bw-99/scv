@@ -1,0 +1,112 @@
+LR_Criteo_001_80ddd191:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: l2(1e-7)
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+LR_Criteo_002_594c63df:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: l2(1e-5)
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+LR_Criteo_003_9a4254be:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: l2(1e-3)
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+LR_Criteo_004_68bff21c:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: LR
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    regularizer: l2(1e-1)
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1

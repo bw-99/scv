@@ -1,0 +1,7 @@
+base_config: ./config/
+base_expid: SCV_light_loca_adadis_Criteo
+dataset_id: Criteo_x4_10_h5
+
+tuner_space:
+    model_root: './checkpoints/'
+    exp_wo_ReLU: [True, False]

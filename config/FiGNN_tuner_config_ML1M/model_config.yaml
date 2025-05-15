@@ -1,0 +1,360 @@
+FiGNN_Movielens_x1_001_5b448038:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 5
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: true
+    verbose: 1
+FiGNN_Movielens_x1_002_d4995a5f:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 5
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: false
+    verbose: 1
+FiGNN_Movielens_x1_003_d4995a5f:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 5
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: true
+    verbose: 1
+FiGNN_Movielens_x1_004_eb18a44a:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 5
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: false
+    verbose: 1
+FiGNN_Movielens_x1_005_ddc4c9e6:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 7
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: true
+    verbose: 1
+FiGNN_Movielens_x1_006_662299be:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 7
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: false
+    verbose: 1
+FiGNN_Movielens_x1_007_662299be:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 7
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: true
+    verbose: 1
+FiGNN_Movielens_x1_008_c8c26c64:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 7
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: false
+    verbose: 1
+FiGNN_Movielens_x1_009_ae3b0afa:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 10
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: true
+    verbose: 1
+FiGNN_Movielens_x1_010_6a66d443:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 10
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: true
+    use_residual: false
+    verbose: 1
+FiGNN_Movielens_x1_011_6a66d443:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 10
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: true
+    verbose: 1
+FiGNN_Movielens_x1_012_ceecacfa:
+    batch_size: 4096
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    gnn_layers: 10
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FiGNN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    use_gru: false
+    use_residual: false
+    verbose: 1

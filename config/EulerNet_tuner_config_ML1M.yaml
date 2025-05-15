@@ -1,0 +1,9 @@
+base_config: ./config/
+base_expid: EulerNet_Movielens_x1
+dataset_id: Movielens_x1
+
+tuner_space:
+    shape: [[10], [20], [7]]
+    net_ex_dropout: [0, 0.1, 0.2, 0.3, 0.4]
+    net_im_dropout: [0, 0.1, 0.2, 0.3, 0.4]
+    layer_norm: [True, False]

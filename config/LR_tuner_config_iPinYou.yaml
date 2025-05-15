@@ -1,0 +1,7 @@
+base_config: ./config/
+base_expid: LR_iPinYou_x1
+dataset_id: iPinYou_x1_csv
+
+tuner_space:
+    regularizer: ["l2(1e-7)", "l2(1e-5)", "l2(1e-3)", "l2(1e-1)"]
+# regularizer: ["l2(1e-7)", "l2(1e-6)", "l2(1e-5)", "l2(1e-4)", "l2(1e-3)", "l2(1e-2)", "l2(1e-1)"]

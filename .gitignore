@@ -13,3 +13,7 @@ myenv
 vis.ipynb
 *.ipynb
 .venv
+
+*.pt
+*.pdf
+*.model

@@ -1,0 +1,10 @@
+base_config: ./config/
+base_expid: GraphFM_Movielens_x1
+dataset_id: Movielens_x1
+
+tuner_space:
+    model_root: './checkpoints/'
+    heads: [2, 3, 4]
+    ks: [[1, 1, 1]]
+    dropout_keep_prob: [0.1, 0.2, 0.3]
+

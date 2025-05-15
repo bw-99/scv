@@ -1,0 +1,10 @@
+base_config: ./config/
+base_expid: GraphFM_KKBox_x1
+dataset_id: KKBox_x1
+
+tuner_space:
+    model_root: './checkpoints/'
+    heads: [2, 3, 4]
+    ks: [[5, 5, 5], [10, 10, 10], [20, 20, 20]]
+    dropout_keep_prob: [0.1, 0.2, 0.3]
+

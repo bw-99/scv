@@ -1,0 +1,10 @@
+base_config: ./config/
+base_expid: AdaGIN_KKBox_x1
+dataset_id: KKBox_x1
+
+tuner_space:
+    warm_tau: [1.1, 1.15, 1.2]
+    cold_tau: [0.007, 0.008]
+    gnn_layers: [1]
+    net_dropout: [0.2, 0.3]
+    batch_norm: [True, False]

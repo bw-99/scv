@@ -1,0 +1,1296 @@
+MaskNet_KKBox_x1_001_f038d244:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_002_bb5b34fb:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_003_b5dd1e5a:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_004_18935b45:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_005_0559567b:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_006_3ac0f485:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_007_8c2431d2:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_008_6fc989d0:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_009_676a8599:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_010_3c78b73b:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_011_0ef87fcf:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_012_2f28c8ea:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_013_62d2e75d:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_014_da3fc138:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_015_16e0cc3a:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_016_cf507764:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_017_ee4f9722:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_018_0e99cf6d:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_019_18935b45:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_020_0559567b:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_021_3ac0f485:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_022_01102ebb:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_023_0116375e:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_024_757156be:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_025_3c78b73b:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_026_0ef87fcf:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_027_2f28c8ea:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_028_e1d588d3:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_029_263570a9:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_030_333c4485:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_031_cf507764:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_032_ee4f9722:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_033_0e99cf6d:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_034_c37bfa88:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_035_2e4fd9b5:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_KKBox_x1_036_d6bce5d9:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 400
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1

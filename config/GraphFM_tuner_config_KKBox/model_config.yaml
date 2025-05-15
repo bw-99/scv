@@ -1,0 +1,837 @@
+GraphFM_KKBox_x1_001_eb5a7f59:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_002_c0556882:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_003_3d7797ba:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_004_a9dc96f9:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_005_8c0a7a96:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_006_17b0dd66:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_007_984302af:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_008_85fdaf09:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_009_d3f18f4c:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_010_48d243e8:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_011_3d7797ba:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_012_aff4a4b6:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_013_695edfc2:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_014_17b0dd66:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_015_36836411:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_016_fe861895:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_017_d3f18f4c:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_018_f910f0b8:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_019_266c44b2:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_020_608f2336:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_021_eaf5bb3a:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_022_73bd04fc:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_023_454f6702:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_024_8fdaa992:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_025_caa88494:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_026_bb1b81df:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_KKBox_x1_027_4d2ba7b1:
+    batch_size: 10000
+    block_shape: [400, 400, 400]
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1

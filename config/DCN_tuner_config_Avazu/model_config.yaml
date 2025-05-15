@@ -1,0 +1,960 @@
+DCN_Avazu_001_1ba86613:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    num_cross_layers: 5
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_002_1c2cb8d2:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    num_cross_layers: 5
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_003_7dc324c5:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    num_cross_layers: 5
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_004_b2fd11ea:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    num_cross_layers: 5
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_005_b7b6082e:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_cross_layers: 5
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_006_d19a2c83:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_cross_layers: 5
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_007_9b4db9ca:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    num_cross_layers: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_008_a16f7c3e:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    num_cross_layers: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_009_b9ffdeb9:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    num_cross_layers: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_010_8123b70b:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    num_cross_layers: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_011_1e475b2c:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_cross_layers: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_012_7987bc59:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_cross_layers: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_013_8f243e0f:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    num_cross_layers: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_014_f14f0107:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    num_cross_layers: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_015_258b59d4:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    num_cross_layers: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_016_4651fbc1:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    num_cross_layers: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_017_b6844e68:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_cross_layers: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_018_6a4dd2f3:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_cross_layers: 3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_019_df1c6c41:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    num_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_020_505e5101:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    num_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_021_425737f7:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    num_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_022_30bc862d:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    num_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_023_29a23600:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_024_c62a5068:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_cross_layers: 2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_025_9607d749:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    num_cross_layers: 1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_026_24da0d7b:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    num_cross_layers: 1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_027_3851de5a:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    num_cross_layers: 1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_028_d13fefe0:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    num_cross_layers: 1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_029_425737f7:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_cross_layers: 1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DCN_Avazu_030_30bc862d:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: Avazu_x4_h5_e3fe560b
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-09
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DCN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_cross_layers: 1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1

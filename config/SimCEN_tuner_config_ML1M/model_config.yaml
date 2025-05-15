@@ -1,0 +1,2432 @@
+SimCEN_Movielens_x1_001_c6534bd0:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_002_60327870:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_003_afaef157:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_004_0adcc81e:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_005_afaef157:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_006_0adcc81e:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_007_cff5d656:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_008_ba9fa22f:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_009_afaef157:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_010_0adcc81e:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_011_cff5d656:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_012_ba9fa22f:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_013_cff5d656:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_014_ba9fa22f:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_015_20268180:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_016_c8c5be9f:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_017_afaef157:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_018_0adcc81e:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_019_cff5d656:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_020_ba9fa22f:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_021_cff5d656:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_022_ba9fa22f:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_023_20268180:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_024_c8c5be9f:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_025_cff5d656:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_026_ba9fa22f:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_027_20268180:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_028_c8c5be9f:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_029_20268180:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_030_c8c5be9f:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_031_f25eeff7:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_032_a12c12a7:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.3
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_033_3e08da35:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_034_80d2d3fd:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_035_4d5eabe2:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_036_f652bf96:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_037_4d5eabe2:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_038_f652bf96:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_039_812843c5:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_040_5a0ea7e9:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_041_4d5eabe2:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_042_f652bf96:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_043_812843c5:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_044_5a0ea7e9:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_045_812843c5:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_046_5a0ea7e9:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_047_dfca746e:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_048_6922ec42:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_049_4d5eabe2:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_050_f652bf96:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_051_812843c5:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_052_5a0ea7e9:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_053_812843c5:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_054_5a0ea7e9:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_055_dfca746e:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_056_6922ec42:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_057_812843c5:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_058_5a0ea7e9:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_059_dfca746e:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_060_6922ec42:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_061_dfca746e:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_062_6922ec42:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_Movielens_x1_063_070277ad:
+    alpha: 0.01
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_Movielens_x1_064_04378eee:
+    alpha: 0.02
+    batch_size: 4096
+    cl_temperature: 0.4
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1

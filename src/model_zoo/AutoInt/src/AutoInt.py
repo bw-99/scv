@@ -66,6 +66,7 @@ class AutoInt(BaseModel):
                                      dropout_rate=net_dropout, 
                                      use_residual=use_residual, 
                                      use_scale=use_scale,
+                                     attn_idx=i,
                                      layer_norm=layer_norm) \
              for i in range(attention_layers)])
         self.fc = nn.Linear(feature_map.num_fields * attention_dim, 1)
@@ -95,7 +96,7 @@ class MultiHeadSelfAttention(nn.Module):
     """ Multi-head attention module """
 
     def __init__(self, input_dim, attention_dim=None, num_heads=1, dropout_rate=0., 
-                 use_residual=True, use_scale=False, layer_norm=False):
+                 use_residual=True, use_scale=False, layer_norm=False, attn_idx=0, mask=None):
         super(MultiHeadSelfAttention, self).__init__()
         if attention_dim is None:
             attention_dim = input_dim
@@ -104,6 +105,7 @@ class MultiHeadSelfAttention(nn.Module):
         self.head_dim = attention_dim // num_heads
         self.num_heads = num_heads
         self.use_residual = use_residual
+        self.attn_idx = attn_idx
         self.scale = self.head_dim ** 0.5 if use_scale else None
         self.W_q = nn.Linear(input_dim, attention_dim, bias=False)
         self.W_k = nn.Linear(input_dim, attention_dim, bias=False)
@@ -114,6 +116,10 @@ class MultiHeadSelfAttention(nn.Module):
             self.W_res = None
         self.dot_attention = ScaledDotProductAttention(dropout_rate)
         self.layer_norm = nn.LayerNorm(attention_dim) if layer_norm else None
+
+        self.attention_lst = []
+        
+        self.mask = nn.Parameter(1-mask, requires_grad=False) if mask is not None and attn_idx == 0 else None
 
     def forward(self, X):
         residual = X
@@ -130,7 +136,10 @@ class MultiHeadSelfAttention(nn.Module):
         value = value.view(batch_size, -1, self.num_heads, self.head_dim).transpose(1, 2)
 
         # scaled dot product attention
-        output, attention = self.dot_attention(query, key, value, scale=self.scale)
+        output, attention = self.dot_attention(query, key, value, mask=self.mask, scale=self.scale)
+        
+        if self.attn_idx == 0:
+            self.attention_lst.append(attention.detach().cpu().mean(0).unsqueeze(0))
         # concat heads
         output = output.transpose(1, 2).contiguous().view(batch_size, -1, self.num_heads * self.head_dim)
         

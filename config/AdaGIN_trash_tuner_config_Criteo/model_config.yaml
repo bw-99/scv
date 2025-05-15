@@ -1,0 +1,836 @@
+AdaGIN_Criteo_001_ec0ff636:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 0
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_002_e57ffc27:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 0
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_003_9bf3b3db:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 1
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_004_ab7568a6:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 1
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_005_ab7568a6:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 2
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_006_94ebfd58:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 2
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_007_7651d015:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 3
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_008_613b4bb5:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 3
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_009_14c6bff3:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 4
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_010_3c1a370d:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 4
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_011_6ba415fc:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 5
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_012_88620e98:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 5
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_013_25f85cdc:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 6
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_014_98cdd1ec:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 6
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_015_4d57ff14:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 7
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_016_8b7ad375:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 7
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_017_34bd767b:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 8
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_018_8586c265:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 8
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_019_08d23e55:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 9
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_020_9d53853e:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 9
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_021_c199f35d:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 10
+    trash2: 1
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Criteo_022_5f01005c:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    trash1: 10
+    trash2: 2
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1

@@ -1,0 +1,2592 @@
+AdaGIN_Movielens_x1_001_e52a8e4f:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_002_3c4b9669:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_003_022c0bb6:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_004_0bfded2f:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_005_022c0bb6:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_006_0bfded2f:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_007_34826658:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_008_4117fa44:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_009_28754b13:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_010_270d3e6c:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_011_05a88287:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_012_60820b88:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_013_7dda09d5:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_014_5e205f04:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_015_63dbccb2:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_016_0eb28f43:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_017_63dbccb2:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_018_0eb28f43:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_019_401a009a:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_020_534dfbf6:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_021_ad352b4d:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_022_02a5ba37:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_023_f3c5d0df:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_024_9da29405:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.1
+AdaGIN_Movielens_x1_025_cae8aa3c:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_026_5bf87824:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_027_6774b6a5:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_028_32eb895a:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_029_6774b6a5:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_030_32eb895a:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_031_4c0daf19:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_032_7945dd5c:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_033_bc314cf1:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_034_87707409:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_035_07887629:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_036_df99c1bc:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_037_4ce0e8da:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_038_b5bda9d8:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_039_2d832b66:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_040_438afee4:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_041_2d832b66:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_042_438afee4:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_043_15a4cf0f:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_044_3f8843b2:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_045_776ffc6a:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_046_d3d7e154:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_047_643e431e:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_048_bc7936fe:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.15
+AdaGIN_Movielens_x1_049_4cfc03f3:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_050_bd40fbb9:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_051_cdeac056:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_052_a8e4d492:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_053_cdeac056:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_054_a8e4d492:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_055_8ebd57e0:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_056_f39b9122:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_057_fdcb406e:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_058_dec362ea:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_059_dceaf2cd:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_060_3a1089e7:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.007
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_061_a38902e6:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_062_fa267ddf:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_063_1e3cc70b:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_064_475f5980:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 2
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_065_1e3cc70b:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_066_475f5980:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_067_af28cc7a:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_068_3faa66b8:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 3
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_069_7a2ff85d:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_070_ddee94c7:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_071_635bf4e1:
+    batch_norm: true
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2
+AdaGIN_Movielens_x1_072_e5be5048:
+    batch_norm: false
+    batch_size: 4096
+    cold_dim: 10
+    cold_tau: 0.008
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    fi_hidden_units: [400, 400, 400]
+    gnn_layers: 4
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: AdaGIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+    w_hidden_units: [400, 400, 400]
+    warm_dim: 10
+    warm_tau: 1.2

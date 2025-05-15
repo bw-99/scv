@@ -1,0 +1,2432 @@
+SimCEN_KKBox_x1_001_28051fac:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_002_377bf216:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_003_af98b2bb:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_004_b8c3bed6:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_005_af98b2bb:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_006_b8c3bed6:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_007_f380da88:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_008_86a08a09:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_009_af98b2bb:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_010_b8c3bed6:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_011_f380da88:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_012_86a08a09:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_013_f380da88:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_014_86a08a09:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_015_7a23c38b:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_016_940adfb8:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_017_af98b2bb:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_018_b8c3bed6:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_019_f380da88:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_020_86a08a09:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_021_f380da88:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_022_86a08a09:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_023_7a23c38b:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_024_940adfb8:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_025_f380da88:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_026_86a08a09:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_027_7a23c38b:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_028_940adfb8:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_029_7a23c38b:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_030_940adfb8:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_031_db47e214:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_032_84f65bf5:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.3
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_033_c3401491:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_034_1bf92be0:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_035_2f46f92d:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_036_ed8e0131:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_037_2f46f92d:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_038_ed8e0131:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_039_699d8809:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_040_76a1b70f:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_041_2f46f92d:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_042_ed8e0131:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_043_699d8809:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_044_76a1b70f:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_045_699d8809:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_046_76a1b70f:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_047_e30e6e28:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_048_24f93048:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.2
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_049_2f46f92d:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_050_ed8e0131:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_051_699d8809:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_052_76a1b70f:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_053_699d8809:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_054_76a1b70f:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_055_e30e6e28:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_056_24f93048:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_057_699d8809:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_058_76a1b70f:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_059_e30e6e28:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_060_24f93048:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.2
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_061_e30e6e28:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_062_24f93048:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.2
+    verbose: 1
+SimCEN_KKBox_x1_063_0daa1ce4:
+    alpha: 0.01
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1
+SimCEN_KKBox_x1_064_9ac10bac:
+    alpha: 0.02
+    batch_size: 10000
+    cl_temperature: 0.4
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    ego_batch_norm: true
+    ego_dropout: 0.3
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    mlep1_hidden_units: [402, 402, 402]
+    mlep2_hidden_units: [402, 402, 402]
+    model: SimCEN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    through_dropout: 0.3
+    use_features: null
+    v1_batch_norm: true
+    v1_dropout: 0.3
+    v2_batch_norm: true
+    v2_dropout: 0.3
+    verbose: 1

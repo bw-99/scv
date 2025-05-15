@@ -1,4 +1,4 @@
-DCNv2_iPinYou_x1_001_5efcc6da:
+DCNv2_iPinYou_x1_001_569cd644:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -25,7 +25,7 @@ DCNv2_iPinYou_x1_001_5efcc6da:
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -34,7 +34,7 @@ DCNv2_iPinYou_x1_001_5efcc6da:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_002_a83709a7:
+DCNv2_iPinYou_x1_002_ffe8cd6c:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -61,7 +61,7 @@ DCNv2_iPinYou_x1_002_a83709a7:
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -70,7 +70,7 @@ DCNv2_iPinYou_x1_002_a83709a7:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_003_3bdc15ac:
+DCNv2_iPinYou_x1_003_d5eb2c93:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -91,13 +91,13 @@ DCNv2_iPinYou_x1_003_3bdc15ac:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.2
     net_regularizer: 0
     num_cross_layers: 1
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 256]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -106,7 +106,7 @@ DCNv2_iPinYou_x1_003_3bdc15ac:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_004_2f90963b:
+DCNv2_iPinYou_x1_004_b0531ba7:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -127,13 +127,13 @@ DCNv2_iPinYou_x1_004_2f90963b:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.2
     net_regularizer: 0
     num_cross_layers: 1
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 256]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -142,7 +142,7 @@ DCNv2_iPinYou_x1_004_2f90963b:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_005_317ef53a:
+DCNv2_iPinYou_x1_005_8ceb551d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -163,13 +163,13 @@ DCNv2_iPinYou_x1_005_317ef53a:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.3
     net_regularizer: 0
     num_cross_layers: 1
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 512]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -178,7 +178,7 @@ DCNv2_iPinYou_x1_005_317ef53a:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_006_0d6b6c29:
+DCNv2_iPinYou_x1_006_a4dd0b86:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -199,13 +199,13 @@ DCNv2_iPinYou_x1_006_0d6b6c29:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.3
     net_regularizer: 0
     num_cross_layers: 1
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 512]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -214,7 +214,7 @@ DCNv2_iPinYou_x1_006_0d6b6c29:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_007_5605caa4:
+DCNv2_iPinYou_x1_007_d5eb2c93:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -241,7 +241,7 @@ DCNv2_iPinYou_x1_007_5605caa4:
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -250,7 +250,7 @@ DCNv2_iPinYou_x1_007_5605caa4:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_008_35044184:
+DCNv2_iPinYou_x1_008_b0531ba7:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -277,7 +277,7 @@ DCNv2_iPinYou_x1_008_35044184:
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -286,7 +286,7 @@ DCNv2_iPinYou_x1_008_35044184:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_009_8b6060b5:
+DCNv2_iPinYou_x1_009_02b9d1d3:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -307,13 +307,13 @@ DCNv2_iPinYou_x1_009_8b6060b5:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.2
     net_regularizer: 0
     num_cross_layers: 2
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 256]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -322,7 +322,7 @@ DCNv2_iPinYou_x1_009_8b6060b5:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_010_efe2e6f9:
+DCNv2_iPinYou_x1_010_7548eefb:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -343,13 +343,13 @@ DCNv2_iPinYou_x1_010_efe2e6f9:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.2
     net_regularizer: 0
     num_cross_layers: 2
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 256]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -358,7 +358,7 @@ DCNv2_iPinYou_x1_010_efe2e6f9:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_011_d5309988:
+DCNv2_iPinYou_x1_011_92473510:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -379,13 +379,13 @@ DCNv2_iPinYou_x1_011_d5309988:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.3
     net_regularizer: 0
     num_cross_layers: 2
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 512]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -394,7 +394,7 @@ DCNv2_iPinYou_x1_011_d5309988:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_012_b8b1d068:
+DCNv2_iPinYou_x1_012_3bb35b2b:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -415,13 +415,13 @@ DCNv2_iPinYou_x1_012_b8b1d068:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.3
     net_regularizer: 0
     num_cross_layers: 2
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 512]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -430,7 +430,7 @@ DCNv2_iPinYou_x1_012_b8b1d068:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_013_aad3299c:
+DCNv2_iPinYou_x1_013_8ceb551d:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -457,7 +457,7 @@ DCNv2_iPinYou_x1_013_aad3299c:
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -466,7 +466,7 @@ DCNv2_iPinYou_x1_013_aad3299c:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_014_0ed35134:
+DCNv2_iPinYou_x1_014_a4dd0b86:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -493,7 +493,7 @@ DCNv2_iPinYou_x1_014_0ed35134:
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -502,7 +502,7 @@ DCNv2_iPinYou_x1_014_0ed35134:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_015_b1b3383d:
+DCNv2_iPinYou_x1_015_92473510:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -523,13 +523,13 @@ DCNv2_iPinYou_x1_015_b1b3383d:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.2
     net_regularizer: 0
     num_cross_layers: 3
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 256]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -538,7 +538,7 @@ DCNv2_iPinYou_x1_015_b1b3383d:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_016_a52e149e:
+DCNv2_iPinYou_x1_016_3bb35b2b:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -559,13 +559,13 @@ DCNv2_iPinYou_x1_016_a52e149e:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.2
     net_regularizer: 0
     num_cross_layers: 3
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 256]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -574,7 +574,7 @@ DCNv2_iPinYou_x1_016_a52e149e:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_017_c0243cdf:
+DCNv2_iPinYou_x1_017_6b4a005a:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -595,13 +595,13 @@ DCNv2_iPinYou_x1_017_c0243cdf:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.3
     net_regularizer: 0
     num_cross_layers: 3
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 512]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -610,7 +610,7 @@ DCNv2_iPinYou_x1_017_c0243cdf:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_018_1b341f10:
+DCNv2_iPinYou_x1_018_bc756e08:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -631,13 +631,13 @@ DCNv2_iPinYou_x1_018_1b341f10:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.3
     net_regularizer: 0
     num_cross_layers: 3
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 512]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -646,7 +646,7 @@ DCNv2_iPinYou_x1_018_1b341f10:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_019_0d685947:
+DCNv2_iPinYou_x1_019_67200ea0:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -673,7 +673,7 @@ DCNv2_iPinYou_x1_019_0d685947:
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -682,7 +682,7 @@ DCNv2_iPinYou_x1_019_0d685947:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_020_b334f461:
+DCNv2_iPinYou_x1_020_6494f50f:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -709,7 +709,7 @@ DCNv2_iPinYou_x1_020_b334f461:
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 128]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -718,7 +718,151 @@ DCNv2_iPinYou_x1_020_b334f461:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_021_128fe19d:
+DCNv2_iPinYou_x1_021_0b328158:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 16
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_iPinYou_x1_022_8ae66cf3:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 16
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_iPinYou_x1_023_7086f74c:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 16
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_iPinYou_x1_024_02b040b2:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 4
+    num_experts: 4
+    num_workers: 16
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_iPinYou_x1_025_aaf625d9:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -741,11 +885,11 @@ DCNv2_iPinYou_x1_021_128fe19d:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 4
+    num_cross_layers: 5
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 256]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -754,7 +898,7 @@ DCNv2_iPinYou_x1_021_128fe19d:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_022_9f27afc4:
+DCNv2_iPinYou_x1_026_99b3d093:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -777,11 +921,11 @@ DCNv2_iPinYou_x1_022_9f27afc4:
     monitor_mode: max
     net_dropout: 0.1
     net_regularizer: 0
-    num_cross_layers: 4
+    num_cross_layers: 5
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 256]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -790,7 +934,7 @@ DCNv2_iPinYou_x1_022_9f27afc4:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_023_2a041393:
+DCNv2_iPinYou_x1_027_2476bb26:
     batch_norm: true
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -811,13 +955,13 @@ DCNv2_iPinYou_x1_023_2a041393:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.2
     net_regularizer: 0
-    num_cross_layers: 4
+    num_cross_layers: 5
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 512]
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024
@@ -826,7 +970,7 @@ DCNv2_iPinYou_x1_023_2a041393:
     use_features: null
     use_low_rank_mixture: false
     verbose: 1
-DCNv2_iPinYou_x1_024_65450272:
+DCNv2_iPinYou_x1_028_d9ee722b:
     batch_norm: false
     batch_size: 4096
     dataset_id: iPinYou_x1_csv_c2b11acf
@@ -847,13 +991,85 @@ DCNv2_iPinYou_x1_024_65450272:
     model_root: ./checkpoints/
     monitor: {AUC: 1, logloss: 0}
     monitor_mode: max
-    net_dropout: 0.1
+    net_dropout: 0.2
     net_regularizer: 0
-    num_cross_layers: 4
+    num_cross_layers: 5
     num_experts: 4
     num_workers: 16
     optimizer: adam
-    parallel_dnn_hidden_units: [512, 512]
+    parallel_dnn_hidden_units: [400, 400, 400]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_iPinYou_x1_029_39c8459b:
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 16
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_iPinYou_x1_030_86ab0c85:
+    batch_norm: false
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.3
+    net_regularizer: 0
+    num_cross_layers: 5
+    num_experts: 4
+    num_workers: 16
+    optimizer: adam
+    parallel_dnn_hidden_units: [400, 400, 400]
     pickle_feature_encoder: true
     save_best_only: true
     seed: 2024

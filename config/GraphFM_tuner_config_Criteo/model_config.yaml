@@ -1,0 +1,864 @@
+GraphFM_Criteo_001_93e928b5:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_002_92eeb379:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_003_28020a6b:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_004_ad9eeac4:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_005_3189d540:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_006_d47e3ff5:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_007_e6a73c3f:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_008_e416c5ff:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_009_31115c03:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_010_3f114d2b:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_011_28020a6b:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_012_05912c12:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_013_23d4a16c:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_014_d47e3ff5:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_015_9c2ca075:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_016_ad246578:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_017_31115c03:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_018_cd3a9a0f:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_019_61910609:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_020_b021a407:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_021_1249e6d2:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [5, 5, 5]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_022_9dc40b52:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_023_92985221:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_024_aaa50d73:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [10, 10, 10]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_025_13ba6b0f:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_026_b82e1f15:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1
+GraphFM_Criteo_027_d4ee9776:
+    batch_norm: true
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Criteo_x4_10_h5_49cec1bd
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [20, 20, 20]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    use_features: null
+    verbose: 1

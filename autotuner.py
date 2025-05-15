@@ -18,6 +18,7 @@
 
 import itertools
 import subprocess
+from ax import ParameterType
 import yaml
 import os
 import numpy as np
@@ -26,7 +27,14 @@ import glob
 import hashlib
 from fuxictr.utils import print_to_json, load_model_config, load_dataset_config
 import pandas as pd
+from ax.service.ax_client import AxClient, ObjectiveProperties
+from ax.utils.measurement.synthetic_functions import hartmann6
+from ax.utils.notebook.plotting import init_notebook_plotting, render
+import plotly.io as pio
 
+# from run_expid import train_model
+
+    
 # add this line to avoid weird characters in yaml files
 yaml.Dumper.ignore_aliases = lambda *args : True
 
@@ -124,7 +132,7 @@ def load_experiment_ids(config_dir):
             experiment_id_list += config_dict.keys()
     return sorted(experiment_id_list)
 
-def grid_search(config_dir, gpu_list, expid_tag=None, script='run_expid.py'):
+def grid_search(config_dir, gpu_list, expid_tag=None, script='run_expid.py', fix_seed=0):
     expname = config_dir.split("/")[-1]
 
     try:
@@ -148,8 +156,8 @@ def grid_search(config_dir, gpu_list, expid_tag=None, script='run_expid.py'):
             idle_idx = idle_queue.pop(0)
             gpu_id = gpu_list[idle_idx]
             expid = experiment_id_list.pop(0)
-            cmd = "python -u {} --config {} --expid {} --gpu {}"\
-                    .format(script, config_dir, expid, gpu_id)
+            cmd = "python -u {} --config {} --expid {} --gpu {} --fix_seed {}"\
+                    .format(script, config_dir, expid, gpu_id, fix_seed)
             p = subprocess.Popen(cmd.split())
             processes[idle_idx] = p
         else:
@@ -158,3 +166,74 @@ def grid_search(config_dir, gpu_list, expid_tag=None, script='run_expid.py'):
                 if p.poll() is not None: # terminated
                     idle_queue.append(idle_idx)
     [p.wait() for p in processes.values()]
+
+
+def bo_search(expid, gpu_list, expid_tag=None, script='run_expid.py'):
+    config_path = f"./config/model_config.yaml"
+
+    gpu_list = list(gpu_list)
+    idle_queue = list(range(len(gpu_list)))
+    processes = dict()
+
+    with open(config_path, "r") as cfg:
+        config_dict = yaml.load(cfg, Loader=yaml.FullLoader)
+
+
+    ax_client = AxClient()
+    ax_client.create_experiment(
+        name="hartmann_test_experiment",
+        parameters=[
+            {
+                "name": "num_tower",
+                "type": "choice",
+                "values": [1, 2, 3, 4, 5, 6],
+                "value_type": "int",
+            },
+            {
+                "name": "net_dropout",
+                "type": "choice",
+                "values": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6], 
+            },
+            {
+                "name": "scv_dropout",
+                "type": "choice",
+                "values": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6], 
+            },
+            {
+                "name": "num_hops",
+                "type": "choice",
+                "values": [1, 2, 3], 
+                "value_type": "int",
+            },
+            {
+                "name": "num_mask",
+                "type": "choice",
+                "values": [1, 2, 3, 4, 5, 6], 
+                "value_type": "int",
+            },
+            {
+                "name": "batch_norm",
+                "type": "choice",
+                "values": [True, False], 
+            },
+            {
+                "name": "alpha",
+                "type": "choice",
+                "values": [0.1, 0.3, 0.5, 0.7, 0.9], 
+            },
+        ],
+        objectives={"AUC": ObjectiveProperties(minimize=False)},
+    )
+
+
+    while True:
+        try:
+            parameterization, trial_index = ax_client.get_next_trial()
+
+            reward = train_model(expid, int(gpu_list[0]), parameterization)
+
+            ax_client.complete_trial(trial_index=trial_index, raw_data={"AUC": reward["AUC"]})
+
+            ax_client.save_to_json_file(f"{expid}.json")
+        except:
+            pass

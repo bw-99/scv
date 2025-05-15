@@ -16,7 +16,11 @@ class CrossNetwork(nn.Module):
                  net_dropout=0.1,
                  num_mask=3,
                  num_hops=1,
-                 mask_strategy="product"
+                 mask_strategy="product",
+                 dotproduct=False,
+                 exp_wo_ReLU=False,
+                 exp_wo_FLE=False,
+                 exp_wo_TLE=False,
                 ):
         super(CrossNetwork, self).__init__()
         self.num_tower = num_tower
@@ -28,6 +32,9 @@ class CrossNetwork(nn.Module):
         self.num_hops = num_hops
         self.num_mask = num_mask
         self.mask_strategy = mask_strategy
+        self.dotproduct = dotproduct
+        self.exp_wo_FLE = exp_wo_FLE
+        self.exp_wo_TLE = exp_wo_TLE
 
         self.gnn_transform_weight = Param(torch.Tensor(1, num_tower, num_hops, 2*embedding_dim, embedding_dim))
         self.gnn_transform_bias = Param(torch.Tensor(num_tower, num_hops, num_fields, embedding_dim))
@@ -43,7 +50,9 @@ class CrossNetwork(nn.Module):
         self.dropout = nn.ModuleList()
         for i in range(num_hops):
             if batch_norm:
-                self.batch_norm.append(nn.BatchNorm1d(self.num_tower * self.num_fields * 2 * self.embedding_dim))
+                dim = self.num_tower * self.num_fields * self.embedding_dim if self.dotproduct else self.num_tower * self.num_fields * 2 * self.embedding_dim
+                # dim = self.embedding_dim if self.dotproduct else 2 * self.embedding_dim
+                self.batch_norm.append(nn.BatchNorm1d(dim))
             if net_dropout > 0:
                 self.dropout.append(nn.Dropout(net_dropout))
         
@@ -58,11 +67,23 @@ class CrossNetwork(nn.Module):
             nn.Softmax(dim=1)
         )
 
+        # if self.exp_wo_FLE:
+        #     self.fle_layer = nn.Linear(self.num_fields*self.embedding_dim, self.num_fields*self.embedding_dim)
+        
+        # if self.exp_wo_TLE:
+        #     self.tle_layer = nn.Linear(self.num_fields*self.embedding_dim*self.num_tower, self.num_fields*self.embedding_dim*self.num_tower)
+
         if self.mask_strategy == "weighted_sum":
             self.mask_weight = nn.Parameter(torch.rand(self.num_tower, self.num_mask, 1, 1))
         elif self.mask_strategy == "hybrid":
             self.mask_fc_layer = nn.Linear(self.num_fields * self.embedding_dim, self.num_mask * self.num_tower)
 
+        self.projector = nn.ModuleList(
+            [nn.Linear(embedding_dim, embedding_dim)
+            for _ in range(num_hops)]
+        )
+
+        self.exp_wo_ReLU = exp_wo_ReLU
 
     def forward(self, _feat):
         x = _feat.unsqueeze(1).repeat(1, self.num_tower, 1, 1)
@@ -79,38 +100,77 @@ class CrossNetwork(nn.Module):
             weight = self.mask_fc_layer(_feat.view(_feat.shape[0], -1)).view(-1, self.num_tower, self.num_mask)
             adj_matrix_hop = torch.einsum('btm,tmnk->btnk',weight, self.masker)
 
+        if self.exp_wo_ReLU:
+            adj_matrix_hop = self.layer_norm(adj_matrix_hop.transpose(-2, -1)).transpose(-2, -1)  + self.diag_adj
+            adj_matrix_hop = torch.nn.functional.softmax(adj_matrix_hop, dim=1)
+        else:
+            adj_matrix_hop = F.relu(adj_matrix_hop)
+            mask = (adj_matrix_hop != 0).float()
+            adj_matrix_hop = self.layer_norm(adj_matrix_hop.transpose(-2, -1)).transpose(-2, -1)
+            x_masked = adj_matrix_hop + (1 - mask) * -1e9 + self.diag_adj
+            adj_matrix_hop = torch.nn.functional.softmax(x_masked, dim=1) * mask
 
-        adj_matrix_hop = F.relu(adj_matrix_hop)
-        mask = (adj_matrix_hop != 0).float()
-        adj_matrix_hop = self.layer_norm(adj_matrix_hop.transpose(-2, -1)).transpose(-2, -1)
-        x_masked = adj_matrix_hop + (1 - mask) * -1e9 + self.diag_adj
-        adj_matrix_hop = torch.nn.functional.softmax(x_masked, dim=1) * mask
-
+        first_x = x.clone()
         for idx in range(self.num_hops):
-            # 1) Linear transform => (B, T, N, D)
-            nei_features = torch.matmul(x.transpose(-2, -1), adj_matrix_hop).transpose(-2, -1)
-            nei_features = nei_features
-            
-            transform = self.gnn_transform_weight[:, :, idx, ...]
-            x = torch.cat([x, nei_features], dim=-1) # B, T, N, 2D
-            
-            if len(self.batch_norm) > idx:
-                x_reshaped = x.view(x.size(0), -1)  # => (B, T*N*D)
-                x_reshaped = self.batch_norm[idx](x_reshaped)
-                x = x_reshaped.view(x.size(0), self.num_tower, self.num_fields, -1)
+            if self.dotproduct:
                 
-            x = torch.matmul(x, transform) + self.gnn_transform_bias[:, idx, ...]
+                nei_features = x
+                # B, T, N, 1, D
+                nei_features = x.view(x.shape[0], self.num_tower, self.num_fields, 1, -1)
+                # 1, T, N, N, 1
+                adj_mat = adj_matrix_hop.unsqueeze(dim=-1).unsqueeze(dim=0)
+                # print(nei_features.shape, adj_mat.shape)
+
+                # B, T, N, N, D
+                nei_features = nei_features * adj_mat
+                # print(nei_features.shape)
+
+                nei_features = torch.prod(nei_features, dim=2)
+
+                # nei_features = torch.abs(nei_features)
+                # nei_features = torch.clamp(nei_features, min=1e-5)
+                # log_X = torch.log(nei_features)
+                # # log_X = torch.log(F.relu(nei_features) + 1e-6)
+                # log_agg = torch.matmul(log_X.transpose(-2, -1), adj_matrix_hop).transpose(-2, -1)
+                # X_new = torch.exp(log_agg)
+                
+                if len(self.batch_norm) > idx:
+                    x_reshaped = nei_features.view(nei_features.size(0), -1)  # => (B, T*N*D)
+                    nei_features = self.batch_norm[idx](x_reshaped)
+                    nei_features = x_reshaped.view(nei_features.size(0), self.num_tower, self.num_fields, -1)
+
+                x = x + first_x * nei_features
+                x = self.projector[idx](x)
+
+            else:
+                # 1) Linear transform => (B, T, N, D)
+                nei_features = torch.matmul(x.transpose(-2, -1), adj_matrix_hop).transpose(-2, -1)
+                nei_features = nei_features
+                transform = self.gnn_transform_weight[:, :, idx, ...]
+                x = torch.cat([x, nei_features], dim=-1) # B, T, N, 2D
+                
+                if len(self.batch_norm) > idx:
+                    x_reshaped = x.view(x.size(0), -1)  # => (B, T*N*D)
+                    x_reshaped = self.batch_norm[idx](x_reshaped)
+                    x = x_reshaped.view(x.size(0), self.num_tower, self.num_fields, -1)
+                    
+                x = torch.matmul(x, transform) + self.gnn_transform_bias[:, idx, ...]
+
+
             if len(self.dropout) > idx:
                 x = self.dropout[idx](x)
 
-        if self.pooling_method == "attn":
+        if self.exp_wo_FLE:
+            x = x.view(x.shape[0], x.shape[1], -1)
+        else:
             weights = self.gating_network(x.view(x.shape[0], x.shape[1], -1)) # B, T, N*D -> B, T, N
             x = torch.sum(x * weights.unsqueeze(dim=-1), dim=2)
+
+        if self.exp_wo_TLE:
+            x = x.view(x.shape[0], -1)
         else:
-            x = x.mean(dim=2)
-        
-        tower_weight = self.tower_moe_gate(_feat.view(_feat.shape[0], -1)).unsqueeze(dim=-1)
-        x = torch.sum(x * tower_weight, dim=1)
+            tower_weight = self.tower_moe_gate(_feat.view(_feat.shape[0], -1)).unsqueeze(dim=-1)
+            x = torch.sum(x * tower_weight, dim=1)
 
         return x
 
@@ -137,6 +197,11 @@ class SCV_light_loca_adadis(BaseModel):
                  batch_norm=False,
                  embedding_regularizer=None,
                  net_regularizer=None,
+                 dotproduct=False,
+                 use_tower="both",
+                 exp_wo_ReLU=False,
+                 exp_wo_FLE=False,
+                 exp_wo_TLE=False,
                  alpha=0.9,
                  **kwargs):
         super(SCV_light_loca_adadis, self).__init__(feature_map,
@@ -159,6 +224,7 @@ class SCV_light_loca_adadis(BaseModel):
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         self.distill_criterion = LoCaDistillationLoss(alpha)
         input_dim = feature_map.sum_emb_out_dim()
+        self.use_tower = use_tower
 
         scv_dropout = net_dropout if scv_dropout == None else scv_dropout
 
@@ -168,38 +234,62 @@ class SCV_light_loca_adadis(BaseModel):
         print("SCV_light_loca_adadis input_dim", input_dim)
         print("distill_loss ", distill_loss, distill_loss==True, distill_loss==False)
 
-        self.gnn_tower = CrossNetwork(
-            num_fields=self.num_fields,
-            embedding_dim=embedding_dim,
-            net_dropout=scv_dropout,
-            num_tower=num_tower,
-            layer_norm=layer_norm,
-            batch_norm=batch_norm,
-            pooling_method=pooling_method,
-            num_hops=num_hops,
-            num_mask=num_mask,
-            mask_strategy=mask_strategy
-        )
+        if self.use_tower == "both" or self.use_tower == "GAS":
+            self.gnn_tower = CrossNetwork(
+                num_fields=self.num_fields,
+                embedding_dim=embedding_dim,
+                net_dropout=scv_dropout,
+                num_tower=num_tower,
+                layer_norm=layer_norm,
+                batch_norm=batch_norm,
+                pooling_method=pooling_method,
+                num_hops=num_hops,
+                num_mask=num_mask,
+                mask_strategy=mask_strategy,
+                dotproduct=dotproduct,
+                exp_wo_ReLU=exp_wo_ReLU,
+                exp_wo_FLE=exp_wo_FLE,
+                exp_wo_TLE=exp_wo_TLE
+            )
+
+        self.exp_wo_FLE = exp_wo_FLE
+        self.exp_wo_TLE = exp_wo_TLE
+        
         self.subs_origin_loss = subs_origin_loss
         
-        self.parallel_dnn = MLP_Block(input_dim=input_dim,
-                                      output_dim=None,  # output hidden layer
-                                      hidden_units=parallel_dnn_hidden_units,
-                                      hidden_activations="ReLU",
-                                      output_activation=None,
-                                      dropout_rates=net_dropout,
-                                      batch_norm=batch_norm)
+        if self.use_tower == "both" or self.use_tower == "MLP":
+            self.parallel_dnn = MLP_Block(input_dim=input_dim,
+                                        output_dim=None,  # output hidden layer
+                                        hidden_units=parallel_dnn_hidden_units,
+                                        hidden_activations="ReLU",
+                                        output_activation=None,
+                                        dropout_rates=net_dropout,
+                                        batch_norm=batch_norm)
 
         
         if self.use_bilinear_fusion:
-            concat_dim = embedding_dim
+            if self.exp_wo_FLE and self.exp_wo_TLE:
+                # B, T, N*D -> B, T*N*D
+                concat_dim = embedding_dim * num_tower * self.num_fields
+            elif not self.exp_wo_FLE and self.exp_wo_TLE:
+                # B, T, D -> B, T*D
+                concat_dim = embedding_dim * num_tower
+            elif not self.exp_wo_FLE and not self.exp_wo_TLE:
+                # B, T, D -> B, D
+                concat_dim = embedding_dim
+            elif self.exp_wo_FLE and not self.exp_wo_TLE:
+                # B, T, N*D -> B, N*D
+                concat_dim = embedding_dim * self.num_fields
+                
             self.W3 = nn.Parameter(torch.randn(concat_dim, parallel_dnn_hidden_units[-1]))
-        else:
-            concat_dim = embedding_dim + parallel_dnn_hidden_units[-1]
-            self.W3 = nn.Parameter(torch.randn(concat_dim, 1))
+        # else:
+        #     concat_dim = embedding_dim + parallel_dnn_hidden_units[-1]
+        #     self.W3 = nn.Parameter(torch.randn(concat_dim, 1))
         print("concat_dim ", concat_dim)
         self.bias = nn.Parameter(torch.tensor(0.0))
-        self.w1 = nn.Parameter(torch.randn(embedding_dim, 1))  # Shape: (d1, 1)
+        
+
+        self.w1 = nn.Parameter(torch.randn(concat_dim, 1))  # Shape: (d1, 1)
         self.w2 = nn.Parameter(torch.randn(parallel_dnn_hidden_units[-1], 1))  # Shape: (d2, 1)
         nn.init.xavier_uniform_(self.w1)
         nn.init.xavier_uniform_(self.w2)
@@ -212,25 +302,43 @@ class SCV_light_loca_adadis(BaseModel):
         print("without emb dim")
         self.count_parameters(count_embedding=False)
 
+        assert (self.distill_loss == True) or ((self.distill_loss == False) and (alpha != 1))
+
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X, flatten_emb=False)
 
         # B, T, D
-        graph_embeddings = self.gnn_tower(feature_emb).view(feature_emb.shape[0], -1)
-        mlp_embeddings = self.parallel_dnn(feature_emb.view(feature_emb.shape[0], -1))
+        if self.use_tower == "both":
+            graph_embeddings = self.gnn_tower(feature_emb).view(feature_emb.shape[0], -1)
+            mlp_embeddings = self.parallel_dnn(feature_emb.view(feature_emb.shape[0], -1))
+            linear_term1 = graph_embeddings @ self.w1  # (B, output_dim)
+            linear_term2 = mlp_embeddings @ self.w2  # (B, output_dim)
+            if self.use_bilinear_fusion:
+                bilinear_term = torch.einsum('bi,ij,bj->b', graph_embeddings, self.W3, mlp_embeddings).unsqueeze(1)  # (B, 1)
+            else:
+                bilinear_term = torch.cat([graph_embeddings, mlp_embeddings], dim=-1) @ self.W3
+            y_pred = self.bias + linear_term1 + linear_term2 + bilinear_term
+            y_pred = self.output_activation(y_pred)
+            return_dict = {"y_pred": y_pred, "y1": linear_term1, "y2": linear_term2, "y3": bilinear_term}
+        elif self.use_tower == "MLP":
+            mlp_embeddings = self.parallel_dnn(feature_emb.view(feature_emb.shape[0], -1))
+            y_pred = mlp_embeddings @ self.w2 + self.bias
+            y_pred = self.output_activation(y_pred)
+            return_dict = {"y_pred": y_pred}
+        elif self.use_tower == "GAS":
+            graph_embeddings = self.gnn_tower(feature_emb).view(feature_emb.shape[0], -1)
+            y_pred = graph_embeddings @ self.w1 + self.bias
+            y_pred = self.output_activation(y_pred)
+            return_dict = {"y_pred": y_pred}
 
-        linear_term1 = graph_embeddings @ self.w1  # (B, output_dim)
-        linear_term2 = mlp_embeddings @ self.w2  # (B, output_dim)
-        if self.use_bilinear_fusion:
-            bilinear_term = torch.einsum('bi,ij,bj->b', graph_embeddings, self.W3, mlp_embeddings).unsqueeze(1)  # (B, 1)
-        else:
-            bilinear_term = torch.cat([graph_embeddings, mlp_embeddings], dim=-1) @ self.W3
-        y_pred = self.bias + linear_term1 + linear_term2 + bilinear_term
-
-        y_pred = self.output_activation(y_pred)
-
-        return_dict = {"y_pred": y_pred, "y1": linear_term1, "y2": linear_term2, "y3": bilinear_term}
+        return_dict["graph_embeddings"] = graph_embeddings
+        # return_dict["linear_term1"] = linear_term1
+        # return_dict["linear_term2"] = linear_term2
+        # return_dict["bilinear_term"] = bilinear_term
+        # return_dict["bias"] = self.bias.item()
+        return_dict["y_pred"] = y_pred
+        
         return return_dict
     
     def compute_loss(self, return_dict, y_true):
@@ -238,26 +346,27 @@ class SCV_light_loca_adadis(BaseModel):
         loss = origin_loss
         loss += self.regularization_loss()
         
-        term_lst = [return_dict["y1"], return_dict["y2"]]
-        if self.distill_loss == "with_bilinear":
-            term_lst.append(return_dict["y3"])
+        if self.use_tower == "both":
+            term_lst = [return_dict["y1"], return_dict["y2"]]
+            if self.distill_loss == "with_bilinear":
+                term_lst.append(return_dict["y3"])
 
-        term_loss = torch.tensor([self.loss_fn(self.output_activation(item), y_true, reduction='mean') for item in term_lst], device=origin_loss.device)
-        if self.subs_origin_loss:
-            term_loss = term_loss - origin_loss
-        term_loss = F.softmax(term_loss)
-        
-        if self.distill_loss:
-            y1 = self.output_activation(return_dict["y1"])
-            y2 = self.output_activation(return_dict["y2"])
-            loss1 = self.distill_criterion(y1, return_dict["y_pred"].detach(), y_true) * term_loss[0]
-            loss2 = self.distill_criterion(y2, return_dict["y_pred"].detach(), y_true) * term_loss[1]
-            loss += loss1+loss2
+            term_loss = torch.tensor([self.loss_fn(self.output_activation(item), y_true, reduction='mean') for item in term_lst], device=origin_loss.device)
+            if self.subs_origin_loss:
+                term_loss = term_loss - origin_loss
+            term_loss = F.softmax(term_loss)
             
-        if self.distill_loss == "with_bilinear":
-            y3 = self.output_activation(return_dict["y3"])
-            loss3 = self.distill_criterion(y3, return_dict["y_pred"].detach(), y_true) * term_loss[2]
-            loss += loss3
+            if self.distill_loss:
+                y1 = self.output_activation(return_dict["y1"])
+                y2 = self.output_activation(return_dict["y2"])
+                loss1 = self.distill_criterion(y1, return_dict["y_pred"].detach(), y_true) * term_loss[0]
+                loss2 = self.distill_criterion(y2, return_dict["y_pred"].detach(), y_true) * term_loss[1]
+                loss += loss1+loss2
+                
+            if self.distill_loss == "with_bilinear":
+                y3 = self.output_activation(return_dict["y3"])
+                loss3 = self.distill_criterion(y3, return_dict["y_pred"].detach(), y_true) * term_loss[2]
+                loss += loss3
 
         return loss
     

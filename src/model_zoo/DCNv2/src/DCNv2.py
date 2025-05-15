@@ -19,11 +19,21 @@ import torch
 from torch import nn
 from fuxictr.pytorch.models import BaseModel
 from fuxictr.pytorch.layers import FeatureEmbedding, MLP_Block, CrossNetV2, CrossNetMix
+import os
+import numpy as np
 
+def block_frobenius_norm(mat, num_features, block_size=16):
+    norm_mat = np.zeros((num_features, num_features))
+    for i in range(num_features):
+        for j in range(num_features):
+            block = mat[i*block_size:(i+1)*block_size, j*block_size:(j+1)*block_size]
+            norm_mat[i, j] = np.linalg.norm(block, ord='fro')
+    return norm_mat
 
 class DCNv2(BaseModel):
     def __init__(self, 
                  feature_map, 
+                 mask_rate=0,
                  model_id="DCNv2", 
                  gpu=-1,
                  model_structure="parallel",
@@ -40,6 +50,7 @@ class DCNv2(BaseModel):
                  batch_norm=False, 
                  embedding_regularizer=None,
                  net_regularizer=None, 
+                 mask=None,
                  **kwargs):
         super(DCNv2, self).__init__(feature_map, 
                                     model_id=model_id, 
@@ -49,10 +60,14 @@ class DCNv2(BaseModel):
                                     **kwargs)
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         input_dim = feature_map.sum_emb_out_dim()
+        
+        self.mask_rate = mask_rate
+        self.expanded_mat = None
+
         if use_low_rank_mixture:
             self.crossnet = CrossNetMix(input_dim, num_cross_layers, low_rank=low_rank, num_experts=num_experts)
         else:
-            self.crossnet = CrossNetV2(input_dim, num_cross_layers)
+            self.crossnet = CrossNetV2(input_dim, num_cross_layers, mask=self.expanded_mat)
         self.model_structure = model_structure
         assert self.model_structure in ["crossnet_only", "stacked", "parallel", "stacked_parallel"], \
                "model_structure={} not supported!".format(self.model_structure)
@@ -89,7 +104,7 @@ class DCNv2(BaseModel):
     def forward(self, inputs):
         X = self.get_inputs(inputs)
         feature_emb = self.embedding_layer(X, flatten_emb=True)
-        cross_out = self.crossnet(feature_emb)
+        cross_out = self.crossnet(feature_emb, idx=0)
         if self.model_structure == "crossnet_only":
             final_out = cross_out
         elif self.model_structure == "stacked":

@@ -1,0 +1,11 @@
+base_config: ./config/
+base_expid: AFN_KKBox_x1
+dataset_id: KKBox_x1
+
+tuner_space:
+    model_root: './checkpoints/'
+    logarithmic_neurons: [600, 900, 1200, 1500]
+    afn_dropout: [0.1, 0.2, 0.3]
+    dnn_dropout: [0.1, 0.2, 0.3]
+    ensemble_dnn: [True]
+    batch_norm: [True]

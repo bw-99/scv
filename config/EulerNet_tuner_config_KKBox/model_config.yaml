@@ -1,0 +1,1674 @@
+EulerNet_KKBox_x1_001_d015e301:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_002_49046f48:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_003_19d567e8:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_004_89432cbb:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_005_9afbd385:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_006_17a9fb69:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_007_19d567e8:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_008_89432cbb:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_009_8f87844f:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_010_7c0c6e85:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_011_9e04d5d2:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_012_4a70c3a2:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_013_9afbd385:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_014_17a9fb69:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_015_9e04d5d2:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_016_4a70c3a2:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_017_6bb4c2ef:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_018_191fb798:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [10]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_019_6486ce72:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_020_6c44e135:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_021_4c79d10d:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_022_e7eb8382:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_023_4e1aa687:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_024_dbf7925a:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_025_4c79d10d:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_026_e7eb8382:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_027_eba126ff:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_028_c45ce1e0:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_029_cf1938a4:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_030_26e006f4:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_031_4e1aa687:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_032_dbf7925a:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_033_cf1938a4:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_034_26e006f4:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_035_abc54456:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_036_c922df7f:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [20, 20]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_037_4f903b6d:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_038_025f5656:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_039_e290b472:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_040_727ace8d:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_041_269caff0:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_042_afb45046:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_043_e290b472:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_044_727ace8d:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_045_0f632a2f:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_046_3ca1f443:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_047_f95dbe84:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_048_da2e3abf:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.1
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_049_269caff0:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_050_afb45046:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_051_f95dbe84:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_052_da2e3abf:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.1
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_053_d48b032a:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1
+EulerNet_KKBox_x1_054_fa7b218e:
+    batch_size: 10000
+    dataset_id: KKBox_x1_92d623b6
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: false
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: EulerNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_ex_dropout: 0.2
+    net_im_dropout: 0.2
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shape: [50]
+    task: binary_classification
+    use_features: null
+    verbose: 1

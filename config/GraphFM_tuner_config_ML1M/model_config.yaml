@@ -1,0 +1,279 @@
+GraphFM_Movielens_x1_001_ab8f2287:
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [1, 1, 1]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_Movielens_x1_002_45cadf41:
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [1, 1, 1]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_Movielens_x1_003_b4b32766:
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 2
+    ks: [1, 1, 1]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_Movielens_x1_004_eb148477:
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [1, 1, 1]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_Movielens_x1_005_b4b32766:
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [1, 1, 1]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_Movielens_x1_006_6b186428:
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 3
+    ks: [1, 1, 1]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_Movielens_x1_007_129a096e:
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dropout_keep_prob: 0.1
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [1, 1, 1]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_Movielens_x1_008_45a96cee:
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dropout_keep_prob: 0.2
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [1, 1, 1]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1
+GraphFM_Movielens_x1_009_a2ac6941:
+    batch_size: 4096
+    block_shape: [400, 400, 400]
+    dataset_id: Movielens_x1_0103c136
+    debug_mode: false
+    dropout_keep_prob: 0.3
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    heads: 4
+    ks: [1, 1, 1]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: GraphFM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    task: binary_classification
+    use_features: null
+    verbose: 1

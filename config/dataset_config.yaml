@@ -74,11 +74,10 @@ iPinYou_x1_csv:
     train_data: dataset/iPinYou/train.csv
     valid_data: dataset/iPinYou/test.csv
 
-KKBox_csv:
+KKBox_x1:
     data_format: csv
     data_root: dataset/
     feature_cols:
-    - {active: true, dtype: str, name: isrc, preprocess: extract_country_code, type: categorical}
     -   active: true
         dtype: str
         name: [msno, song_id, source_system_tab, source_screen_name, source_type,
@@ -88,6 +87,7 @@ KKBox_csv:
         type: sequence}
     - {active: true, dtype: str, encoder: MaskedSumPooling, max_len: 3, name: artist_name,
         type: sequence}
+    - {active: true, dtype: str, name: isrc, preprocess: extract_country_code, type: categorical}
     - {active: true, dtype: str, name: bd, preprocess: bucketize_age, type: categorical}
     label_col: {dtype: float, name: label}
     min_categr_count: 10
@@ -114,3 +114,30 @@ KDD12_x10:
     test_data: dataset/KDD12/test.csv
     train_data: dataset/KDD12/train.csv
     valid_data: dataset/KDD12/valid.csv
+
+
+Frappe_x1:
+    data_root: dataset
+    data_format: csv
+    train_data: dataset/Frappe/train.csv
+    valid_data: dataset/Frappe/valid.csv
+    test_data: dataset/Frappe/test.csv
+    min_categr_count: 1
+    feature_cols:
+        - {name: ["user", "item", "daytime", "weekday", "isweekend", "homework", "cost", "weather", "country", "city"],
+            active: True, dtype: float, type: categorical}
+    label_col: {name: label, dtype: float}
+
+Movielens_x1:
+    data_root: dataset
+    data_format: csv
+    feature_cols:
+    -   active: true
+        dtype: float
+        name: [user_id, item_id, tag_id]
+        type: categorical
+    label_col: {dtype: float, name: label}
+    min_categr_count: 1
+    test_data: dataset/Movielens_x1/test.csv
+    train_data: dataset/Movielens_x1/train.csv
+    valid_data: dataset/Movielens_x1/valid.csv

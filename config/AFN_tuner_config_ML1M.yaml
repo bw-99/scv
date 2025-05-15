@@ -1,0 +1,11 @@
+base_config: ./config/
+base_expid: AFN_Movielens_x1
+dataset_id: Movielens_x1
+
+tuner_space:
+    model_root: './checkpoints/'
+    logarithmic_neurons: [600, 800]
+    afn_dropout: [0.1, 0.2, 0.3, 0.4, 0.5]
+    dnn_dropout: [0.1, 0.2, 0.3, 0.4, 0.5]
+    ensemble_dnn: [True, False]
+    batch_norm: [True, False]

@@ -33,14 +33,20 @@ if __name__ == '__main__':
                         help='Use the tag to determine which expid to run (e.g. 001 for the first expid).')
     parser.add_argument('--gpu', nargs='+', default=[0, 1, 2, 3, 2, 1, 0],
                         help='The list of gpu indexes, -1 for cpu.')
+    parser.add_argument('--fix_seed', type=int, default=0, choices=[0,1], help='The gpu index, -1 for cpu')
+
     args = vars(parser.parse_args())
     gpu_list = args['gpu']
     expid_tag = args['tag']
-    seed_everything(2024)
+
+    if args["fix_seed"] == 1:
+        print("fix seed!"*100)
+        seed_everything(seed=2024)
+    # seed_everything(2024)
 
     torch.autograd.set_detect_anomaly(True)
 
     # generate parameter space combinations
     config_dir = autotuner.enumerate_params(args['config'])
     print(config_dir)
-    autotuner.grid_search(config_dir, gpu_list, expid_tag)
+    autotuner.grid_search(config_dir, gpu_list, expid_tag, fix_seed= args["fix_seed"])

@@ -1,0 +1,12 @@
+base_config: ./config/
+base_expid: FinalMLP_Movielens_x1
+dataset_id: Movielens_x1
+
+tuner_space:
+    num_heads: [10, 20, 50]
+    mlp1_dropout: [0.1, 0.2, 0.3, 0.4]
+    mlp2_dropout: [0.1, 0.2, 0.3, 0.4]
+    monitor_mode: "max"
+    mlp1_hidden_units: [[1000, 1000, 1000], [400, 400, 400]]
+    mlp2_hidden_units: [[1000, 1000, 1000], [400, 400, 400]]
+    

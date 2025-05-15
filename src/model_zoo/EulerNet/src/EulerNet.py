@@ -76,7 +76,7 @@ class EulerNet(BaseModel):
         return return_dict
 
 class EulerInteractionLayer(nn.Module):
-    def __init__(self, inshape, outshape, embedding_dim, apply_norm, net_ex_dropout, net_im_dropout):
+    def __init__(self, inshape, outshape, embedding_dim, apply_norm, net_ex_dropout, net_im_dropout, mask=None):
         super().__init__()
         self.inshape, self.outshape = int(inshape), int(outshape)
         self.feature_dim = embedding_dim
@@ -92,6 +92,13 @@ class EulerInteractionLayer(nn.Module):
             init_orders = torch.softmax(torch.randn(inshape // self.feature_dim, (outshape) // self.feature_dim) / 0.01, dim = 0)
         
         self.inter_orders = nn.Parameter(init_orders)
+        if mask is not None:
+            print("mask is not none"*100)
+            print(mask.sum(), mask.numel())
+        else:
+            print("mask is none"*100)
+        self.mask = nn.Parameter(mask, requires_grad=False) if mask is not None else None
+
         self.im = nn.Linear(inshape, outshape)
         #nn.init.normal_(self.im.weight , mean = 0 , std = 0.1) 🫱 Use for large embedding size, e.g. 128 in KKBox
         nn.init.xavier_uniform_(self.im.weight)
@@ -112,7 +119,13 @@ class EulerInteractionLayer(nn.Module):
         lam = 0.5 * torch.log(lam)
         lam, theta = self.drop_ex(lam), self.drop_ex(theta)
         lam, theta = torch.transpose(lam, -2, -1), torch.transpose(theta, -2, -1)
-        lam, theta =  lam @ (self.inter_orders) + self.bias_lam,  theta @ (self.inter_orders) + self.bias_theta
+
+        if self.mask is None:
+            lam, theta =  lam @ (self.inter_orders) + self.bias_lam,  theta @ (self.inter_orders) + self.bias_theta
+        else:
+            lam =  lam @ (self.inter_orders * self.mask) + self.bias_lam
+            theta = theta @ (self.inter_orders * self.mask) + self.bias_theta
+
         lam = torch.exp(lam)
         lam, theta = torch.transpose(lam, -2, -1), torch.transpose(theta, -2, -1)
 

@@ -1,0 +1,3552 @@
+MaskNet_iPinYou_x1_001_4412c7ed:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_002_ebd4e377:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_003_a804b4d0:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_004_b3c5ed7d:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_005_f4bc4da5:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_006_1e93ffab:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_007_b3c5ed7d:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_008_f4bc4da5:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_009_1e93ffab:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_010_5905c6c1:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_011_f03aa10a:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_012_f4159785:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_013_a8eea44e:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_014_a099c275:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_015_4770a848:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_016_988d4840:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_017_ae8fb63f:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_018_e8dc9fdd:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_019_988d4840:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_020_ae8fb63f:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_021_e8dc9fdd:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_022_ecf2c865:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_023_7cd5e00f:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_024_14149ba2:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 4
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_025_1529b503:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_026_8eb25f91:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_027_4a18bcc9:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_028_fda1295b:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_029_1b88903c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_030_62b978d9:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_031_fda1295b:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_032_1b88903c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_033_62b978d9:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_034_20ec7547:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_035_87f9e331:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_036_3d359c70:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_037_788a328a:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_038_7a23eae7:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_039_0f4ce78c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_040_3df5b54b:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_041_d1a4e614:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_042_6a4bb410:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_043_3df5b54b:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_044_d1a4e614:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_045_6a4bb410:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_046_9844c7da:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_047_8887edbf:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_048_10cf6c32:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 3
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_049_df3bc744:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_050_870928af:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_051_070dbd89:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_052_8e6f38d6:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_053_6c2b899c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_054_fafb5eed:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_055_8e6f38d6:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_056_6c2b899c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_057_fafb5eed:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_058_57a08987:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_059_374764ab:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_060_e8a21781:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_061_8ee2dd04:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_062_c028eb73:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_063_60644550:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_064_aa78f71c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_065_3baf50cb:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_066_8454c255:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_067_aa78f71c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_068_3baf50cb:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_069_8454c255:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_070_63a97afe:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_071_abd174bc:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_072_7c3467f9:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_073_4406a8e7:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_074_ec05793e:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_075_870928af:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_076_27b04e5f:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_077_4c638c99:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_078_6c2b899c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_079_27b04e5f:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_080_4c638c99:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_081_6c2b899c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_082_d52986eb:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_083_583a33e2:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_084_374764ab:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 64
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_085_dd0f3c86:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_086_3f9dc606:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_087_c028eb73:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_088_3cbf0ac7:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_089_98934e4c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_090_3baf50cb:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: true
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_091_3cbf0ac7:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_092_98934e4c:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_093_3baf50cb:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: true
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_094_8920004e:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_095_3a094161:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+MaskNet_iPinYou_x1_096_abd174bc:
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    dnn_hidden_activations: relu
+    dnn_hidden_units: [400, 400, 400]
+    early_stop_patience: 2
+    emb_layernorm: false
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: MaskNet
+    model_root: ./checkpoints/
+    model_type: ParallelMaskNet
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.2
+    net_layernorm: false
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    parallel_block_dim: 128
+    parallel_num_blocks: 1
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1

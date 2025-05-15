@@ -1,0 +1,5616 @@
+FinalNet_iPinYou_x1_001_db82e49e:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_002_52a79f83:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_003_dfc80352:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_004_204e6040:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_005_5f2b0409:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_006_6ded21d3:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_007_766f03c4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_008_5518c456:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_009_b346e30b:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_010_4abe01a2:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_011_5b4886f4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_012_62f4e9a0:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_013_52a79f83:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_014_e26b8eb5:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_015_fec6a6c6:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_016_047ccff5:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_017_6ded21d3:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_018_8a44ce29:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_019_fbbb10f4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_020_f07b94fe:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_021_4abe01a2:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_022_d4aa9ba3:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_023_3af4527e:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_024_896e1936:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_025_dfc80352:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_026_fec6a6c6:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_027_6bc1d361:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_028_d687a9e5:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_029_766f03c4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_030_fbbb10f4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_031_a922f38d:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_032_4c6528e8:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_033_5b4886f4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_034_3af4527e:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_035_4c316cbe:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_036_f5958835:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_037_204e6040:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_038_047ccff5:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_039_d687a9e5:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_040_4f2123f7:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_041_5518c456:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_042_f07b94fe:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_043_4c6528e8:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_044_df8adf37:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_045_62f4e9a0:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_046_896e1936:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_047_f5958835:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_048_9edfed95:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 1000, 1000]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_049_5f2b0409:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_050_6ded21d3:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_051_766f03c4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_052_5518c456:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_053_bc4a12a7:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_054_4f736ffa:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_055_99421d59:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_056_12aeaffe:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_057_10ac084b:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_058_60dbe41e:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_059_a9efeb39:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_060_6475d6a7:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_061_6ded21d3:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_062_8a44ce29:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_063_fbbb10f4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_064_f07b94fe:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_065_4f736ffa:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_066_3638b8bc:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_067_9b4ea1c3:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_068_8650b5f5:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_069_60dbe41e:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_070_39858749:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_071_81948d06:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_072_f4633754:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_073_766f03c4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_074_fbbb10f4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_075_a922f38d:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_076_4c6528e8:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_077_99421d59:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_078_9b4ea1c3:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_079_8709d266:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_080_02ae0370:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_081_a9efeb39:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_082_81948d06:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_083_a85962b9:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_084_9b78befd:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_085_5518c456:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_086_f07b94fe:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_087_4c6528e8:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_088_df8adf37:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_089_12aeaffe:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_090_8650b5f5:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_091_02ae0370:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_092_bb3d962a:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_093_6475d6a7:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_094_f4633754:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_095_9b78befd:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_096_6eccbe36:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [1000, 512, 128]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_097_b346e30b:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_098_4abe01a2:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_099_5b4886f4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_100_62f4e9a0:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_101_10ac084b:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_102_60dbe41e:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_103_a9efeb39:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_104_6475d6a7:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_105_86f4b218:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_106_107855c1:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_107_0e771f82:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_108_d8a599e2:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.1
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_109_4abe01a2:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_110_d4aa9ba3:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_111_3af4527e:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_112_896e1936:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_113_60dbe41e:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_114_39858749:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_115_81948d06:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_116_f4633754:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_117_107855c1:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_118_3936f5fb:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_119_359394f5:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_120_213c26fb:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.2
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_121_5b4886f4:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_122_3af4527e:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_123_4c316cbe:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_124_f5958835:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_125_a9efeb39:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_126_81948d06:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_127_a85962b9:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_128_9b78befd:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_129_0e771f82:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_130_359394f5:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_131_ddc1c15b:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_132_49b14547:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.3
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_133_62f4e9a0:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_134_896e1936:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_135_f5958835:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_136_9edfed95:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 1000, 1000]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_137_6475d6a7:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_138_f4633754:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_139_9b78befd:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_140_6eccbe36:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [1000, 512, 128]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_141_d8a599e2:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.1
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_142_213c26fb:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.2
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_143_49b14547:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.3
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1
+FinalNet_iPinYou_x1_144_6a7207f1:
+    batch_norm: true
+    batch_size: 4096
+    block1_dropout: 0.4
+    block1_hidden_activations: ReLU
+    block1_hidden_units: [400, 400, 400]
+    block2_dropout: 0.4
+    block2_hidden_activations: ReLU
+    block2_hidden_units: [400, 400, 400]
+    block_type: 2B
+    dataset_id: iPinYou_x1_csv_c2b11acf
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: FinalNet
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_feature_gating: true
+    use_features: null
+    verbose: 1

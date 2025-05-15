@@ -1,0 +1,9 @@
+base_config: ./config/
+base_expid: xDeepFM_Movielens_x1
+dataset_id: Movielens_x1
+
+tuner_space:
+    batch_norm: [True, False]
+    net_dropout: [0, 0.1, 0.2]
+    cin_layer_units: [[400, 400, 400]]
+    embedding_dropout: [0, 0.1, 0.2]

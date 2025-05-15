@@ -1,0 +1,7 @@
+base_config: ./config/
+base_expid: SCV_light_loca_adadis_Movielens_x1
+dataset_id: Movielens_x1
+
+tuner_space:
+    model_root: './checkpoints/'
+    mask_strategy: ["product", "mean", "weighted_sum", "inner"]

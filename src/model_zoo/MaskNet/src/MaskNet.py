@@ -34,7 +34,7 @@ class MaskNet(BaseModel):
                  model_type="SerialMaskNet",
                  parallel_num_blocks=1,
                  parallel_block_dim=64,
-                 reduction_ratio=1,
+                 reduction_ratio=2,
                  embedding_regularizer=None,
                  net_regularizer=None,
                  net_dropout=0,

@@ -3632,8 +3632,10 @@ GraphFM_KKBox_x1:
 
     heads: 4
     block_shape: [400, 400, 400]
-    ks: [1, 1, 1]
+    ks: [10, 10, 10]
     dropout_keep_prob: 0.1
+    trash1: 0
+    trash2: 0
 
 
 AutoInt_KKBox_x1:

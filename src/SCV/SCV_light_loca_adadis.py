@@ -333,6 +333,7 @@ class SCV_light_loca_adadis(BaseModel):
             return_dict = {"y_pred": y_pred}
 
         return_dict["graph_embeddings"] = graph_embeddings
+        return_dict["mlp_embeddings"] = mlp_embeddings
         # return_dict["linear_term1"] = linear_term1
         # return_dict["linear_term2"] = linear_term2
         # return_dict["bilinear_term"] = bilinear_term

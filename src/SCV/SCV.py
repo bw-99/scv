@@ -5,7 +5,7 @@ from torch.nn import Parameter as Param
 from fuxictr.pytorch.models import BaseModel
 from fuxictr.pytorch.layers import FeatureEmbedding, MLP_Block
 
-class GasStream(nn.Module):
+class GASStream(nn.Module):
     def __init__(self,
                  num_fields,
                  embedding_dim,
@@ -16,7 +16,7 @@ class GasStream(nn.Module):
                  num_mask=3,
                  num_hops=1,
                 ):
-        super(GasStream, self).__init__()
+        super(GASStream, self).__init__()
         self.num_tower = num_tower
         self.layer_norm_flag = layer_norm
         self.batch_norm_flag = batch_norm
@@ -129,7 +129,7 @@ class SCV(BaseModel):
         self.embedding_layer = FeatureEmbedding(feature_map, embedding_dim)
         self.distill_criterion = LBD(gamma)
 
-        self.gas_stream = GasStream(
+        self.gas_stream = GASStream(
             num_fields=self.num_fields,
             embedding_dim=embedding_dim,
             net_dropout=net_dropout if scv_dropout == None else scv_dropout,

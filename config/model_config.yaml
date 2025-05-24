@@ -1,0 +1,363 @@
+Base:
+    model_root: './checkpoints/'
+    num_workers: 16
+    verbose: 1
+    early_stop_patience: 2
+    pickle_feature_encoder: True
+    save_best_only: True
+    eval_steps: null
+    debug_mode: False
+    group_id: null
+    use_features: null
+    feature_specs: null
+    feature_config: null
+
+SCV_light_loca_adadis_Criteo:
+    alpha: 0.7
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    distill_loss: true
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    exp_wo_FLE: false
+    exp_wo_ReLU: false
+    exp_wo_TLE: false
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_strategy: product
+    metrics: [logloss, AUC]
+    model: SCV_light_loca_adadis
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_hops: 1
+    num_mask: 4
+    num_tower: 7
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    pooling_method: attn
+    save_best_only: true
+    scv_dropout: 0
+    seed: 2024
+    shuffle: true
+    subs_origin_loss: false
+    task: binary_classification
+    use_bilinear_fusion: true
+    use_features: null
+    verbose: 1
+    exp_wo_ReLU: False
+    exp_wo_FLE: False
+    exp_wo_TLE: False
+    trash1: 0
+    trash2: 0
+
+
+SCV_light_loca_adadis_iPinYou_x1:
+    alpha: 0.7
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv
+    debug_mode: false
+    distill_loss: true
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    exp_wo_ReLU: false
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_strategy: product
+    metrics: [logloss, AUC]
+    model: SCV_light_loca_adadis
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    num_hops: 1
+    num_mask: 4
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    pooling_method: attn
+    save_best_only: true
+    scv_dropout: 0.5
+    seed: 2024
+    shuffle: true
+    subs_origin_loss: false
+    task: binary_classification
+    use_bilinear_fusion: true
+    use_features: null
+    use_tower: both
+    verbose: 1
+    exp_wo_ReLU: False
+    exp_wo_FLE: False
+    exp_wo_TLE: False
+
+SCV_light_loca_adadis_Movielens_x1:
+    alpha: 0.7
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Movielens_x1
+    debug_mode: false
+    distill_loss: true
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_strategy: product
+    metrics: [logloss, AUC]
+    model: SCV_light_loca_adadis
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_hops: 2
+    num_mask: 6
+    num_tower: 6
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    pooling_method: attn
+    save_best_only: true
+    scv_dropout: 0.2
+    seed: 2024
+    shuffle: true
+    subs_origin_loss: false
+    task: binary_classification
+    use_bilinear_fusion: true
+    use_features: null
+    use_tower: both
+    verbose: 1
+    exp_wo_ReLU: False
+    exp_wo_FLE: False
+    exp_wo_TLE: False
+    trash1: 0
+    trash2: 0
+
+SCV_light_loca_adadis_KKBox_x1:
+    alpha: 0.9
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: KKBox_x1
+    debug_mode: false
+    distill_loss: true
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    mask_strategy: product
+    metrics: [logloss, AUC]
+    model: SCV_light_loca_adadis
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_hops: 1
+    num_mask: 2
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    pooling_method: attn
+    save_best_only: true
+    scv_dropout: 0
+    seed: 2024
+    shuffle: true
+    subs_origin_loss: false
+    task: binary_classification
+    use_bilinear_fusion: true
+    use_features: null
+    use_tower: both
+    verbose: 1
+    exp_wo_ReLU: False
+    exp_wo_FLE: False
+    exp_wo_TLE: False
+    trash1: 0
+    trash2: 0
+
+
+# final
+
+SCV_Criteo:
+    gamma: 0.7
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Criteo_x4_10_h5
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: SCV
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_hops: 1
+    num_mask: 4
+    num_tower: 7
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    scv_dropout: 0
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+
+
+SCV_iPinYou_x1:
+    gamma: 0.7
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: iPinYou_x1_csv
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    layer_norm: true
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: SCV
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.5
+    net_regularizer: 0
+    num_hops: 1
+    num_mask: 4
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    scv_dropout: 0.5
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+
+SCV_Movielens_x1:
+    gamma: 0.7
+    batch_norm: true
+    batch_size: 4096
+    dataset_id: Movielens_x1
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 16
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: SCV
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_hops: 2
+    num_mask: 6
+    num_tower: 6
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    scv_dropout: 0.2
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+
+SCV_KKBox_x1:
+    gamma: 0.9
+    batch_norm: true
+    batch_size: 10000
+    dataset_id: KKBox_x1
+    debug_mode: false
+    early_stop_patience: 2
+    embedding_dim: 128
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: null
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: SCV
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, logloss: 0}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_hops: 1
+    num_mask: 2
+    num_tower: 4
+    num_workers: 16
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    scv_dropout: 0
+    seed: 2024
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1

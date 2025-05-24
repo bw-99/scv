@@ -1,6 +1,5 @@
 import itertools
 import subprocess
-from ax import ParameterType
 import yaml
 import os
 import numpy as np
@@ -9,9 +8,6 @@ import glob
 import hashlib
 from fuxictr.utils import print_to_json, load_model_config, load_dataset_config
 import pandas as pd
-from ax.service.ax_client import AxClient, ObjectiveProperties
-from ax.utils.measurement.synthetic_functions import hartmann6
-from ax.utils.notebook.plotting import init_notebook_plotting, render
 import plotly.io as pio
 
 yaml.Dumper.ignore_aliases = lambda *args : True

@@ -1,0 +1,75 @@
+Criteo_x4_10_h5:
+    data_format: csv
+    data_root: dataset/
+    feature_cols:
+    -   active: true
+        dtype: float
+        fill_na: 0
+        na_value: 0
+        name: [I1, I2, I3, I4, I5, I6, I7, I8, I9, I10, I11, I12, I13]
+        preprocess: convert_to_bucket
+        type: categorical
+    -   active: true
+        dtype: str
+        fill_na: ''
+        na_value: ''
+        name: [C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16,
+            C17, C18, C19, C20, C21, C22, C23, C24, C25, C26]
+        type: categorical
+    label_col: {dtype: float, name: Label}
+    min_categr_count: 10
+    test_data: dataset/Criteo_x4_10_h5/test.csv
+    train_data: dataset/Criteo_x4_10_h5/train.csv
+    valid_data: dataset/Criteo_x4_10_h5/valid.csv
+
+
+iPinYou_x1_csv:
+    data_format: csv
+    data_root: dataset/
+    feature_cols:
+    -   active: true
+        dtype: str
+        name: [weekday,hour,IP,region,city,adexchange,domain,
+               slotid,slotwidth,slotheight,slotvisibility,slotformat,
+               creative,advertiser,useragent,slotprice]
+        type: categorical
+    label_col: {dtype: float, name: click}
+    min_categr_count: 2
+    test_data: dataset/iPinYou/test.csv
+    train_data: dataset/iPinYou/train.csv
+    valid_data: dataset/iPinYou/test.csv
+
+KKBox_x1:
+    data_format: csv
+    data_root: dataset/
+    feature_cols:
+    -   active: true
+        dtype: str
+        name: [msno, song_id, source_system_tab, source_screen_name, source_type,
+            city, gender, registered_via, language]
+        type: categorical
+    - {active: true, dtype: str, encoder: MaskedSumPooling, max_len: 3, name: genre_ids,
+        type: sequence}
+    - {active: true, dtype: str, encoder: MaskedSumPooling, max_len: 3, name: artist_name,
+        type: sequence}
+    - {active: true, dtype: str, name: isrc, preprocess: extract_country_code, type: categorical}
+    - {active: true, dtype: str, name: bd, preprocess: bucketize_age, type: categorical}
+    label_col: {dtype: float, name: label}
+    min_categr_count: 10
+    test_data: dataset/KKBox_x1/test.csv
+    train_data: dataset/KKBox_x1/train.csv
+    valid_data: dataset/KKBox_x1/valid.csv
+
+Movielens_x1:
+    data_root: dataset
+    data_format: csv
+    feature_cols:
+    -   active: true
+        dtype: float
+        name: [user_id, item_id, tag_id]
+        type: categorical
+    label_col: {dtype: float, name: label}
+    min_categr_count: 1
+    test_data: dataset/Movielens_x1/test.csv
+    train_data: dataset/Movielens_x1/train.csv
+    valid_data: dataset/Movielens_x1/valid.csv

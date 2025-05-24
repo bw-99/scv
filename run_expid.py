@@ -61,7 +61,6 @@ if __name__ == '__main__':
     
     experiment_id = args['expid']
     mask_rate = args['mask_rate']
-    print("remove_model"*10 , args["remove_model"] == 1)
     
     params = load_config(args['config'], experiment_id)
     # params["epochs"] = 1

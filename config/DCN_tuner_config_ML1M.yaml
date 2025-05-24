@@ -1,9 +1,0 @@
-base_config: ./config/
-base_expid: DCN_Movielens_x1
-dataset_id: Movielens_x1
-
-tuner_space:
-    dnn_hidden_units: [[400, 400, 400]]
-    num_cross_layers: [5, 4, 3, 2, 1]
-    net_dropout: [0.1, 0.2, 0.3]
-    batch_norm: [True, False]

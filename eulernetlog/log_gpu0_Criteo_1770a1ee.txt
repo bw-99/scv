@@ -1,9 +1,0 @@
-remove_modelremove_modelremove_modelremove_modelremove_modelremove_modelremove_modelremove_modelremove_modelremove_model True
-Traceback (most recent call last):
-  File "/home/dxlab/jupyter/jinhee/scv/run_expid.py", line 84, in <module>
-    params = load_config(args['config'], experiment_id)
-  File "/home/dxlab/jupyter/jinhee/scv/.venv/lib/python3.9/site-packages/fuxictr/utils.py", line 32, in load_config
-    params = load_model_config(config_dir, experiment_id)
-  File "/home/dxlab/jupyter/jinhee/scv/.venv/lib/python3.9/site-packages/fuxictr/utils.py", line 56, in load_model_config
-    assert "dataset_id" in params, f'expid={experiment_id} is not valid in config.'
-AssertionError: expid=AdaGIN_Criteo_x1 is not valid in config.

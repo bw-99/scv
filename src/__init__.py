@@ -1,6 +1,3 @@
-# * gnn operation
-from .GNNv3 import *
-
 from .SCV import *
 
 # * baseline

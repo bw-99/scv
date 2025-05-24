@@ -1,9 +1,0 @@
-base_config: ./config/
-base_expid: FiGNN_KKBox_x1
-dataset_id: KKBox_x1
-
-tuner_space:
-    model_root: './checkpoints/'
-    gnn_layers: [5, 7, 10]
-    use_gru: [True, False]
-    use_residual: [True, False]

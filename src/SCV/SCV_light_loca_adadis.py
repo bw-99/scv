@@ -86,6 +86,8 @@ class CrossNetwork(nn.Module):
         self.exp_wo_ReLU = exp_wo_ReLU
 
     def forward(self, _feat):
+        # fle_attn, tle_attn = [], []
+
         x = _feat.unsqueeze(1).repeat(1, self.num_tower, 1, 1)
         if self.mask_strategy == "product":
             adj_matrix_hop = torch.prod(self.masker, dim=1) # (num_tower, num_fields, num_fields)
@@ -127,13 +129,6 @@ class CrossNetwork(nn.Module):
 
                 nei_features = torch.prod(nei_features, dim=2)
 
-                # nei_features = torch.abs(nei_features)
-                # nei_features = torch.clamp(nei_features, min=1e-5)
-                # log_X = torch.log(nei_features)
-                # # log_X = torch.log(F.relu(nei_features) + 1e-6)
-                # log_agg = torch.matmul(log_X.transpose(-2, -1), adj_matrix_hop).transpose(-2, -1)
-                # X_new = torch.exp(log_agg)
-                
                 if len(self.batch_norm) > idx:
                     x_reshaped = nei_features.view(nei_features.size(0), -1)  # => (B, T*N*D)
                     nei_features = self.batch_norm[idx](x_reshaped)
@@ -164,14 +159,17 @@ class CrossNetwork(nn.Module):
             x = x.view(x.shape[0], x.shape[1], -1)
         else:
             weights = self.gating_network(x.view(x.shape[0], x.shape[1], -1)) # B, T, N*D -> B, T, N
+            # fle_attn.append(weights.detach().cpu())
             x = torch.sum(x * weights.unsqueeze(dim=-1), dim=2)
 
         if self.exp_wo_TLE:
             x = x.view(x.shape[0], -1)
         else:
             tower_weight = self.tower_moe_gate(_feat.view(_feat.shape[0], -1)).unsqueeze(dim=-1)
+            # tle_attn.append(tower_weight.detach().cpu())
             x = torch.sum(x * tower_weight, dim=1)
 
+        # return x, torch.cat(fle_attn, dim=0), torch.cat(tle_attn, dim=0)
         return x
 
 
@@ -234,6 +232,7 @@ class SCV_light_loca_adadis(BaseModel):
         print("SCV_light_loca_adadis input_dim", input_dim)
         print("distill_loss ", distill_loss, distill_loss==True, distill_loss==False)
 
+        # assert not(exp_wo_FLE == False and exp_wo_TLE == False)
         if self.use_tower == "both" or self.use_tower == "GAS":
             self.gnn_tower = CrossNetwork(
                 num_fields=self.num_fields,
@@ -310,7 +309,9 @@ class SCV_light_loca_adadis(BaseModel):
 
         # B, T, D
         if self.use_tower == "both":
-            graph_embeddings = self.gnn_tower(feature_emb).view(feature_emb.shape[0], -1)
+            # graph_embeddings, fle_attn, tle_attn = self.gnn_tower(feature_emb)
+            graph_embeddings = self.gnn_tower(feature_emb)
+            graph_embeddings = graph_embeddings.view(feature_emb.shape[0], -1)
             mlp_embeddings = self.parallel_dnn(feature_emb.view(feature_emb.shape[0], -1))
             linear_term1 = graph_embeddings @ self.w1  # (B, output_dim)
             linear_term2 = mlp_embeddings @ self.w2  # (B, output_dim)
@@ -320,7 +321,9 @@ class SCV_light_loca_adadis(BaseModel):
                 bilinear_term = torch.cat([graph_embeddings, mlp_embeddings], dim=-1) @ self.W3
             y_pred = self.bias + linear_term1 + linear_term2 + bilinear_term
             y_pred = self.output_activation(y_pred)
-            return_dict = {"y_pred": y_pred, "y1": linear_term1, "y2": linear_term2, "y3": bilinear_term}
+            return_dict = {"y_pred": y_pred, "y1": linear_term1, "y2": linear_term2, "y3": bilinear_term,
+                           }
+                        #    "fle_attn": fle_attn, "tle_attn": tle_attn}
         elif self.use_tower == "MLP":
             mlp_embeddings = self.parallel_dnn(feature_emb.view(feature_emb.shape[0], -1))
             y_pred = mlp_embeddings @ self.w2 + self.bias
@@ -332,8 +335,8 @@ class SCV_light_loca_adadis(BaseModel):
             y_pred = self.output_activation(y_pred)
             return_dict = {"y_pred": y_pred}
 
-        return_dict["graph_embeddings"] = graph_embeddings
-        return_dict["mlp_embeddings"] = mlp_embeddings
+        # return_dict["graph_embeddings"] = graph_embeddings
+        # return_dict["mlp_embeddings"] = mlp_embeddings
         # return_dict["linear_term1"] = linear_term1
         # return_dict["linear_term2"] = linear_term2
         # return_dict["bilinear_term"] = bilinear_term

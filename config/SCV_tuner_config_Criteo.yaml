@@ -6,13 +6,10 @@ tuner_space:
     model_root: './checkpoints/'
     learning_rate: [1.e-3]
     batch_size: [4096]
-    num_tower: [4, 5, 6]
-    net_dropout: [0, 0.1, 0.2]
-    num_hops: [1, 2]
-    num_mask: [3, 4, 5]
+    num_tower: [4, 5, 6, 7]
+    net_dropout: [0, 0.1, 0.2]      
+    num_hops: [1]
+    num_mask: [2, 3, 4, 5]
     embedding_dim: [16]
-    batch_norm: [True]
-    use_bilinear_fusion: [true]
-    distill_loss: [True, False]
-    pooling_method: ["attn"]
+    gamma: [0.7, 0.8]
     monitor_mode: "max"

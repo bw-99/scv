@@ -1,8 +1,0 @@
-base_config: ./config/
-base_expid: AdaGIN_Criteo
-dataset_id: Criteo_x4_10_h5
-
-tuner_space:
-    trash1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    trash2: [1, 2]
-    

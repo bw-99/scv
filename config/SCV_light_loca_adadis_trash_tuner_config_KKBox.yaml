@@ -1,8 +1,0 @@
-base_config: ./config/
-base_expid: SCV_light_loca_adadis_KKBox_x1
-dataset_id: KKBox_x1
-
-tuner_space:
-    trash1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    trash2: [1, 2]
-    

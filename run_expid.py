@@ -1,22 +1,4 @@
-# =========================================================================
-# Copyright (C) 2022. Huawei Technologies Co., Ltd. All rights reserved.
-# 
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# =========================================================================
-
 import sys
-sys.path.append("./")
-sys.path.append("/home/lhh/code")
 import os
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 import sys
@@ -79,7 +61,6 @@ if __name__ == '__main__':
     
     experiment_id = args['expid']
     mask_rate = args['mask_rate']
-    print("remove_model"*10 , args["remove_model"] == 1)
     
     params = load_config(args['config'], experiment_id)
     # params["epochs"] = 1
@@ -138,125 +119,6 @@ if __name__ == '__main__':
                     "N.A.", print_to_list(valid_result), print_to_list(test_result)))
 
     model_dir = os.path.join(params["model_root"], feature_map.dataset_id)
-
-    # torch.save(test_result, f"{experiment_id}_{mask_rate}_plot.pt")
-
-    # if "DCNv2" in experiment_id:
-    #     adj_matrix = torch.load(f"./{experiment_id}_weight.pt")
-    #     embedding_dim = params["embedding_dim"]
-
-    #     weight_mat = adj_matrix.detach().cpu().numpy()  # torch tensor -> numpy
-    #     block_size = embedding_dim
-    #     num_features = feature_map.num_fields
-    #     norm_mat = block_frobenius_norm(weight_mat,num_features=num_features, block_size=block_size)
-
-    #     th_lst, result_lst = [], []
-    #     for th in np.arange(0, 1.1, 0.1):
-    #         tmp_matrix = torch.from_numpy(norm_mat.copy())
-    #         flat = tmp_matrix.flatten()
-    #         _, indices = torch.topk(flat.abs(), max(1, min(tmp_matrix.numel(), int(tmp_matrix.numel() * th))), largest=False)
-    #         mask = torch.ones_like(flat)
-    #         mask[indices] = 0
-    #         binary_mat = mask.view(tmp_matrix.shape[0], tmp_matrix.shape[1])
-
-    #         expanded_mat = torch.zeros((norm_mat.shape[0] * block_size, norm_mat.shape[1] * block_size), dtype=int)
-
-    #         for i in range(norm_mat.shape[0]):
-    #             for j in range(norm_mat.shape[1]):
-    #                 if binary_mat[i, j] == 1:
-    #                     expanded_mat[i*block_size:(i+1)*block_size,
-    #                                 j*block_size:(j+1)*block_size] = 1
-    #         expanded_mat = expanded_mat.to(device=model.device)
-    #         model.crossnet.mask = nn.Parameter(expanded_mat, requires_grad=False)
-    #         test_result = model.evaluate(test_gen)
-    #         print(th, test_result, model.crossnet.mask.sum())
-    #         del model.crossnet.mask
-    #         gc.collect()
-    #         torch.cuda.empty_cache()
-
-    #         th_lst.append(th)
-    #         result_lst.append(test_result)
-    #     torch.save({"th_lst": th_lst, "result_lst": result_lst}, f"{experiment_id}_test_plot.pt")
-
-    # elif "FinalNet" in experiment_id:
-    #     th_lst, result_lst = [], []
-    #     for th in np.arange(0, 1.1, 0.1):
-    #         block1_mask = torch.load(f"./{experiment_id}_weight.pt")
-    #         flat = block1_mask.view(-1)
-    #         _, indices = torch.topk(flat.abs(), max(1, min(flat.numel(), int(block1_mask.numel() * th))), largest=False)
-    #         mask = torch.ones_like(flat)
-    #         mask[indices] = 0
-    #         binary_mat1 = mask.view(block1_mask.shape[0], block1_mask.shape[1]).to(device=model.device)
-    #         mask = nn.Parameter(binary_mat1, requires_grad=False)
-    #         model.block1.layer[0].mask = mask
-
-    #         test_result = model.evaluate(test_gen)
-    #         print(th, test_result, model.block1.layer[0].mask.sum())
-    #         th_lst.append(th)
-    #         result_lst.append(test_result)
-    #     torch.save({"th_lst": th_lst, "result_lst": result_lst}, f"{experiment_id}_test_plot.pt")
-    
-    # elif "EulerNet" in experiment_id:
-    #     th_lst, result_lst = [], []
-    #     for th in np.arange(0, 1.1, 0.1):
-    #         inter_orders = torch.load(f"./{experiment_id}_weight.pt")
-    #         flat = inter_orders.view(-1)
-    #         _, indices = torch.topk(flat.abs(), max(1, min(inter_orders.numel(), int(inter_orders.numel() * th))), largest=False)
-    #         mask = torch.ones_like(flat)
-    #         mask[indices] = 0
-    #         binary_mat = mask.view(inter_orders.shape[0], inter_orders.shape[1]).to(device=model.device)
-    #         mask = nn.Parameter(binary_mat, requires_grad=False)
-    #         model.Euler_interaction_layers[0].mask = mask
-
-    #         test_result = model.evaluate(test_gen)
-    #         print(th, test_result, model.Euler_interaction_layers[0].mask.sum())
-    #         th_lst.append(th)
-    #         result_lst.append(test_result)
-    #     torch.save({"th_lst": th_lst, "result_lst": result_lst}, f"{experiment_id}_test_plot.pt")
-
-    # elif "AdaGIN" in experiment_id:
-    #     th_lst, result_lst = [], []
-    #     for th in np.arange(0, 1.1, 0.1):
-    #         inter_orders = torch.load(f"./{experiment_id}_weight.pt")
-    #         flat = inter_orders.view(-1)
-    #         _, indices = torch.topk(flat.abs(), max(1, min(inter_orders.numel(), int(inter_orders.numel() * th))), largest=False)
-    #         mask = torch.ones_like(flat)
-    #         mask[indices] = 0
-    #         binary_mat = mask.view(inter_orders.shape[0], inter_orders.shape[1]).to(device=model.device)
-    #         mask = nn.Parameter(binary_mat, requires_grad=False)
-    #         model.AutoGraph.mask = mask
-
-    #         test_result = model.evaluate(test_gen)
-    #         print(th, test_result, model.AutoGraph.mask.sum())
-    #         th_lst.append(th)
-    #         result_lst.append(test_result)
-    #     torch.save({"th_lst": th_lst, "result_lst": result_lst}, f"{experiment_id}_test_plot.pt")
-    
-    # elif "AutoInt" in experiment_id:
-    #     th_lst, result_lst = [], []
-    #     for th in np.arange(0, 1.1, 0.1):
-    #         inter_orders = torch.load(f"./{experiment_id}_weight.pt")  # shape: [num_heads, num_feat, num_feat]
-    #         num_heads, num_feat, _ = inter_orders.shape
-    #         binary_mat = torch.ones_like(inter_orders)
-
-    #         for h in range(num_heads):
-    #             flat = inter_orders[h].flatten()
-    #             k = max(1, int(flat.numel() * th))
-    #             _, indices = torch.topk(flat.abs(), k, largest=False)
-    #             mask = torch.ones_like(flat)
-    #             mask[indices] = 0
-    #             binary_mat[h] = mask.view(num_feat, num_feat)
-    #         binary_mat = 1 - binary_mat
-    #         binary_mat = binary_mat.unsqueeze(0)
-    #         mask = nn.Parameter(binary_mat.to(device=model.device), requires_grad=False)
-    #         model.self_attention[0].mask = mask
-
-    #         test_result = model.evaluate(test_gen)
-    #         print(th, test_result, model.self_attention[0].mask.sum())
-    #         th_lst.append(th)
-    #         result_lst.append(test_result)
-    #     torch.save({"th_lst": th_lst, "result_lst": result_lst}, f"{experiment_id}_test_plot.pt")
-
 
     if args["remove_model"] == 1:
         logging.info('******** Remove Model Weights ********')

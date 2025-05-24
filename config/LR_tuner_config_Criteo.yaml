@@ -1,7 +1,0 @@
-base_config: ./config/
-base_expid: LR_Criteo
-dataset_id: Criteo_x4_10_h5
-
-tuner_space:
-    regularizer: ["l2(1e-7)", "l2(1e-5)", "l2(1e-3)", "l2(1e-1)"]
-# regularizer: ["l2(1e-7)", "l2(1e-6)", "l2(1e-5)", "l2(1e-4)", "l2(1e-3)", "l2(1e-2)", "l2(1e-1)"]

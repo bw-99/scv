@@ -1,7 +1,0 @@
-base_config: ./config/
-base_expid: SCV_light_loca_adadis_iPinYou_x1
-dataset_id: iPinYou_x1_csv
-
-tuner_space:
-    model_root: './checkpoints/'
-    exp_wo_ReLU: [True, False]

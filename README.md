@@ -1,1 +1,1 @@
-SCV: Selectively Crossing Vectors for Accelerated Model Training
+Streamlining Feature Interactions via Selectively Crossing Vectors for Click-Through Rate prediction

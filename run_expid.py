@@ -10,7 +10,6 @@ from fuxictr.pytorch.torch_utils import seed_everything
 from fuxictr.pytorch.dataloaders import RankDataLoader
 from fuxictr.preprocess import build_dataset
 from custom_fp import CustomizedFeatureProcessor as FeatureProcessor 
-import torch
 import src as model_zoo
 import gc
 import argparse
@@ -18,31 +17,6 @@ import os
 from pathlib import Path
 import os
 import subprocess
-import numpy as np
-import torch.nn as nn
-
-def block_frobenius_norm(mat, num_features, block_size=16):
-    norm_mat = np.zeros((num_features, num_features))
-    for i in range(num_features):
-        for j in range(num_features):
-            block = mat[i*block_size:(i+1)*block_size, j*block_size:(j+1)*block_size]
-            norm_mat[i, j] = np.linalg.norm(block, ord='fro')
-    return norm_mat
-
-def get_model(config_path, experiment_id, **kwargs):
-    params = load_config(config_path, experiment_id)
-    params.update(kwargs)
-    data_dir = os.path.join(params['data_root'], params['dataset_id'])
-    feature_map_json = os.path.join(data_dir, "feature_map.json")
-    feature_map = FeatureMap(params['dataset_id'], data_dir)
-    feature_map.load(feature_map_json, params)
-    logging.info("Feature specs: " + print_to_json(feature_map.features))
-
-    model_class = getattr(model_zoo, params['model'])
-    model = model_class(feature_map, **params)
-    model.count_parameters() # print number of parameters used in model
-    return model
-
 
 if __name__ == '__main__':
     ''' Usage: python run_expid.py --config {config_dir} --expid {experiment_id} --gpu {gpu_device_id}
@@ -63,7 +37,6 @@ if __name__ == '__main__':
     mask_rate = args['mask_rate']
     
     params = load_config(args['config'], experiment_id)
-    # params["epochs"] = 1
     print('**************')
     print(args['config'], experiment_id)
     params['gpu'] = args['gpu']
@@ -76,13 +49,11 @@ if __name__ == '__main__':
     logging.info("Params: " + print_to_json(params))
 
     if args["fix_seed"] == 1:
-        print("fix seed!"*100)
         seed_everything(seed=params['seed'])
 
 
     data_dir = os.path.join(params['data_root'], params['dataset_id'])
     print('*******************')
-    print(data_dir)
     feature_map_json = os.path.join(data_dir, "feature_map.json")
     if params["data_format"] == "csv":
         feature_encoder = FeatureProcessor(**params)
@@ -91,7 +62,6 @@ if __name__ == '__main__':
     feature_map = FeatureMap(params['dataset_id'], data_dir)
     feature_map.load(feature_map_json, params)
     logging.info("Feature specs: " + print_to_json(feature_map.features))
-    # LogCNv3_exp_var_iPinYou_x1_058_febf35a5
 
     model_class = getattr(model_zoo, params['model'])
     model = model_class(feature_map, **params)

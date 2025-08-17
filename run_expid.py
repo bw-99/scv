@@ -26,34 +26,24 @@ if __name__ == '__main__':
     parser.add_argument('--expid', type=str, default='DCNv3_Criteo', help='The experiment id to run.')
     parser.add_argument('--gpu', type=int, default=0 , help='The gpu index, -1 for cpu')
     parser.add_argument('--remove_model', type=int, default=1 , help='The gpu index, -1 for cpu')
-    parser.add_argument('--mask_rate', type=float, default=0, help='The gpu index, -1 for cpu')
-    parser.add_argument('--save_feature_interaction', type=int, default=0, choices=[0,1], help='The gpu index, -1 for cpu')
     parser.add_argument('--fix_seed', type=int, default=0, choices=[0,1], help='The gpu index, -1 for cpu')
 
     
     args = vars(parser.parse_args())
     
     experiment_id = args['expid']
-    mask_rate = args['mask_rate']
     
     params = load_config(args['config'], experiment_id)
-    print('**************')
-    print(args['config'], experiment_id)
     params['gpu'] = args['gpu']
     params["experiment_id"] = f"{experiment_id}"
-    params["mask_rate"] = args["mask_rate"]
-    params["save_feature_interaction"] = args["save_feature_interaction"]
-    print('**************')
-    print(params["experiment_id"])
     set_logger(params)
     logging.info("Params: " + print_to_json(params))
 
     if args["fix_seed"] == 1:
         seed_everything(seed=params['seed'])
 
-
+    
     data_dir = os.path.join(params['data_root'], params['dataset_id'])
-    print('*******************')
     feature_map_json = os.path.join(data_dir, "feature_map.json")
     if params["data_format"] == "csv":
         feature_encoder = FeatureProcessor(**params)
@@ -65,7 +55,7 @@ if __name__ == '__main__':
 
     model_class = getattr(model_zoo, params['model'])
     model = model_class(feature_map, **params)
-    model.count_parameters() # print number of parameters used in model
+    model.count_parameters()
 
     train_gen, valid_gen = RankDataLoader(feature_map, stage='train', **params).make_iterator()
     model.fit(train_gen, validation_data=valid_gen, **params)

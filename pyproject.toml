@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scv"
+version = "0.1.0"
+description = "Streamlining Feature Interactions via Selectively Crossing Vectors for Click-Through Rate prediction"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=1.12.0",
+    "numpy",
+    "pandas",
+    "pyyaml",
+    "fuxictr @ git+https://github.com/reczoo/FuxiCTR.git@v2.3.9",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+    "mypy",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true

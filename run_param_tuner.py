@@ -5,7 +5,7 @@ import torch
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--config', type=str, default='./config/ECN_tuner_config_KKBox.yaml',
+    parser.add_argument('--config', type=str, default='./config/SCV_tuner_config_Criteo.yaml',
                         help='The config file for para tuning.')
     parser.add_argument('--tag', type=str, default=None,
                         help='Use the tag to determine which expid to run (e.g. 001 for the first expid).')
@@ -18,12 +18,10 @@ if __name__ == '__main__':
     expid_tag = args['tag']
 
     if args["fix_seed"] == 1:
-        print("fix seed!"*100)
         seed_everything(seed=2024)
 
     torch.autograd.set_detect_anomaly(True)
 
     # generate parameter space combinations
     config_dir = autotuner.enumerate_params(args['config'])
-    print(config_dir)
     autotuner.grid_search(config_dir, gpu_list, expid_tag, fix_seed= args["fix_seed"])
